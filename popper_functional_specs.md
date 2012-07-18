@@ -32,7 +32,7 @@ Soon, Professor Goldin begins designing her own experiments from scratch using t
 
 ###2. Robert, the Trial Runner
 
-Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Landing Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Researcher Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
+Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Landing Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
 
 ##Landing Page 
 
@@ -86,7 +86,7 @@ The Navigation Bar in the Header includes four links:
 
 *Log in* opens an ajax popup window that allows researchers who already have an account to log in using their Email and Password. We would like to use each user's email address as their User Name to minimize the number of steps it takes to sign up and to encourage the creation of only one account per researcher. The ajax popup window should be minimalistic: at the top of the window should be the words "Log in". Under these words should be two fields: "Email" and, beneath that, "Password". Under the password field should be a a link that says "Forgot password?". Under "Forgot password?" should be a button that says "Log in". Under this button should be another button that contrasts in color with the "Log in" button, and says "Sign up". We do not anticipate this Sign Up button to be the primary way that new users create an account, but we would still like to provide the option of signing up for a new user who happens to click on "Log in".
 
-A valid user name and password combination signs in the user and brings the user to the **Researcher Dashboard**. Users who are signed in should, by default, remain signed in unless they log out. There should not be a "Remember Me" checkbox: we want to minimize clutter and only show what the user needs to see. If the user enters an invalid username or password, the fields should vibrate quickly left to right and the message "Invalid username or password." should appear beneath the Password field, in the location where the "Log in" button was originally. The "Log in" and "Sign up" buttons appear beneath the "Invalid username or password" message, in all making it appear as if the "Invalid username or password" status pushed the two buttons down the page.
+A valid user name and password combination signs in the user and brings the user to the **Dashboard**. Users who are signed in should, by default, remain signed in unless they log out. There should not be a "Remember Me" checkbox: we want to minimize clutter and only show what the user needs to see. If the user enters an invalid username or password, the fields should vibrate quickly left to right and the message "Invalid username or password." should appear beneath the Password field, in the location where the "Log in" button was originally. The "Log in" and "Sign up" buttons appear beneath the "Invalid username or password" message, in all making it appear as if the "Invalid username or password" status pushed the two buttons down the page.
 
 If a user clicks on the "Forgot password?" link, the ajax popup should change to display the title "Forgot Password?" and only one field: "Email". Under this field is a message that says, "To reset your password, please enter your email address." Underneath this message should be a button that says "Submit". If the email address that the user enters cannot be found in the database, the popup window shakes from left to right rapidly and displays the error message, "Sorry, your email address could not be found." If the email matches one in the database, the message "Please check your email for instructions to reset your password." replaces the text "To reset your password..." and [support@popper.org](support@popper.org) sends a formatted email with the subject "Reset your Popper password" to the user. At the top of the email is a header incorporating the Popper logo. The following text appears: 
 
@@ -217,7 +217,7 @@ We would like the other static pages on the Researcher site to feature the same 
 
 The first part of the sign up process is described above, and takes place on the **Landing Page**. The confirmation link in the email brings the user to the **Sign Up** page. The user sees the text "Almost There!" and only a few more fields to complete: "First Name", "Last Name", "Password", and "Confirm Password". The user then fills the checkbox "I agree with Terms of Service", and clicks the Sign Up button when done. Clicking on the Terms of Service link brings the user to a static page identical in layout to **Our Story**, except without an image. We will provide this legal text once it becomes available. 
 
-Once the user clicks Sign Up, an account is created and the user is taken to the **Researcher Dashboard**, which will be discussed later. We will ask for more information from the user, such as affiliation and payment information, as the information becomes necessary. We would like to bring as many researchers on board as possible without overwhelming them with too many premature demands for credentials.
+Once the user clicks Sign Up, an account is created and the user is taken to the **Dashboard**, which will be discussed later. We will ask for more information from the user, such as affiliation and payment information, as the information becomes necessary. We would like to bring as many researchers on board as possible without overwhelming them with too many premature demands for credentials.
 
 **Sign Up** features the same Header and Footer as the **Landing Page** and **Our Story**.
 
@@ -283,6 +283,57 @@ If the user enters an invalid username and/or password, the ajax window shakes f
 
 ###5. Header and Footer
 
-The Header of **Experiment Library** is identical to the Header found on the **Landing Page**, except for two main differences. First, the link "Our Story" is replaced by a link to **Researcher Dashboard**. Second, the user sees something different in the top navigation bar depending on whether the user is logged in. A logged-in user will see the email address of the logged-in account with a down-cursor. Clicking on the down-cursor displays the following options: Researcher Dashboard, Profile, Log Out. **Researcher Dashboard** and **Profile** are separate pages and will be described later. Log Off signs the user off Popper and brings the user back to the **Landing Page**. A message telling the user that Log Out has been completed is *not* necessary.
+The Header of **Experiment Library** is identical to the Header found on the **Landing Page**, except for two main differences. First, the link "Our Story" is replaced by a link to **Dashboard**. Second, the user sees something different in the top navigation bar depending on whether the user is logged in. A logged-in user will see the email address of the logged-in account with a down-cursor. Clicking on the down-cursor displays the following options: Dashboard, Profile, Log Out. **Dashboard** and **Profile** are separate pages and will be described later. Log Off signs the user off Popper and brings the user back to the **Landing Page**. A message telling the user that Log Out has been completed is *not* necessary.
 
 The Footer of **Experiment Library** is exactly the same as the Footer described on the **Landing Page**. 
+
+##Dashboard
+
+Researchers monitor trials in the **Dashboard**. The **Dashboard** consists of two main components: 
+
+1. Trials
+2. Feed
+
+###1. Trials
+
+Trials is a list of all of the researcher's trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Monitor Trial** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.  
+
+Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes "activity" that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:
+
+1. Awaiting players: The initial status of all trials that a researcher creates is "Waiting for players". This status indicates that the trial has been created and that the server is waiting for a sufficient number of subjects to join the game. The researcher can click on the name of the trial to go to that trial's **Monitor Trial** page to recruit more subjects if necessary. 
+2. In progress: Once enough subjects have joined a trial, the status of the trial changes to "In progress". Subjects play the game, and as they do, data from the experiment is sent to the **Monitor Trials** page.
+3. Pay subjects: Once a trial is complete, the researcher pays subjects. The researcher can review and approve subject payments from the **Monitor Trial** page.
+4. Complete: After payment is complete, the status of the trial changes to "Complete". No further action is required from the researcher at this time, but the trial is saved in the List for the researcher to review and download data. 
+5. Error: If there is an error with any part of the trial, the researcher can click on the trial to go to **Monitor Trial** in order to fix the error.
+
+In addition to the status of the trial, two other pieces of information about the trial are displayed next to the name of the trial. 
+
+- Trial number: Each trial is assigned a unique ID number. This number is necessary to keep track of trials and allows us to help users resolve issues with individual trials.
+- Date and time: A timestamp corresponding with when the change in status occurred is displayed next to the name of the trial. These time stamps are important and informative for each status. For example, when a trial is first created, the time stamp in "Trial" would indicate when the trial was first created.
+
+At the bottom of the Trials frame is a button for "More...", in the style of GitHub. Clicking this button scrolls the entire window down to display more trials. This button disappears once the researcher has displayed all existing trials. There is no scroll bar on the Trials frame itself.
+
+At the top of the Trials frame is a button, "New Trial". Clicking this button takes the researcher to the **Create Trial** page.
+
+###2. Feed
+
+The Feed is on the right side of **Dashboard**. This feed automatically updates with the following information regarding changes in status and other types of activities:
+
+- Changes in status, with the following phrasing:
+	- Awaiting players: "**Trial ##** has been created. Awaiting players." As each player joins, the following message is displayed in the Feed: "**Player ##** has joined **Trial ##**."
+	- In progress: "**Trial ##**" is now in progress.
+	- Pay subjects: "**Trial ##** has finished. Go to the **Monitor Trial** page to review subject payments."
+	- Complete: "**Trial ##** is now complete."
+- Fork activity
+	- "Researcher ## has just forked your experiment, **Experiment Name**."
+- Following activity
+	- "**Researcher ##** is now following **Trial ##**."
+	- "You are now following **Trial ##** by **Researcher ##**."
+
+Each bolded item in the above bulleted list should be a link that opens in a new tab. **Trial ##** links to the **Monitor Trial** page for a particular trial. **Player ##** links to a player profile, which is hosted externally on the Player Website. **Researcher ##** links to the public profile view of another researcher; this profile is hosted on the Researcher Website.
+
+Just as with the Trials frame, a "More..." button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.
+
+The Header and Footer of **Dashboard** are identical to the signed-in view in **Experiment Library**.
+
+## 
