@@ -1,8 +1,8 @@
 #Popper Functional Specifications
 
-The Popper Functional Specs describe the three core components of Popper: (1) The Researcher Site, (2) The Player Site, and (3) The Popper Software Development Kit. These Functional Specs serve to make sure that everyone is on the same page about the functionality and purpose of each of the components of Popper. This document is an organic work in progress and will likely change over time. We will notify everyone when changes are made.
+The Popper Functional Specs describe the three core components of Popper: (1) The Researcher Site, (2) The Player Site, and (3) The Popper Software Development Kit. These Functional Specs serve to make sure that everyone is on the same page about the functionality and purpose of each of the components of Popper. This document is an organic work in progress and will likely change over time. We will notify everyone as changes are made.
 
-Two types of names are bolded in this document: **Web Pages** for the Researcher Site and Player Site, and **subcomponents** for the Popper Software Development Kit. These items are bolded and assigned a consistent name throughout the text. 
+Two types of names are bolded in this document: **Web Pages** for the Researcher Site and Player Site, and **components** of the Popper Software Development Kit. These items are bolded and assigned a consistent name throughout the text. 
 
 #Researcher Site
 
@@ -36,75 +36,74 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 ##Landing Page 
 
-The purpose of the **Landing Page** is to convince social science researchers to _Sign up_ to use Popper. This Sign up process will be later discussed in further detail. The **Landing Page** answers the question "What Is Popper?" and provides reasons that the researcher should try to use Popper in place of their current software. 
+The purpose of the **Landing Page** is to convince social science researchers to sign up to use Popper. This sign up process will be discussed later. The **Landing Page** answers the question, "What Is Popper?" and provides reasons that the researcher should try to use Popper in place of their current software. 
 
-The overall look of the **Landing Page** should be classic yet modern. Since the audience ranges from graduate students in their mid-20s to older professors, it is essential that the site does *not* have a plastic, generically Web-2.0 feel. We are leaning towards a light, clean color scheme. The **Landing Page** must convey academic legitimacy: it is essential that researchers not feel that they are marketing targets.
+The overall look of the **Landing Page** should be classic yet modern. Since the audience ranges from graduate students in their mid-20s to older professors, it is essential that the site does not have a plastic, generically Web-2.0 feel. We are leaning towards a light, clean color scheme. The **Landing Page** must convey academic legitimacy: it is essential that researchers not feel that they are the targets of marketing.
 
 The **Landing Page** consists of six components: 
 
 1. The Header
-
 2. The Hook
-
 3. Statistics
-
 4. The Features List
-
 5. Sign Up
-
-6. The Footer
 
 ###1. The Header
 
 The Header contains the Popper Logo and the Navigation Bar. 
 
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
+
 ####Popper Logo
 
-The Popper Logo contains the name "Popper" accompanying a stylized likeness of Karl Popper, the philosopher after whom the product is named. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. We would like to include Karl Popper's likeness to emphasize that the name "Popper" does not refer to drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, which is a core component of the Popper SDK. 
+The Popper Logo contains the name "Popper" accompanying a stylized likeness of Karl Popper, the philosopher after whom the product is named. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
-The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities ([Harvard](http://www.harvard.edu/), [Dartmouth](http://www.dartmouth.edu/), [University of Texas](http://www.utexas.edu/)), as well as research technologies like [Wolfram Alpha](http://www.wolframalpha.com/). Finally, the logo should have a corresponding smaller "minilogo" that appears in the title bar of web browsers. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
+![Image](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg)
 
-When a user is not signed in, clicking on the Popper Logo brings the user to [www.popper.org](www.popper.org).
+We would like to include Karl Popper's likeness to emphasize that the name "Popper" does not refer to drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
+
+The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
+
+![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
+
+![Image](http://www.dartmouth.edu/home/files/graphics/dartmouth.gif)
+
+![Image](http://www.utexas.edu/sites/all/themes/webcentral/_images/ribbon.png)
+
+![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
+
+Finally, the logo should have a corresponding smaller "minilogo" that appears in the title bar of web browsers. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
+
+When a user is not signed in, clicking on the Popper Logo brings the user to [www.popper.org](www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the **Researcher Dashboard**, which will be discussed later.
 
 ####Navigation Bar
 
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true)
+
 The Navigation Bar in the Header includes four links: 
 
-1. How It Works
+1. **How It Works**
+2. **Our Story**
+3. **Experiment Library**
+4. *Log in*
 
-2. Our Story
+[1] **How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Popper Researcher Website. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
-3. Experiment Library
+[2] **Our Story** is a static About page. Its contents will be discussed later.
 
-4. Log in
+[3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.  
 
-*How It Works* links to documentation for Popper. Clicking on this link takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documents for the Documentation repository to explain to users how to use Popper.
+[4] Users sign in with their GitHub account to use Popper. *Log in* takes the user to GitHub, where they can sign in and authorize GitHub access to their Popper account. This same functionality can be seen on [laravel.com](laravel.com). When a user logs in to laravel.com, she is taken straight to the following GitHub log in page. 
 
-*Our Story* links to the **Our Story** page, which functions as an About page. **Our Story** is a static page and its contents will be discussed later.
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/lsignin.png?raw=true)
 
-*Experiment Library* links to our **Experiment Library**, which is a page on the Popper Research Site that allows researchers to explore all available experiments. **Experiment Library** is dynamic and looks different for each user as it pulls information from GitHub repositories linked with each user's account. This page of the site will be discussed later.  
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/githubsignin.png?raw=true)
 
-*Log in* opens an ajax popup window that allows researchers who already have an account to log in using their Email and Password. We would like to use each user's email address as their User Name to minimize the number of steps it takes to sign up and to encourage the creation of only one account per researcher. The ajax popup window should be minimalistic: at the top of the window should be the words "Log in". Under these words should be two fields: "Email" and, beneath that, "Password". Under the password field should be a a link that says "Forgot password?". Under "Forgot password?" should be a button that says "Log in". Under this button should be another button that contrasts in color with the "Log in" button, and says "Sign up". We do not anticipate this Sign Up button to be the primary way that new users create an account, but we would still like to provide the option of signing up for a new user who happens to click on "Log in".
+After clicking Sign In, the user is taken straight back to Laravel.
 
-A valid user name and password combination signs in the user and brings the user to the **Dashboard**. Users who are signed in should, by default, remain signed in unless they log out. There should not be a "Remember Me" checkbox: we want to minimize clutter and only show what the user needs to see. If the user enters an invalid username or password, the fields should vibrate quickly left to right and the message "Invalid username or password." should appear beneath the Password field, in the location where the "Log in" button was originally. The "Log in" and "Sign up" buttons appear beneath the "Invalid username or password" message, in all making it appear as if the "Invalid username or password" status pushed the two buttons down the page.
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/lsignedin.png?raw=true)
 
-If a user clicks on the "Forgot password?" link, the ajax popup should change to display the title "Forgot Password?" and only one field: "Email". Under this field is a message that says, "To reset your password, please enter your email address." Underneath this message should be a button that says "Submit". If the email address that the user enters cannot be found in the database, the popup window shakes from left to right rapidly and displays the error message, "Sorry, your email address could not be found." If the email matches one in the database, the message "Please check your email for instructions to reset your password." replaces the text "To reset your password..." and [support@popper.org](support@popper.org) sends a formatted email with the subject "Reset your Popper password" to the user. At the top of the email is a header incorporating the Popper logo. The following text appears: 
-
-> ***Forgot your password?***
->
-> To reset your password, please click the link below:
-> 
-> [Link to reset password]
-> 
-> If you have any questions, please email us at [support@popper.org](support@popper.org).
-> 
-> Thanks,
-> 
-> The Popper Team
-
-When the user clicks the password reset link, a new tab should open in the user's browser bringing the user to the **Landing Page** with an ajax popup window in the exact same style as the Log In popup window described above. The title of this popup is "Reset Password", with three fields. The first field is "Email Address" and should be pre-populated with the email address for the password reset. Right underneath is a second field, "New Password" and beneath that, a third field, "Confirm New Password". Under "Confirm New Password" is a button, "Submit". The password must be at least 6 characters in length, and contain both numbers and letters. If the password doesn't fit these parameters, the ajax popup shakes from left to right and the following message shows up at the top of the screen, directly below "Reset Password": Your password must be at least 6 characters long and contain both letters (A-Z) and numbers (0-9). 
-
-Once the user clicks "Submit" for a valid new password, the ajax popup window switches back to the Log In layout described above, with the email address field pre-populated with the email address that was just used for Reset Password. 
+In this way, all authentication, forgotten password handling, and user account creation is handled by GitHub. 
 
 ###2. The Hook
 
