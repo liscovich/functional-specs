@@ -40,6 +40,8 @@ The purpose of the **Landing Page** is to convince social science researchers to
 
 The overall look of the **Landing Page** should be classic yet modern. Since the audience ranges from graduate students in their mid-20s to older professors, it is essential that the site does not have a plastic, generically Web-2.0 feel. We are leaning towards a light, clean color scheme. The **Landing Page** must convey academic legitimacy: it is essential that researchers not feel that they are the targets of marketing.
 
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true)
+
 The **Landing Page** consists of six components: 
 
 1. The Header
@@ -58,7 +60,7 @@ The Header contains the Popper Logo and the Navigation Bar.
 
 The Popper Logo contains the name "Popper" accompanying a stylized likeness of Karl Popper, the philosopher after whom the product is named. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
-![Image](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg)
+![Image](http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg)
 
 We would like to include Karl Popper's likeness to emphasize that the name "Popper" does not refer to drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
 
@@ -78,7 +80,7 @@ When a user is not signed in, clicking on the Popper Logo brings the user to [ww
 
 ####Navigation Bar
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true)
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
 
 The Navigation Bar in the Header includes four links: 
 
@@ -99,7 +101,11 @@ The Navigation Bar in the Header includes four links:
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/githubsignin.png?raw=true)
 
-After clicking Sign In, the user is taken straight back to Laravel.
+After clicking Sign In, the user is taken to an authorization screen to grant Popper access to the user's public and private repositories on GitHub. This authorization is necessary to display the user's experiments on the **Experiments** page. To run a trial, the experiment must be visible in **Experiments**. Public repositories are thus also public in **Experiments** and can be accessed by any researcher. Experiments from private repositories are only visible to researchers who are signed into Popper with that GitHub account. 
+
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/popperauth.png?raw=true)
+
+After GitHub access authorization, the user is taken back to the Laravel. In our case, we would want the user to be taken back to the Landing Page, or whichever page the user was on immediately prior to signup. 
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/lsignedin.png?raw=true)
 
@@ -107,9 +113,11 @@ In this way, all authentication, forgotten password handling, and user account c
 
 ###2. The Hook
 
+
+
 The purpose of the Hook is to describe to the user, briefly, exactly what Popper is. We anticipate that initially, most users who come to www.popper.org will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.
 
-The header of the **Landing Page** is "Behavioral Experiments Platform, [*a(n) adjective*] one". We would like to replace the [*a(n) adjective*] with a revolving list of words, both serious and funny. This header is meant to add character and likeability to the Researcher Site. In terms of execution, we are unsure whether it would be more pleasant from a UX perspective to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the [*adjective*] to make the word change. As a design decision, we are unsure whether the "an [adjective] one" phrase should be capitalized or lower case.
+The header of the **Landing Page** is "Behavioral Experiments Platform, [*a(n) adjective*] one". We would like to replace the [*a(n) adjective*] with a revolving list of words, both serious and funny. This header is meant to add character and likeability to the Researcher Site. In terms of execution, we are unsure whether it would be more pleasant from a UX perspective to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the [*adjective*] to make the word change.
 
 Here is the list of words -- we would like for the succession of words to be random but the first word that appears when the user arrives on the **Landing Page** should always be a word from the Serious list. 
 
