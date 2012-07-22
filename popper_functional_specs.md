@@ -44,43 +44,54 @@ The overall look of the **Landing Page** should be classic yet modern. Since the
 
 The **Landing Page** consists of six components: 
 
-1. The Header
-2. The Hook
-3. Statistics
-4. The Features List
-5. Sign Up
+1. Header (including Accounts)
+2. Features
+3. Sign Up
+4. Footer
 
-###1. The Header
+###1. Header
 
-The Header contains the Popper Logo and the Navigation Bar. 
+The Header contains the Logo, Navigation Bar (where we will cover user Accounts), Overview, and Usage Statistics. 
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
 
 ####Popper Logo
 
-The Popper Logo contains the name "Popper" accompanying a stylized likeness of Karl Popper, the philosopher after whom the product is named. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true)
 
-![Image](http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg)
+The Popper Logo contains the name "Popper" accompanying a stylized likeness of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
-We would like to include Karl Popper's likeness to emphasize that the name "Popper" does not refer to drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
+<center>
+	<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="10%" ALT="POPPER_PHOTO" BORDER="2.5">
+	</center>
+
+We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the name from drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
 
 The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
 
-![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
+<center>
+	![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
+</center>
 
-![Image](http://www.dartmouth.edu/home/files/graphics/dartmouth.gif)
+<center>
+	![Image](http://www.dartmouth.edu/home/files/graphics/dartmouth.gif)
+</center>
 
-![Image](http://www.utexas.edu/sites/all/themes/webcentral/_images/ribbon.png)
+<center>
+	![Image](http://www.utexas.edu/sites/all/themes/webcentral/_images/ribbon.png)
+</center>
 
-![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
+<center>
+	![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
+</center>
 
 Finally, the logo should have a corresponding smaller "minilogo" that appears in the title bar of web browsers. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
 
-When a user is not signed in, clicking on the Popper Logo brings the user to [www.popper.org](www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the **Researcher Dashboard**, which will be discussed later.
+When a user is not signed in, clicking on the Popper Logo brings the user to the landing page at [www.popper.org](www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the **Researcher Dashboard**, which will be discussed later.
 
 ####Navigation Bar
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true)
 
 The Navigation Bar in the Header includes four links: 
 
@@ -93,19 +104,46 @@ The Navigation Bar in the Header includes four links:
 
 [2] **Our Story** is a static About page. Its contents will be discussed later.
 
-[3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.  
+[3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
-[4] Users sign in with their GitHub account to use Popper. *Log in* takes the user to GitHub, where they can sign in and authorize GitHub access to their Popper account. This same functionality can be seen on [laravel.com](laravel.com). When a user logs in to laravel.com, she is taken straight to the following GitHub log in page. 
+[4] User log in and sign up will be described in the "Accounts" section below. 
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/lsignin.png?raw=true)
+####Accounts
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/githubsignin.png?raw=true)
+The diagram below explains the log in and sign up processes. I will describe specific steps after the diagram.
 
-After clicking Sign In, the user is taken to an authorization screen to grant Popper access to the user's public and private repositories on GitHub. This authorization is necessary to display the user's experiments on the **Experiments** page. To run a trial, the experiment must be visible in **Experiments**. Public repositories are thus also public in **Experiments** and can be accessed by any researcher. Experiments from private repositories are only visible to researchers who are signed into Popper with that GitHub account. 
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts.png?raw=true)
+
+
+
+I. **Logged into GitHub?** When the user clicks "Log in", Popper checks whether the user is already logged into GitHub.
+	1. **Verified email address?** If the user is already logged into GitHub, Popper checks whether this GitHub account is linked with a verified email address in the Popper database. A verified email address is necessary to maintain the quality of user accounts in the Popper database. 
+		a. If a verified email address is linked with the GitHub account, Popper checks whether the user has entered additional credentials on the Popper website.
+			i. **BINGO!** If the user has entered additional credentials, this means that the user has a fully completed, fully validated account, and the user is taken straight to the **Dashboard**.
+			ii. **Additional credentials** If the user has not previously entered additional credentials, this means that the user does not have a fully completed account, and the user is taken to the Sign Up page. This page is discussed later in the Functional Specs. After the user has completed the Sign Up process, the user is taken to the **Researcher Dashboard**
+
+
+	entered additional credentials on the Popper website.
+		-If the user has already entered additional credentials on the Popper website, the user is taken straight to the **Dashboard**.
+		-If the user has not yet entered additional credentials on the Popper website, the user is taken to an authorization page that asks the user to grant Popper access to public and private information from the user's GitHub account. Once the user clicks "Allow", the user is redirected to the **Dashboard**.
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/popperauth.png?raw=true)
 
-After GitHub access authorization, the user is taken back to the Laravel. In our case, we would want the user to be taken back to the Landing Page, or whichever page the user was on immediately prior to signup. 
+	-If the user is not yet logged into GitHub, Popper 
+
+*Log in* takes the user to GitHub, where they can sign in and authorize GitHub access to their Popper account. This same functionality can be seen on [laravel.com](laravel.com). When a user clicks "log in" on Laravel, the user is taken straight to the following GitHub log in page. What happens next depends on whether the user has a Popper account. 
+
+
+
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/githubsignin.png?raw=true)
+
+After signing in on this GitHub page, the user is taken to an authorization screen to grant Popper access to the user's public and private repositories on GitHub.  
+
+
+
+This authorization is necessary to display the user's experiments on the **Experiments Library** page. To run a trial, the experiment must be visible in **Experiments Library**. Public repositories are thus also public in **Experiments Library** and can be accessed by any researcher. Experiments from private repositories are only visible to researchers who are signed into Popper with that GitHub account.
+
+After GitHub access authorization, the user is taken to a taken back to the Landing Page, or whichever page the user was on when the user clicked "log in". 
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/lsignedin.png?raw=true)
 
@@ -113,9 +151,7 @@ In this way, all authentication, forgotten password handling, and user account c
 
 ###2. The Hook
 
-
-
-The purpose of the Hook is to describe to the user, briefly, exactly what Popper is. We anticipate that initially, most users who come to www.popper.org will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.
+The purpose of the Hook is to describe to the user, briefly, exactly what Popper is. We anticipate that initially, most users who come to www.popper.org will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.	
 
 The header of the **Landing Page** is "Behavioral Experiments Platform, [*a(n) adjective*] one". We would like to replace the [*a(n) adjective*] with a revolving list of words, both serious and funny. This header is meant to add character and likeability to the Researcher Site. In terms of execution, we are unsure whether it would be more pleasant from a UX perspective to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the [*adjective*] to make the word change.
 
