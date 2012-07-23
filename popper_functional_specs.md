@@ -110,22 +110,19 @@ The Navigation Bar in the Header includes four links:
 
 ####Accounts
 
-The diagram below explains the log in and sign up processes. I will describe specific steps after the diagram.
+The diagram below explains the log in and sign up processes. I'll go through the digram step by step and explain what's going on.
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts.png?raw=true)
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts1.png?raw=true)
+
+When the user clicks "Log In" on the **Landing Page**, Popper first checks whether the User is already logged into a GitHub account on the same browser. Users log in to Popper using GitHub credentials, for several reasons. First, GitHub handles account issues like log in and password retrieval. Second, we would like all Popper users to have a GitHub account to encourage users to collaborate on experiments. Third, all experiment designers need a GitHub account to push their experiments and run trials; requiring everyone to have a GitHub account means that there is no separate GitHub sign up process further down the road for users who are not yet sure if they will design experiments. 
+
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts2.png?raw=true)
+
+If the user is not signed into a GitHub account, the user is redirected to the GitHub Log In page.
+
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/githubsignin.png?raw=true)
 
 
-
-I. **Logged into GitHub?** When the user clicks "Log in", Popper checks whether the user is already logged into GitHub.
-	1. **Verified email address?** If the user is already logged into GitHub, Popper checks whether this GitHub account is linked with a verified email address in the Popper database. A verified email address is necessary to maintain the quality of user accounts in the Popper database. 
-		a. If a verified email address is linked with the GitHub account, Popper checks whether the user has entered additional credentials on the Popper website.
-			i. **BINGO!** If the user has entered additional credentials, this means that the user has a fully completed, fully validated account, and the user is taken straight to the **Dashboard**.
-			ii. **Additional credentials** If the user has not previously entered additional credentials, this means that the user does not have a fully completed account, and the user is taken to the Sign Up page. This page is discussed later in the Functional Specs. After the user has completed the Sign Up process, the user is taken to the **Researcher Dashboard**
-
-
-	entered additional credentials on the Popper website.
-		-If the user has already entered additional credentials on the Popper website, the user is taken straight to the **Dashboard**.
-		-If the user has not yet entered additional credentials on the Popper website, the user is taken to an authorization page that asks the user to grant Popper access to public and private information from the user's GitHub account. Once the user clicks "Allow", the user is redirected to the **Dashboard**.
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/popperauth.png?raw=true)
 
