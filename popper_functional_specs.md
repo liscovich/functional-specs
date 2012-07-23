@@ -110,9 +110,9 @@ The Navigation Bar in the Header includes four links:
 
 ####Accounts
 
-The diagram below explains the log in and sign up processes. I'll go through the digram step by step and explain what's going on.
+The diagram below explains the log in and sign up processes. I'll go through the diagram step by step and explain what's going on.
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts1.png?raw=true)
+![Image](https://github.com/liscovich/functional-specs/blob/master/images/accounts.png?raw=true)
 
 When the user clicks "Log In" on the **Landing Page**, Popper first checks whether the User is already logged into a GitHub account on the same browser. Users log in to Popper using GitHub credentials, for several reasons. First, GitHub handles account issues like log in and password retrieval. Second, we would like all Popper users to have a GitHub account to encourage users to collaborate on experiments. Third, all experiment designers need a GitHub account to push their experiments and run trials; requiring everyone to have a GitHub account means that there is no separate GitHub sign up process further down the road for users who are not yet sure if they will design experiments. 
 
