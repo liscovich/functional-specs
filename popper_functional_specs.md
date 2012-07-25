@@ -82,7 +82,7 @@ The log in screen is done through GitHub API and looks like the following.
 The sign up screen is done through GitHub API as well, and looks like the following. 
 
 <!---GitHub sign up screen-->
-After log in or sign up, the user is redirected to a GitHub page to authorize GitHub access to the user's private and public information. This authorization is necessary to customize the user's **Experiment Library** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiment Library**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository. 
+After log in or sign up, the user is redirected to a GitHub page to authorize GitHub access to the user's private and public information. This authorization is necessary to customize the user's **Experiments Library** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiments Library**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository. 
 
 <!---GitHub authorization page-->
 If the user has already granted Popper access to the user's GitHub account, Step 2 should either be hidden or minimized along with Step 1.
@@ -210,14 +210,14 @@ The Navigation Bar in the Header includes four links:
 
 - **How It Works**
 - **Our Story**
-- **Experiment Library**
+- **Experiments Library**
 - **Log in**
 
 [1] **How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Popper Researcher Website. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
 [2] **Our Story** is a static About page. Its contents will be discussed later.
 
-[3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
+[3] **Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
 [4] User log in and sign up were discussed in the previous section, "Accounts". <!---internal link-->
 
@@ -281,7 +281,7 @@ These four features should be arranged on a horizontal navigation panel. Each of
 
 ###Start at the frontier
 
-Begin running experiments right away. Browse the Experiment Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. 
+Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. 
 
 Popper relies on frontier technology, which means that it improves daily. 
 
@@ -315,17 +315,17 @@ The Sign Up and Log In pages feature the same Logo, Navigation Bar, and Footer a
 
 The **Our Story** page is a static About page. It explains who Karl Popper is and introduces the Popper team.
 
-**Our Story** features the same Header and Footer as the **Landing Page**. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, <code>"&copy; Lucinda Douglas-Menzies" and "Reproduced with the generous permission of the photographer"</code>. 
+**Our Story** features the same Header and Footer as the **Landing Page**. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, <code>"&copy; Lucinda Douglas-Menzies"</code> and <code>"Reproduced with the generous permission of the photographer"</code>. 
 
 To the right of Karl Popper's likeness, we would like to include a section called <code>"Behind the Name"</code> and, beneath it, <code>"Team"</code>. We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. 
 
 We would like the other static pages on the Researcher site to feature the same wrapper as **Our Story**. These other pages are **Contact**, **Terms of Service**, **Privacy**, and **Security**. **Terms of Service**, **Privacy**, and **Security** should open up in popup windows.
 
-#Experiment Library
+#Experiments Library
 
-**Experiment Library** is the final page accessible to users who are not signed in from the **Landing Page**. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.
+**Experiments Library** is the final page accessible to users who are not signed in from the **Landing Page**. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.
 
-There are five main components in **Experiment Library**:
+There are five main components in **Experiments Library**:
 
 1. Logo
 2. Navigation Bar
@@ -350,53 +350,33 @@ Same as **Landing Page**. <!---internal link-->
 
 #4. List of Experiments
 
-The main feature of **Experiment Library** is a list of public experiments. All users can see this list, no matter if they are logged in or not. The idea is to allow researchers to be able to see what Popper offers without having to sign up first. The list of experiments is an embedded frame with a scrollbar. We would like to display three experiments per row.
+The main feature of **Experiments Library** is a list of public experiments. All users can see this list, no matter if they are logged in or not. The idea is to allow researchers to be able to see what Popper offers without having to sign up first. The list of experiments is an embedded frame with a scrollbar. We would like to display three experiments per row.
 
-This frame displays two sections of experiments: User Experiments and Stock Experiments, in this order. User Experiments are pulled from the user's GitHub repositories, which means that public 
+This frame displays two sections of experiments: User Experiments and Stock Experiments, in this order. User Experiments are pulled from the user's GitHub repositories, which means that experiments contained in public repositories are visible to all other users and those from private repositories are visible only to someone who has GitHub access to that repository. A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. 
 
-From a GitHub perspective, Private Experiments are user-specific and are drawn from the private repositories that the user links with her Popper account. Public Experiments are drawn from users' public repositories that are linked with a Popper account. Finally, Stock Experiments are drawn from public repositories in the Popper GitHub account. Each of these three types of experiments serve a slightly different purpose. Private Experiments allow researchers to run trials without having to reveal their experiment protocol before they are ready. Public Experiments allow researchers to open their work to their peers for review and replication if necessary, usually after the original researcher has already run the experiment and published results. Stock Experiments are provided by Popper and allow the very first users of the platform to begin running trials right away. They also show researchers the functionality of Popper, and serve as a template for researchers to use as they begin to design their own experiments. The Stock Experiments that Popper provides on the Researcher Website incorporate common games that researchers frequently test in the lab.
+Stock Experiments are stored in the [Popper GitHub account](https://github.com/Experiments/) and can be public or private. Stock Experiments allow researchers to run experiments right away, without having to design their own experiments from scratch. This is particularly important when Popper launches because no users will have designed their own experiments yet. Stock Experiments also provide researchers with templates of the most commonly run experiments in the social sciences. 
 
-Accordingly, the List of experiments should be divided into three sections separating Private Experiments, Public Experiments, and Stock Experiments. 
+Popper reads through the content of a user's repositories and pulls only the ones that contain full experiments. Popper makes this determination by looking for metadata, source code, master client, and client files. If the user's GitHub account does not contain any experiments, "No experiments pushed to GitHub. Click [here](linktodocumentation.com) to learn how to design experiments." should be displayed in the section for User Experiments. "Here" links to Popper documentation on the [Popper GitHub account](https://github.com/Experiments/).
 
-The content of this frame is pulled from GitHub and sorted by date--repositories with the most recent changes will be displayed first. *Users who are signed in and who have linked their GitHub account with their Popper account will see experiments from their private repositories displayed first in the list, rather than public experiments. Next displayed will be Public Experiments, with their own experiments displayed at the top of the list. Last are Stock Experiments.* Each experiment is accompanied by a metadata, which is pulled from GitHub. The name of the repository (functioning as the name of the experiment), a description of the experiment, number of forks, and the academic journal in which the results of the experiment were published should be listed. The number of forks is necessary to list and include in the metadata because researchers may want to sort experiments by popularity, which is functionality we would like to include in the future once more experiments are available in **Experiments Library**. We anticipate that almost all public experiments in **Experiment Library** will be accompanied by a journal in which results were published. This is because we expect that researchers will not make their experiment repository public until they have published results, at which point it is good academic practice to make the experiment publicly available should peers wish to replicate the experiment.  
+These experiments are sorted by date--repositories with the most recent changes are displayed first. The name of the repository (functioning as the name of the experiment), a description of the experiment, number of forks, and the academic journal in which the results of the experiment were published should be listed. The number of forks is necessary to list and include in the metadata because researchers may want to sort experiments by popularity, which is functionality we would like to include in the future once more experiments are available in **Experiments Library**. 
 
-When a researcher hovers over an experiment, the color of the square containing the name of the experiment and its information should change color. Clicking on the experiment brings the user to the **Create Trial** page for that particular experiment, which will be discussed later. 
+When a researcher hovers over an experiment, the square containing the name of the experiment and its information should change color. Clicking on the experiment brings the user to the **Experiment** page (formerly known as **Create Trial**) for that particular experiment, where the user can learn more about the experiment and create a trial.  
 
-##2. Search bar
+##5. Search bar
 
-The search bar sifts through the contents of the List of experiments. As soon as a researcher begins to type, autocomplete suggestions should appear beneath the Search bar, in the style of Google search. When a researcher clicks on an experiment in the autocomplete list, that single experiment alone is displayed in the List of experiments. If the researcher instead hits Enter, a list of all experiments relevant to the search phrase will appear in the List of experiments, split up into the three sections mentioned above (Private Experiments, Public Experiments, and Stock Experiments). 
+The search bar sifts through the contents of the List of experiments. As soon as a researcher begins to type, autocomplete suggestions should appear beneath the Search bar, in the style of Google search. When a researcher clicks on an experiment in the autocomplete list, that single experiment alone is displayed in the List of experiments. If the researcher instead hits Enter, a list of all experiments relevant to the search phrase will appear in the List of experiments, split up into the two sections mentioned above (User Experiments, Stock Experiments). 
 
 Autocomplete search results should be formatted as follows:
 
-> **Name of Experiment** - Description of experiment, truncated after a certain number of characters so that the number of forks and publication journal can appear at the end of the autocomplete suggestion... - *Forks: ##; Journal Name*
+> **Name of Experiment** - Description of experiment, truncated after a certain number of characters so that the number of forks and publication journal can appear at the end of the autocomplete suggestion... - *Forks: ##*; *Journal Name*
 
-##3. Filter
+##6. Filter
 
-Researchers can click on one of five filters to find experiments. The number of filters may increase in the future, so there should be a way of adding filters as necessary. For now, the five filters for experiments are:
+Researchers can also search for an experiment by browsing with the filter, in the style of navigating with the left navigation bar to find a product on [Amazon.com](Amazon.com). 
 
-- All
-- Social Preferences
-- Networks
-- Coordination Games
-- Cheap Talk Games
+[insert explanation of filters here, Andrey...]
 
-When a user clicks on one of these filters, the filter opens up and the list of available experiments that fall under this filter are displayed in the filter navigation bar. The format of the filtered result is as follows:
-
->**Name of Experiment** (number of forks)
-
-At the same time, the frame to the right of the Filter should update if necessary to be populated with all experiments that match that filter, organized by section (Private Experiments, Public Experiments, and Stock Experiments). If a user selects an experiment in the Filter, that experiment should be highlighted in the Filter and the Experiment List frame should update to display only that experiment, as well as the section that the experiment falls under (Private Experiments, Public Experiments, and Stock Experiments). Similarly, if a user selects an experiment in the Experiments List frame, this experiment should be highlighted in the Filter and the Filter should collect/collapse as necessary to open up the filter that contains the experiment. 
-
-##4. GitHub authentication link
-
-Users who are not logged in see the following text under the Experiments List: "To add external experiments, [Log In](linktologintopopper.com)". Clicking on Log In opens the same ajax popup window described for the **Landing Page**. 
-
-Users who are logged in see the following text instead: "To add external experiments, [sign-in with GitHub](signinwithgithub.com)". Clicking on the link opens an ajax popup that allows a user to link her Popper account with her GitHub account. Doing so allows the user to view her Private and Public Experiments in the List of Experiments. 
-
-The window contains five elements: a title, "Sign In with GitHub"; GitHub username; GitHub password; a "Forgot your GitHub password?" link; a button, "Submit". Clicking Submit sends a call to GitHub's API and links the user's Popper account with the GitHub account so that all public repositories are sent to the List of Experiments under Public Experiments and all private repositories are sent to the List of Experiments under Private Experiments (which are viewable by the user who owns the linked account). 
-
-After clicking Submit, the ajax window disappears and the user sees an updated version of **Experiment Library** with additions to the List of Experiments as applicable. 
-
-If the user enters an invalid username and/or password, the ajax window shakes from left to right and the message "Invalid user name or password" is displayed at the top of the popup, between "Sign In with GitHub" and the "GitHub username" field. If the user clicks on "Forgot your GitHub password?", a new tab opens to https://github.com/sessions/forgot_password and the user completes the password retrieval process through the GitHub website.
+At the same time, the frame to the right of the Filter should update if necessary to be populated with all experiments that match that filter, organized by section (User Experiments and Stock Experiments). If a user selects an experiment in the Filter, that experiment should be highlighted in the Filter and the Experiment List frame should update to display only that experiment, as well as the section that the experiment falls under (User Experiments and Stock Experiments).
 
 #Dashboard
 
@@ -445,4 +425,4 @@ Each bolded item in the above bulleted list should be a link that opens in a new
 
 Just as with the Trials frame, a "More..." button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.
 
-The Header and Footer of **Dashboard** are identical to the signed-in view in **Experiment Library**.
+The Header and Footer of **Dashboard** are identical to the logged-in view in **Experiments Library**. <!---internal link-->
