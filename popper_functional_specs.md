@@ -32,24 +32,139 @@ Soon, Professor Goldin begins designing her own experiments from scratch using t
 
 Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Landing Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
 
+#Accounts
+
+We will first discuss user sign up and log in to clarify what user accounts look like, since these accounts are the backbone of the Researcher Website. After accounts, we will take a detailed look at each of pages on the Popper Researcher Website. 
+
+Popper user accounts pull information from two sources: GitHub and the Popper Researcher Website. Sign up begins with the creation of a GitHub account and log in is accomplished on the GitHub website, which then redirects to the Popper site. As part of the sign up process, the Researcher Website asks for additional credentials and user information relevant to Popper that GitHub does not ask for. All users are required to have a GitHub account, for three reasons. 
+
+1. GitHub frees Popper from having to handle plumbing tasks, like log in and password retrieval. 
+2. We would like to encourage users to collaborate on experiments, and GitHub provides a handy framework that encourages users to work together.
+3. We would like to minimize the number of additional steps a user needs to take after signing up. Users who design experiments must have a GitHub account to push experiments, but users who only run trials do not need a GitHub account since trials can be handled solely through the website. We anticipate that some users who start out running trials may also run experiments later. Requiring all users to create a GitHub account means that users do not have to jump through an extra set of hoops to set up a GitHub account later if they decide to run experiments; they can get started right away. 
+
+The diagram below illustrates the Sign Up process. We will take a look at each step separately.
+
+<!---Sign Up pic-->
+
+##Sign up
+
+We will first make a brief detour to the Sign Up field on the **Landing Page** to discuss the sign up process, and then go back to the Navigation Bar to take a look at the log in process.  
+
+<!---Landing Page screenshot with Sign Up field highlighted-->
+
+###Step 1
+
+The Sign Up page consists of three separate steps. We would like to display only one step at a time while showing progress. All steps should be displayed on the same Sign Up page with the same wrapper. Each step should be bite-sized and modular, and fold away so that the user knows it is complete without having to see the entire step. Users should not feel overwhelmed by a long form.
+
+The first part of the Sign Up page verifies the user's email. Most users will actually complete this step on the **Landing Page**. The user enters an email address for verification and clicks Get Started. Text appears below this portion of the page that reads, "Please check your email to verify your account." Here's the text of the email: 
+  
+> Hello,
+> 
+> We received a request to create a Popper account for [youremail@university.edu](youremail@university.edu). To verify your account and complete the sign up process, please click [here](some.authenticated.URL.com) or paste the following URL into your browser.
+>
+> [www.someurlforsignup.com](www.someurlforsignup.com) 
+> 
+> If you have any questions or believe you received this email in error, please email [support@popper.org](support@popper.org).
+> 
+> Thanks,
+> 
+> The Popper Team
+ 
+Clicking the verification link in the email takes the user back to the **Sign Up** page if the user started out on that page, and to the Sign Up page for the first time if the user signed up through the **Landing Page**. After completing email verification, users should be able to know that they have successfully completed this step. Two design decisions have to be made here with Fixel: first, where the message "Your email nash@princeton.edu has been successfully confirmed!" is shown; second, whether the step is grayed out or invisible altogether. 
+ 
+###Step 2
+
+After verifying an email address, the user is prompted with two buttons, either to log in or sign up using GitHub. GitHub does not allow user log in and sign up to be conducted on an external site, which means that this process has to take place on GitHub and then redirect the user back to the Popper Researcher Website once log in or sign up is done. 
+
+The log in screen is done through GitHub API and looks like the following. 
+
+<!---GitHub log in screen-->
+The sign up screen is done through GitHub API as well, and looks like the following. 
+
+<!---GitHub sign up screen-->
+After log in or sign up, the user is redirected to a GitHub page to authorize GitHub access to the user's private and public information. This authorization is necessary to customize the user's **Experiment Library** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiment Library**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository. 
+
+<!---GitHub authorization page-->
+If the user has already granted Popper access to the user's GitHub account, Step 2 should either be hidden or minimized along with Step 1.
+
+###Step 3
+
+The user is redirected to the **Sign Up** page after granting GitHub access to Popper in order to provide Popper with a few last pieces of information not available through GitHub: 
+
+- First Name
+- Last Name
+- Affiliation
+- Department
+
+First and Last Name are required here because GitHub does not ask users to input their first and last names separately, and we want to make sure that we have the full names of all users. Affiliation usually refers to an institution such as a university. We would like users to be able to write in their affiliation using auto-complete. If their institution is not found from our provided list, the user simply finishes typing the name of the affiliation. For example, typing "D" should bring up Duke University in autocomplete (among other affiliations) but Bob's Garage of Experiments would be written as-is. 
+
+The complete list of all institutions and departments that run economics experiments can be found [here](http://edirc.repec.org/alphabet.html). If possible, we would like to scrape institution and department names somehow from this website. Manual entry of all institutions and departments into a spreadsheet is also possible but would be highly time-consuming: the United States alone has 3,149 institutions, each of which has several departments, and we want to include all institutions and departments from every country in the world. 
+
+Finally, by clicking "Submit", the user agrees to the Popper Terms of Service, which we will provide. The Terms of Service should open in a popup window.
+
+##Log In
+
+The Log In process is tied closely to the Sign Up page. You'll recall that Sign Up requires three components: email verification, a linked GitHub account, and additional information. The log in process includes a series of checks in the backend to make sure that a user account includes all three components.
+
+The below diagram shows how Log In works and how it is connected to Sign Up. We will now take a look at what happens from the moment the user clicks "Log In" from the Navigation Bar. 
+
+<!---Log in pic-->
+
+###Logged into GitHub?
+
+<!---accounts 1 image-->
+When a user clicks "Log In", Popper first checks whether the user is currently logged into GitHub from the current browser. If the user is not logged into GitHub, the user is taken to the GitHub log in page, which is the same page that the user sees after clicking "Log In using GitHub" from the **Sign Up** page.
+
+###GitHub account?
+
+<!---accounts 2 image-->
+Now that the user is on the GitHub log in page, let's assume the user is not logged into a GitHub account from the current browser. 
+
+If the user does not have a GitHub account, she can sign up for an account by clicking "(Pricing and Signup)". Just as during Sign Up, the user then grants Popper access to public and private GitHub user information. This user does not have a complete Popper account, so Popper redirects the user to the **Sign Up** page. 
+
+Popper then checks whether this GitHub account is associated with a verified email address in the Popper user account database. 
+
+If there is already an associated email address, Step 1 shows the message, "Your email nash@princeton.edu has been successfully confirmed!" and Step 1 is shown as complete in the same way as during Sign Up. Step 2 is also shown as complete, and the user will need to complete Step 3 on the **Sign Up** page. 
+
+The more likely scenario is that the GitHub account is not associated with a verified email address. In this case, Step 1 should be shown as incomplete and Step 3 should not be available for the user to complete. The user verifies an email address in Step 1. Both Step 1 and Step 2 are shown as complete and the user finishes Sign Up by filling out Step 3.
+
+If the user does have a GitHub account, the user logs in using GitHub credentials on the GitHub log in page, and then grants Popper access to the user's GitHub account.
+
+###Verified email address?
+<!---accounts 3 image-->
+
+Once the user is logged into a GitHub account, Popper checks whether this GitHub account is associated with a verified email address. This check is identical to the one mentioned in the previous subsection, "GitHub account?". The difference is that in the previous section, the check happens while the user is on the **Sign Up** page, while here the check happens without taking the user to **Sign Up** just yet.
+
+If the user does not have a verified email address, she is taken to the Sign Up page to complete Step 1. Since the user has already logged into GitHub and granted Popper access to the GitHub account, Step 2 is marked as complete and the user proceeds straight to Step 3.
+
+If the user does have a verified email address, she is taken to the final check: "Has the user entered Popper credentials?"
+
+###Popper credentials?
+<!---accounts 4 image-->
+
+Popper now checks whether this user, who has a verified email address and a linked GitHub account, has entered additional Popper credentials required in Step 3 of **Sign Up**. 
+
+If the user has not entered Step 3 information, the user is taken to the **Sign Up** page to complete Step 3.
+
+If additional user information exists, the user is logged in and taken to the **Dashboard**. 
+
 #Landing Page 
 
-The purpose of the **Landing Page** is to convince social science researchers to sign up to use Popper. This sign up process will be discussed later. The **Landing Page** answers the question, "What Is Popper?" and provides reasons that the researcher should try to use Popper in place of their current software. 
+The purpose of the **Landing Page** is to convince social science researchers to sign up<!---IL--> to use Popper. The **Landing Page** answers the question, "What Is Popper?" and provides reasons that the researcher should try to use Popper in place of their current software. 
 
-The overall look of the **Landing Page** should be classic yet modern. Since the audience ranges from graduate students in their mid-20s to older professors, it is essential that the site does not have a plastic, generically Web-2.0 feel. We are leaning towards a light, clean color scheme. The **Landing Page** must convey academic legitimacy: it is essential that researchers not feel that they are the targets of marketing.
+Since the site serves an academic audience, the overall look of the **Landing Page** should be classic yet modern, and convey academic legitimcy. We are leaning towards a light, clean color scheme.
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true)
 
-The **Landing Page** consists of six components: 
+The **Landing Page** consists of three components: 
 
-1. Header (including Accounts)
-2. Features
-3. Sign Up
-4. Footer
+1. Header
+2. Body
+3. Footer
 
 ##1. Header
 
-The Header contains the Logo, Navigation Bar (where we will cover user Accounts), Overview, and Usage Statistics. 
+The Header contains the Logo, Navigation Bar, Overview, and Usage Statistics. 
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
 
@@ -104,62 +219,8 @@ The Navigation Bar in the Header includes four links:
 
 [3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
-[4] User log in and sign up will be described in the "Accounts" section below. 
+[4] User log in and sign up were discussed in the previous section, "Accounts". <!---internal link to Accounts-->
 
-###Accounts
-
-Popper user accounts pull information from two sources: GitHub and the Popper Researcher Website. Sign up begins with the creation of a GitHub account and log in is accomplished on the GitHub website, which then redirects to the Popper site. As part of the sign up process, the Researcher Website asks for additional credentials and user information relevant to Popper that GitHub does not ask for. All users are required to have a GitHub account, for three reasons. 
-
-1. GitHub frees Popper from having to handle plumbing tasks, like log in and password retrieval. 
-2. We would like to encourage users to collaborate on experiments, and GitHub provides a handy framework that encourages users to work together.
-3. We would like to minimize the number of additional steps a user needs to take after signing up. Users who design experiments must have a GitHub account to push experiments, but users who only run trials do not need a GitHub account since trials can be handled solely through the website. We anticipate that some users who start out running trials may also run experiments later. Requiring all users to create a GitHub account means that users do not have to jump through an extra set of hoops to set up a GitHub account later if they decide to run experiments; they can get started right away. 
-
-####Sign up
-
-We will first make a brief detour to the Sign Up field on the **Landing Page** to discuss the sign up process, and then go back to the Navigation Bar to take a look at the log in process.  
-
-<!---Landing Page screenshot with Sign Up field highlighted-->
-
-#####Step 1
-
-The Sign Up page consists of three separate steps. We would like to display only one step at a time while showing progress, in the style of the sign up process at [Groupon.com](Groupon.com). All steps should be displayed on the same Sign Up page with the same wrapper. The Groupon method of showing each page of the sign up is not necessarily the best choice for Popper, so the way each step is shown on our site is a design decision that we would like to discuss with Fixel. The point is that each step should be bite-sized and modular, and users should not feel overwhelmed by a long form.
-
-The first part of the Sign Up page verifies the user's email. Most users will actually complete this step on the **Landing Page**. The user enters an email address for verification and clicks Get Started. Text appears below this portion of the page that reads, "Please check your email to verify your account." Here's the text of the email: 
-  
-> Hello,
-> 
-> We received a request to create a Popper account for [youremail@university.edu](youremail@university.edu). To verify your account and complete the sign up process, please click [here](some.authenticated.URL.com) or paste the following URL into your browser.
->
-> [www.someurlforsignup.com](www.someurlforsignup.com) 
-> 
-> If you have any questions or believe you received this email in error, please email [support@popper.org](support@popper.org).
-> 
-> Thanks,
-> 
-> The Popper Team
- 
-Clicking the verification link in the email takes the user back to the **Sign Up** page if the user started out on that page, and to the Sign Up page for the first time if the user signed up through the **Landing Page**. After completing email verification, users should be able to know that they have successfully completed this step. Two design decisions have to be made here with Fixel: first, where the message "Your email nash@princeton.edu has been successfully confirmed!" is shown; second, whether the step is grayed out or invisible altogether. 
- 
-#####Step 2
-
-After verifying an email address, the user is prompted with two buttons, either to log in or sign up using GitHub. GitHub does not allow user log in and sign up to be conducted on an external site, which means that this process has to take place on GitHub and then redirect the user back to the Popper Researcher Website once log in or sign up is done. 
-
-The log in screen is part of GitHub API and looks like the following. 
-
-<!---GitHub log in screen-->
-The sign up screen is part of GitHub API as well, and looks like the following. 
-
-<!---GitHub sign up screen-->
-After log in or sign up, the user is redirected to a GitHub page to authorize GitHub access to the user's private and public information. This authorization is necessary to customize the user's **Experiment Library** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiment Library**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository. 
-
-<!---GitHub authorization page-->
-If the user has already granted Popper access to the user's GitHub account, Step 2 should either be hidden or minimized along with Step 1.
-
-#####Step 3
-
-The user is redirected to the **Sign Up** page after granting GitHub access to Popper in order to provide Popper with a few last pieces of information not available through GitHub: First Name, Last Name, Affiliation, and Department. First and Last Name are required here because GitHub does not ask users to input their first and last names separately, and we want to make sure that we have the full names of all users. Affiliation usually refers to university, but users who are not affiliated with a university should be able to click "Other", which allows them to complete a separate field with their affiliation. We would like users to be able to complete the Affiliation and Department fields using auto-complete. The complete list of all institutions and departments that run economics experiments can be found [here](http://edirc.repec.org/alphabet.html). If possible, we would like to scrape institution and department names somehow, if Brendan thinks this is possible. Manual entry of all institutions and departments into a spreadsheet is possible but would be highly time-consuming: the United States alone has 3,149 institutions, each of which has several departments. 
-
-Finally, by clicking "Submit", the user agrees to the Popper Terms of Service, which we will provide. The Terms of Service should open in a popup window. 
 
 ##2. The Hook
 
