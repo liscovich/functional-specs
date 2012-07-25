@@ -54,7 +54,7 @@ We will first make a brief detour to the Sign Up field on the **Landing Page** t
 
 ###Step 1
 
-The Sign Up page consists of three separate steps. We would like to display only one step at a time while showing progress. All steps should be displayed on the same Sign Up page with the same wrapper. Each step should be bite-sized and modular, and fold away so that the user knows it is complete without having to see the entire step. Users should not feel overwhelmed by a long form.
+The **Sign Up** page consists of three separate steps. We would like to display only one step at a time while showing progress. All steps should be displayed on the same Sign Up page with the same wrapper. Each step should be bite-sized and modular, and fold away so that the user knows it is complete without having to see the entire step. Users should not feel overwhelmed by a long form.
 
 The first part of the Sign Up page verifies the user's email. Most users will actually complete this step on the **Landing Page**. The user enters an email address for verification and clicks Get Started. Text appears below this portion of the page that reads, "Please check your email to verify your account." Here's the text of the email: 
   
@@ -156,19 +156,18 @@ Since the site serves an academic audience, the overall look of the **Landing Pa
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true)
 
-The **Landing Page** consists of three components: 
+The **Landing Page** consists of seven components: 
 
-1. Header
-2. Body
-3. Footer
+1. Logo
+2. Navigation Bar
+3. Overview
+4. Usage Statistics
+5. Features
+6. Sign Up (Verify Email)
+7. Footer
 
-##1. Header
-
-The Header contains the Logo, Navigation Bar, Overview, and Usage Statistics. 
-
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/header.png?raw=true)
-
-###Popper Logo
+##1. Logo
+<!---pic-->
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true)
 
@@ -178,7 +177,7 @@ The Popper Logo contains the name "Popper" accompanying a stylized likeness of t
 	<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="10%" ALT="POPPER_PHOTO" BORDER="2.5">
 	</center>
 
-We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the name from drugs or the action of "popping". The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
+We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. 
 
 The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
 
@@ -198,20 +197,21 @@ The font of the logo should be classical and convey both authority and legitimac
 	![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
 </center>
 
-Finally, the logo should have a corresponding smaller "minilogo" that appears in the title bar of web browsers. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
+Finally, the logo should have a corresponding smaller "minilogo" that appears in the browser title bar. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
 
 When a user is not signed in, clicking on the Popper Logo brings the user to the landing page at [www.popper.org](www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the **Researcher Dashboard**, which will be discussed later.
 
-###Navigation Bar
+##2. Navigation Bar
+<!---pic-->
 
 ![Image](https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true)
 
 The Navigation Bar in the Header includes four links: 
 
-1. **How It Works**
-2. **Our Story**
-3. **Experiment Library**
-4. *Log in*
+- **How It Works**
+- **Our Story**
+- **Experiment Library**
+- **Log in**
 
 [1] **How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Popper Researcher Website. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
@@ -219,51 +219,53 @@ The Navigation Bar in the Header includes four links:
 
 [3] **Experiment Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
-[4] User log in and sign up were discussed in the previous section, "Accounts". <!---internal link to Accounts-->
+[4] User log in and sign up were discussed in the previous section, "Accounts". <!---internal link-->
 
+##3. Overview
+<!---pic-->
 
-##2. The Hook
+The purpose of the Overview is to describe Popper briefly. We anticipate that initially, most users who come to [www.popper.org](www.popper.org) will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.	
 
-The purpose of the Hook is to describe to the user, briefly, exactly what Popper is. We anticipate that initially, most users who come to www.popper.org will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.	
-
-The header of the **Landing Page** is "Behavioral Experiments Platform, [*a(n) adjective*] one". We would like to replace the [*a(n) adjective*] with a revolving list of words, both serious and funny. This header is meant to add character and likeability to the Researcher Site. In terms of execution, we are unsure whether it would be more pleasant from a UX perspective to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the [*adjective*] to make the word change.
+The header of the **Landing Page** is <code>"Behavioral Experiments Platform, [a(n) adjective] one"</code>. We would like to replace the <code>[a(n) adjective]</code> with a revolving list of serious and funny words. We are unsure from a UX perspective whether it would be more pleasant to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the <code>[a(n) adjective]</code> to make the word change.
 
 Here is the list of words -- we would like for the succession of words to be random but the first word that appears when the user arrives on the **Landing Page** should always be a word from the Serious list. 
 
-> **Serious** 
-> 
-> - an agile
-> - a modern
-> - a versatile
-> - a cutting-edge
-> - a customizable
-> - an addictive
-> - an advanced
-> - a promising
-> 
-> **Funny**
-> 
-> - a fat-free
-> - a low cholesterol
-> - a low emissions
-> - a PG-13
-> - a lactose intolerant
-> - a free range
-> - a whole wheat
-> - a hormone free
-> - an antibiotic free
-> - a TSA-compliant
-> - a pasteurized
+**Serious** 
+
+- an agile
+- a modern
+- a versatile
+- a cutting-edge
+- a customizable
+- an addictive
+- an advanced
+- a promising
+ 
+**Funny**
+ 
+- a fat-free
+- a low cholesterol
+- a low emissions
+- a PG-13
+- a lactose intolerant
+- a free range
+- a whole wheat
+- a hormone free
+- an antibiotic free
+- a TSA-compliant
+- a pasteurized
 
 Underneath the header is a short paragraph explaining what Popper is. 
 
 > Popper is a powerful blend of modern technology and social science. Using Popper, you can design complex cutting-edge experiments using the most advanced tools in existence. You can also run large-scale online trials drawing subjects from the world's deepest on-demand subject pool.
 
-##3. Statistics
+##4. Usage Statistics
+<!---pic-->
 
 We would like to include usage statistics to boost the legitimacy of Popper among researchers. This portion of the **Landing Page** should be located directly under the Hook. Three statistics should be dynamically displayed and updated: the number of researchers, the number of deployed experiments, and the number of completed trials. The focus is on the numbers, which means that these digits should stand out much more than the names of what the numbers are counting. These statistics will only be available once Popper gains traction, which means that it would be ideal for there to be a way for us to activate this section of the site only once we have compelling statistics to show. This means that the **Landing Page** should visually "work" even if the statistics portion of the page is not shown. 
 
-##4. The Features List
+##5. Features
+<!---pic-->
 
 After the user gets some sense of what Popper is, the Features List provides a more detailed explanation of why the user should make the decision to Sign Up. The Features List describes four core selling points of Popper:
 
@@ -275,7 +277,7 @@ After the user gets some sense of what Popper is, the Features List provides a m
 
 4. Leave Logistics to Us
 
-These four features should be arranged on a horizontal navigation panel. Each of the four phrases should be accompanied by an image, which we will provide. Underneath the navigation panel is a frame split in half horizontally, with text in the left panel and an image in the right panel. As the user clicks on each of the four features, the contents of the frame change. We are currently deciding on the four sets of text and images to place into this frame. The following text is a draft of what we would like to include in the frame. 
+These four features should be arranged on a horizontal navigation panel. Each of the four phrases should be accompanied by an image, which we will provide. Underneath the navigation panel is a frame split in half vertically, with text in the left panel and an image in the right panel. As the user clicks on each of the four features, the contents of the frame change. We are currently deciding on the four sets of text and images to place into this frame. Below is a draft of what we would like to include in the frame. 
 
 ###Start at the frontier
 
@@ -295,45 +297,64 @@ Draw from our on-demand online subject pool. Without the physical restraints of 
 
 Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process. 
 
-##5. Sign Up
+##6. Sign Up (Verify Email)
+<!---pic-->
 
-<!---extracted; fix-->
+Users can begin the sign up process by entering their email in this field for verification. Read more about the sign up process in the previous section, "Accounts". <!---internal link-->
 
-##6. Footer
+##7. Footer
+<!---pic-->
 
-The Popper footer contains links, and is divided into two components: general links and legal miscellaney. The general links are divided into three vertical columns. The first column, "Popper", includes links to "Our Story", "Blog", and "Contact". The second and third columns include links to Documentation. We have not yet fleshed out the Documentation of Popper enough to know how many distinct links this section will include. 
+The Popper footer contains secondary navigation and is divided into two components: general links and legal miscellany. The general links are divided into three vertical columns. The first column, "Popper", includes links to "Our Story", "Blog", and "Contact". The second and third columns include links to Documentation. We have not yet fleshed out the Documentation of Popper enough to know how many distinct links this section will include. 
 
-The second half of the footer is comprised of links that run horizontally along the bottom of the page. These links are "Terms of Service", "Privacy", and "Security". Under these links is the text "(c) 2012 Popper. All Rights Reserved." On the right side of this part of the footer is the Fixel logo, with the text "Designed by Fixel".
+The second half of the footer is comprised of links that run horizontally along the bottom of the page. These links are "Terms of Service", "Privacy", and "Security". Under these links is the text <code>"&copy; 2012 Popper. All Rights Reserved."</code> On the right side of this part of the footer is the Fixel logo, with the text <code>"Designed by Fixel"</code>.
+
+The Sign Up and Log In pages feature the same Logo, Navigation Bar, and Footer as the **Landing Page** and *Our Story**
 
 #Our Story
 
-The **Our Story** page functions as an About page. It explains who Karl Popper is and introduces the Popper team.
+The **Our Story** page is a static About page. It explains who Karl Popper is and introduces the Popper team.
 
-**Our Story** features the same Header and Footer as the **Landing Page**. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, "(c) Lucinda Douglas-Menzies" and "Reproduced with the generous permission of the photographer". 
+**Our Story** features the same Header and Footer as the **Landing Page**. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, <code>"&copy; Lucinda Douglas-Menzies" and "Reproduced with the generous permission of the photographer"</code>. 
 
-To the right of Karl Popper's likeness, we would like to include a section called "Behind the Name" and, beneath it, "Team". We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. 
+To the right of Karl Popper's likeness, we would like to include a section called <code>"Behind the Name"</code> and, beneath it, <code>"Team"</code>. We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. 
 
-We would like the other static pages on the Researcher site to feature the same wrapper as **Our Story**. These other pages are **Contact**, **Terms of Service**, **Privacy**, and **Security**. 
-
-**Sign Up** features the same Header and Footer as the **Landing Page** and **Our Story**.
+We would like the other static pages on the Researcher site to feature the same wrapper as **Our Story**. These other pages are **Contact**, **Terms of Service**, **Privacy**, and **Security**. **Terms of Service**, **Privacy**, and **Security** should open up in popup windows.
 
 #Experiment Library
 
-**Experiment Library** is the final page accessible to non-signed in users from the **Landing Page**. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.
+**Experiment Library** is the final page accessible to users who are not signed in from the **Landing Page**. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.
 
-There are five main features in **Experiment Library**:
+There are five main components in **Experiment Library**:
 
-1. List of experiments
-2. Search bar
-3. Filter
-4. GitHub authentication link
-5. Header and Footer
+1. Logo
+2. Navigation Bar
+3. Footer
+4. List of Experiments
+5. Search Bar
+6. Filter
 
-##1. List of experiments
+##1. Logo
+
+Same as **Landing Page**. <!---internal link-->
+
+#2. Navigation Bar
+
+A logged in user sees "Dashboard" where the "Our Story" link used to be. The "Log In" link is replaced by the user's email address, which opens out to a menu with the options "Profile" and "Log Out". <!---internal links--> Log Off signs the user off Popper and brings the user back to the **Landing Page**. A message telling the user that Log Out has been completed is not necessary: the user will know that log out is successful because the email address in the top right hand corner will once again be replaced by the "Log In" link.
+
+A logged out user sees the same Navigation Bar as the logged-out version described on the **Landing Page**. <!---internal link-->
+
+#3. Footer
+
+Same as **Landing Page**. <!---internal link-->
+
+#4. List of Experiments
 
 The main feature of **Experiment Library** is a list of public experiments. All users can see this list, no matter if they are logged in or not. The idea is to allow researchers to be able to see what Popper offers without having to sign up first. The list of experiments is an embedded frame with a scrollbar. We would like to display three experiments per row.
 
-Three types of experiments are thus displayable in this frame: Private Experiments, Public Experiments, and Stock Experiments. These three sections are always displayed in this order. From a GitHub perspective, Private Experiments are user-specific and are drawn from the private repositories that the user links with her Popper account. Public Experiments are drawn from users' public repositories that are linked with a Popper account. Finally, Stock Experiments are drawn from public repositories in the Popper GitHub account. Each of these three types of experiments serve a slightly different purpose. Private Experiments allow researchers to run trials without having to reveal their experiment protocol before they are ready. Public Experiments allow researchers to open their work to their peers for review and replication if necessary, usually after the original researcher has already run the experiment and published results. Stock Experiments are provided by Popper and allow the very first users of the platform to begin running trials right away. They also show researchers the functionality of Popper, and serve as a template for researchers to use as they begin to design their own experiments. The Stock Experiments that Popper provides on the Researcher Website incorporate common games that researchers frequently test in the lab.
+This frame displays two sections of experiments: User Experiments and Stock Experiments, in this order. User Experiments are pulled from the user's GitHub repositories, which means that public 
+
+From a GitHub perspective, Private Experiments are user-specific and are drawn from the private repositories that the user links with her Popper account. Public Experiments are drawn from users' public repositories that are linked with a Popper account. Finally, Stock Experiments are drawn from public repositories in the Popper GitHub account. Each of these three types of experiments serve a slightly different purpose. Private Experiments allow researchers to run trials without having to reveal their experiment protocol before they are ready. Public Experiments allow researchers to open their work to their peers for review and replication if necessary, usually after the original researcher has already run the experiment and published results. Stock Experiments are provided by Popper and allow the very first users of the platform to begin running trials right away. They also show researchers the functionality of Popper, and serve as a template for researchers to use as they begin to design their own experiments. The Stock Experiments that Popper provides on the Researcher Website incorporate common games that researchers frequently test in the lab.
 
 Accordingly, the List of experiments should be divided into three sections separating Private Experiments, Public Experiments, and Stock Experiments. 
 
@@ -376,12 +397,6 @@ The window contains five elements: a title, "Sign In with GitHub"; GitHub userna
 After clicking Submit, the ajax window disappears and the user sees an updated version of **Experiment Library** with additions to the List of Experiments as applicable. 
 
 If the user enters an invalid username and/or password, the ajax window shakes from left to right and the message "Invalid user name or password" is displayed at the top of the popup, between "Sign In with GitHub" and the "GitHub username" field. If the user clicks on "Forgot your GitHub password?", a new tab opens to https://github.com/sessions/forgot_password and the user completes the password retrieval process through the GitHub website.
-
-##5. Header and Footer
-
-The Header of **Experiment Library** is identical to the Header found on the **Landing Page**, except for two main differences. First, the link "Our Story" is replaced by a link to **Dashboard**. Second, the user sees something different in the top navigation bar depending on whether the user is logged in. A logged-in user will see the email address of the logged-in account with a down-cursor. Clicking on the down-cursor displays the following options: Dashboard, Profile, Log Out. **Dashboard** and **Profile** are separate pages and will be described later. Log Off signs the user off Popper and brings the user back to the **Landing Page**. A message telling the user that Log Out has been completed is *not* necessary.
-
-The Footer of **Experiment Library** is exactly the same as the Footer described on the **Landing Page**. 
 
 #Dashboard
 
