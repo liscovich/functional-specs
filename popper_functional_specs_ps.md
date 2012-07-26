@@ -224,7 +224,7 @@ We would like to include Karl Popper's likeness to clarify the origin of the nam
 The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
 
 <center>
-	<img src="http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_Logo.PNG" width="100%">
+	<img src="https://github.com/liscovich/functional-specs/blob/master/images/harvard_logo.png?raw=true" width="100%">
 </center>
 
 <center>
