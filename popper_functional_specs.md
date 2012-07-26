@@ -387,15 +387,15 @@ Researchers monitor trials in the **Dashboard**. The **Dashboard** consists of t
 
 ##1. Trials
 
-Trials is a list of all of the researcher's trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Monitor Trial** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.  
+Trials is a list of all of the researcher's trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Trial Summary** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.  
 
 Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes "activity" that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:
 
-1. Awaiting players: The initial status of all trials that a researcher creates is "Waiting for players". This status indicates that the trial has been created and that the server is waiting for a sufficient number of subjects to join the game. The researcher can click on the name of the trial to go to that trial's **Monitor Trial** page to recruit more subjects if necessary. 
-2. In progress: Once enough subjects have joined a trial, the status of the trial changes to "In progress". Subjects play the game, and as they do, data from the experiment is sent to the **Monitor Trials** page.
-3. Pay subjects: Once a trial is complete, the researcher pays subjects. The researcher can review and approve subject payments from the **Monitor Trial** page.
+1. Awaiting players: The initial status of all trials that a researcher creates is "Waiting for players". This status indicates that the trial has been created and that the server is waiting for a sufficient number of subjects to join the game. The researcher can click on the name of the trial to go to that trial's **Trial Summary** page to recruit more subjects if necessary. 
+2. In progress: Once enough subjects have joined a trial, the status of the trial changes to "In progress". Subjects play the game, and as they do, data from the experiment is sent to the **Trial Summary** page.
+3. Pay subjects: Once a trial is complete, the researcher pays subjects. The researcher can review and approve subject payments from the **Trial Summary** page.
 4. Complete: After payment is complete, the status of the trial changes to "Complete". No further action is required from the researcher at this time, but the trial is saved in the List for the researcher to review and download data. 
-5. Error: If there is an error with any part of the trial, the researcher can click on the trial to go to **Monitor Trial** in order to fix the error.
+5. Error: If there is an error with any part of the trial, the researcher can click on the trial to go to **Trial Summary** in order to fix the error.
 
 In addition to the status of the trial, two other pieces of information about the trial are displayed next to the name of the trial. 
 
@@ -413,7 +413,7 @@ The Feed is on the right side of **Dashboard**. This feed automatically updates 
 - Changes in status, with the following phrasing:
 	- Awaiting players: "**Trial ##** has been created. Awaiting players." As each player joins, the following message is displayed in the Feed: "**Player ##** has joined **Trial ##**."
 	- In progress: "**Trial ##**" is now in progress.
-	- Pay subjects: "**Trial ##** has finished. Go to the **Monitor Trial** page to review subject payments."
+	- Pay subjects: "**Trial ##** has finished. Go to the **Trial Summary** page to review subject payments."
 	- Complete: "**Trial ##** is now complete."
 - Fork activity
 	- "Researcher ## has just forked your experiment, **Experiment Name**."
@@ -421,7 +421,7 @@ The Feed is on the right side of **Dashboard**. This feed automatically updates 
 	- "**Researcher ##** is now following **Trial ##**."
 	- "You are now following **Trial ##** by **Researcher ##**."
 
-Each bolded item in the above bulleted list should be a link that opens in a new tab. **Trial ##** links to the **Monitor Trial** page for a particular trial. **Player ##** links to a player profile, which is hosted externally on the Player Website. **Researcher ##** links to the public profile view of another researcher; this profile is hosted on the Researcher Website.
+Each bolded item in the above bulleted list should be a link that opens in a new tab. **Trial ##** links to the **Trial Summary** page for a particular trial. **Player ##** links to a player profile, which is hosted externally on the Player Website. **Researcher ##** links to the public profile view of another researcher; this profile is hosted on the Researcher Website.
 
 Just as with the Trials frame, a "More..." button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.
 
@@ -492,7 +492,58 @@ Create Trial must be able to accomodate a wide range of parameters because exper
 
 #Trial Summary
 
+The **Trial Summary** is the same as the **Monitor Trial** page described in the original [Popper brief](https://github.com/Experiments/popper-design/blob/master/popper_brief.md). This page allows the researcher to monitor an individual trial in real time and download the results once the trial is complete. **Trial Summary** consists of six components:
 
+1. Header
+2. Footer
+3. Trial Information
+4. Players
+5. Report
+6. History
+
+##1. Header
+
+See above. <!---internal link-->
+
+##2. Footer
+
+See above. <!---internal link-->
+
+##3. Trial Information
+
+- Name of the experiment: Clicking on this link brings the user to the **Experiment Page** for this particular experiment.
+- Trial number: For reference purposes. Trials are numbered in the order that they are created on Popper.org.
+- Start: Initiate the server instance and begin the trial.
+- Stop: End the trial manually.
+- Pause: Suspend the trial temporarily.
+- Replicate: The user is brought to the **Experiment** page for this trial with all fields in Create Trial already filled in. All the user needs to do is click "Create Trial" to replicate the trial, or change parameters if desired.
+
+##4. Players
+
+The researcher can see a list of all subjects who have participated or are currently participating in the trial. The following stock parameters are suggested but can be added to or deleted on the **Experiment Parameters** page.
+
+- Player ID: The researcher does not know subject names. Clicking on the Player ID of a subject brings the user to the public player profile on the Popper Player Website, which will be discussed later.
+- Status: A player who has the game open in the player's current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.
+- Stage: If there are multiple steps in the trial, the researcher can see how far each subject has progressed.
+- IP address: The user can prevent cheating by checking whether multiple users are actually playing from the same IP address. 
+- Location
+- Platform
+- Earnings
+- Approved: The researcher approves subject payments buy clicking the checkbox next to a player's earnings. This option is not available until the trial ends or the researcher manually clicks "Stop" to end the trial.
+
+##5. Report
+
+The Report is a list of purely quantitative data. The data collected for each trial is specified by the user. At the conclusion of a trial, the user can download the data in the form of a .csv, .xls, or .pdf file. Here are suggested types of data that users collect:
+
+- Stage
+- Player
+- Choice: Can be a binary variable but does not have to be; its significance is specified by the user in the source code of the experiment and on the **Experiment Parameters** page.
+- Duration: The amount of time that it took for a player to make a particular choice.
+- Balance: A snapshot of the player's current points balance.
+
+##6. History
+
+The History is a qualitative description of the events of the trial. Like the Report, the output of the History of a trial depends on what the user specifies. Regardless of these specifications, the history should include at the minimum the Timestamp of an event and the name of the event.
 
 #Profile
 
