@@ -426,3 +426,78 @@ Each bolded item in the above bulleted list should be a link that opens in a new
 Just as with the Trials frame, a "More..." button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.
 
 The Header and Footer of **Dashboard** are identical to the logged-in view in **Experiments Library**. <!---internal link-->
+
+#Experiment
+
+The **Experiment** page is the same thing as the **Create Trial** page described in the original [Popper brief](https://github.com/Experiments/popper-design/blob/master/popper_brief.md). 
+
+This page describes the experiment and allows the user to run a trial of the experiment. **Experiment** consists of four components:
+
+1. Header
+2. Footer
+3. Experiment Description
+4. Create Trial
+
+##1. Header
+
+Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the landing page. <!---internal link-->
+
+##2. Footer
+
+The Footer is the same as the one described on previous pages. <!---internal link-->
+
+##3. Experiment Description
+
+Popper reads the metadata file from the experiment GitHub repository to dynamically generate the Experiment Description. The metadata file itself is generated using the **Experiment Parameters** form on the Popper website. This page of the site does not need to be designed, since it should use the same design as the Sign Up page. We would like to provide users with a stock list of parameters that usually accompany any experiment, but also give users the flexibility to omit and add fields as necessary. A user should also be able to click "Edit" next to a field to change portions of the Experiment Description if the experiment came from this user's repository. Even if an experiment is public, the Experiment Description is read-only for users who do not own the GitHub experiment repository, and these users do not see "Edit" next to any of the fields. 
+
+Here is a preliminary list of stock fields that we suggest accompany all experiments.
+
+**User provided**
+
+- Name of the experiment.
+- Authors of the experiment with links to their Popper profiles. <!---internal link-->
+- Description of the experiment.
+- References.
+- IRB approval(s): All social science research conducted in the United States receiving federal funding requires an IRB approval form before the researcher can conduct the experiment. It would be up to the researcher to make sure that the appropriate form is complete and attached, since Popper is not responsible or liable for monitoring the IRB approval process for researchers.
+- Categories: We will provide a list of categories for each field. As the user begins typing, this field would provide suggested categories in "tag" form. The researcher would also be able to enter other categories that are not included in our suggestions. The purpose of categories is to sort experiments so that they are searchable using the Filter tool in the Experiment Library.
+
+**Automatically generated for all experiments**
+
+- Original repository, if the experiment repository was forked
+- Link to GitHub repository holding the experiment
+- Automatically generated "citation link" of the form "http://expt.cc/######", where # is a randomly generated digit. This citation link is a short URL to the **Experiment Page** for an experiment
+- Discussion: Researchers should be able to post comments about an experiment. A user must be logged in to leave comments, as we would like to make sure comments are made by actual researchers. 
+
+##4. Create Trial
+
+As with Experiment Description, Create Trial is generated based on what the user specifies in the **Experiment Parameters** form. Users would be able to add to or delete from a stock list of parameters for a trial. Here is the list of suggested parameters:
+
+- Number of subjects
+- Cost of cooperation
+- Multiplier
+- Continuation probability
+- Initial endowment
+- Exchange rate (points to dollars)
+- Frame (different visualizations of the game)
+- Subjects (the pool of subjects for the trial)
+- Gender
+- Age
+- Option to make trial results public
+- Connection speed
+- Connection latency
+
+Below the create trial box is a list of previous trials that were run using the same experiment. Clicking on the name of the trial brings the user to the **Trial Results** page, which is accessible only if the user ran the trial or if the trial results are made public. Clicking on the name of the researcher brings the user to the researcher's Popper **Profile**.
+
+Create Trial must be able to accomodate a wide range of parameters because experiments differ greatly. Since the parameters depend on the coding of the master client and client files of the experiment, the researcher would know what parameters are necessary and what parameters the server would accept as inputs based on the design of the experiment. 
+
+#Trial Summary
+
+
+
+#Profile
+
+Wireframe needs to be created.
+
+#Experiment Parameters
+
+Wireframe needs to be created.
