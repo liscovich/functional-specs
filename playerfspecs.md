@@ -15,14 +15,9 @@ latex footer:		mmd-memoir-footer
 
 
 
-#Popper Functional Specifications: Researcher Site
+#Player Site
 
-The Popper Functional Specs describe the three core components of Popper: (1) The Researcher Site, (2) The Player Site, and (3) The Popper Software Development Kit. These Functional Specs serve to make sure that everyone is on the same page about the functionality and purpose of each of the components of Popper. This document is an organic work in progress and will likely change over time. We will notify everyone as changes are made.
-
-Two types of names are bolded in this document: **Web Pages** for the Researcher Site and Player Site, and **components** of the Popper Software Development Kit. These items are bolded and assigned a consistent name , m m mk
-
-#Audience
-
+#Audience 
 The Researcher Site serves two types of users: 
 
 1. Social Science researchers from academic institutions

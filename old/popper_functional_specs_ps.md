@@ -1,25 +1,50 @@
-latex input:		mmd-article-header  
-Title:				Sample MultiMarkdown Document  
-Base Header Level:	2  
-latex mode:			memoir  
-Keywords:			MultiMarkdown, Markdown, XML, XHTML, XSLT, PDF   
-CSS:				fspecs.css	
-xhtml header:		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-copyright:			2011 Fletcher T. Penney.  
-					This work is licensed under a Creative Commons License.  
-					http://creativecommons.org/licenses/by-nc-sa/3.0/  
-latex input:		mmd-natbib-plain
-latex input:		mmd-article-begin-doc  
-latex footer:		mmd-memoir-footer  
+# <a name="Introduction" id="anchor4">Introduction</a> 
 
+**Popper** is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create and conduct complex large-scale online experiments. 
 
+## Role of experiments in the social sciences
+
+ Social scientists are interested in studying human behavior. They develop theories to explain this behavior and conduct controlled experiments to test these theories. In order for a theory to be "testable", it must produce predictions (hypotheses) about human behavior that can, in principle, be proven wrong. Thus, the process of experimentation results in the falsification of inaccurate theories. 
+
+## Classical experiments
+
+Conducting controlled experiments in the social sciences is difficult. Unlike natural scientists, who often conduct their experiments with inanimate objects, social scientists experiment exclusively with live human beings. Human subjects cannot be forced to participate in experiments and can also quit an ongoing experimental trial at any point. For these reasons, researchers must pay human subjects to convince them to participate in and complete a trial. These trials are typically run in physical laboratories, where invited volunteer subjects engage in simple decision tasks for $15-25/hour--and sometimes more depending on their performance. 
+
+This approach has three serious limitations: 
+
+1. It is very expensive, requiring an equipped brick-and-mortar laboratory and significant subject payments that often exceed $500-1000 per trial. 
+
+2. It is time-consuming and requires recruiting local human subjects more than a week in advance of the trial. 
+
+3. Local subject pools are relatively small, so large-scale trials require using laboratories in multiple geographical locations.
+
+In addition, the software used in physical labs to create and conduct experiments is very outdated. The most popular package, [z-Tree](http://www.iew.uzh.ch/ztree/index.php), was created in the University of Zurich in the late 1990s and hasn't been updated since then.
+
+## Online experiments
+
+In the last 2-3 years, researchers have started conducting experiments online, using subjects from various online labor markets, most notably [Amazon Mechanical Turk](http://mturk.com). This move has radically expanded the size of the available subject pool and decreased subject payments. Now, experimental subjects can participate in trials from the comfort of their own home rather than coming to a physical lab.
+
+However, the move to online trials introduces several new challenges:
+
+1. **Lack of software.** Most online trials have so far been technologically limited to survey-style tasks that do not involve realtime interaction between subjects. The researchers who do conduct multiplayer studies have had to write from scratch their own ad hoc software. No reusable framework capable of supporting multiplayer online trials is currently available on the market.
+
+2. **Low comprehension rates of written instructions.** Online subjects frequently skim, or even ignore, written experimental instructions.
+
+3. **High subject attrition rates.** Online subjects can quit a trial simply by closing a browser tab, with few consequences. This leads to very high attrition rates, especially in trials where subjects become bored. Even though subjects in a physical lab are also allowed to quit the trial at any moment, doing so usually involves an uncomfortable interaction with the researcher. 
+
+4. **Lower degree of control over the experimental conditions.** Subjects can communicate with each other, collude, and cheat in other ways that undermine the [internal validity](http://en.wikipedia.org/wiki/Internal_validity) of the experiment.
+
+## Popper
+
+The goal of Popper is to address the above four problems. It seeks to streamline the process of creating complex and visually compelling multiplayer experiments. Through Popper, researchers will use professional game development tools, which include visual scripting and an extensive library of template game assets. Popper will also provide researchers with extensive subject monitoring capabilites to minimize the possibility of cheating and other runtime irregularities.
 
 #Popper Functional Specifications: Researcher Site
 
-The Popper Functional Specs describe the three core components of Popper: (1) The Researcher Site, (2) The Player Site, and (3) The Popper Software Development Kit. These Functional Specs serve to make sure that everyone is on the same page about the functionality and purpose of each of the components of Popper. This document is an organic work in progress and will likely change over time. We will notify everyone as changes are made.
+Popper consists of three components: 
 
-Two types of names are bolded in this document: **Web Pages** for the Researcher Site and Player Site, and **components** of the Popper Software Development Kit. These items are bolded and assigned a consistent name , m m mk
+1. The Researcher Site
+2. The Player Site
+3. The Popper Software Development Kit
 
 #Audience
 
@@ -199,7 +224,7 @@ We would like to include Karl Popper's likeness to clarify the origin of the nam
 The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
 
 <center>
-	![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
+	<img src="https://github.com/liscovich/functional-specs/blob/master/images/harvard_logo.png?raw=true" width="100%">
 </center>
 
 <center>
@@ -569,249 +594,3 @@ Wireframe needs to be created.
 #Experiment Parameters
 
 Wireframe needs to be created.
-
-
-
-# Introduction #
-
-As I  add increasing numbers  of features to  MultiMarkdown, I decided  it was
-time to create  a sample document to  show them off. Many of  the features are
-demonstrated in the [MultiMarkdown User's Guide][], but some are not.
-
-Additionally,  it's easy  for those  features to  get lost  within all  of the
-technical  documentation.  This document  is  designed  to *demonstrate*,  not
-describe, most of the features of MultiMarkdown.
-
-
-[MultiMarkdown User's Guide]: http://fletcherpenney.net/mmd/users_guide/
-  "MultiMarkdown User's Guide"
-
-
-# How to Use This Document #
-
-I suggest comparing  the raw text source with the  various final outputs (e.g.
-HTML, LaTeX,  PDF, OpenDocument)  in order  to see  what can  be accomplished.
-There  will be  many  similarities  between output  formats,  but  also a  few
-differences. Tables will end up in different places. Paragraphs won't break in
-the same way. But these differences are superficial and are a result of trying
-to optimize  each format,  without regard to  identical output  across formats
-(which would be virtually impossible).
-
-Remember, the main goal of Markdown\MultiMarkdown  is to allow you to create a
-document in  plain text,  with minimal  distraction from  markup, that  can be
-transformed into a variety of high quality outputs. Or, to quote John Gruber:
-
-> The overriding design goal for Markdown's formatting syntax is to make it as
-readable as possible. The idea is that a Markdown-formatted document should be
-publishable as-is,  as plain text,  without looking  like it's been  marked up
-with  tags  or  formatting  instructions. While  Markdown's  syntax  has  been
-influenced by several existing text-to-HTML filters, the single biggest source
-of  inspiration   for  Markdown's   syntax  is  the   format  of   plain  text
-email.[#Gruber]
-
-
-[#Gruber]: John Gruber.  Daring Fireball: Markdown. [Cited January 2006]. 
-  Available from <http://daringfireball.net/projects/markdown/>.
-
-
-# Where Can I Get a Copy? #
-
-You can download a zipfile containing multiple formats of this document:
-
-* [MultiMarkdown-Gallery](http://fletcher.github.com/MultiMarkdown-Gallery)
-
-
-This file includes:
-
-*	A plain text file in MultiMarkdown format
-*	A Scrivener file
-*	An HTML file
-*	A PDF
-*	An OpenDocument file
-*	An OPML
-*	A LaTeX file
-*	And the included images
-
-All files were generated automatically from the MultiMarkdown source document.
-
-
-# So, What Can This Document Demonstrate? #
-
-
-## Metadata ##
-
-First, take  a look  at the  overall structure  of the  document. At  the very
-beginning  is  metadata,  including   a  title,  author,  keywords,  copyright
-information, etc.  Where possible,  this metadata is  put to  appropriate use,
-otherwise it is  stored in a format  designed to be easily  read and minimally
-distracting:
-
-* In plain text and XHTML snippets[^snippets], it is located at the top of the
-  document.
-
-* In a full XHTML document, is located in the `<head>` section, and the title
-  and CSS metadata, if present, are used appropriately.
-
-* In a PDF generated from my XSLT files, metadata is used to generate the
-  appropriate fields (title, author, keywords) in the PDF itself. Some PDF
-  readers will let you examine this data. Additionally, the title, subtitle,
-  author, and copyright are placed at the beginning of the document.
-
-* In a Scrivener document, you can put the metadata in the first File in the
-  Binder, but the preferred location is in the "MultiMarkdown Settings..."
-  pane (in the File Menu.)
-
-There are a lot of standard metadata keys  that can be used, or you can create
-your own and use them as you see fit. Definitely a powerful feature.
-
-[^snippets]: An XHTML  snippet is my terminology for XHTML  code that does not
-include the `<html>`, `<head>`, and  `<body>` tags. Most browsers will display
-it  properly, but  it is  not a  complete XHTML  document. Without  a `<head>`
-section there is nowhere to put metadata(e.g. there is no `<title>`).
-
-
-## Structure ##
-
-The next thing  to look at is  the overall structure of the  document. You can
-visualize  a Markdown  document as  an  outline, with  different sections  and
-different levels within those sections. Based on your output format, these can
-be used to generate headers, or sections,  or even chapters. It's all based on
-what tools you use to process the XHTML output.
-
-Even within the XHTML document, however, you can make use of this structure to
-allow  easy navigation  within  the document.  You can  link  directly to  the
-[Introduction][] (and to [][Introduction] when using LaTeX), for instance. And
-if you are creating  a PDF, it will contain a hierarchy  of section names that
-you  can use  to  allow easy  navigation,  if your  PDF  reader supports  this
-function.
-
-
-## Footnotes ##
-
-Footnotes are  very easy to  implement in  MultiMarkdown, as described  in the
-MultiMarkdown Syntax Guide.[^somesamplefootnote]
-
-[^somesamplefootnote]: Here is the text of the footnote itself.
-
-
-## Tables ##
-
-Tables  can be  quite useful  for  showing data  in  a meaningful  way. As  an
-example, here is a table comparing [MultiMarkdown vs. Crayons][].
-
-
-[This is a caption with *italics*][MultiMarkdown vs. Crayons]  
-| Features                          | MultiMarkdown |  Crayons |  
------------------------------------ | :-----------: | :------: |  
-Melts in warm places                |       No      |    Yes   |  
-Mistakes can be easily fixed        |      Yes      |    No    |  
-Easy to copy documents for friends  |      Yes      |    No    |  
-Fun at parties                      |  No[^parties] | Why not? |  
-
-Minimum markup for maximum quality? |      Yes      |    No    |  
-
-
-
-[^parties]: I guess it depends on what kind of parties you go to...
-
-
-## Typographical conventions ##
-
-By incorporating John Gruber's [SmartyPants][] program into your workflow, you
-can generate more  "correct" typographic punction in your XHTML  pages, and in
-your  LaTeX source  if  you are  generating PDF's---this  includes  en and  em
-dashes, and ellipses....
-
-Very nice when you want to focus on writing, not grammar.
-
-
-[SmartyPants]: http://daringfireball.net/projects/smartypants/
-
-
-## Image Support ##
-
-If you choose to incorporate images in your documents, this can be easily done
-as well. MultiMarkdown  makes it easier to link to  images and include various
-attributes.
-
-As   an  example,   here  is   an  image   from  my   website  ---   [Nautilus
-Star](#nautilusstar). If you  have a local copy of the  image, you can include
-the image in a pdf.
-
-![This is a **bolded** caption][Nautilus Star]
-
-[Nautilus Star]: Nautilus_Star.png "Nautilus Star" width="3in" height="2.4in"
-
-
-## Bibliography Support ##
-
-MultiMarkdown offers  several mechanisms  for managing bibliographies.  It has
-built-in  support   for  basic   citation  and  bibliography   management  and
-formatting, or you  can rely on external  tools to handle this  for you. There
-aren't  many  citations in  this  document,  but I  think  it  gets the  point
-across.[p. 42][#fake]
-
-
-[#fake]: John Doe. *A Totally Fake Book*.  Vanity Press, 2006.
-
-
-## Glossary Support ##
-
-MultiMarkdown  has  a  special  format for  footnotes  that  should  represent
-glossary terms. This  doesn't make much difference in XHTML  (because there is
-no such thing as a glossary in XHTML),  but can be used to generate a glossary
-within LaTeX documents.
-
-For example,  let's have  an entry for  `glossary`.[^glossary] And  what about
-ampersands?[^amp]
-
-Since we  want the ampersand  entry to  be sorted with  the a's, and  not with
-symbols, we put in the optional sort key `ampersand` to control sorting.
-
-	[^glossary]: glossary: Glossary 
-		A section at the end ...
-		
-	[^amp]: glossary: & (ampersand)
-		A punctuation mark ...
-
-[^glossary]: glossary: Glossary 
-	A section at the end ...
-
-[^amp]: glossary: & (ampersand)
-	A punctuation mark ...
-
-
-## Math Support ##
-
-It's pretty easy to include mathematical equations:
-
-\\[ {e}^{i\pi }+1=0 \\]
-
-\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
-
-
-You can also include formulas within a sentence, such as
-\\({x}^{2}+{y}^{2}=1\\).
-
-
-# Now What? #
-
-Get out there and try it. Let me know what you think. Let me know what doesn't
-work. Let me know what you think is missing.
-
-In other words, help me make it better!
-
-You can get more information on my web site:
-
-*	<http://fletcherpenney.net/multimarkdown>
-
-You can also:
-
-* Email me:  
-	<mailto:owner@fletcherpenney.net>
-
-* Join the MultiMarkdown discussion list:  
-	<http://groups.google.com/group/multimarkdown>
-
-* Join the Markdown discussion list:  
-	<http://six.pairlist.net/mailman/listinfo/markdown-discuss>
