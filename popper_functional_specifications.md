@@ -356,13 +356,50 @@ The **Landing Page** introduces users to Popper. The primary action that a user 
 
 The Popper Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
 
-A good starting point for the logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons.  
+A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
-- In its current form, this portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive. 
-- The face in the logo should be discernible at different sizes. For example, <a href="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true">this</a> logo is not suitable because 
-- The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
-- The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. 
-- The logo should have a corresponding favicon that appears in the browser title bar.
+###Logo requirements
+
+- **Thoughtful facial expression:** In its current form, the above portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive.
+- **Cropping:** The face must be cropped so that it does not look as if it belongs at a funeral.
+- **Discernible at all sizes:** The word "Popper" and the portrait should be recognizable whether the logo is small or large.
+- **Compatible with diverse backgrounds:** The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
+- **Classical font:** The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. 
+- **Favicon:** The logo should have a corresponding favicon that appears in the browser title bar.
+
+###Example logo #1
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true"> 
+
+- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
+- **Cropping:** The face is cropped appropriately.  
+- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
+- **Compatible with diverse backgrounds: This logo would only work against a light background.
+- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
+- **Favicon:** This logo is difficult to use for a favicon.
+
+###Example logo #2
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-round-face.png?raw=true"> 
+
+- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
+- **Cropping:** The face is cropped appropriately.  
+- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
+- **Compatible with diverse backgrounds: This logo would only work against a light background.
+- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
+- **Favicon:** This logo is difficult to convert into a favicon.
+
+###Example logo #3
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-square-face.png?raw=true"> 
+
+- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
+- **Cropping:** The face is cropped appropriately.  
+- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
+- **Compatible with diverse backgrounds: This logo would only work against a light background.
+- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
+- **Favicon:** This logo is difficult to convert into a favicon.
+
 
 <!---	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
