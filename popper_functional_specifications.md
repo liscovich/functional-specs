@@ -341,20 +341,30 @@ The **Landing Page** introduces users to Popper. The primary action that a user 
 ##Page Components
 
 <!---internal lnks here-->
-1. Logo
-2. Navigation Bar
+1. Navigation Bar 
 3. Overview
 4. Usage Statistics
 5. Features
-6. Sign Up (Verify Email)
-7. Footer
+6. Footer
 
-##1. Logo
+##1. Navigation Bar
 <!---pic-->
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true" width="100%">
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%">
 
-The Popper Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
+The **Navigation Bar** includes five links: 
+
+<!---internal links-->
+1. Logo
+2. <a href="#How_It_Works">How It Works</a>
+2. Our Story
+3. Experiments Library
+4. Log In with GitHub
+5. Sign Up
+
+The **Logo** contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
+
+When a user is not signed in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
 A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
@@ -370,17 +380,17 @@ A good starting point for the logo portrait is available <a href="http://en.wiki
 <h4>Examples of Unsuccessful Logos</h4>
 |						   | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true" width="180px"> | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-round-face.png?raw=true" width="180px"> | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-square-face.png?raw=true" width="180px"> |
 ----------------------------------- |  :-----------  |  :------  |   :------  | 
-Facial expression                   | Yes: Pensive |     No: Eyes look dazed; bad photo     |  No: Confused expression      |
+**Facial expression**                   | Yes: Pensive |     No: Eyes look dazed; bad photo     |  No: Confused expression      |
 
-Cropping                            | Yes: Appropriate cropping |    No: Popper looks beheaded      |       Yes: Appropriate cropping    |  
+**Cropping**                            | Yes: Appropriate cropping |    No: Popper looks beheaded      |       Yes: Appropriate cropping    |  
 
-Different sizes                     | No: This logo only works at one size. If smaller, the word "Popper" is not readable. If larger, the mosaic of squares looks patchy and unpleasant |    Yes: Would look uniform at different sizes      |      Yes: Would look uniform at different sizes     |  
+**Different sizes**                     | No: This logo only works at one size. If smaller, the word "Popper" is not readable. If larger, the mosaic of squares looks patchy and unpleasant |    Yes: Would look uniform at different sizes      |      Yes: Would look uniform at different sizes     |  
 
-Color scheme                        | No: Does not work against a dark background |    No: Funeral photo      |    No: Funeral photo  |  
+**Color scheme**                        | No: Does not work against a dark background |    No: Funeral photo      |    No: Funeral photo  |  
 
-Font                                | No: Font color is too light |      No: Font looks too casual    |    No: Font looks too casual     |  
+**Font**                                | No: Font color is too light |      No: Font looks too casual    |    No: Font looks too casual     |  
 
-Favicon                             | No: Difficult to use for a favicon |   No: Difficult to use for a favicon   |   No: Difficult to use for a favicon     | 
+**Favicon**                             | No: Difficult to use for a favicon |   No: Difficult to use for a favicon   |   No: Difficult to use for a favicon     | 
 
 <!---	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
@@ -388,29 +398,13 @@ Favicon                             | No: Difficult to use for a favicon |   No:
 
 <!---logo images here-->
 
-When a user is not signed in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
-
-##2. Navigation Bar
-<!---pic-->
-
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%">
-
-The **Navigation Bar** includes five links: 
-
-<!---internal links-->
-1. <a href="#How_It_Works">How It Works</a>
-2. Our Story
-3. Experiments Library
-4. Log In with GitHub
-5. Sign Up
-
 <a name="How_It_Works"></a>**How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
 **Our Story** is a static About page. Its contents will be discussed later.
 
 **Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
-Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link-->
+Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link--> The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user's full name and a dropdown navigation bar that allows the user to view profile <!---link-->or log out.
 
 ##3. Header
 <!---pic-->
@@ -461,7 +455,7 @@ Three summary statistics are dynamically updated and displayed under the <!---li
 2. The number of deployed experiments
 3. The number of completed trials
 
-The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At the launch, the Landing Page will not contain this statistics block.
+The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Landing Page will not contain this statistics block.
 
 ##5. Overview
 <!---pic-->
@@ -471,49 +465,46 @@ The **Overview** introduces the key features of the platform by walking users th
 
 | Element                          | Text |  Image |  
 ----------------------------------- | :----------- | :------ |  
-Start at the Frontier                |       Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. Popper relies on frontier technology, which means that it improves daily.  |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">   | 
+**Start at the Frontier**                |   Research frontier. Experiments. Replicate. Technology frontier.     |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">   | 
 
-Program the Way You Think     |      Design experiments using intuitive visual programming. Popper comes equipped with domain-specific nodes, custom-tailored for behavioral experiments. Easily automate common experiment tasks using one of our templates. Popper features full Mathematica support for computationally-intensive functionality. Those with more programming experience can delve past visual programming into the C# code underlying all experiments.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
+**Program the Way You Think**     |      <!--rewrite-->Design experiments using intuitive visual programming. Popper comes equipped with domain-specific nodes, custom-tailored for behavioral experiments. Easily automate common experiment tasks using one of our templates. Popper features full Mathematica support for computationally-intensive functionality. Those with more programming experience can delve past visual programming into the C# code underlying all experiments.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
 
-Run When You Are Ready  |      Draw from our on-demand online subject pool. Without the physical restraints of a lab, subjects can participate from the comfort of their homes, when you need them to. Deploy experiments in minutes, without worrying about searching and coordinating eligible subjects.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
+**Run When You Are Ready**  |      Draw from our on-demand online subject pool. Without the physical restraints of a lab, subjects can participate from the comfort of their homes, when you need them to. Deploy experiments in minutes, without worrying about searching and coordinating eligible subjects.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
 
-Leave Logistics to Us |     Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
+**Leave Logistics to Us** |     Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
 
-Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. 
-
-Popper relies on frontier technology, which means that it improves daily. 
-
-### Program the Way You Think
- 
-Design experiments using intuitive visual programming. Popper comes equipped with domain-specific nodes, custom-tailored for behavioral experiments. Easily automate common experiment tasks using one of our templates. Popper features full Mathematica support for computationally-intensive functionality. Those with more programming experience can delve past visual programming into the C# code underlying all experiments. 
-
-### Run When You Are Ready
-
-Draw from our on-demand online subject pool. Without the physical restraints of a lab, subjects can participate from the comfort of their homes, when you need them to. Deploy experiments in minutes, without worrying about searching and coordinating eligible subjects. 
-
-### Leave Logistics to Us
-
-Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process. 
-
-##6. Sign Up (Verify Email)
+##6. Footer
 <!---pic-->
 
-Users can begin the sign up process by entering their email in this field for verification. Read more about the sign up process in the previous section, "Accounts". <!---internal link-->
-
-##7. Footer
-<!---pic-->
-
-The Popper footer contains secondary navigation and is divided into two components: general links and legal miscellany. The general links are divided into three vertical columns. The first column, "Popper", includes links to "Our Story", "Blog", and "Contact". The second and third columns include links to Documentation. We have not yet fleshed out the Documentation of Popper enough to know how many distinct links this section will include. 
-
-The second half of the footer is comprised of links that run horizontally along the bottom of the page. These links are "Terms of Service", "Privacy", and "Security". Under these links is the text <code>"&copy; 2012 Popper. All Rights Reserved."</code> On the right side of this part of the footer is the Fixel logo, with the text <code>"Designed by Fixel"</code>.
-
-The Sign Up and Log In pages feature the same Logo, Navigation Bar, and Footer as the **Landing Page** and *Our Story**
+The **Footer** features general links and legal miscellany.
 
 # <a name="RSOur_story"></a>Our story
 
-The **Our Story** page is a static About page. It explains who Karl Popper is and introduces the Popper team.
+**Our Story** introduces the history of the project and its connection to Karl Popper.
+<!---pic-->
 
-**Our Story** features the same Header and Footer as the **Landing Page**. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, <code>"&copy; Lucinda Douglas-Menzies"</code> and <code>"Reproduced with the generous permission of the photographer"</code>. 
+##Page Components
+
+<!---internal lnks here-->
+1. Navigation Bar 
+2. Portrait of Karl Popper 
+3. History
+4. Team and Contributors
+5. Footer
+
+##1. Navigation Bar
+
+Same as the Landing Page. <!---link-->
+
+##2. Portrait of Karl Popper
+
+**Our Story** features a <a href="http://images.npg.org.uk/800_800/0/2/mw07802.jpg">photo</a> of Karl Popper taken by Lucinda Douglas-Menzies, cropped as necessary. 
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/popperlucinda.png?raw=true" width="100px">
+
+Under the cropped photo should be the text, 
+
+<c>"&copy; Lucinda Douglas-Menzies"</c> and <c>"Reproduced with the generous permission of the photographer"</c>. 
 
 To the right of Karl Popper's likeness, we would like to include a section called <code>"Behind the Name"</code> and, beneath it, <code>"Team"</code>. We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. 
 
