@@ -336,8 +336,11 @@ By Check 4, the user has logged in using GitHub and the Researcher Website has v
 
 The **Landing Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
 
-This page consists of seven components: 
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" width="100%">
 
+##Page Components
+
+<!---internal lnks here-->
 1. Logo
 2. Navigation Bar
 3. Overview
@@ -346,26 +349,26 @@ This page consists of seven components:
 6. Sign Up (Verify Email)
 7. Footer
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" width="100%">
-
 ##1. Logo
 <!---pic-->
 
 <img src="https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true" width="100%">
 
-The Popper Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
+The Popper Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
+
+A good starting point for the logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons.  
+
+- In its current form, this portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive. 
+- The face in the logo should be discernible at different sizes. For example, <a href="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true">this</a> logo is not suitable because 
+- The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
+- The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. 
+- The logo should have a corresponding favicon that appears in the browser title bar.
 
 <!---	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
 -->
 
-We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
-
-The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
-
 <!---logo images here-->
-
-Finally, the logo should have a corresponding smaller "minilogo" that appears in the browser title bar. This minilogo should be a "P" that corresponds stylistically with the Popper logo.
 
 When a user is not signed in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
