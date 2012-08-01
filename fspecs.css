@@ -55,8 +55,8 @@ pre .poetry {
   background: none;
 }
 img {
-  border: #777777 1px solid;
-  background-color: #cccccc;
+/*  border: #777777 1px solid;
+  background-color: #cccccc; */
   color: black;
 }
 figcaption {
@@ -80,9 +80,9 @@ div.wrapper {
 }
 pre { padding: 0.5em; }
 img {
-  padding: 0.5em;
-  margin-left: 1em;
-  margin-right: 2em;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 body { font: 14px/1.5em Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman"; }
 p {

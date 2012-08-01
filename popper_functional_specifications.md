@@ -129,13 +129,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h1> <a name="Researcher_Site">Researcher Site</a> </h1>
 
-The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers to explore available experiments, create trials, recruit subjects, monitor trials in real time, and download experimental data.
+The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers to explore available experiments, create trials, recruit subjects, monitor trials in real time, and download experimental data. 
 
 ## Pages
 
 <section class="pages">
 	<ul>
 		<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
+		<li>2.2 &nbsp; <a href="RSLook">Look and Feel</a></li>
 		<li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
 		<li>2.3 &nbsp; <a href="#RSLanding_page">Landing page</a></li>
 		<li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>	
@@ -170,6 +171,10 @@ Soon, Professor Goldin begins designing her own experiments from scratch using t
 ##2. Robert, the Trial Runner
 
 Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Landing Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
+
+# <a name="Look">Look and Feel</a>
+
+The site serves an academic audience so the overall look of the **Landing Page** should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
 
 # <a name="RSAccounts">Accounts</a>
 
@@ -298,7 +303,7 @@ By Check 2, the Researcher Site has determined that the user is not currently lo
 ###<a name="Check_3"></a>Check 3: Confirmed email address?
 <!---accounts 3 image-->
 
-By Check 3, the user has logged in using a GitHub account and has granted the Researcher Website access to GitHub account information. 
+By Check 3, the user has logged in using a GitHub account and has granted the Researcher access to GitHub account information. 
 
 <section class="pages">
 	<ul>
@@ -329,13 +334,9 @@ By Check 4, the user has logged in using GitHub and the Researcher Website has v
 
 # <a name="RSLanding_page"></a>Landing page
 
-The purpose of the **Landing Page** is to convince social science researchers to sign up<!---IL--> to use Popper. The **Landing Page** answers the question, "What Is Popper?" and provides reasons that the researcher should try to use Popper in place of their current software. 
+The **Landing Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
 
-Since the site serves an academic audience, the overall look of the **Landing Page** should be classic yet modern, and convey academic legitimcy. We are leaning towards a light, clean color scheme.
-
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true)
-
-The **Landing Page** consists of seven components: 
+This page consists of seven components: 
 
 1. Logo
 2. Navigation Bar
@@ -345,15 +346,17 @@ The **Landing Page** consists of seven components:
 6. Sign Up (Verify Email)
 7. Footer
 
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" width="100%">
+
 ##1. Logo
 <!---pic-->
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true)
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true" width="100%">
 
 The Popper Logo contains the name "Popper" accompanying a stylized likeness of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
 <center>
-	<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="10%" ALT="POPPER_PHOTO" BORDER="2.5">
+	<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="25%" ALT="POPPER_PHOTO" ALIGN="RIGHT" padding="3px">
 	</center>
 
 We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
