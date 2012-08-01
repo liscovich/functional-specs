@@ -353,35 +353,21 @@ This page consists of seven components:
 
 <img src="https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true" width="100%">
 
-The Popper Logo contains the name "Popper" accompanying a stylized likeness of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
+The Popper Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
-<center>
-	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
+<!---	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
+-->
 
-We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
+We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
 
 The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.
 
-<center>
-	![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
-</center>
+<!---logo images here-->
 
-<center>
-	![Image](http://www.dartmouth.edu/home/files/graphics/dartmouth.gif)
-</center>
+Finally, the logo should have a corresponding smaller "minilogo" that appears in the browser title bar. This minilogo should be a "P" that corresponds stylistically with the Popper logo.
 
-<center>
-	![Image](http://www.utexas.edu/sites/all/themes/webcentral/_images/ribbon.png)
-</center>
-
-<center>
-	![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
-</center>
-
-Finally, the logo should have a corresponding smaller "minilogo" that appears in the browser title bar. This minilogo should most likely be a "P" that corresponds stylistically with the Popper logo.
-
-When a user is not signed in, clicking on the Popper Logo brings the user to the landing page at [www.popper.org](www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the **Researcher Dashboard**, which will be discussed later.
+When a user is not signed in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
 ##2. Navigation Bar
 <!---pic-->
