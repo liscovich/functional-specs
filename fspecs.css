@@ -16,10 +16,15 @@
 @font-face {
   font-family: 'PT Serif';
   font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v4/QABk9IxT-LFTJ_dQzv7xpLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
   font-weight: 400;
   src: local('PT Serif'), local('PTSerif-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v4/sDRi4fY9bOiJUbgq53yZCXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
 }
-
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
@@ -35,13 +40,12 @@
 
 
 
+a:link {text-decoration:none; color:#0046BB}
+a:visited {text-decoration:none; color:#0046BB}
+a:hover {text-decoration:underline; color:#0046BB}
+a:active {text-decoration:underline; color:#0046BB}
 
-a { color: #222222; }
-a:visited { color: #222222; }
-a:hover {
-  color: #ffffff;
-  background: #222222;
-}
+
 pre {
   border: #777777 1px solid;
   background-color: #cccccc;
@@ -85,17 +89,22 @@ p {
   font-size: 1em;
   line-height: 1.5em;
   text-align: justify;
-  margin: 1.5em 0 1.5em 0;
+/*  margin: 1.5em 0 1.5em 0; */
   max-width: 35em;
 }
 li p { margin: 1em 0 1em 0; }
-h1, h2, h3, h4 {
-  font-family: Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
-  font-weight: normal;
+
+
+c { 
+  font-size: 1em;
+/*  font-family: courier;
+  font-size: 1em; 
+  line-height: 1.75em; */
 }
+
 code {
   font-family: courier;
-  font-size: 0.857em;
+  font-size: 1em;
   line-height: 1.75em;
 }
 pre {
@@ -110,10 +119,6 @@ pre {
   word-wrap: break-word;
 }
 div.bibliography p { text-align: left; }
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
 .sidebar { padding-top: 3em; }
 .sidebar > h1 { margin-top: 0; }
 .sidebar h3:first-child { margin-top: 0; }
@@ -241,15 +246,15 @@ body {
 
 h1 {
     color: #222;
-    font: 700 24px/24px "pt sans narrow";
-    margin: 0;
+    font: 700 24px/28px "pt sans narrow";
+    margin: 20px 0 8px 0;
     text-align: left;
     text-transform: uppercase; }
 
 h2 {
      color: #222;
-    font: 700 24px/24px "pt sans narrow";
-    margin: 0;
+    font: 700 20px/24px "pt sans narrow";
+    margin: 20px 0 8px 0;
     text-align: left;
     text-transform: uppercase;
 }
@@ -257,14 +262,14 @@ h2 {
 h3 {
     color: #222;
     font: 700 16px/20px "pt sans";
-    margin: 0;
+    margin: 20px 0 8px 0;
     text-align: left; 
 }        
 
 h4 {
     color: #222;
     font: 700 14px/18px "pt sans";
-    margin: 0;
+    margin: 20px 0 8px 0;
     text-align: left; 
 }
 
@@ -272,8 +277,16 @@ p {
     color: #222;
     font: 400 14px/18px "pt serif";
     text-align: justify;
-    text-indent: 14px; 
+    text-indent: 0px; 
+    margin: 0 0 1em 0;  
     max-width: 50em;}
+
+.quote p {
+  font-family: courier;
+  text-indent: 0em; 
+  margin: 0.5em 4.5em 0.5em 4.5em;
+  font-size: 0.9em; 
+}    
 
 hr {
     background: #333;
@@ -284,14 +297,44 @@ hr {
     .sample hr.bottom {
       margin: 10px 0px; }    
 
-li {     color: #222;
-    font: 400 14px/18px "pt serif";
-    text-align: justify;
-    text-indent: 14px; }
+
 
 ol {    color: #222;
     font: 400 14px/18px "pt serif";
     text-align: justify;
-    text-indent: 14px; 
+    text-indent: 0px; 
   }
 
+
+
+.pages ul {
+    color: #222;
+    font: 400 14px/18px "pt serif";
+    text-align: justify;
+    text-indent: 0px; 
+    list-style-type: none;
+    margin: 0 0 0 0;
+  }
+
+.pages ul li {     color: #222;
+    font: 400 14px/18px "pt serif";
+    text-align: justify;
+    text-indent: -1.5em; 
+    list-style-type: none;
+    margin: .3em 0 0 0;
+}
+
+.pages .inner ul {
+    color: #222;
+    font: 400 14px/18px "pt serif";
+    text-align: justify;
+    text-indent: 0px; 
+    margin: 0 0 0 0;
+}
+
+ul {    color: #222;
+    font: 400 14px/18px "pt serif";
+    text-align: justify;
+    text-indent: 0px; 
+    margin: 0 0 0 0;
+  }

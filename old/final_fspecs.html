@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-article-header"/>
+	<title>Sample MultiMarkdown Document</title>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="keywords" content="MultiMarkdown, Markdown, XML, XHTML, XSLT, PDF"/>
+	<link type="text/css" rel="stylesheet" href="fspecs.css"/>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+	<meta name="copyright" content="2011 Fletcher T. Penney.  
+This work is licensed under a Creative Commons License.  
+http://creativecommons.org/licenses/by-nc-sa/3.0/"/>
+	<meta name="latexinput" content="mmd-natbib-plain"/>
+	<meta name="latexinput" content="mmd-article-begin-doc"/>
+	<meta name="latexfooter" content="mmd-memoir-footer"/>
+</head>
+<body>
+
+<h2 id="popperfunctionalspecifications:researchersite">Popper Functional Specifications: Researcher Site</h2>
+
+<p>Popper consists of three components:</p>
+
+<ol>
+<li>The Researcher Site</li>
+<li>The Player Site</li>
+<li>The Popper Software Development Kit</li>
+</ol>
+
+<h2 id="audience">Audience</h2>
+
+<p>The Researcher Site is used by social science researchers from both academic and non-academic institutions. </p>
+
+<p>Academic researchers include professors, graduate students, and research assistants in the fields of economics, political science, psychology, and sociology. Non-academic researchers come from a variety of companies and backgrounds, including Microsoft and think tanks. Both sets of researchers attempt to use experiments to better understand and explain human behavior. </p>
+
+<p>Most of these researchers currently use <a href="http://www.iew.uzh.ch/ztree/index.php">z-Tree</a>, software from the 1990s that requires researchers to learn how to program. Researchers are accustomed to bare-bones UI for both themselves and their subjects. These researchers typically know a limited amount of programming and are open to technologically complex tools, since much of their work relies on technology such as <a href="www.stata.com">STATA</a>, <a href="http://www.iew.uzh.ch/ztree/index.php">z-Tree</a>, and <a href="http://www.r-project.org/">R</a>.</p>
+
+<p>Users fall into two typical use cases: </p>
+
+<ol>
+<li>The Experiment Designer</li>
+<li>The Trial Runner</li>
+</ol>
+
+<h3 id="professorgoldintheexperimentdesigner">1. Professor Goldin, the Experiment Designer</h3>
+
+<p>Professor Goldin is an economics professor at Carnegie Mellon University. For over ten years, she has used <a href="http://www.iew.uzh.ch/ztree/index.php">z-Tree</a>, the dominant social science experiments software, to study human behavior. She knows a rudimentary amount of programming&#8211;just enough to design experiments in z-Tree. Each trial takes several weeks to run, and much of this time is spent handling logistics: recruiting subjects, waiting for subjects, screening subjects, reserving computer lab space at the university&#8217;s social science experiments facility, and ensuring that subjects are paid. </p>
+
+<p>Professor Goldin hears about Popper at an Experimental Economics Conference and visits <a href="www.popper.org">www.popper.org</a>. On the <strong>Landing Page</strong>, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in <a href="http://unity3d.com/">Unity3D</a>, which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. </p>
+
+<p>Soon, Professor Goldin begins designing her own experiments from scratch using templates from the Popper SDK and assets downloaded from the <a href="http://unity3d.com/unity/asset-store/">Unity Asset Store</a>. Popper takes care of logistical and technical issues so that Professor Goldin can focus on her research rather than tedious overhead. Her trials now take hours, rather than weeks, to run. </p>
+
+<h3 id="robertthetrialrunner">2. Robert, the Trial Runner</h3>
+
+<p>Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the <strong>Landing Page</strong> and follows a set of simple instructions to create an account. Robert links Professor Goldin&#8217;s laboratory GitHub account with his Popper account, and is able to find the lab&#8217;s private experiments on the <strong>Experiments Library</strong> page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the <strong>Dashboard</strong> page. A few hours later, the trial is complete and Robert downloads the data to analyze further. </p>
+
+<h2 id="accounts">Accounts</h2>
+
+<p>We will first discuss user sign up and log in to clarify what user accounts look like, since these accounts are the backbone of the Researcher Website. After accounts, we will take a detailed look at each of pages on the Popper Researcher Website. </p>
+
+<p>Popper user accounts pull information from two sources: GitHub and the Popper Researcher Website. Sign up begins with the creation of a GitHub account and log in is accomplished on the GitHub website, which then redirects to the Popper site. As part of the sign up process, the Researcher Website asks for additional credentials and user information relevant to Popper that GitHub does not ask for. All users are required to have a GitHub account, for three reasons. </p>
+
+<ol>
+<li>GitHub frees Popper from having to handle plumbing tasks, like log in and password retrieval.</li>
+<li>We would like to encourage users to collaborate on experiments, and GitHub provides a handy framework that encourages users to work together.</li>
+<li>We would like to minimize the number of additional steps a user needs to take after signing up. Users who design experiments must have a GitHub account to push experiments, but users who only run trials do not need a GitHub account since trials can be handled solely through the website. We anticipate that some users who start out running trials may also run experiments later. Requiring all users to create a GitHub account means that users do not have to jump through an extra set of hoops to set up a GitHub account later if they decide to run experiments; they can get started right away.</li>
+</ol>
+
+<p>The diagram below illustrates the Sign Up process. We will take a look at each step separately.</p>
+
+<!---Sign Up pic-->
+
+<h3 id="signup">Sign up</h3>
+
+<p>We will first make a brief detour to the Sign Up field on the <strong>Landing Page</strong> to discuss the sign up process, and then go back to the Navigation Bar to take a look at the log in process. </p>
+
+<!---Landing Page screenshot with Sign Up field highlighted-->
+
+<h4 id="step1">Step 1</h4>
+
+<p>The <strong>Sign Up</strong> page consists of three separate steps. We would like to display only one step at a time while showing progress. All steps should be displayed on the same Sign Up page with the same wrapper. Each step should be bite-sized and modular, and fold away so that the user knows it is complete without having to see the entire step. Users should not feel overwhelmed by a long form.</p>
+
+<p>The first part of the Sign Up page verifies the user&#8217;s email. Most users will actually complete this step on the <strong>Landing Page</strong>. The user enters an email address for verification and clicks Get Started. Text appears below this portion of the page that reads, &#8220;Please check your email to verify your account.&#8221; Here&#8217;s the text of the email: </p>
+
+<blockquote>
+<p>Hello,</p>
+
+<p>We received a request to create a Popper account for <a href="youremail@university.edu">youremail@university.edu</a>. To verify your account and complete the sign up process, please click <a href="some.authenticated.URL.com">here</a> or paste the following URL into your browser.</p>
+
+<p><a href="www.someurlforsignup.com">www.someurlforsignup.com</a> </p>
+
+<p>If you have any questions or believe you received this email in error, please email <a href="support@popper.org">support@popper.org</a>.</p>
+
+<p>Thanks,</p>
+
+<p>The Popper Team</p>
+</blockquote>
+
+<p>Clicking the verification link in the email takes the user back to the <strong>Sign Up</strong> page if the user started out on that page, and to the Sign Up page for the first time if the user signed up through the <strong>Landing Page</strong>. After completing email verification, users should be able to know that they have successfully completed this step. Two design decisions have to be made here with Fixel: first, where the message &#8220;Your email nash@princeton.edu has been successfully confirmed!&#8221; is shown; second, whether the step is grayed out or invisible altogether. </p>
+
+<h4 id="step2">Step 2</h4>
+
+<p>After verifying an email address, the user is prompted with two buttons, either to log in or sign up using GitHub. GitHub does not allow user log in and sign up to be conducted on an external site, which means that this process has to take place on GitHub and then redirect the user back to the Popper Researcher Website once log in or sign up is done. </p>
+
+<p>The log in screen is done through GitHub API and looks like the following. </p>
+
+<!---GitHub log in screen-->
+
+<p>The sign up screen is done through GitHub API as well, and looks like the following. </p>
+
+<!---GitHub sign up screen-->
+
+<p>After log in or sign up, the user is redirected to a GitHub page to authorize GitHub access to the user&#8217;s private and public information. This authorization is necessary to customize the user&#8217;s <strong>Experiments Library</strong> so that the users&#8217;s own public and private experiments are displayed. The only way to run a trial is through the <strong>Experiments Library</strong>, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository. </p>
+
+<!---GitHub authorization page-->
+
+<p>If the user has already granted Popper access to the user&#8217;s GitHub account, Step 2 should either be hidden or minimized along with Step 1.</p>
+
+<h4 id="step3">Step 3</h4>
+
+<p>The user is redirected to the <strong>Sign Up</strong> page after granting GitHub access to Popper in order to provide Popper with a few last pieces of information not available through GitHub: </p>
+
+<ul>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Affiliation</li>
+<li>Department</li>
+</ul>
+
+<p>First and Last Name are required here because GitHub does not ask users to input their first and last names separately, and we want to make sure that we have the full names of all users. Affiliation usually refers to an institution such as a university. We would like users to be able to write in their affiliation using auto-complete. If their institution is not found from our provided list, the user simply finishes typing the name of the affiliation. For example, typing &#8220;D&#8221; should bring up Duke University in autocomplete (among other affiliations) but Bob&#8217;s Garage of Experiments would be written as-is. </p>
+
+<p>The complete list of all institutions and departments that run economics experiments can be found <a href="http://edirc.repec.org/alphabet.html">here</a>. If possible, we would like to scrape institution and department names somehow from this website. Manual entry of all institutions and departments into a spreadsheet is also possible but would be highly time-consuming: the United States alone has 3,149 institutions, each of which has several departments, and we want to include all institutions and departments from every country in the world. </p>
+
+<p>Finally, by clicking &#8220;Submit&#8221;, the user agrees to the Popper Terms of Service, which we will provide. The Terms of Service should open in a popup window.</p>
+
+<h3 id="login">Log In</h3>
+
+<p>The Log In process is tied closely to the Sign Up page. You&#8217;ll recall that Sign Up requires three components: email verification, a linked GitHub account, and additional information. The log in process includes a series of checks in the backend to make sure that a user account includes all three components.</p>
+
+<p>The below diagram shows how Log In works and how it is connected to Sign Up. We will now take a look at what happens from the moment the user clicks &#8220;Log In&#8221; from the Navigation Bar. </p>
+
+<!---Log in pic-->
+
+<h4 id="loggedintogithub">Logged into GitHub?</h4>
+
+<!---accounts 1 image-->
+
+<p>When a user clicks &#8220;Log In&#8221;, Popper first checks whether the user is currently logged into GitHub from the current browser. If the user is not logged into GitHub, the user is taken to the GitHub log in page, which is the same page that the user sees after clicking &#8220;Log In using GitHub&#8221; from the <strong>Sign Up</strong> page.</p>
+
+<h4 id="githubaccount">GitHub account?</h4>
+
+<!---accounts 2 image-->
+
+<p>Now that the user is on the GitHub log in page, let&#8217;s assume the user is not logged into a GitHub account from the current browser. </p>
+
+<p>If the user does not have a GitHub account, she can sign up for an account by clicking &#8220;(Pricing and Signup)&#8221;. Just as during Sign Up, the user then grants Popper access to public and private GitHub user information. This user does not have a complete Popper account, so Popper redirects the user to the <strong>Sign Up</strong> page. </p>
+
+<p>Popper then checks whether this GitHub account is associated with a verified email address in the Popper user account database. </p>
+
+<p>If there is already an associated email address, Step 1 shows the message, &#8220;Your email nash@princeton.edu has been successfully confirmed!&#8221; and Step 1 is shown as complete in the same way as during Sign Up. Step 2 is also shown as complete, and the user will need to complete Step 3 on the <strong>Sign Up</strong> page. </p>
+
+<p>The more likely scenario is that the GitHub account is not associated with a verified email address. In this case, Step 1 should be shown as incomplete and Step 3 should not be available for the user to complete. The user verifies an email address in Step 1. Both Step 1 and Step 2 are shown as complete and the user finishes Sign Up by filling out Step 3.</p>
+
+<p>If the user does have a GitHub account, the user logs in using GitHub credentials on the GitHub log in page, and then grants Popper access to the user&#8217;s GitHub account.</p>
+
+<h4 id="verifiedemailaddress">Verified email address?</h4>
+
+<!---accounts 3 image-->
+
+<p>Once the user is logged into a GitHub account, Popper checks whether this GitHub account is associated with a verified email address. This check is identical to the one mentioned in the previous subsection, &#8220;GitHub account?&#8221;. The difference is that in the previous section, the check happens while the user is on the <strong>Sign Up</strong> page, while here the check happens without taking the user to <strong>Sign Up</strong> just yet.</p>
+
+<p>If the user does not have a verified email address, she is taken to the Sign Up page to complete Step 1. Since the user has already logged into GitHub and granted Popper access to the GitHub account, Step 2 is marked as complete and the user proceeds straight to Step 3.</p>
+
+<p>If the user does have a verified email address, she is taken to the final check: &#8220;Has the user entered Popper credentials?&#8221;</p>
+
+<h4 id="poppercredentials">Popper credentials?</h4>
+
+<!---accounts 4 image-->
+
+<p>Popper now checks whether this user, who has a verified email address and a linked GitHub account, has entered additional Popper credentials required in Step 3 of <strong>Sign Up</strong>. </p>
+
+<p>If the user has not entered Step 3 information, the user is taken to the <strong>Sign Up</strong> page to complete Step 3.</p>
+
+<p>If additional user information exists, the user is logged in and taken to the <strong>Dashboard</strong>. </p>
+
+<h2 id="landingpage">Landing Page</h2>
+
+<p>The purpose of the <strong>Landing Page</strong> is to convince social science researchers to sign up<!---IL--> to use Popper. The <strong>Landing Page</strong> answers the question, &#8220;What Is Popper?&#8221; and provides reasons that the researcher should try to use Popper in place of their current software. </p>
+
+<p>Since the site serves an academic audience, the overall look of the <strong>Landing Page</strong> should be classic yet modern, and convey academic legitimcy. We are leaning towards a light, clean color scheme.</p>
+
+<figure>
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" alt="Image" />
+<figcaption>Image</figcaption></figure>
+
+
+
+<p>The <strong>Landing Page</strong> consists of seven components: </p>
+
+<ol>
+<li>Logo</li>
+<li>Navigation Bar</li>
+<li>Overview</li>
+<li>Usage Statistics</li>
+<li>Features</li>
+<li>Sign Up (Verify Email)</li>
+<li>Footer</li>
+</ol>
+
+<h3 id="logo">1. Logo</h3>
+
+<!---pic-->
+
+<figure>
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/lplogo.png?raw=true" alt="Image" />
+<figcaption>Image</figcaption></figure>
+
+
+
+<p>The Popper Logo contains the name &#8220;Popper&#8221; accompanying a stylized likeness of the philosopher Karl Popper. The ideal portrait for this logo is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg">here</a> in the public domain from Wiki Commons. </p>
+
+<center>
+    <IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="10%" ALT="POPPER_PHOTO" BORDER="2.5">
+    </center>
+
+<p>We would like to include Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate the alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Website and the dark background of Unity3D, a core component of the Popper SDK. </p>
+
+<p>The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.</p>
+
+<center>
+    ![Image](http://upload.wikimedia.org/wikipedia/commons/9/99/Harvard_University_Logo.PNG)
+</center>
+
+<center>
+    ![Image](http://www.dartmouth.edu/home/files/graphics/dartmouth.gif)
+</center>
+
+<center>
+    ![Image](http://www.utexas.edu/sites/all/themes/webcentral/_images/ribbon.png)
+</center>
+
+<center>
+    ![Image](http://www.wolframalpha.com/images/homepage/wa-logo.png)
+</center>
+
+<p>Finally, the logo should have a corresponding smaller &#8220;minilogo&#8221; that appears in the browser title bar. This minilogo should most likely be a &#8220;P&#8221; that corresponds stylistically with the Popper logo.</p>
+
+<p>When a user is not signed in, clicking on the Popper Logo brings the user to the landing page at <a href="www.popper.org">www.popper.org</a>. Once the user signs in, clicking on the Popper Logo brings the user to the <strong>Researcher Dashboard</strong>, which will be discussed later.</p>
+
+<h3 id="navigationbar">2. Navigation Bar</h3>
+
+<!---pic-->
+
+<figure>
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" alt="Image" />
+<figcaption>Image</figcaption></figure>
+
+
+
+<p>The Navigation Bar in the Header includes four links: </p>
+
+<ul>
+<li><strong>How It Works</strong></li>
+<li><strong>Our Story</strong></li>
+<li><strong>Experiments Library</strong></li>
+<li><strong>Log in</strong></li>
+</ul>
+
+<p>[1] <strong>How It Works</strong> links to documentation for Popper. Documentation is stored on GitHub, not on the Popper Researcher Website. Clicking on <strong>How It Works</strong> takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments/">Popper GitHub account</a>. We will take care of writing documentation.</p>
+
+<p>[2] <strong>Our Story</strong> is a static About page. Its contents will be discussed later.</p>
+
+<p>[3] <strong>Experiments Library</strong> is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.</p>
+
+<p>[4] User log in and sign up were discussed in the previous section, &#8220;Accounts&#8221;. <!---internal link--></p>
+
+<h3 id="overview">3. Overview</h3>
+
+<!---pic-->
+
+<p>The purpose of the Overview is to describe Popper briefly. We anticipate that initially, most users who come to <a href="www.popper.org">www.popper.org</a> will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments. </p>
+
+<p>The header of the <strong>Landing Page</strong> is <code>&#8220;Behavioral Experiments Platform, [a(n) adjective] one&#8221;</code>. We would like to replace the <code>[a(n) adjective]</code> with a revolving list of serious and funny words. We are unsure from a UX perspective whether it would be more pleasant to have the words automatically refresh every few seconds or if it would be better for the user to click a small &#8220;refresh&#8221; icon next to the <code>[a(n) adjective]</code> to make the word change.</p>
+
+<p>Here is the list of words &#8211; we would like for the succession of words to be random but the first word that appears when the user arrives on the <strong>Landing Page</strong> should always be a word from the Serious list. </p>
+
+<p><strong>Serious</strong> </p>
+
+<ul>
+<li>an agile</li>
+<li>a modern</li>
+<li>a versatile</li>
+<li>a cutting-edge</li>
+<li>a customizable</li>
+<li>an addictive</li>
+<li>an advanced</li>
+<li>a promising</li>
+</ul>
+
+<p><strong>Funny</strong></p>
+
+<ul>
+<li>a fat-free</li>
+<li>a low cholesterol</li>
+<li>a low emissions</li>
+<li>a PG&#8211;13</li>
+<li>a lactose intolerant</li>
+<li>a free range</li>
+<li>a whole wheat</li>
+<li>a hormone free</li>
+<li>an antibiotic free</li>
+<li>a TSA-compliant</li>
+<li>a pasteurized</li>
+</ul>
+
+<p>Underneath the header is a short paragraph explaining what Popper is. </p>
+
+<blockquote>
+<p>Popper is a powerful blend of modern technology and social science. Using Popper, you can design complex cutting-edge experiments using the most advanced tools in existence. You can also run large-scale online trials drawing subjects from the world&#8217;s deepest on-demand subject pool.</p>
+</blockquote>
+
+<h3 id="usagestatistics">4. Usage Statistics</h3>
+
+<!---pic-->
+
+<p>We would like to include usage statistics to boost the legitimacy of Popper among researchers. This portion of the <strong>Landing Page</strong> should be located directly under the Hook. Three statistics should be dynamically displayed and updated: the number of researchers, the number of deployed experiments, and the number of completed trials. The focus is on the numbers, which means that these digits should stand out much more than the names of what the numbers are counting. These statistics will only be available once Popper gains traction, which means that it would be ideal for there to be a way for us to activate this section of the site only once we have compelling statistics to show. This means that the <strong>Landing Page</strong> should visually &#8220;work&#8221; even if the statistics portion of the page is not shown. </p>
+
+<h3 id="features">5. Features</h3>
+
+<!---pic-->
+
+<p>After the user gets some sense of what Popper is, the Features List provides a more detailed explanation of why the user should make the decision to Sign Up. The Features List describes four core selling points of Popper:</p>
+
+<ol>
+<li><p>Start at the Frontier</p></li>
+<li><p>Program the Way You Think</p></li>
+<li><p>Run When You Are Ready</p></li>
+<li><p>Leave Logistics to Us</p></li>
+</ol>
+
+<p>These four features should be arranged on a horizontal navigation panel. Each of the four phrases should be accompanied by an image, which we will provide. Underneath the navigation panel is a frame split in half vertically, with text in the left panel and an image in the right panel. As the user clicks on each of the four features, the contents of the frame change. We are currently deciding on the four sets of text and images to place into this frame. Below is a draft of what we would like to include in the frame. </p>
+
+<h4 id="startatthefrontier">Start at the frontier</h4>
+
+<p>Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. </p>
+
+<p>Popper relies on frontier technology, which means that it improves daily. </p>
+
+<h4 id="programthewayyouthink">Program the Way You Think</h4>
+
+<p>Design experiments using intuitive visual programming. Popper comes equipped with domain-specific nodes, custom-tailored for behavioral experiments. Easily automate common experiment tasks using one of our templates. Popper features full Mathematica support for computationally-intensive functionality. Those with more programming experience can delve past visual programming into the C# code underlying all experiments. </p>
+
+<h4 id="runwhenyouareready">Run When You Are Ready</h4>
+
+<p>Draw from our on-demand online subject pool. Without the physical restraints of a lab, subjects can participate from the comfort of their homes, when you need them to. Deploy experiments in minutes, without worrying about searching and coordinating eligible subjects. </p>
+
+<h4 id="leavelogisticstous">Leave Logistics to Us</h4>
+
+<p>Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process. </p>
+
+<h3 id="signupverifyemail">6. Sign Up (Verify Email)</h3>
+
+<!---pic-->
+
+<p>Users can begin the sign up process by entering their email in this field for verification. Read more about the sign up process in the previous section, &#8220;Accounts&#8221;. <!---internal link--></p>
+
+<h3 id="footer">7. Footer</h3>
+
+<!---pic-->
+
+<p>The Popper footer contains secondary navigation and is divided into two components: general links and legal miscellany. The general links are divided into three vertical columns. The first column, &#8220;Popper&#8221;, includes links to &#8220;Our Story&#8221;, &#8220;Blog&#8221;, and &#8220;Contact&#8221;. The second and third columns include links to Documentation. We have not yet fleshed out the Documentation of Popper enough to know how many distinct links this section will include. </p>
+
+<p>The second half of the footer is comprised of links that run horizontally along the bottom of the page. These links are &#8220;Terms of Service&#8221;, &#8220;Privacy&#8221;, and &#8220;Security&#8221;. Under these links is the text <code>&#8220;&copy; 2012 Popper. All Rights Reserved.&#8221;</code> On the right side of this part of the footer is the Fixel logo, with the text <code>&#8220;Designed by Fixel&#8221;</code>.</p>
+
+<p>The Sign Up and Log In pages feature the same Logo, Navigation Bar, and Footer as the <strong>Landing Page</strong> and <em>Our Story</em>*</p>
+
+<h2 id="ourstory">Our Story</h2>
+
+<p>The <strong>Our Story</strong> page is a static About page. It explains who Karl Popper is and introduces the Popper team.</p>
+
+<p><strong>Our Story</strong> features the same Header and Footer as the <strong>Landing Page</strong>. On the left is a photo of Karl Popper taken by Lucinda Douglas-Menzies. This photo should be cropped as necessary to work with the overall design of the page. We were able to secure rights to use this photo, provided we give credit to the photographer. Under the cropped photo should be the text, <code>&#8220;&copy; Lucinda Douglas-Menzies&#8221;</code> and <code>&#8220;Reproduced with the generous permission of the photographer&#8221;</code>. </p>
+
+<p>To the right of Karl Popper&#8217;s likeness, we would like to include a section called <code>&#8220;Behind the Name&#8221;</code> and, beneath it, <code>&#8220;Team&#8221;</code>. We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. </p>
+
+<p>We would like the other static pages on the Researcher site to feature the same wrapper as <strong>Our Story</strong>. These other pages are <strong>Contact</strong>, <strong>Terms of Service</strong>, <strong>Privacy</strong>, and <strong>Security</strong>. <strong>Terms of Service</strong>, <strong>Privacy</strong>, and <strong>Security</strong> should open up in popup windows.</p>
+
+<h2 id="experimentslibrary">Experiments Library</h2>
+
+<p><strong>Experiments Library</strong> is the final page accessible to users who are not signed in from the <strong>Landing Page</strong>. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.</p>
+
+<p>There are five main components in <strong>Experiments Library</strong>:</p>
+
+<ol>
+<li>Logo</li>
+<li>Navigation Bar</li>
+<li>Footer</li>
+<li>List of Experiments</li>
+<li>Search Bar</li>
+<li>Filter</li>
+</ol>
+
+<h3 id="logo">1. Logo</h3>
+
+<p>Same as <strong>Landing Page</strong>. <!---internal link--></p>
+
+<h2 id="navigationbar">2. Navigation Bar</h2>
+
+<p>A logged in user sees &#8220;Dashboard&#8221; where the &#8220;Our Story&#8221; link used to be. The &#8220;Log In&#8221; link is replaced by the user&#8217;s email address, which opens out to a menu with the options &#8220;Profile&#8221; and &#8220;Log Out&#8221;. <!---internal links--> Log Off signs the user off Popper and brings the user back to the <strong>Landing Page</strong>. A message telling the user that Log Out has been completed is not necessary: the user will know that log out is successful because the email address in the top right hand corner will once again be replaced by the &#8220;Log In&#8221; link.</p>
+
+<p>A logged out user sees the same Navigation Bar as the logged-out version described on the <strong>Landing Page</strong>. <!---internal link--></p>
+
+<h2 id="footer">3. Footer</h2>
+
+<p>Same as <strong>Landing Page</strong>. <!---internal link--></p>
+
+<h2 id="listofexperiments">4. List of Experiments</h2>
+
+<p>The main feature of <strong>Experiments Library</strong> is a list of public experiments. All users can see this list, no matter if they are logged in or not. The idea is to allow researchers to be able to see what Popper offers without having to sign up first. The list of experiments is an embedded frame with a scrollbar. We would like to display three experiments per row.</p>
+
+<p>This frame displays two sections of experiments: User Experiments and Stock Experiments, in this order. User Experiments are pulled from the user&#8217;s GitHub repositories, which means that experiments contained in public repositories are visible to all other users and those from private repositories are visible only to someone who has GitHub access to that repository. A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. </p>
+
+<p>Stock Experiments are stored in the <a href="https://github.com/Experiments/">Popper GitHub account</a> and can be public or private. Stock Experiments allow researchers to run experiments right away, without having to design their own experiments from scratch. This is particularly important when Popper launches because no users will have designed their own experiments yet. Stock Experiments also provide researchers with templates of the most commonly run experiments in the social sciences. </p>
+
+<p>Popper reads through the content of a user&#8217;s repositories and pulls only the ones that contain full experiments. Popper makes this determination by looking for metadata, source code, master client, and client files. If the user&#8217;s GitHub account does not contain any experiments, &#8220;No experiments pushed to GitHub. Click <a href="linktodocumentation.com">here</a> to learn how to design experiments.&#8221; should be displayed in the section for User Experiments. &#8220;Here&#8221; links to Popper documentation on the <a href="https://github.com/Experiments/">Popper GitHub account</a>.</p>
+
+<p>These experiments are sorted by date&#8211;repositories with the most recent changes are displayed first. The name of the repository (functioning as the name of the experiment), a description of the experiment, number of forks, and the academic journal in which the results of the experiment were published should be listed. The number of forks is necessary to list and include in the metadata because researchers may want to sort experiments by popularity, which is functionality we would like to include in the future once more experiments are available in <strong>Experiments Library</strong>. </p>
+
+<p>When a researcher hovers over an experiment, the square containing the name of the experiment and its information should change color. Clicking on the experiment brings the user to the <strong>Experiment</strong> page (formerly known as <strong>Create Trial</strong>) for that particular experiment, where the user can learn more about the experiment and create a trial. </p>
+
+<h3 id="searchbar">5. Search bar</h3>
+
+<p>The search bar sifts through the contents of the List of experiments. As soon as a researcher begins to type, autocomplete suggestions should appear beneath the Search bar, in the style of Google search. When a researcher clicks on an experiment in the autocomplete list, that single experiment alone is displayed in the List of experiments. If the researcher instead hits Enter, a list of all experiments relevant to the search phrase will appear in the List of experiments, split up into the two sections mentioned above (User Experiments, Stock Experiments). </p>
+
+<p>Autocomplete search results should be formatted as follows:</p>
+
+<blockquote>
+<p><strong>Name of Experiment</strong> - Description of experiment, truncated after a certain number of characters so that the number of forks and publication journal can appear at the end of the autocomplete suggestion&#8230; - <em>Forks: ##</em>; <em>Journal Name</em></p>
+</blockquote>
+
+<h3 id="filter">6. Filter</h3>
+
+<p>Researchers can also search for an experiment by browsing with the filter, in the style of navigating with the left navigation bar to find a product on <a href="Amazon.com">Amazon.com</a>. </p>
+
+<p>[insert explanation of filters here, Andrey&#8230;]</p>
+
+<p>At the same time, the frame to the right of the Filter should update if necessary to be populated with all experiments that match that filter, organized by section (User Experiments and Stock Experiments). If a user selects an experiment in the Filter, that experiment should be highlighted in the Filter and the Experiment List frame should update to display only that experiment, as well as the section that the experiment falls under (User Experiments and Stock Experiments).</p>
+
+<h2 id="dashboard">Dashboard</h2>
+
+<p>Researchers monitor trials in the <strong>Dashboard</strong>. The <strong>Dashboard</strong> consists of two main components: </p>
+
+<ol>
+<li>Trials</li>
+<li>Feed</li>
+</ol>
+
+<h3 id="trials">1. Trials</h3>
+
+<p>Trials is a list of all of the researcher&#8217;s trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks &#8220;Create Trial&#8221; on the <strong>Create Trial</strong> page, which will be discussed later. Clicking on the name of a trial brings the researcher to the <strong>Trial Summary</strong> page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later. </p>
+
+<p>Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes &#8220;activity&#8221; that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:</p>
+
+<ol>
+<li>Awaiting players: The initial status of all trials that a researcher creates is &#8220;Waiting for players&#8221;. This status indicates that the trial has been created and that the server is waiting for a sufficient number of subjects to join the game. The researcher can click on the name of the trial to go to that trial&#8217;s <strong>Trial Summary</strong> page to recruit more subjects if necessary.</li>
+<li>In progress: Once enough subjects have joined a trial, the status of the trial changes to &#8220;In progress&#8221;. Subjects play the game, and as they do, data from the experiment is sent to the <strong>Trial Summary</strong> page.</li>
+<li>Pay subjects: Once a trial is complete, the researcher pays subjects. The researcher can review and approve subject payments from the <strong>Trial Summary</strong> page.</li>
+<li>Complete: After payment is complete, the status of the trial changes to &#8220;Complete&#8221;. No further action is required from the researcher at this time, but the trial is saved in the List for the researcher to review and download data.</li>
+<li>Error: If there is an error with any part of the trial, the researcher can click on the trial to go to <strong>Trial Summary</strong> in order to fix the error.</li>
+</ol>
+
+<p>In addition to the status of the trial, two other pieces of information about the trial are displayed next to the name of the trial. </p>
+
+<ul>
+<li>Trial number: Each trial is assigned a unique ID number. This number is necessary to keep track of trials and allows us to help users resolve issues with individual trials.</li>
+<li>Date and time: A timestamp corresponding with when the change in status occurred is displayed next to the name of the trial. These time stamps are important and informative for each status. For example, when a trial is first created, the time stamp in &#8220;Trial&#8221; would indicate when the trial was first created.</li>
+</ul>
+
+<p>At the bottom of the Trials frame is a button for &#8220;More&#8230;&#8221;, in the style of GitHub. Clicking this button scrolls the entire window down to display more trials. This button disappears once the researcher has displayed all existing trials. There is no scroll bar on the Trials frame itself.</p>
+
+<p>At the top of the Trials frame is a button, &#8220;New Trial&#8221;. Clicking this button takes the researcher to the <strong>Create Trial</strong> page.</p>
+
+<h3 id="feed">2. Feed</h3>
+
+<p>The Feed is on the right side of <strong>Dashboard</strong>. This feed automatically updates with the following information regarding changes in status and other types of activities:</p>
+
+<ul>
+<li>Changes in status, with the following phrasing:
+
+<ul>
+<li>Awaiting players: &#8220;<strong>Trial ##</strong> has been created. Awaiting players.&#8221; As each player joins, the following message is displayed in the Feed: &#8220;<strong>Player ##</strong> has joined <strong>Trial ##</strong>.&#8221;</li>
+<li>In progress: &#8220;<strong>Trial ##</strong>&#8221; is now in progress.</li>
+<li>Pay subjects: &#8220;<strong>Trial ##</strong> has finished. Go to the <strong>Trial Summary</strong> page to review subject payments.&#8221;</li>
+<li>Complete: &#8220;<strong>Trial ##</strong> is now complete.&#8221;</li>
+</ul></li>
+<li>Fork activity
+
+<ul>
+<li>&#8220;Researcher ## has just forked your experiment, <strong>Experiment Name</strong>.&#8221;</li>
+</ul></li>
+<li>Following activity
+
+<ul>
+<li>&#8220;<strong>Researcher ##</strong> is now following <strong>Trial ##</strong>.&#8221;</li>
+<li>&#8220;You are now following <strong>Trial ##</strong> by <strong>Researcher ##</strong>.&#8221;</li>
+</ul></li>
+</ul>
+
+<p>Each bolded item in the above bulleted list should be a link that opens in a new tab. <strong>Trial ##</strong> links to the <strong>Trial Summary</strong> page for a particular trial. <strong>Player ##</strong> links to a player profile, which is hosted externally on the Player Website. <strong>Researcher ##</strong> links to the public profile view of another researcher; this profile is hosted on the Researcher Website.</p>
+
+<p>Just as with the Trials frame, a &#8220;More&#8230;&#8221; button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.</p>
+
+<p>The Header and Footer of <strong>Dashboard</strong> are identical to the logged-in view in <strong>Experiments Library</strong>. <!---internal link--></p>
+
+<h2 id="experiment">Experiment</h2>
+
+<p>The <strong>Experiment</strong> page is the same thing as the <strong>Create Trial</strong> page described in the original <a href="https://github.com/Experiments/popper-design/blob/master/popper_brief.md">Popper brief</a>. </p>
+
+<p>This page describes the experiment and allows the user to run a trial of the experiment. <strong>Experiment</strong> consists of four components:</p>
+
+<ol>
+<li>Header</li>
+<li>Footer</li>
+<li>Experiment Description</li>
+<li>Create Trial</li>
+</ol>
+
+<h3 id="header">1. Header</h3>
+
+<p>Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the landing page. <!---internal link--></p>
+
+<h3 id="footer">2. Footer</h3>
+
+<p>The Footer is the same as the one described on previous pages. <!---internal link--></p>
+
+<h3 id="experimentdescription">3. Experiment Description</h3>
+
+<p>Popper reads the metadata file from the experiment GitHub repository to dynamically generate the Experiment Description. The metadata file itself is generated using the <strong>Experiment Parameters</strong> form on the Popper website. This page of the site does not need to be designed, since it should use the same design as the Sign Up page. We would like to provide users with a stock list of parameters that usually accompany any experiment, but also give users the flexibility to omit and add fields as necessary. A user should also be able to click &#8220;Edit&#8221; next to a field to change portions of the Experiment Description if the experiment came from this user&#8217;s repository. Even if an experiment is public, the Experiment Description is read-only for users who do not own the GitHub experiment repository, and these users do not see &#8220;Edit&#8221; next to any of the fields. </p>
+
+<p>Here is a preliminary list of stock fields that we suggest accompany all experiments.</p>
+
+<p><strong>User provided</strong></p>
+
+<ul>
+<li>Name of the experiment.</li>
+<li>Authors of the experiment with links to their Popper profiles. <!---internal link--></li>
+<li>Description of the experiment.</li>
+<li>References.</li>
+<li>IRB approval(s): All social science research conducted in the United States receiving federal funding requires an IRB approval form before the researcher can conduct the experiment. It would be up to the researcher to make sure that the appropriate form is complete and attached, since Popper is not responsible or liable for monitoring the IRB approval process for researchers.</li>
+<li>Categories: We will provide a list of categories for each field. As the user begins typing, this field would provide suggested categories in &#8220;tag&#8221; form. The researcher would also be able to enter other categories that are not included in our suggestions. The purpose of categories is to sort experiments so that they are searchable using the Filter tool in the Experiment Library.</li>
+</ul>
+
+<p><strong>Automatically generated for all experiments</strong></p>
+
+<ul>
+<li>Original repository, if the experiment repository was forked</li>
+<li>Link to GitHub repository holding the experiment</li>
+<li>Automatically generated &#8220;citation link&#8221; of the form &#8220;http://expt.cc/######&#8221;, where # is a randomly generated digit. This citation link is a short URL to the <strong>Experiment Page</strong> for an experiment</li>
+<li>Discussion: Researchers should be able to post comments about an experiment. A user must be logged in to leave comments, as we would like to make sure comments are made by actual researchers.</li>
+</ul>
+
+<h3 id="createtrial">4. Create Trial</h3>
+
+<p>As with Experiment Description, Create Trial is generated based on what the user specifies in the <strong>Experiment Parameters</strong> form. Users would be able to add to or delete from a stock list of parameters for a trial. Here is the list of suggested parameters:</p>
+
+<ul>
+<li>Number of subjects</li>
+<li>Cost of cooperation</li>
+<li>Multiplier</li>
+<li>Continuation probability</li>
+<li>Initial endowment</li>
+<li>Exchange rate (points to dollars)</li>
+<li>Frame (different visualizations of the game)</li>
+<li>Subjects (the pool of subjects for the trial)</li>
+<li>Gender</li>
+<li>Age</li>
+<li>Option to make trial results public</li>
+<li>Connection speed</li>
+<li>Connection latency</li>
+</ul>
+
+<p>Below the create trial box is a list of previous trials that were run using the same experiment. Clicking on the name of the trial brings the user to the <strong>Trial Results</strong> page, which is accessible only if the user ran the trial or if the trial results are made public. Clicking on the name of the researcher brings the user to the researcher&#8217;s Popper <strong>Profile</strong>.</p>
+
+<p>Create Trial must be able to accomodate a wide range of parameters because experiments differ greatly. Since the parameters depend on the coding of the master client and client files of the experiment, the researcher would know what parameters are necessary and what parameters the server would accept as inputs based on the design of the experiment. </p>
+
+<h2 id="trialsummary">Trial Summary</h2>
+
+<p>The <strong>Trial Summary</strong> is the same as the <strong>Monitor Trial</strong> page described in the original <a href="https://github.com/Experiments/popper-design/blob/master/popper_brief.md">Popper brief</a>. This page allows the researcher to monitor an individual trial in real time and download the results once the trial is complete. <strong>Trial Summary</strong> consists of six components:</p>
+
+<ol>
+<li>Header</li>
+<li>Footer</li>
+<li>Trial Information</li>
+<li>Players</li>
+<li>Report</li>
+<li>History</li>
+</ol>
+
+<h3 id="header">1. Header</h3>
+
+<p>See above. <!---internal link--></p>
+
+<h3 id="footer">2. Footer</h3>
+
+<p>See above. <!---internal link--></p>
+
+<h3 id="trialinformation">3. Trial Information</h3>
+
+<ul>
+<li>Name of the experiment: Clicking on this link brings the user to the <strong>Experiment Page</strong> for this particular experiment.</li>
+<li>Trial number: For reference purposes. Trials are numbered in the order that they are created on Popper.org.</li>
+<li>Start: Initiate the server instance and begin the trial.</li>
+<li>Stop: End the trial manually.</li>
+<li>Pause: Suspend the trial temporarily.</li>
+<li>Replicate: The user is brought to the <strong>Experiment</strong> page for this trial with all fields in Create Trial already filled in. All the user needs to do is click &#8220;Create Trial&#8221; to replicate the trial, or change parameters if desired.</li>
+</ul>
+
+<h3 id="players">4. Players</h3>
+
+<p>The researcher can see a list of all subjects who have participated or are currently participating in the trial. The following stock parameters are suggested but can be added to or deleted on the <strong>Experiment Parameters</strong> page.</p>
+
+<ul>
+<li>Player ID: The researcher does not know subject names. Clicking on the Player ID of a subject brings the user to the public player profile on the Popper Player Website, which will be discussed later.</li>
+<li>Status: A player who has the game open in the player&#8217;s current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.</li>
+<li>Stage: If there are multiple steps in the trial, the researcher can see how far each subject has progressed.</li>
+<li>IP address: The user can prevent cheating by checking whether multiple users are actually playing from the same IP address.</li>
+<li>Location</li>
+<li>Platform</li>
+<li>Earnings</li>
+<li>Approved: The researcher approves subject payments buy clicking the checkbox next to a player&#8217;s earnings. This option is not available until the trial ends or the researcher manually clicks &#8220;Stop&#8221; to end the trial.</li>
+</ul>
+
+<h3 id="report">5. Report</h3>
+
+<p>The Report is a list of purely quantitative data. The data collected for each trial is specified by the user. At the conclusion of a trial, the user can download the data in the form of a .csv, .xls, or .pdf file. Here are suggested types of data that users collect:</p>
+
+<ul>
+<li>Stage</li>
+<li>Player</li>
+<li>Choice: Can be a binary variable but does not have to be; its significance is specified by the user in the source code of the experiment and on the <strong>Experiment Parameters</strong> page.</li>
+<li>Duration: The amount of time that it took for a player to make a particular choice.</li>
+<li>Balance: A snapshot of the player&#8217;s current points balance.</li>
+</ul>
+
+<h3 id="history">6. History</h3>
+
+<p>The History is a qualitative description of the events of the trial. Like the Report, the output of the History of a trial depends on what the user specifies. Regardless of these specifications, the history should include at the minimum the Timestamp of an event and the name of the event.</p>
+
+<h2 id="profile">Profile</h2>
+
+<p>Wireframe needs to be created.</p>
+
+<h2 id="experimentparameters">Experiment Parameters</h2>
+
+<p>Wireframe needs to be created.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>As I add increasing numbers of features to MultiMarkdown, I decided it was
+time to create a sample document to show them off. Many of the features are
+demonstrated in the <a href="http://fletcherpenney.net/mmd/users_guide/" title="MultiMarkdown User's Guide">MultiMarkdown User&#8217;s Guide</a>, but some are not.</p>
+
+<p>Additionally, it&#8217;s easy for those features to get lost within all of the
+technical documentation. This document is designed to <em>demonstrate</em>, not
+describe, most of the features of MultiMarkdown.</p>
+
+<h2 id="howtousethisdocument">How to Use This Document</h2>
+
+<p>I suggest comparing the raw text source with the various final outputs (e.g.
+HTML, LaTeX, PDF, OpenDocument) in order to see what can be accomplished.
+There will be many similarities between output formats, but also a few
+differences. Tables will end up in different places. Paragraphs won&#8217;t break in
+the same way. But these differences are superficial and are a result of trying
+to optimize each format, without regard to identical output across formats
+(which would be virtually impossible).</p>
+
+<p>Remember, the main goal of Markdown\MultiMarkdown is to allow you to create a
+document in plain text, with minimal distraction from markup, that can be
+transformed into a variety of high quality outputs. Or, to quote John Gruber:</p>
+
+<blockquote>
+<p>The overriding design goal for Markdown&#8217;s formatting syntax is to make it as
+readable as possible. The idea is that a Markdown-formatted document should be
+publishable as-is, as plain text, without looking like it&#8217;s been marked up
+with tags or formatting instructions. While Markdown&#8217;s syntax has been
+influenced by several existing text-to-HTML filters, the single biggest source
+of inspiration for Markdown&#8217;s syntax is the format of plain text
+email.<a class="citation" href="#fn:1" title="Jump to citation">[1]<span class="citekey" style="display:none">Gruber</span></a></p>
+</blockquote>
+
+<h2 id="wherecanigetacopy">Where Can I Get a Copy?</h2>
+
+<p>You can download a zipfile containing multiple formats of this document:</p>
+
+<ul>
+<li><a href="http://fletcher.github.com/MultiMarkdown-Gallery">MultiMarkdown-Gallery</a></li>
+</ul>
+
+<p>This file includes:</p>
+
+<ul>
+<li>A plain text file in MultiMarkdown format</li>
+<li>A Scrivener file</li>
+<li>An HTML file</li>
+<li>A PDF</li>
+<li>An OpenDocument file</li>
+<li>An OPML</li>
+<li>A LaTeX file</li>
+<li>And the included images</li>
+</ul>
+
+<p>All files were generated automatically from the MultiMarkdown source document.</p>
+
+<h2 id="sowhatcanthisdocumentdemonstrate">So, What Can This Document Demonstrate?</h2>
+
+<h3 id="metadata">Metadata</h3>
+
+<p>First, take a look at the overall structure of the document. At the very
+beginning is metadata, including a title, author, keywords, copyright
+information, etc. Where possible, this metadata is put to appropriate use,
+otherwise it is stored in a format designed to be easily read and minimally
+distracting:</p>
+
+<ul>
+<li><p>In plain text and XHTML snippets<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a>, it is located at the top of the
+ document.</p></li>
+<li><p>In a full XHTML document, is located in the <code>&lt;head&gt;</code> section, and the title
+ and CSS metadata, if present, are used appropriately.</p></li>
+<li><p>In a PDF generated from my XSLT files, metadata is used to generate the
+ appropriate fields (title, author, keywords) in the PDF itself. Some PDF
+ readers will let you examine this data. Additionally, the title, subtitle,
+ author, and copyright are placed at the beginning of the document.</p></li>
+<li><p>In a Scrivener document, you can put the metadata in the first File in the
+ Binder, but the preferred location is in the &#8220;MultiMarkdown Settings&#8230;&#8221;
+ pane (in the File Menu.)</p></li>
+</ul>
+
+<p>There are a lot of standard metadata keys that can be used, or you can create
+your own and use them as you see fit. Definitely a powerful feature.</p>
+
+<h3 id="structure">Structure</h3>
+
+<p>The next thing to look at is the overall structure of the document. You can
+visualize a Markdown document as an outline, with different sections and
+different levels within those sections. Based on your output format, these can
+be used to generate headers, or sections, or even chapters. It&#8217;s all based on
+what tools you use to process the XHTML output.</p>
+
+<p>Even within the XHTML document, however, you can make use of this structure to
+allow easy navigation within the document. You can link directly to the
+<a href="#introduction">Introduction</a> (and to <a href="#introduction"></a> when using LaTeX), for instance. And
+if you are creating a PDF, it will contain a hierarchy of section names that
+you can use to allow easy navigation, if your PDF reader supports this
+function.</p>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<p>Footnotes are very easy to implement in MultiMarkdown, as described in the
+MultiMarkdown Syntax Guide.<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a></p>
+
+<h3 id="tables">Tables</h3>
+
+<p>Tables can be quite useful for showing data in a meaningful way. As an
+example, here is a table comparing <a href="#multimarkdownvs.crayons">MultiMarkdown vs. Crayons</a>.</p>
+
+<table>
+<caption id="multimarkdownvs.crayons">This is a caption with <em>italics</em></caption>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Features</th>
+	<th style="text-align:center;">MultiMarkdown</th>
+	<th style="text-align:center;">Crayons</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Melts in warm places</td>
+	<td style="text-align:center;">No</td>
+	<td style="text-align:center;">Yes</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Mistakes can be easily fixed</td>
+	<td style="text-align:center;">Yes</td>
+	<td style="text-align:center;">No</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Easy to copy documents for friends</td>
+	<td style="text-align:center;">Yes</td>
+	<td style="text-align:center;">No</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Fun at parties</td>
+	<td style="text-align:center;">No<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a></td>
+	<td style="text-align:center;">Why not?</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Minimum markup for maximum quality?</td>
+	<td style="text-align:center;">Yes</td>
+	<td style="text-align:center;">No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="typographicalconventions">Typographical conventions</h3>
+
+<p>By incorporating John Gruber&#8217;s <a href="http://daringfireball.net/projects/smartypants/">SmartyPants</a> program into your workflow, you
+can generate more &#8220;correct&#8221; typographic punction in your XHTML pages, and in
+your LaTeX source if you are generating PDF&#8217;s&#8212;this includes en and em
+dashes, and ellipses&#8230;.</p>
+
+<p>Very nice when you want to focus on writing, not grammar.</p>
+
+<h3 id="imagesupport">Image Support</h3>
+
+<p>If you choose to incorporate images in your documents, this can be easily done
+as well. MultiMarkdown makes it easier to link to images and include various
+attributes.</p>
+
+<p>As an example, here is an image from my website &#8212; <a href="#nautilusstar">Nautilus
+Star</a>. If you have a local copy of the image, you can include
+the image in a pdf.</p>
+
+<figure>
+<img src="Nautilus_Star.png" alt="This is a bolded caption" id="nautilusstar" title="Nautilus Star" style="height:2.4in;width:3in;" />
+<figcaption>This is a <strong>bolded</strong> caption</figcaption></figure>
+
+
+
+<h3 id="bibliographysupport">Bibliography Support</h3>
+
+<p>MultiMarkdown offers several mechanisms for managing bibliographies. It has
+built-in support for basic citation and bibliography management and
+formatting, or you can rely on external tools to handle this for you. There
+aren&#8217;t many citations in this document, but I think it gets the point
+across.<a class="citation" href="#fn:5" title="Jump to citation">[<span class="locator">p. 42</span>, 5]<span class="citekey" style="display:none">fake</span></a></p>
+
+<h3 id="glossarysupport">Glossary Support</h3>
+
+<p>MultiMarkdown has a special format for footnotes that should represent
+glossary terms. This doesn&#8217;t make much difference in XHTML (because there is
+no such thing as a glossary in XHTML), but can be used to generate a glossary
+within LaTeX documents.</p>
+
+<p>For example, let&#8217;s have an entry for <code>glossary</code>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote glossary">[6]</a> And what about
+ampersands?<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote glossary">[7]</a></p>
+
+<p>Since we want the ampersand entry to be sorted with the a&#8217;s, and not with
+symbols, we put in the optional sort key <code>ampersand</code> to control sorting.</p>
+
+<pre><code>[^glossary]: glossary: Glossary 
+    A section at the end ...
+
+[^amp]: glossary: &amp; (ampersand)
+    A punctuation mark ...
+</code></pre>
+
+<h3 id="mathsupport">Math Support</h3>
+
+<p>It&#8217;s pretty easy to include mathematical equations:</p>
+
+<p><span class="math">\[ {e}^{i\pi }+1=0 \]</span></p>
+
+<p><span class="math">\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \]</span></p>
+
+<p>You can also include formulas within a sentence, such as
+<span class="math">\({x}^{2}+{y}^{2}=1\)</span>.</p>
+
+<h2 id="nowwhat">Now What?</h2>
+
+<p>Get out there and try it. Let me know what you think. Let me know what doesn&#8217;t
+work. Let me know what you think is missing.</p>
+
+<p>In other words, help me make it better!</p>
+
+<p>You can get more information on my web site:</p>
+
+<ul>
+<li><a href="http://fletcherpenney.net/multimarkdown">http://fletcherpenney.net/multimarkdown</a></li>
+</ul>
+
+<p>You can also:</p>
+
+<ul>
+<li><p>Email me:<br/>
+<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#111;&#x77;&#x6e;&#101;&#x72;&#64;&#102;&#x6c;&#x65;&#x74;&#x63;&#104;&#101;&#x72;&#x70;&#x65;&#x6e;&#110;&#x65;&#x79;&#46;&#110;&#x65;&#x74;">&#111;&#119;&#x6e;&#101;&#x72;&#x40;&#x66;&#x6c;&#x65;&#x74;&#99;&#x68;&#101;&#x72;&#x70;&#101;&#x6e;&#110;&#x65;&#x79;&#x2e;&#110;&#101;&#116;</a></p></li>
+<li><p>Join the MultiMarkdown discussion list:<br/>
+<a href="http://groups.google.com/group/multimarkdown">http://groups.google.com/group/multimarkdown</a></p></li>
+<li><p>Join the Markdown discussion list:<br/>
+<a href="http://six.pairlist.net/mailman/listinfo/markdown-discuss">http://six.pairlist.net/mailman/listinfo/markdown-discuss</a></p></li>
+</ul>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1" class="citation"><span class="citekey" style="display:none">Gruber</span><p>John Gruber. Daring Fireball: Markdown. [Cited January 2006].
+ Available from <a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a>.</p>
+</li>
+
+<li id="fn:2">
+<p>An XHTML snippet is my terminology for XHTML code that does not
+include the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags. Most browsers will display
+it properly, but it is not a complete XHTML document. Without a <code>&lt;head&gt;</code>
+section there is nowhere to put metadata(e.g. there is no <code>&lt;title&gt;</code>). <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>Here is the text of the footnote itself. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>I guess it depends on what kind of parties you go to&#8230; <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5" class="citation"><span class="citekey" style="display:none">fake</span><p>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006.</p>
+</li>
+
+<li id="fn:6">
+<span class="glossary name">Glossary </span>: <p>A section at the end &#8230; <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<span class="glossary name">&amp; </span><span class="glossary sort" style="display:none">ampersand</span>: <p>A punctuation mark &#8230; <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>
