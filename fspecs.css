@@ -199,6 +199,7 @@ table {
   border-spacing: 0px;
   padding: 2px;
   margin: 20px auto;
+  vertical-align: top;  
 }
 table caption {
   margin: 5px;
@@ -209,11 +210,15 @@ thead th {
   border: solid gray;
   border-width: 0 0 2px 0;
   padding: 5px;
+vertical-align: top;
 }
+
 thead > tr:last-child > th { border-style: none; }
 tbody > tr:first-child > td {
   border: solid gray;
   border-width: 1px 0 0 0;
+ padding: 8px;
+vertical-align: top;
 }
 tbody > tr:first-child > th {
   border: solid gray;
@@ -336,5 +341,5 @@ ul {    color: #222;
     font: 400 14px/18px "pt serif";
     text-align: justify;
     text-indent: 0px; 
-    margin: 0 0 0 0;
+    margin: 0 0 1em 0;   
   }

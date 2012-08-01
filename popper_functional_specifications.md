@@ -358,48 +358,29 @@ The Popper Logo contains the word "Popper" accompanying a stylized image of the 
 
 A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
-###Logo requirements
+###Logo Requirements
 
-- **Thoughtful facial expression:** In its current form, the above portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive.
+- **Facial expression:** In its current form, the above portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive.
 - **Cropping:** The face must be cropped so that it does not look as if it belongs at a funeral.
-- **Discernible at all sizes:** The word "Popper" and the portrait should be recognizable whether the logo is small or large.
-- **Compatible with diverse backgrounds:** The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
-- **Classical font:** The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. 
+- **Different sizes:** The word "Popper" and the portrait should be recognizable whether the logo is small or large.
+- **Color scheme:** The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
+- **Font:** The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. 
 - **Favicon:** The logo should have a corresponding favicon that appears in the browser title bar.
 
-###Example logo #1
+<h4>Examples of Unsuccessful Logos</h4>
+|						   | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true" width="180px"> | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-round-face.png?raw=true" width="180px"> | <img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-square-face.png?raw=true" width="180px"> |
+----------------------------------- |  :-----------  |  :------  |   :------  | 
+Facial expression                   | Yes: Pensive |     No: Eyes look dazed; bad photo     |  No: Confused expression      |
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-mosaic.png?raw=true"> 
+Cropping                            | Yes: Appropriate cropping |    No: Popper looks beheaded      |       Yes: Appropriate cropping    |  
 
-- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
-- **Cropping:** The face is cropped appropriately.  
-- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
-- **Compatible with diverse backgrounds: This logo would only work against a light background.
-- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
-- **Favicon:** This logo is difficult to use for a favicon.
+Different sizes                     | No: This logo only works at one size. If smaller, the word "Popper" is not readable. If larger, the mosaic of squares looks patchy and unpleasant |    Yes: Would look uniform at different sizes      |      Yes: Would look uniform at different sizes     |  
 
-###Example logo #2
+Color scheme                        | No: Does not work against a dark background |    No: Funeral photo      |    No: Funeral photo  |  
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-round-face.png?raw=true"> 
+Font                                | No: Font color is too light |      No: Font looks too casual    |    No: Font looks too casual     |  
 
-- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
-- **Cropping:** The face is cropped appropriately.  
-- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
-- **Compatible with diverse backgrounds: This logo would only work against a light background.
-- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
-- **Favicon:** This logo is difficult to convert into a favicon.
-
-###Example logo #3
-
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/popper-square-face.png?raw=true"> 
-
-- **Thoughtful facial expression:** Karl Popper's eyes look higher in this logo compared to the original portrait, making him look pensive. 
-- **Cropping:** The face is cropped appropriately.  
-- **Discernible at all sizes:** This logo only works at one size. If the logo is smaller, the word "Popper" is not readable. If the logo is larger, the mosaic of squares in Popper's face looks patchy and unpleasant.
-- **Compatible with diverse backgrounds: This logo would only work against a light background.
-- **Classical font:** Although the font used here is sans serif, it works well with the portrait of Popper. The font color, however, is too light.
-- **Favicon:** This logo is difficult to convert into a favicon.
-
+Favicon                             | No: Difficult to use for a favicon |   No: Difficult to use for a favicon   |   No: Difficult to use for a favicon     | 
 
 <!---	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
@@ -412,31 +393,37 @@ When a user is not signed in, clicking on the Popper Logo brings the user to the
 ##2. Navigation Bar
 <!---pic-->
 
-![Image](https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true)
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%">
 
-The Navigation Bar in the Header includes four links: 
+The **Navigation Bar** includes five links: 
 
-- **How It Works**
-- **Our Story**
-- **Experiments Library**
-- **Log in**
+<!---internal links-->
+1. <a href="#How_It_Works">How It Works</a>
+2. Our Story
+3. Experiments Library
+4. Log In with GitHub
+5. Sign Up
 
-[1] **How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
+<a name="How_It_Works"></a>**How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
-[2] **Our Story** is a static About page. Its contents will be discussed later.
+**Our Story** is a static About page. Its contents will be discussed later.
 
-[3] **Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
+**Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
-[4] User log in and sign up were discussed in the previous section, "Accounts". <!---internal link-->
+Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link-->
 
-##3. Overview
+##3. Header
 <!---pic-->
 
-The purpose of the Overview is to describe Popper briefly. We anticipate that initially, most users who come to [www.popper.org](www.popper.org) will know little to nothing about Popper. The most that users might know is that Popper is a tool that lets social scientists run experiments.	
+The purpose of the **Header** is to describe Popper briefly. At the top of the Header is a tagline:
 
-The header of the **Landing Page** is <code>"Behavioral Experiments Platform, [a(n) adjective] one"</code>. We would like to replace the <code>[a(n) adjective]</code> with a revolving list of serious and funny words. We are unsure from a UX perspective whether it would be more pleasant to have the words automatically refresh every few seconds or if it would be better for the user to click a small "refresh" icon next to the <code>[a(n) adjective]</code> to make the word change.
+<c>
+<center>
+	Behavioral Experiments Platform, a(n) [adjective] one.
+</center>
+</c>
 
-Here is the list of words -- we would like for the succession of words to be random but the first word that appears when the user arrives on the **Landing Page** should always be a word from the Serious list. 
+The <c>[adjective]</c> is replaced with a revolving list of serious and funny words. When the user arrives on the page for the first time, one of the serious adjectives is selected and displayed at random. If the user returns to the page again (as determined by cookies), a random word from either the funny or the serious list is displayed.
 
 **Serious** 
 
@@ -446,8 +433,6 @@ Here is the list of words -- we would like for the succession of words to be ran
 - a cutting-edge
 - a customizable
 - an addictive
-- an advanced
-- a promising
  
 **Funny**
  
@@ -463,31 +448,34 @@ Here is the list of words -- we would like for the succession of words to be ran
 - a TSA-compliant
 - a pasteurized
 
-Underneath the header is a short paragraph explaining what Popper is. 
+Underneath the tagline is a short paragraph describing Popper. 
 
-> Popper is a powerful blend of modern technology and social science. Using Popper, you can design complex cutting-edge experiments using the most advanced tools in existence. You can also run large-scale online trials drawing subjects from the world's deepest on-demand subject pool.
+> Popper is a powerful blend of modern technology and social science. With Popper, you can design complex cutting-edge experiments using the most advanced tools in existence. You can also run large-scale online trials drawing subjects from the world's deepest on-demand subject pool.
 
 ##4. Usage Statistics
 <!---pic-->
 
-We would like to include usage statistics to boost the legitimacy of Popper among researchers. This portion of the **Landing Page** should be located directly under the Hook. Three statistics should be dynamically displayed and updated: the number of researchers, the number of deployed experiments, and the number of completed trials. The focus is on the numbers, which means that these digits should stand out much more than the names of what the numbers are counting. These statistics will only be available once Popper gains traction, which means that it would be ideal for there to be a way for us to activate this section of the site only once we have compelling statistics to show. This means that the **Landing Page** should visually "work" even if the statistics portion of the page is not shown. 
+Three summary statistics are dynamically updated and displayed under the <!---link-->Header:
 
-##5. Features
+1. The number of registered researchers
+2. The number of deployed experiments
+3. The number of completed trials
+
+The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At the launch, the Landing Page will not contain this statistics block.
+
+##5. Overview
 <!---pic-->
 
-After the user gets some sense of what Popper is, the Features List provides a more detailed explanation of why the user should make the decision to Sign Up. The Features List describes four core selling points of Popper:
+The **Overview** introduces the key features of the platform by walking users through a typical workflow:
+<!---internal links-->
 
-1. Start at the Frontier
-
-2. Program the Way You Think
-
-3. Run When You Are Ready
-
-4. Leave Logistics to Us
-
-These four features should be arranged on a horizontal navigation panel. Each of the four phrases should be accompanied by an image, which we will provide. Underneath the navigation panel is a frame split in half vertically, with text in the left panel and an image in the right panel. As the user clicks on each of the four features, the contents of the frame change. We are currently deciding on the four sets of text and images to place into this frame. Below is a draft of what we would like to include in the frame. 
-
-###Start at the frontier
+| Element                          | Text |  Image |  
+----------------------------------- | :-----------: | :------: |  
+Start at the Frontier                |       Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. <br> Popper relies on frontier technology, which means that it improves daily. 
+      |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">   |  
+Program the Way You Think     |      Design experiments using intuitive visual programming. Popper comes equipped with domain-specific nodes, custom-tailored for behavioral experiments. Easily automate common experiment tasks using one of our templates. Popper features full Mathematica support for computationally-intensive functionality. Those with more programming experience can delve past visual programming into the C# code underlying all experiments.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
+Run When You Are Ready  |      Draw from our on-demand online subject pool. Without the physical restraints of a lab, subjects can participate from the comfort of their homes, when you need them to. Deploy experiments in minutes, without worrying about searching and coordinating eligible subjects.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
+Leave Logistics to Us |     Popper is built on a secure cloud infrastructure of servers, which means that you can focus on science rather than logistics. We handle all technical overhead related to subjects, from recruitment to screening to payment. We also provide an archive of IRB experiment-specific approvals for your convenience to expedite your own IRB approval process.       |    <img src="https://github.com/liscovich/functional-specs/blob/master/images/comingsoon.png?raw=true" width="100px">     |  
 
 Begin running experiments right away. Browse the Experiments Library to find the best existing experiments. Share, discuss, and collaborate on best-practice experiment design effortlessly with a community of professionals. Retrieve the entire experiment protocol for any publicly available experiment 24/7 from our servers. Best of all, replicating an experiment only requires three clicks. 
 
