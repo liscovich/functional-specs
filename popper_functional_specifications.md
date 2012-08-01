@@ -356,7 +356,7 @@ This page consists of seven components:
 The Popper Logo contains the name "Popper" accompanying a stylized likeness of the philosopher Karl Popper. The ideal portrait for this logo is available [here](http://en.wikipedia.org/wiki/File:Karl_Popper.jpg) in the public domain from Wiki Commons. 
 
 <center>
-	<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg" WIDTH="25%" ALT="POPPER_PHOTO" ALIGN="RIGHT" padding="3px">
+	<IMG SRC="https://github.com/liscovich/functional-specs/blob/master/images/popper_eyes.png?raw=true" width="100%" ALT="POPPER_EYES" ALIGN="RIGHT">
 	</center>
 
 We would like to include Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate the alternative meanings of the word. The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK. 
