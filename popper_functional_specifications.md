@@ -547,7 +547,7 @@ The **Experiments** page is a searchable library of all experiments available to
 
 Same as the Landing Page.<!---link-->
 
-##2. List of Experiments
+##2. <a name="RSList_of_Experiments"></a>List of Experiments
 
 The **Experiments** page displays a dynamically generated list of all available experiments from two sources:
 
@@ -568,6 +568,7 @@ A user would typically keep a repository private while the experiment is still b
 The layout of the page is fluid so that the number of experiments displayed per row changes dynamically with the browser width. Each individual experiment listing contains the following information:
 
 - Name of the repository (functioning as the name of the experiment)
+- Repository owner
 - Short description of the experiment
 - Number of forks
 - Publication citation
@@ -583,19 +584,24 @@ The user clicks on the experiment to go to its <a href="RSCreate_Trial">Create T
 
 ##5. Search bar
 
-The search bar sifts through the contents of the List of experiments. As soon as a researcher begins to type, autocomplete suggestions should appear beneath the Search bar, in the style of Google search. When a researcher clicks on an experiment in the autocomplete list, that single experiment alone is displayed in the List of experiments. If the researcher instead hits Enter, a list of all experiments relevant to the search phrase will appear in the List of experiments, split up into the two sections mentioned above (User Experiments, Stock Experiments). 
+The search bar performs an instant search on the <a href="#RSList_of_Experiments">List of Experiments</a>. Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query even before the user hits "Return".
 
-Autocomplete search results should be formatted as follows:
+To perform instant search, the Researcher Site regularly indexes metadata from all experiment repositories. This specifically includes all text fields in the metadata, such as title, description, author, and documentation.
 
-> **Name of Experiment** - Description of experiment, truncated after a certain number of characters so that the number of forks and publication journal can appear at the end of the autocomplete suggestion... - *Forks: ##*; *Journal Name*
+Search results are sorted by:
+
+1. Growth rate in the number of commits
+2. If tied, the number of forks
+3. If tied, the number of upvotes
+4. If tied, the age of the repository, with younger repositories listed first
 
 ##6. Filter
 
-Researchers can also search for an experiment by browsing with the filter, in the style of navigating with the left navigation bar to find a product on [Amazon.com](Amazon.com). 
+Researchers can apply filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. 
 
-[insert explanation of filters here, Andrey...]
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="100%">
 
-At the same time, the frame to the right of the Filter should update if necessary to be populated with all experiments that match that filter, organized by section (User Experiments and Stock Experiments). If a user selects an experiment in the Filter, that experiment should be highlighted in the Filter and the Experiment List frame should update to display only that experiment, as well as the section that the experiment falls under (User Experiments and Stock Experiments).
+
 
 # <a name="RSDashboard"></a>Dashboard
 
