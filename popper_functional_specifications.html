@@ -35,7 +35,7 @@
         <ul>
             <li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
             <li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>  
-            <li>2.3 &nbsp; <a href="#RSLanding_page">Landing page</a></li>
+            <li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
             <li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>    
             <li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
             <li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>    
@@ -145,7 +145,7 @@
         <li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
         <li>2.2 &nbsp; <a href="RSLook">Look and Feel</a></li>
         <li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>  
-        <li>2.3 &nbsp; <a href="#RSLanding_page">Landing page</a></li>
+        <li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
         <li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>    
         <li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
         <li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>    
@@ -173,26 +173,27 @@
 
 <p>Professor Goldin is an economics professor at Carnegie Mellon University. For over ten years, she has used <a href="http://www.iew.uzh.ch/ztree/index.php">z-Tree</a>, the dominant social science experiments software, to study human behavior. She knows a rudimentary amount of programming&#8211;just enough to design experiments in z-Tree. Each trial takes several weeks to run, and much of this time is spent handling logistics: recruiting subjects, waiting for subjects, screening subjects, reserving computer lab space at the university&#8217;s social science experiments facility, and ensuring that subjects are paid. </p>
 
-<p>Professor Goldin hears about Popper at an Experimental Economics Conference and visits <a href="www.popper.org">www.popper.org</a>. On the <strong>Landing Page</strong>, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in <a href="http://unity3d.com/">Unity3D</a>, which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. </p>
+<p>Professor Goldin hears about Popper at an Experimental Economics Conference and visits <a href="www.popper.org">www.popper.org</a>. On the <strong>Introduction Page</strong>, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in <a href="http://unity3d.com/">Unity3D</a>, which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. </p>
 
 <p>Soon, Professor Goldin begins designing her own experiments from scratch using templates from the Popper SDK and assets downloaded from the <a href="http://unity3d.com/unity/asset-store/">Unity Asset Store</a>. Popper takes care of logistical and technical issues so that Professor Goldin can focus on her research rather than tedious overhead. Her trials now take hours, rather than weeks, to run. </p>
 
 <h3 id="robertthetrialrunner">2. Robert, the Trial Runner</h3>
 
-<p>Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the <strong>Landing Page</strong> and follows a set of simple instructions to create an account. Robert links Professor Goldin&#8217;s laboratory GitHub account with his Popper account, and is able to find the lab&#8217;s private experiments on the <strong>Experiments Library</strong> page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the <strong>Dashboard</strong> page. A few hours later, the trial is complete and Robert downloads the data to analyze further. </p>
+<p>Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the <strong>Introduction Page</strong> and follows a set of simple instructions to create an account. Robert links Professor Goldin&#8217;s laboratory GitHub account with his Popper account, and is able to find the lab&#8217;s private experiments on the <strong>Experiments Library</strong> page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the <strong>Dashboard</strong> page. A few hours later, the trial is complete and Robert downloads the data to analyze further. </p>
 
 <h2 id="anamelooklookandfeela"><a name="Look">Look and Feel</a></h2>
 
-<p>The site serves an academic audience so the overall look of the <strong>Landing Page</strong> should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.</p>
+<p>The site serves an academic audience so the overall look of the <strong>Introduction Page</strong> should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.</p>
 
 <h2 id="anamersaccountsaccountsa"><a name="RSAccounts">Accounts</a></h2>
 
 <!---A GitHub account is necessary for the following three reasons. 
-
 1. GitHub eliminates the need to implement standard workflows on our side, like log in and password retrieval. 
 2. We would like to encourage users to collaborate on experiments, and GitHub provides convenient tools for sharing and discussing code.
 3. Using a GitHub account, all users can push experiments.
 -->
+
+<h3 id="overview">Overview</h3>
 
 <p>The Researcher Site requires users to have a GitHub account and authenticates them via GitHub OAuth API. In addition to the GitHub profile information, the following data are stored for each of the users: </p>
 
@@ -205,7 +206,14 @@
 <li>Activity history on the Site (list of created trials, list of experiments recommended by the user)</li>
 </ul>
 
-<h3 id="anamesign_upasignup"><a name="Sign_Up"></a>Sign up</h3>
+<h3 id="components">Components</h3>
+
+<ol>
+<li>Sign Up</li>
+<li>Log In</li>
+</ol>
+
+<h3 id="anamesign_upa1.signup"><a name="Sign_Up"></a>1. Sign up</h3>
 
 <p>There are two ways for unregistered users to Sign Up:</p>
 
@@ -354,11 +362,11 @@
     </ul>
 </section>
 
-<h2 id="anamerslanding_pagealandingpage"><a name="RSLanding_page"></a>Landing page</h2>
+<h2 id="anamersintroduction_pageaintroductionpage"><a name="RSIntroduction_page"></a>Introduction page</h2>
 
-<p>The <strong>Landing Page</strong> introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>. </p>
+<p>The <strong>Introduction Page</strong> introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>. </p>
 
-<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" width="100%"></p>
+<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/Introductionpage.png?raw=true" width="100%"></p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -394,7 +402,7 @@
 
 <p>The <strong>Logo</strong> contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
 
-<p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at <a href="http://www.popper.org">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
+<p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
 
 <p>A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons. </p>
 
@@ -557,7 +565,7 @@
 <li>The number of completed trials</li>
 </ol>
 
-<p>The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Landing Page will not contain this statistics block.</p>
+<p>The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Introduction Page will not contain this statistics block.</p>
 
 <h3 id="overview">5. Overview</h3>
 
@@ -649,7 +657,7 @@
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
-<p>Same as the Landing Page. <!---link--></p>
+<p>Same as the Introduction Page. <!---link--></p>
 
 <h3 id="portraitofkarlpopper">2. Portrait of Karl Popper</h3>
 
@@ -671,7 +679,7 @@
 
 <h3 id="footer">5. Footer</h3>
 
-<p>Same as the Landing Page. <!---link--></p>
+<p>Same as the Introduction Page. <!---link--></p>
 
 <h2 id="anamersexperimentsaexperiments"><a name="RSExperiments"></a>Experiments</h2>
 
@@ -691,7 +699,7 @@
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
-<p>Same as the Landing Page.<!---link--></p>
+<p>Same as the Introduction Page.<!---link--></p>
 
 <h3 id="anamerslist_of_experimentsalistofexperiments">2. <a name="RSList_of_Experiments"></a>List of Experiments</h3>
 
@@ -724,6 +732,7 @@
 <li>Number of forks</li>
 <li>Publication citation</li>
 <li>Upvotes and names of recommenders</li>
+<li>Date last modified</li>
 </ul>
 
 <p>The Researcher Site obtaines this information for each experiment from the metadata in its respective GitHub repository. Repositories that lack the proper metadata, source code, or executable files, are not displayed.</p>
@@ -749,24 +758,59 @@
 <li>If tied, the age of the repository, with younger repositories listed first</li>
 </ol>
 
+<section class="sideimg">
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="40%" align="right">
+
+</section>
+
 <h3 id="filter">6. Filter</h3>
 
-<p>Researchers can apply filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. </p>
+<p>Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. </p>
 
-<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="100%"></p>
+<h4 id="availablefilters:">Available filters:</h4>
+
+<ul>
+<li>Category
+
+<ul>
+<li>Hierarchy of fields (based on information contained in experiment metadata)</li>
+</ul></li>
+<li>Author
+
+<ul>
+<li>Names of top 10 authors (checkboxes; by number of repositories as determined by experiment metadata)</li>
+</ul></li>
+<li>Status
+
+<ul>
+<li>Published (checkbox; indicates whether the metadata for an experiment lists an accepted peer-reviewed publication based on this experiment)</li>
+<li>Hosted by Popper (checkbox; indicates whether experiment is in the Popper repository)</li>
+</ul></li>
+</ul>
 
 <h2 id="anamersdashboardadashboard"><a name="RSDashboard"></a>Dashboard</h2>
 
-<p>Researchers monitor trials in the <strong>Dashboard</strong>. The <strong>Dashboard</strong> consists of two main components: </p>
+<p>The <strong>Dashboard</strong> is an overview of all activity in the user&#8217;s account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.</p>
+
+<h3 id="pagecomponents">Page Components</h3>
+
+<!---internal lnks here-->
 
 <ol>
+<li>Navigation bar</li>
 <li>Trials</li>
 <li>Feed</li>
+<li>Footer</li>
 </ol>
 
-<h3 id="trials">1. Trials</h3>
+<h3 id="navigationbar">1. Navigation bar</h3>
 
-<p>Trials is a list of all of the researcher&#8217;s trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks &#8220;Create Trial&#8221; on the <strong>Create Trial</strong> page, which will be discussed later. Clicking on the name of a trial brings the researcher to the <strong>Trial Summary</strong> page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later. </p>
+<p>Same as the Introduction Page. <!---link--></p>
+
+<h3 id="trials">2. Trials</h3>
+
+<p><strong>Trials</strong> lists a user&#8217;s ongoing and complete trials. A trial enters this list as soon as a researcher clicks &#8220;Create Trial&#8221; on the <strong>Create Trial</strong> page, which will be discussed later. Clicking on the name of a trial brings the researcher to the <strong>Trial Summary</strong> page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.</p>
 
 <p>Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes &#8220;activity&#8221; that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:</p>
 
@@ -834,7 +878,7 @@
 
 <h3 id="header">1. Header</h3>
 
-<p>Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the landing page. <!---internal link--></p>
+<p>Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the Introduction page. <!---internal link--></p>
 
 <h3 id="footer">2. Footer</h3>
 

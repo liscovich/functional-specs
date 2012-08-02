@@ -337,6 +337,10 @@ ol {    color: #222;
     margin: 0 0 0 0;
 }
 
+.sideimg img{
+    padding-left: 12px;
+}
+
 ul {    color: #222;
     font: 400 14px/18px "pt serif";
     text-align: justify;

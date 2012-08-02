@@ -30,7 +30,7 @@ Introduction: What is Popper, tagline story. Wikipedia-style paragraph. Lorem ip
 		<ul>
 			<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
 			<li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
-			<li>2.3 &nbsp; <a href="#RSLanding_page">Landing page</a></li>
+			<li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
 			<li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>	
 			<li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
 			<li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
@@ -138,7 +138,7 @@ The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers
 		<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
 		<li>2.2 &nbsp; <a href="RSLook">Look and Feel</a></li>
 		<li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
-		<li>2.3 &nbsp; <a href="#RSLanding_page">Landing page</a></li>
+		<li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
 		<li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>	
 		<li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
 		<li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
@@ -164,26 +164,27 @@ Users fall into two typical use cases:
 
 Professor Goldin is an economics professor at Carnegie Mellon University. For over ten years, she has used [z-Tree](http://www.iew.uzh.ch/ztree/index.php), the dominant social science experiments software, to study human behavior. She knows a rudimentary amount of programming--just enough to design experiments in z-Tree. Each trial takes several weeks to run, and much of this time is spent handling logistics: recruiting subjects, waiting for subjects, screening subjects, reserving computer lab space at the university's social science experiments facility, and ensuring that subjects are paid. 
 
-Professor Goldin hears about Popper at an Experimental Economics Conference and visits [www.popper.org](www.popper.org). On the **Landing Page**, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in [Unity3D](http://unity3d.com/), which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. 
+Professor Goldin hears about Popper at an Experimental Economics Conference and visits [www.popper.org](www.popper.org). On the **Introduction Page**, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in [Unity3D](http://unity3d.com/), which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. 
 
 Soon, Professor Goldin begins designing her own experiments from scratch using templates from the Popper SDK and assets downloaded from the [Unity Asset Store](http://unity3d.com/unity/asset-store/). Popper takes care of logistical and technical issues so that Professor Goldin can focus on her research rather than tedious overhead. Her trials now take hours, rather than weeks, to run. 
 
 ##2. Robert, the Trial Runner
 
-Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Landing Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
+Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Introduction Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
 
 # <a name="Look">Look and Feel</a>
 
-The site serves an academic audience so the overall look of the **Landing Page** should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
+The site serves an academic audience so the overall look of the **Introduction Page** should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
 
 # <a name="RSAccounts">Accounts</a>
 
 <!---A GitHub account is necessary for the following three reasons. 
-
 1. GitHub eliminates the need to implement standard workflows on our side, like log in and password retrieval. 
 2. We would like to encourage users to collaborate on experiments, and GitHub provides convenient tools for sharing and discussing code.
 3. Using a GitHub account, all users can push experiments.
 -->
+
+##Overview
 
 The Researcher Site requires users to have a GitHub account and authenticates them via GitHub OAuth API. In addition to the GitHub profile information, the following data are stored for each of the users: 
 
@@ -194,7 +195,12 @@ The Researcher Site requires users to have a GitHub account and authenticates th
 - Payment method (credit card/PayPal)
 - Activity history on the Site (list of created trials, list of experiments recommended by the user)
 
-##<a name="Sign_Up"></a>Sign up
+##Components
+
+1. Sign Up
+2. Log In
+
+##<a name="Sign_Up"></a>1. Sign up
 
 There are two ways for unregistered users to Sign Up:
 
@@ -332,11 +338,11 @@ By Check 4, the user has logged in using GitHub and the Researcher Website has v
 	</ul>
 </section>
 
-# <a name="RSLanding_page"></a>Landing page
+# <a name="RSIntroduction_page"></a>Introduction page
 
-The **Landing Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
+The **Introduction Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/landingpage.png?raw=true" width="100%">
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/Introductionpage.png?raw=true" width="100%">
 
 ##Page Components
 
@@ -365,7 +371,7 @@ The **Navigation Bar** includes five or six links, depending on whether the user
 
 The **Logo** contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
 
-When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
+When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at [www.popper.org](http://www.popper.org). Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
 A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
@@ -458,7 +464,7 @@ Three summary statistics are dynamically updated and displayed under the <!---li
 2. The number of deployed experiments
 3. The number of completed trials
 
-The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Landing Page will not contain this statistics block.
+The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Introduction Page will not contain this statistics block.
 
 ##5. Overview
 <!---pic-->
@@ -506,7 +512,7 @@ The **Footer** features general links and legal documents.
 
 ##1. Navigation Bar
 
-Same as the Landing Page. <!---link-->
+Same as the Introduction Page. <!---link-->
 
 ##2. Portrait of Karl Popper
 
@@ -528,7 +534,7 @@ We will provide the text for the History of the project when it is ready.
 
 ##5. Footer
 
-Same as the Landing Page. <!---link-->
+Same as the Introduction Page. <!---link-->
 
 # <a name="RSExperiments"></a>Experiments
 
@@ -545,7 +551,7 @@ The **Experiments** page is a searchable library of all experiments available to
 
 ##1. Navigation Bar
 
-Same as the Landing Page.<!---link-->
+Same as the Introduction Page.<!---link-->
 
 ##2. <a name="RSList_of_Experiments"></a>List of Experiments
 
@@ -573,6 +579,7 @@ The layout of the page is fluid so that the number of experiments displayed per 
 - Number of forks
 - Publication citation
 - Upvotes and names of recommenders
+- Last modified ## minutes/hours/days/weeks/months/years ago
 
 The Researcher Site obtaines this information for each experiment from the metadata in its respective GitHub repository. Repositories that lack the proper metadata, source code, or executable files, are not displayed.
 
@@ -595,24 +602,45 @@ Search results are sorted by:
 3. If tied, the number of upvotes
 4. If tied, the age of the repository, with younger repositories listed first
 
+<section class="sideimg">
+
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="40%" align="right">
+
+</section>
+
 ##6. Filter
 
-Researchers can apply filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. 
+Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. 
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="100%">
+###Available filters:
 
-
+- Category 
+	- Hierarchy of fields (based on information contained in experiment metadata)
+- Author
+	- Names of top 10 authors (checkboxes; by number of repositories as determined by experiment metadata)
+- Status
+	- Published (checkbox; indicates whether the metadata for an experiment lists an accepted peer-reviewed publication based on this experiment)
+	- Hosted by Popper (checkbox; indicates whether experiment is in the Popper repository)
 
 # <a name="RSDashboard"></a>Dashboard
 
-Researchers monitor trials in the **Dashboard**. The **Dashboard** consists of two main components: 
+The **Dashboard** is an overview of all activity in the user's account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.
 
-1. Trials
-2. Feed
+##Page Components
 
-##1. Trials
+<!---internal lnks here-->
+1. Navigation bar
+2. Trials
+3. Feed
+4. Footer
 
-Trials is a list of all of the researcher's trials, both complete and ongoing. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Trial Summary** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.  
+##1. Navigation bar
+
+Same as the Introduction Page. <!---link-->
+
+##2. Trials
+
+**Trials** lists a user's ongoing and complete trials. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Trial Summary** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.
 
 Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes "activity" that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:
 
@@ -663,7 +691,7 @@ The **Create Trial** page describes the experiment and allows the user to run a 
 
 ##1. Header
 
-Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the landing page. <!---internal link-->
+Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the Introduction page. <!---internal link-->
 
 ##2. Footer
 
