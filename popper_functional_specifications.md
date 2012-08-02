@@ -352,7 +352,7 @@ The **Landing Page** introduces users to Popper. The primary action that a user 
 
 <img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%">
 
-The **Navigation Bar** includes five links: 
+The **Navigation Bar** includes five or six links, depending on whether the user is logged in: 
 
 <!---internal links-->
 1. Logo
@@ -361,10 +361,11 @@ The **Navigation Bar** includes five links:
 3. Experiments Library
 4. Log In with GitHub
 5. Sign Up
+6. Dashboard (if logged in)
 
 The **Logo** contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
 
-When a user is not signed in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user signs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
+When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSLanding_page">Landing Page</a> at [www.popper.org](http://www.popper.org). Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
 A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
@@ -405,6 +406,8 @@ A good starting point for the logo portrait is available <a href="http://en.wiki
 **Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
 Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link--> The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user's full name and a dropdown navigation bar that allows the user to view profile <!---link-->or log out.
+
+**Dashboard** is visible only if the user is logged in.
 
 ##3. Header
 <!---pic-->
@@ -476,7 +479,16 @@ The **Overview** introduces the key features of the platform by walking users th
 ##6. Footer
 <!---pic-->
 
-The **Footer** features general links and legal miscellany.
+The **Footer** features general links and legal documents.
+
+- Our Story <!---internal link-->
+- Blog: Hosted on a third-party site
+- Twitter: @popper_exp
+- Facebook: http://www.facebook.com/popper_exp
+- Contact: The "Contact" section of <!---link-->About Us
+- Documentation: Hosted on GitHub, as described above<!---link-->
+- Terms of Service: Navigation Bar, text, and Footer<!---link-->
+- Privacy & Security: Navigation Bar, text, and Footer<!---link-->
 
 # <a name="RSOur_story"></a>Our story
 
@@ -500,56 +512,74 @@ Same as the Landing Page. <!---link-->
 
 **Our Story** features a <a href="http://images.npg.org.uk/800_800/0/2/mw07802.jpg">photo</a> of Karl Popper taken by Lucinda Douglas-Menzies, cropped as necessary. 
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/popperlucinda.png?raw=true" width="100px">
+<img src="https://github.com/liscovich/functional-specs/blob/master/images/popperlucinda.png?raw=true" width="100%">
 
 Under the cropped photo should be the text, 
 
 <c>"&copy; Lucinda Douglas-Menzies"</c> and <c>"Reproduced with the generous permission of the photographer"</c>. 
 
-To the right of Karl Popper's likeness, we would like to include a section called <code>"Behind the Name"</code> and, beneath it, <code>"Team"</code>. We are currently working on this text and will provide it once it is ready. For now, we anticipate that the text in each section will not be more than two paragraphs long. 
+##3. History
 
-We would like the other static pages on the Researcher site to feature the same wrapper as **Our Story**. These other pages are **Contact**, **Terms of Service**, **Privacy**, and **Security**. **Terms of Service**, **Privacy**, and **Security** should open up in popup windows.
+We will provide the text for the History of the project when it is ready.
+
+##4. Team and Contributors 
+
+We will provide the text for the History of the project when it is ready.
+
+##5. Footer
+
+Same as the Landing Page. <!---link-->
 
 # <a name="RSExperiments"></a>Experiments
 
-**Experiments Library** is the final page accessible to users who are not signed in from the **Landing Page**. The page includes a few additional features once a user has signed in. These differences will be noted below when relevant.
+The **Experiments** page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles a <a href="http://www.amazon.com/s/ref=sr_nr_scat_3245219011_ln?rh=n%3A3245219011%2Ck%3Abarbie+doll&keywords=barbie+doll&ie=UTF8&qid=1343866475&scn=3245219011&h=220dc68f97ae40d6e3790975515ccea286922364" target="_blank">product list page</a> on Amazon.
 
-There are five main components in **Experiments Library**:
+##Page Components
 
-1. Logo
-2. Navigation Bar
-3. Footer
-4. List of Experiments
-5. Search Bar
-6. Filter
+<!---internal lnks here-->
+1. Navigation Bar 
+2. List of Experiments 
+3. Search Bar
+4. Filter
+5. Footer
 
-##1. Logo
+##1. Navigation Bar
 
-Same as **Landing Page**. <!---internal link-->
+Same as the Landing Page.<!---link-->
 
-##2. Navigation Bar
+##2. List of Experiments
 
-A logged in user sees "Dashboard" where the "Our Story" link used to be. The "Log In" link is replaced by the user's email address, which opens out to a menu with the options "Profile" and "Log Out". <!---internal links--> Log Off signs the user off Popper and brings the user back to the **Landing Page**. A message telling the user that Log Out has been completed is not necessary: the user will know that log out is successful because the email address in the top right hand corner will once again be replaced by the "Log In" link.
+The **Experiments** page displays a dynamically generated list of all available experiments from two sources:
 
-A logged out user sees the same Navigation Bar as the logged-out version described on the **Landing Page**. <!---internal link-->
+- Public repositories from the central Popper GitHub account (github.com/experiments)
+- Other GitHub repositories in the extended Popper network. This includes public GitHub repositories of *all* Popper users, and private repositories to which the user has access.
 
-##3. Footer
+Naturally, if the user is not logged in, he or she cannot see any experiments hosted in private repositories. 
 
-Same as **Landing Page**. <!---internal link-->
+When the user first arrives at the **List of Experiments** and when the user conducts a search, his or her private repositories are listed first and sorted by the number of trials. All other experiments are listed afterwards and sorted by:
 
-##4. List of Experiments
+1. Growth rate in the number of commits
+2. If tied, the number of forks
+3. If tied, the number of upvotes
+4. If tied, the age of the repository, with younger repositories listed first
 
-The main feature of **Experiments Library** is a list of public experiments. All users can see this list, no matter if they are logged in or not. The idea is to allow researchers to be able to see what Popper offers without having to sign up first. The list of experiments is an embedded frame with a scrollbar. We would like to display three experiments per row.
+A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. 
 
-This frame displays two sections of experiments: User Experiments and Stock Experiments, in this order. User Experiments are pulled from the user's GitHub repositories, which means that experiments contained in public repositories are visible to all other users and those from private repositories are visible only to someone who has GitHub access to that repository. A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. 
+The layout of the page is fluid so that the number of experiments displayed per row changes dynamically with the browser width. Each individual experiment listing contains the following information:
 
-Stock Experiments are stored in the [Popper GitHub account](https://github.com/Experiments/) and can be public or private. Stock Experiments allow researchers to run experiments right away, without having to design their own experiments from scratch. This is particularly important when Popper launches because no users will have designed their own experiments yet. Stock Experiments also provide researchers with templates of the most commonly run experiments in the social sciences. 
+- Name of the repository (functioning as the name of the experiment)
+- Short description of the experiment
+- Number of forks
+- Publication citation
+- Upvotes and names of recommenders
 
-Popper reads through the content of a user's repositories and pulls only the ones that contain full experiments. Popper makes this determination by looking for metadata, source code, master client, and client files. If the user's GitHub account does not contain any experiments, "No experiments pushed to GitHub. Click [here](linktodocumentation.com) to learn how to design experiments." should be displayed in the section for User Experiments. "Here" links to Popper documentation on the [Popper GitHub account](https://github.com/Experiments/).
+The Researcher Site obtaines this information for each experiment from the metadata in its respective GitHub repository. Repositories that lack the proper metadata, source code, or executable files, are not displayed.
 
-These experiments are sorted by date--repositories with the most recent changes are displayed first. The name of the repository (functioning as the name of the experiment), a description of the experiment, number of forks, and the academic journal in which the results of the experiment were published should be listed. The number of forks is necessary to list and include in the metadata because researchers may want to sort experiments by popularity, which is functionality we would like to include in the future once more experiments are available in **Experiments Library**. 
+The [Popper GitHub account](https://github.com/Experiments/) hosts Stock Experiments that showcase the capabilities of the platform and provide researchers with fully functional templates to start their own projects. 
 
-When a researcher hovers over an experiment, the square containing the name of the experiment and its information should change color. Clicking on the experiment brings the user to the **Experiment** page (formerly known as **Create Trial**) for that particular experiment, where the user can learn more about the experiment and create a trial.  
+An "Add Experiment" button links to Popper documention for designing and publishing an experiment using the Popper SDK.
+
+The user clicks on the experiment to go to its <a href="RSCreate_Trial">Create Trial</a> page.
 
 ##5. Search bar
 
@@ -616,11 +646,9 @@ Just as with the Trials frame, a "More..." button below the Feed frame scrolls d
 
 The Header and Footer of **Dashboard** are identical to the logged-in view in **Experiments Library**. <!---internal link-->
 
-# <a name="RSExperiment_page"></a>Experiment page
+# <a name="RSCreate_Trial"></a>Create Trial
 
-The **Experiment** page is the same thing as the **Create Trial** page described in the original [Popper brief](https://github.com/Experiments/popper-design/blob/master/popper_brief.md). 
-
-This page describes the experiment and allows the user to run a trial of the experiment. **Experiment** consists of four components:
+The **Create Trial** page describes the experiment and allows the user to run a trial of the experiment. **Experiment** consists of four components:
 
 1. Header
 2. Footer
