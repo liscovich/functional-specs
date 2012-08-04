@@ -1,5 +1,5 @@
 latex input:		mmd-article-header  
-Title:				Sample MultiMarkdown Document  
+Title:				Popper Functional Specifications  
 Base Header Level:	2  
 latex mode:			memoir  
 Keywords:			MultiMarkdown, Markdown, XML, XHTML, XSLT, PDF   
@@ -628,7 +628,7 @@ The **Dashboard** is an overview of all activity in the user's account. It serve
 
 ##Page Components
 
-<!---internal lnks here-->
+<!---internal links here-->
 1. Navigation bar
 2. Trials
 3. Feed
@@ -640,169 +640,179 @@ Same as the Introduction Page. <!---link-->
 
 ##2. Trials
 
-**Trials** lists a user's ongoing and complete trials. A trial enters this list as soon as a researcher clicks "Create Trial" on the **Create Trial** page, which will be discussed later. Clicking on the name of a trial brings the researcher to the **Trial Summary** page for that trial, which includes all parameters and actions specific to a particular trial. This page will be discussed later.
+**Trials** lists a user's ongoing and completed trials. Clicking on the name of a trial brings the researcher to its **Trial Summary**<!---link--> page.
 
-Trials are sorted by activity date, which means that the most recently active trials appear at the top of the list. Trials can be in one of five statuses, and a change in status consitutes "activity" that pushes a trial to the top of the list. These statuses are displayed underneath the name of the trial, as shown in the wireframe. The five statuses are:
+Trials are sorted by timestamp. The state of a trial appears beneath its name, and a change in state updates its time stamp, pushing the trial to the top of the list.. These states can be altered in the metadata file but by default, trials are in one of six states:
 
-1. Awaiting players: The initial status of all trials that a researcher creates is "Waiting for players". This status indicates that the trial has been created and that the server is waiting for a sufficient number of subjects to join the game. The researcher can click on the name of the trial to go to that trial's **Trial Summary** page to recruit more subjects if necessary. 
-2. In progress: Once enough subjects have joined a trial, the status of the trial changes to "In progress". Subjects play the game, and as they do, data from the experiment is sent to the **Trial Summary** page.
-3. Pay subjects: Once a trial is complete, the researcher pays subjects. The researcher can review and approve subject payments from the **Trial Summary** page.
-4. Complete: After payment is complete, the status of the trial changes to "Complete". No further action is required from the researcher at this time, but the trial is saved in the List for the researcher to review and download data. 
-5. Error: If there is an error with any part of the trial, the researcher can click on the trial to go to **Trial Summary** in order to fix the error.
+1. **Awaiting subjects:** The initial status of all trials. The trial has been created and the server is waiting for a sufficient number of subjects. The researcher can recruit more subjects by clicking the name of the trial to go to its **Trial Summary** page. 
+2. **In progress:** Sufficient subjects have joined and the trial has begun.
+3. **Paused:** The researcher has paused the trial.
+4. **Payment pending:** The trial has ended. The researcher reviews and approves subject payments on the **Trial Summary** page.
+5. **Complete:** The researcher has paid subjects and may download data. 
+6. **Error:** The researcher reviews errors on the **Trial Summary** page.
 
-In addition to the status of the trial, two other pieces of information about the trial are displayed next to the name of the trial. 
+Also displayed: 
 
-- Trial number: Each trial is assigned a unique ID number. This number is necessary to keep track of trials and allows us to help users resolve issues with individual trials.
-- Date and time: A timestamp corresponding with when the change in status occurred is displayed next to the name of the trial. These time stamps are important and informative for each status. For example, when a trial is first created, the time stamp in "Trial" would indicate when the trial was first created.
+- **Trial number:** Unique ID number assigned to each trial.
+- **Timestamp:** Time trial corresponding to a change in state.
 
-At the bottom of the Trials frame is a button for "More...", in the style of GitHub. Clicking this button scrolls the entire window down to display more trials. This button disappears once the researcher has displayed all existing trials. There is no scroll bar on the Trials frame itself.
+Clicking “More...” scrolls down the window to display more trials in the style of GitHub. <!--- screenshot of GitHub more in action-->“More” disappears once all trials have been displayed. There is no scroll bar on the Trials frame.
 
-At the top of the Trials frame is a button, "New Trial". Clicking this button takes the researcher to the **Create Trial** page.
+“New Trial” links to the **Create Trial** page.
 
-##2. Feed
+##3. Feed
 
-The Feed is on the right side of **Dashboard**. This feed automatically updates with the following information regarding changes in status and other types of activities:
+The Feed automatically updates with:
 
-- Changes in status, with the following phrasing:
-	- Awaiting players: "**Trial ##** has been created. Awaiting players." As each player joins, the following message is displayed in the Feed: "**Player ##** has joined **Trial ##**."
-	- In progress: "**Trial ##**" is now in progress.
-	- Pay subjects: "**Trial ##** has finished. Go to the **Trial Summary** page to review subject payments."
-	- Complete: "**Trial ##** is now complete."
-- Fork activity
-	- "Researcher ## has just forked your experiment, **Experiment Name**."
-- Following activity
-	- "**Researcher ##** is now following **Trial ##**."
-	- "You are now following **Trial ##** by **Researcher ##**."
+1. Changes in status, with the following phrasing:
+	- **Awaiting subjects:** `<a href=”trial-summary-url”>Trial ##</a> has been created. Awaiting subjects.`
+    - **In progress:** `<a href=”trial-summary-url”>Trial ##</a> is now in progress.`
+	- **Paused:** `<a href=”trial-summary-url”>Trial ##</a> has been paused.`
+	- **Payment pending:** `<a href=”trial-summary-url”>Trial ##</a> has finished. Please <a href=”trial-summary-url”>review</a> subject payments.`
+	- **Complete:** `<a href=”trial-summary-url”>Trial ##</a> is now complete.`
+	- **Error:** `An error has occurred with <a href=”trial-summary-url”>Trial ##</a>.`
+2. **Fork activity**
+	- `<a href=”researcher-public-profile-url”>John Nash</a> has just forked your experiment, <a href=”experiment-url”>Experiment Name</a>.`
+- **Following activity**
+	- `<a href=”researcher-public-profile-url”>John Nash</a> is now following <a href=”trial-summary-url”>Trial ##</a>.`
+	- `You are now following <a href=”trial-summary-url”>Trial ##</a> by <a href=”researcher-public-profile-url”>John Nash</a>.`
 
-Each bolded item in the above bulleted list should be a link that opens in a new tab. **Trial ##** links to the **Trial Summary** page for a particular trial. **Player ##** links to a player profile, which is hosted externally on the Player Website. **Researcher ##** links to the public profile view of another researcher; this profile is hosted on the Researcher Site.
+"More..." scrolls down the entire window to display more feed information.
 
-Just as with the Trials frame, a "More..." button below the Feed frame scrolls down the entire window and allows the researcher to see more feed information.
-
-The Header and Footer of **Dashboard** are identical to the logged-in view in **Experiments Library**. <!---internal link-->
-
-# <a name="RSCreate_Trial"></a>Create Trial
-
-The **Create Trial** page describes the experiment and allows the user to run a trial of the experiment. **Experiment** consists of four components:
-
-1. Header
-2. Footer
-3. Experiment Description
-4. Create Trial
-
-##1. Header
-
-Logged in users see the same Header as the logged in version described in Experiment Library. Logged out users see the Header described in the Introduction page. <!---internal link-->
-
-##2. Footer
+##4. Footer 
 
 The Footer is the same as the one described on previous pages. <!---internal link-->
 
-##3. Experiment Description
+# <a name="RSExperiment_Summary"></a>Experiment Summary
 
-Popper reads the metadata file from the experiment GitHub repository to dynamically generate the Experiment Description. The metadata file itself is generated using the **Experiment Parameters** form on the Popper website. This page of the site does not need to be designed, since it should use the same design as the Sign Up page. We would like to provide users with a stock list of parameters that usually accompany any experiment, but also give users the flexibility to omit and add fields as necessary. A user should also be able to click "Edit" next to a field to change portions of the Experiment Description if the experiment came from this user's repository. Even if an experiment is public, the Experiment Description is read-only for users who do not own the GitHub experiment repository, and these users do not see "Edit" next to any of the fields. 
+The Create Trial form includes the following fields:
 
-Here is a preliminary list of stock fields that we suggest accompany all experiments.
-
-**User provided**
-
-- Name of the experiment.
-- Authors of the experiment with links to their Popper profiles. <!---internal link-->
-- Description of the experiment.
-- References.
-- IRB approval(s): All social science research conducted in the United States receiving federal funding requires an IRB approval form before the researcher can conduct the experiment. It would be up to the researcher to make sure that the appropriate form is complete and attached, since Popper is not responsible or liable for monitoring the IRB approval process for researchers.
-- Categories: We will provide a list of categories for each field. As the user begins typing, this field would provide suggested categories in "tag" form. The researcher would also be able to enter other categories that are not included in our suggestions. The purpose of categories is to sort experiments so that they are searchable using the Filter tool in the Experiment Library.
-
-**Automatically generated for all experiments**
-
-- Original repository, if the experiment repository was forked
-- Link to GitHub repository holding the experiment
-- Automatically generated "citation link" of the form "http://expt.cc/######", where # is a randomly generated digit. This citation link is a short URL to the **Experiment Page** for an experiment
-- Discussion: Researchers should be able to post comments about an experiment. A user must be logged in to leave comments, as we would like to make sure comments are made by actual researchers. 
-
-##4. Create Trial
-
-As with Experiment Description, Create Trial is generated based on what the user specifies in the **Experiment Parameters** form. Users would be able to add to or delete from a stock list of parameters for a trial. Here is the list of suggested parameters:
-
-- Number of subjects
-- Cost of cooperation
-- Multiplier
-- Continuation probability
-- Initial endowment
-- Exchange rate (points to dollars)
+- Parameters (experiment-specific; may differ according to the needs of each experiment)
+	- Number of subjects
+	- Cost of cooperation
+	- Multiplier
+	- Continuation probability
+	- Initial endowment
+	- Exchange rate (points to dollars)
 - Frame (different visualizations of the game)
-- Subjects (the pool of subjects for the trial)
+- Subjects 
+	
+Users create a metadata file to customize the Create Trial form for an experiment. They may specify:
+
+- Default values for any field in the form 
+- The exact Parameters, which may not be the same as in the example above
+
+The Researcher Site uses the metadata file to look up the names of available frames and their accompanying screenshots.
+
+The Subjects section accompanies all experiments. Available options, with the default values indicated, are as follows:
+
+- Subject pool
+	- Amazon MTurk (default)
+	- oDesk
+	- Own subjects (Selecting this option shows a direct link, below the “Subjects” field, to the game page on the Player Website. Researchers are responsible for communicating this link to subjects.)
 - Gender
+	- [X] Female
+	- [X] Male
 - Age
-- Option to make trial results public
-- Connection speed
-- Connection latency
-
-Below the create trial box is a list of previous trials that were run using the same experiment. Clicking on the name of the trial brings the user to the **Trial Results** page, which is accessible only if the user ran the trial or if the trial results are made public. Clicking on the name of the researcher brings the user to the researcher's Popper **Profile**.
-
-Create Trial must be able to accomodate a wide range of parameters because experiments differ greatly. Since the parameters depend on the coding of the master client and client files of the experiment, the researcher would know what parameters are necessary and what parameters the server would accept as inputs based on the design of the experiment. 
+	- Slider beginning at age 13 and ending at age 100; the default slider selects ages 18 to 100
+- Connection speed at least ## kbps (the researcher fills in the field with a number, with the default value at 256)
+- Connection latency at most ## milliseconds (the researcher fills in the field with a number, with the default value at 700)
+- [X] Make trial results public
 
 # <a name="RSTrial_summary"></a>Trial summary
 
-The **Trial Summary** is the same as the **Monitor Trial** page described in the original [Popper brief](https://github.com/Experiments/popper-design/blob/master/popper_brief.md). This page allows the researcher to monitor an individual trial in real time and download the results once the trial is complete. **Trial Summary** consists of six components:
+Researchers monitor trials in real time and download results on the Trial Summary page.
 
-1. Header
-2. Footer
-3. Trial Information
-4. Players
+##Page Components
+
+1. Navigation bar
+2. Trial information
+3. Trial actions
+4. Subjects
 5. Report
 6. History
+7. Footer
 
-##1. Header
-
-See above. <!---internal link-->
-
-##2. Footer
+##1. Navigation bar
 
 See above. <!---internal link-->
 
-##3. Trial Information
+##2. Trial information
 
-- Name of the experiment: Clicking on this link brings the user to the **Experiment Page** for this particular experiment.
-- Trial number: For reference purposes. Trials are numbered in the order that they are created on Popper.org.
-- Start: Initiate the server instance and begin the trial.
-- Stop: End the trial manually.
-- Pause: Suspend the trial temporarily.
-- Replicate: The user is brought to the **Experiment** page for this trial with all fields in Create Trial already filled in. All the user needs to do is click "Create Trial" to replicate the trial, or change parameters if desired.
+- **Name of the experiment:** Link to the Create Trial page
+- **Trial number:** Trials are numbered in the order that they are created
 
-##4. Players
+##3. Trial actions
 
-The researcher can see a list of all subjects who have participated or are currently participating in the trial. The following stock parameters are suggested but can be added to or deleted on the **Experiment Parameters** page.
+- **Pause/Resume:** Suspend/resume the trial temporarily.
+- **Stop:** End the trial manually; clicking this button opens a popup that asks,
 
-- Player ID: The researcher does not know subject names. Clicking on the Player ID of a subject brings the user to the public player profile on the Popper Player Website, which will be discussed later.
-- Status: A player who has the game open in the player's current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.
-- Stage: If there are multiple steps in the trial, the researcher can see how far each subject has progressed.
-- IP address: The user can prevent cheating by checking whether multiple users are actually playing from the same IP address. 
-- Location
-- Platform
-- Earnings
-- Approved: The researcher approves subject payments buy clicking the checkbox next to a player's earnings. This option is not available until the trial ends or the researcher manually clicks "Stop" to end the trial.
+	Are you sure you want to end this trial now? You will be responsible for any subject payments that have accumulated so far.
+
+End trial (red button) 
+	Never mind (grey button) 
+
+- **Replicate:** Link to the Create Trial page, with all fields already filled in. The user can replicate the trial or change parameters.
+
+##3. Subjects
+
+Subjects is a table of all past and current subjects for the trial. The following stock parameters can be added to or changed in the experiment metadata. 
+
+- **Player ID:** Link to the public player profile on the Player Website. For anonymity, a new Player ID is generated for each player per game. <!---internal link to player ID discussion-->
+- **Status:** A player who has the game open in the player's current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>Inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.
+- **Stage:** If there are multiple steps in the trial, the researcher can see how far each subject has progressed.
+- **IP address:** The user can prevent cheating by checking whether multiple users are actually playing from the same IP address.
+- **Location:** Based on the player’s IP address. 
+- **Platform** Browser & Operating system
+- **Earnings** How much the subject has earned so far in the trial.
+- **Approved:** The researcher approves subject payments by clicking the checkbox next to a player's earnings. This option is not available until the trial ends or the researcher manually clicks "Stop" to end the trial.
 
 ##5. Report
 
-The Report is a list of purely quantitative data. The data collected for each trial is specified by the user. At the conclusion of a trial, the user can download the data in the form of a .csv, .xls, or .pdf file. Here are suggested types of data that users collect:
+The Report is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:
 
 - Stage
 - Player
-- Choice: Can be a binary variable but does not have to be; its significance is specified by the user in the source code of the experiment and on the **Experiment Parameters** page.
-- Duration: The amount of time that it took for a player to make a particular choice.
-- Balance: A snapshot of the player's current points balance.
+- Choice: Can be a binary variable but does not have to be; its significance is specified by the user in the source code of the experiment and on the Experiment Parameters page
+- Duration: The amount of time that it took for a player to make a particular choice
+- Balance: A snapshot of the player's current points balance
 
 ##6. History
 
-The History is a qualitative description of the events of the trial. Like the Report, the output of the History of a trial depends on what the user specifies. Regardless of these specifications, the history should include at the minimum the Timestamp of an event and the name of the event.
+The History is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. 
 
 # <a name="RSProfile"></a>Profile
 
-Wireframe needs to be created.
+Each user has a public profile to showcase his or her work in the experimental social sciences on Popper.
+	
+##Page Components
 
-# <a name="RSExperiment_parameters"></a>Experiment Parameters
+1. Navigation bar
+2. Researcher profile
+3. Footer
 
-Wireframe needs to be created.
+##1. Navigation bar
+
+See above. <!---internal link-->
+
+##2. Researcher profile (replaced with the researcher’s name)
+
+The profile features information pulled from the user’s GitHub account as well as user-provided information. The public view of a user’s profile displays the following:
+
+- GitHub profile picture (Gravatar)
+- Full Name
+- Department
+- Affiliation
+- Experiments
+- Trials
+
+A logged-in user can edit the above fields and see the following private information:
+
+- Payment credentials
+
+##3. Footer 
+
+See above. <!---internal link-->
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 
