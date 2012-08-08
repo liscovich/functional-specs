@@ -216,7 +216,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 
 ###Step 1: Email Confirmation 
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/sign_up_1.png?raw=true" width="100%">
+<img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_1.png?raw=true" width="100%">
 
 <section class="pages">
 	<ul>
