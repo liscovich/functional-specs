@@ -251,10 +251,13 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 <section class="pages">
 	<ul>
 		<li>1. &nbsp; The user is prompted to log in by either using an existing GitHub account or signing up for a new one.</li>
-		<li>2. &nbsp; The user clicks either Log In with GitHub or Sign Up for GitHub.</li>
+		<li>2. &nbsp; The user clicks either Log In with GitHub (with a custom link that ultimately brings the user to the Authorize access page) or Sign Up for GitHub (free account at <a href="https://github.com/signup/free">https://github.com/signup/free</a>).</li>
 		<li>3. &nbsp; The user either logs in or signs up for GitHub on the GitHub website.</li>
 			<ul>
 				<li><a name=3a>a.</a> &nbsp; If the user clicks Log In, he or she is taken to the GitHub App Authorization page <i>in the same browser tab</i> with parameters. If the user is not logged in, he or she is taken to the log in page instead.</li>
+
+				<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Authorization.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Authorization.png?raw=true" width="100%"></a>
+
 				<a name="Sign_Up_2_3a"></a><li>b. &nbsp; If the user clicks Sign Up, he or she is taken to the GitHub Sign Up page to create a free account at <a href="https://github.com/signup/free">https://github.com/signup/free</a> <i>in a new browser tab.</i> Once the user has signed up, he or she can close the GitHub tab and log in using GitHub from the Researcher Site Sign Up page. The workflow proceeds from part <a href="#3a">3a</a> above.</li>
 			</ul>	
 		<li>4. &nbsp; The user authorizes Popper to access the user's public and private information, including all repositories.</li>
