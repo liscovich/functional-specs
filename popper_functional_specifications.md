@@ -216,7 +216,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 
 ###Step 1: Email Confirmation 
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_1.png?raw=true" width="100%">
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_1.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_1.png?raw=true" width="100%"></a>
 
 <section class="pages">
 	<ul>
@@ -240,12 +240,13 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 <section class="pages">
 	<ul>
 		<li>3. &nbsp; The user clicks on the confirmation link in the email.</li>
-		<li>4. &nbsp; The user is taken to the Sign Up page, which has the same overall design as the email confirmation Sign Up page but contains different information.</li> 
-			<!---Screenshot of Sign Up page-->
+		<li>4. &nbsp; The user is taken back to the Sign Up page, which has the same overall design as the email confirmation Sign Up page but contains different information.</li> 
 	</ul>
 </section>
 
 ###<a name="Sign_Up_2">Step 2: GitHub Authentication</a>
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_2.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/sign_up_2.png?raw=true" width="100%"></a>
 
 <section class="pages">
 	<ul>
