@@ -132,14 +132,14 @@
         <text>Log%20In%20with%20GitHub</text>
       </controlProperties>
     </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Link" x="784" y="83" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Link" x="698" y="83" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="29" locked="false" isInGroup="-1">
       <controlProperties>
         <href>our_story%26bm%3Bour_story.bmml%26bm%3Bour_story.bmml%26bm%3Bour_story.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22784%2C83%2C845%2C104%22%20href%3D%22our_story.bmml%22%20alt%3D%22our_story%22%20id%3D%2248%22/%3E</map>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22698%2C83%2C759%2C104%22%20href%3D%22our_story.bmml%22%20alt%3D%22our_story%22%20id%3D%2248%22/%3E</map>
         <text>Our%20Story</text>
       </controlProperties>
     </control>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::Link" x="693" y="83" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Link" x="759" y="83" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Documentation</text>
       </controlProperties>
