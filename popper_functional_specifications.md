@@ -14,11 +14,11 @@ latex footer:		mmd-memoir-footer
 
 <h1> Functional Specifications </h1>
 
-Introduction: What is Popper, tagline story. Wikipedia-style paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Popper is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create and conduct complex large-scale online experiments.
 
 <section class="pages">
 <ul>
-	<li>1 &nbsp; <a href="#Introduction">Introduction</a> </li>
+	<li>1 &nbsp; <a href="#Introduction">Introduction (in progress)</a> </li>
 		<ul>
 			<li>1.1 &nbsp; <a href="#Correlation_vs_causation">Correlation vs. Causation</a></li>
 			<li>1.2 &nbsp; <a href="#Experiments_in_sciences">Experiments in the natural and social sciences</a></li>
@@ -29,15 +29,16 @@ Introduction: What is Popper, tagline story. Wikipedia-style paragraph. Lorem ip
 	<li>2 &nbsp; <a href="./researcher_site.html#Researcher_Site">Researcher Site</a></li>
 		<ul>
 			<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
-			<li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
-			<li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
-			<li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>	
-			<li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
-			<li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
-			<li>2.7 &nbsp; <a href="#RSExperiment_page">Experiment page</a></li>
-			<li>2.8 &nbsp; <a href="#RSTrial_summary">Trial summary</a></li>
-			<li>2.9 &nbsp; <a href="#RSProfile">Profile</a></li>
-			<li>2.10 &nbsp; <a href="#RSExperiment_parameters">Experiment parameters</a></li>
+			<li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
+			<li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
+			<li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
+			<li>2.5 &nbsp; <a href="#RSOur_story">Our Story</a></li>	
+			<li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
+			<li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
+			<li>2.8 &nbsp; <a href="#RSExperiment_summary">Experiment Summary</a></li>
+			<li>2.9 &nbsp; <a href="#RSTrial_summary">Trial Summary</a></li>
+			<li>2.10 &nbsp; <a href="#RSProfile">Profile</a></li>
+			<li>2.11 &nbsp; <a href="#RSSearch_Results">Search Results</a></li>		
 		</ul>
 	<li>3 &nbsp; <a href="./player_site.html#Player_Site">Player Site</a></li>
 		<ul>
@@ -54,6 +55,8 @@ Introduction: What is Popper, tagline story. Wikipedia-style paragraph. Lorem ip
 		</ul>
 </ul>
 </section>
+
+<!---introduction
 
 <h1> <a name="Introduction">Introduction</a> </h1>
 
@@ -127,6 +130,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+-->
+
 <h1> <a name="Researcher_Site">Researcher Site</a> </h1>
 
 The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers to explore available experiments, create trials, recruit subjects, monitor trials in real time, and download experimental data. 
@@ -136,16 +141,16 @@ The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers
 <section class="pages">
 	<ul>
 		<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
-		<li>2.2 &nbsp; <a href="RSLook">Look and Feel</a></li>
-		<li>2.2 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
-		<li>2.3 &nbsp; <a href="#RSIntroduction_page">Introduction page</a></li>
-		<li>2.4 &nbsp; <a href="#RSOur_story">Our story</a></li>	
-		<li>2.5 &nbsp; <a href="#RSExperiments">Experiments</a></li>
-		<li>2.6 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
-		<li>2.7 &nbsp; <a href="#RSExperiment_page">Experiment page</a></li>
-		<li>2.8 &nbsp; <a href="#RSTrial_summary">Trial summary</a></li>
-		<li>2.9 &nbsp; <a href="#RSProfile">Profile</a></li>
-		<li>2.10 &nbsp; <a href="#RSExperiment_parameters">Experiment parameters</a></li>
+		<li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
+		<li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
+		<li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
+		<li>2.5 &nbsp; <a href="#RSOur_story">Our Story</a></li>	
+		<li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
+		<li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
+		<li>2.8 &nbsp; <a href="#RSExperiment_summary">Experiment Summary</a></li>
+		<li>2.9 &nbsp; <a href="#RSTrial_summary">Trial Summary</a></li>
+		<li>2.10 &nbsp; <a href="#RSProfile">Profile</a></li>
+		<li>2.11 &nbsp; <a href="#RSSearch_Results">Search Results</a></li>
 	</ul>
 </section>
 
@@ -170,9 +175,9 @@ Soon, Professor Goldin begins designing her own experiments from scratch using t
 
 ##2. Robert, the Trial Runner
 
-Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Introduction Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments Library** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
+Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Introduction Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
 
-# <a name="Look">Look and Feel</a>
+# <a name="RSLook">Look and Feel</a>
 
 The site serves an academic audience so the overall look of the **Introduction Page** should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
 
@@ -184,7 +189,7 @@ The site serves an academic audience so the overall look of the **Introduction P
 3. Using a GitHub account, all users can push experiments.
 -->
 
-##Overview
+## Overview
 
 The Researcher Site requires users to have a GitHub account and authenticates them via GitHub OAuth API. In addition to the GitHub profile information, the following data are stored for each of the users: 
 
@@ -193,14 +198,14 @@ The Researcher Site requires users to have a GitHub account and authenticates th
 - Email address
 - Department and affiliation
 - Payment method (credit card/PayPal)
-- Activity history on the Site (list of created trials, list of experiments recommended by the user)
+- Activity history on the Site (experiments, trials, experiments recommended by the user)
 
 ##Components
 
-1. Sign Up
-2. Log In
+1. <a href="#RSSign_Up">Sign Up</a>
+2. <a href="#RSLog_In">Log In</a>
 
-##<a name="Sign_Up"></a>1. Sign up
+##<a name="RSSign_Up"></a>1. Sign Up
 
 There are two ways for unregistered users to Sign Up:
 
@@ -252,7 +257,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 				<a name="Sign_Up_2_3a"></a><li>b. &nbsp; If the user clicks Sign Up, he or she is taken to the GitHub Sign Up page to create a free account at <a href="https://github.com/signup/free">https://github.com/signup/free</a> <i>in a new browser tab.</i> Once the user has signed up, he or she can close the GitHub tab and log in using GitHub from the Researcher Site Sign Up page. The workflow proceeds from part <a href="#3a">3a</a> above.</li>
 			</ul>	
 		<li>4. &nbsp; The user authorizes Popper to access the user's public and private information, including all repositories.</li>
-			<!---This authorization is necessary to customize the user's **Experiments Library** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiments Library**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository.-->	
+			<!---This authorization is necessary to customize the user's **Experiments** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiments**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository.-->	
 		<li>5. &nbsp; The user is redirected to the Sign Up page, which features the same design but different content.</li>
  	</ul>
 </section>
@@ -364,7 +369,7 @@ The **Navigation Bar** includes five or six links, depending on whether the user
 1. Logo
 2. <a href="#How_It_Works">How It Works</a>
 2. Our Story
-3. Experiments Library
+3. Experiments
 4. Log In with GitHub
 5. Sign Up
 6. Dashboard (if logged in)
@@ -409,7 +414,7 @@ A good starting point for the logo portrait is available <a href="http://en.wiki
 
 **Our Story** is a static About page. Its contents will be discussed later.
 
-**Experiments Library** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
+**Experiments** is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.
 
 Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link--> The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user's full name and a dropdown navigation bar that allows the user to view profile <!---link-->or log out.
 
@@ -719,7 +724,7 @@ The Subjects section accompanies all experiments. Available options, with the de
 - Connection latency at most ## milliseconds (the researcher fills in the field with a number, with the default value at 700)
 - [X] Make trial results public
 
-# <a name="RSTrial_summary"></a>Trial summary
+# <a name="RSTrial_summary"></a>Trial Summary
 
 Researchers monitor trials in real time and download results on the Trial Summary page.
 
@@ -813,6 +818,76 @@ A logged-in user can edit the above fields and see the following private informa
 ##3. Footer 
 
 See above. <!---internal link-->
+
+# <a name="RSSearch"></a>Search Results
+
+Users can perform an instant search for an experiment, trial, or researcher profile from any page on the Researcher Website.
+
+## Page Components
+
+<!---internal lnks here-->
+1. Navigation Bar 
+2. Search Results 
+3. Footer
+
+## 1. Navigation Bar
+
+See above.
+
+##2. Search Results 
+
+Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query. 
+
+###Indexing
+
+To perform instant search, the Researcher Site regularly indexes the following information:
+
+- Experiments
+	- All experiment repositories: All text fields in the metadata, such as title, description, author, and documentation.
+	- All ongoing and completed trials.
+	- All researcher profiles.
+- Trials (indexed from the Trial Summary page for each trial)
+	- Trial information 
+	- Trial parameters and researcher comments from the Trial History section
+- Profiles
+	- Full Name
+	- Department
+	- Affiliation
+	- Names of the user’s pushed experiments
+	- Categories assigned to the user’s pushed experiments
+	- Names of the user’s created trials
+
+All three results sections (experiments, trials, and profiles) are displayed with every query. If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More...” opens a new page with search results from only that category. The same “More...” functionality <a href=”https://github.com/search?q=rails&type=Everything&repo=&langOverride=&start_value=1” target=”_blank”>can be found</a> in GitHub search. 
+
+###Sorting
+
+Experiments search results are sorted by:
+
+1. Growth rate in the number of commits
+2. If tied, the number of forks
+3. If tied, the number of upvotes
+4. If tied, the age of the repository, with younger repositories listed first
+
+Trials search results are sorted by:
+
+1. Last activity date
+2. If tied, number of times search word(s) appear in 
+
+Profile search results are sorted by
+
+1. Appearance in the user’s name:
+	- Alphabetically by last name
+	- If tied, by number of experiments committed
+	- If tied, by number of trials created
+	- If tied, by date account was created
+2. If the search term does not appear in the user’s name:
+	- Appearance in names of pushed experiments
+	- If tied, by appearance in names of trials created
+	- If tied, by appearance in the researcher’s self summary
+
+##3. Footer
+
+See above.
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 
