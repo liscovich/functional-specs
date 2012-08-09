@@ -300,7 +300,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <!---First and Last Name are required because GitHub does not ask users to input their first and last names separately, and we want to make sure that we have the full names of all users.-->
 
-<h3 id="login">Log In</h3>
+<h3 id="anamerslog_inalogin"><a name="RSLog_In"></a>Log In</h3>
 
 <p>The Log In process is tied closely to the Sign Up page. You&#8217;ll recall that Sign Up requires three components: email verification, a linked GitHub account, and affiliation details. Logging in includes a series of checks in the backend to make sure that a user account includes all three components.</p>
 
@@ -332,7 +332,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     <ul>
         <li>1. &nbsp; The user's action depends on whether he or she has a GitHub account.</li>
             <ul>
-                <li>a. &nbsp; If the user does not have a GitHub account, he or she can sign up for an account by clicking "(Pricing and Signup)", which is discussed in <a href="#Sign_Up_2_3a">Step 2, Part 3</a> of the Sign Up process.</li>
+                <li>a. &nbsp; If the user does not have a GitHub account, he or she can sign up for an account by clicking "(Pricing and Signup)", which is discussed in <a href="#Sign_Up_2_3a">Step 2, Part 3</a> of the Sign Up process.
+                    <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/github_pricing.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/github_pricing.png?raw=true" width="100%"></a>    
+                </li>
                 <li>b. &nbsp; If the user does have a GitHub account, the user logs in using GitHub credentials on the GitHub Log In page, and then grants Popper access to the user's GitHub account if this has not yet been done.</li>
             </ul>
         <li>2. &nbsp; The Researcher Site proceeds to <a href="#Check_3">Check 3</a>.
@@ -377,7 +379,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p>The <strong>Introduction Page</strong> introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>. </p>
 
-<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/Introductionpage.png?raw=true" width="100%"></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -397,21 +399,84 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p><img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%"></p>
 
-<p>The <strong>Navigation Bar</strong> includes five or six links, depending on whether the user is logged in: </p>
+<p>The <strong>Navigation Bar</strong> includes six or three items, depending on whether the user is logged in: </p>
 
-<!---internal links-->
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
 
-<ol>
-<li>Logo</li>
-<li><a href="#How_It_Works">How It Works</a></li>
-<li>Our Story</li>
-<li>Experiments</li>
-<li>Log In with GitHub</li>
-<li>Sign Up</li>
-<li>Dashboard (if logged in)</li>
-</ol>
+<thead>
+<tr>
+	<th style="text-align:left;"></th>
+	<th style="text-align:left;">Logged Out</th>
+	<th style="text-align:left;">Logged In</th>
+</tr>
+</thead>
 
-<p>The <strong>Logo</strong> contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
+<tbody>
+<tr>
+	<td style="text-align:left;">1. <a href="#RSLogo">Logo</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">Yes</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">2. <a href="#RSHow_It_Works">How It Works</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">No</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">3. <a href="#RSOur_Story">Our Story</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">No</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">4. <a href="#RSExperiments">Experiments</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">Yes</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">5. <a href="#RSLog_In">Log In with GitHub</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">No</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">6. <a href="#RSSign_Up">Sign Up</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">No</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">7. <a href="#RSDashboard">Dashboard</a></td>
+	<td style="text-align:left;">No</td>
+	<td style="text-align:left;">Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="loggedoutnavigationbar">Logged Out Navigation Bar</h4>
+
+<h4 id="loggedinnavigationbar">Logged In Navigation Bar</h4>
+
+<p><a name="RSLogo"></a>The <strong>Logo</strong> contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
 
 <p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
 
@@ -507,7 +572,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <!---logo images here-->
 
-<p><a name="How_It_Works"></a><strong>How It Works</strong> links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on <strong>How It Works</strong> takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments/">Popper GitHub account</a>. We will take care of writing documentation.</p>
+<p><a name="RSHow_It_Works"></a><strong>How It Works</strong> links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on <strong>How It Works</strong> takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments/">Popper GitHub account</a>. We will take care of writing documentation.</p>
 
 <p><strong>Our Story</strong> is a static About page. Its contents will be discussed later.</p>
 
@@ -1046,7 +1111,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p>See above. <!---internal link--></p>
 
-<h2 id="anamerssearchasearchresults"><a name="RSSearch"></a>Search Results</h2>
+<h2 id="anamerssearch_resultsasearchresults"><a name="RSSearch_Results"></a>Search Results</h2>
 
 <p>Users can perform an instant search for an experiment, trial, or researcher profile from any page on the Researcher Website.</p>
 

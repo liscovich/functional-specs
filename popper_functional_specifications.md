@@ -282,7 +282,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 
 <!---First and Last Name are required because GitHub does not ask users to input their first and last names separately, and we want to make sure that we have the full names of all users.--> 
  
-##Log In
+## <a name="RSLog_In"></a>Log In
 
 The Log In process is tied closely to the Sign Up page. You'll recall that Sign Up requires three components: email verification, a linked GitHub account, and affiliation details. Logging in includes a series of checks in the backend to make sure that a user account includes all three components.
 
@@ -312,7 +312,9 @@ By Check 2, the Researcher Site has determined that the user is not currently lo
 	<ul>
 		<li>1. &nbsp; The user's action depends on whether he or she has a GitHub account.</li>
 			<ul>
-				<li>a. &nbsp; If the user does not have a GitHub account, he or she can sign up for an account by clicking "(Pricing and Signup)", which is discussed in <a href="#Sign_Up_2_3a">Step 2, Part 3</a> of the Sign Up process.</li>
+				<li>a. &nbsp; If the user does not have a GitHub account, he or she can sign up for an account by clicking "(Pricing and Signup)", which is discussed in <a href="#Sign_Up_2_3a">Step 2, Part 3</a> of the Sign Up process.
+					<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/github_pricing.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/github_pricing.png?raw=true" width="100%"></a>	
+				</li>
 				<li>b. &nbsp; If the user does have a GitHub account, the user logs in using GitHub credentials on the GitHub Log In page, and then grants Popper access to the user's GitHub account if this has not yet been done.</li>
 			</ul>
 		<li>2. &nbsp; The Researcher Site proceeds to <a href="#Check_3">Check 3</a>.
@@ -355,34 +357,47 @@ By Check 4, the user has logged in using GitHub and the Researcher Website has v
 
 The **Introduction Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
 
-<img src="https://github.com/liscovich/functional-specs/blob/master/images/Introductionpage.png?raw=true" width="100%">
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" width="100%"></a>	
 
 ##Page Components
 
 <!---internal lnks here-->
 1. Navigation Bar 
-3. Overview
-4. Usage Statistics
-5. Features
-6. Footer
+2. Overview
+3. Usage Statistics
+4. Features
+5. Footer
 
 ##1. Navigation Bar
 <!---pic-->
 
 <img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%">
 
-The **Navigation Bar** includes five or six links, depending on whether the user is logged in: 
+The **Navigation Bar** includes six or three items, depending on whether the user is logged in: 
 
-<!---internal links-->
-1. Logo
-2. <a href="#How_It_Works">How It Works</a>
-2. Our Story
-3. Experiments
-4. Log In with GitHub
-5. Sign Up
-6. Dashboard (if logged in)
+|						                            | Logged Out | Logged In | 
+------------------------------------------------------- | :- | :- |  
+1. <a href="#RSLogo">Logo</a>   						| Yes | Yes |  
 
-The **Logo** contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
+2. <a href="#RSHow_It_Works">How It Works</a>           | Yes | No |   
+
+3. <a href="#RSOur_Story">Our Story</a>                 | Yes | No |   
+
+4. <a href="#RSExperiments">Experiments</a>             | Yes | Yes |  
+
+5. <a href="#RSLog_In">Log In with GitHub</a>           | Yes | No |   
+
+6. <a href="#RSSign_Up">Sign Up</a>                     | Yes | No |   
+
+7. <a href="#RSDashboard">Dashboard</a>                 | No | Yes |  
+
+### Logged Out Navigation Bar
+
+
+
+### Logged In Navigation Bar
+
+<a name="RSLogo"></a>The **Logo** contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
 
 When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at [www.popper.org](http://www.popper.org). Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
@@ -418,7 +433,7 @@ A good starting point for the logo portrait is available <a href="http://en.wiki
 
 <!---logo images here-->
 
-<a name="How_It_Works"></a>**How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
+<a name="RSHow_It_Works"></a>**How It Works** links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on **How It Works** takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments/). We will take care of writing documentation.
 
 **Our Story** is a static About page. Its contents will be discussed later.
 
@@ -827,7 +842,7 @@ A logged-in user can edit the above fields and see the following private informa
 
 See above. <!---internal link-->
 
-# <a name="RSSearch"></a>Search Results
+# <a name="RSSearch_Results"></a>Search Results
 
 Users can perform an instant search for an experiment, trial, or researcher profile from any page on the Researcher Website.
 
