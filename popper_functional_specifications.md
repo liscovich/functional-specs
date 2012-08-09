@@ -288,7 +288,7 @@ The Log In process is tied closely to the Sign Up page. You'll recall that Sign 
 
 The below diagram shows how Log In works and how it is connected to Sign Up. We will now take a look at what happens from the moment the user clicks **Log In** from the Navigation Bar. 
 
-<!---Log in pic-->
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/log_in.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/log_in.png?raw=true" width="100%"></a>
 
 ###Check 1: Logged into GitHub?
 
