@@ -26,7 +26,7 @@
     </control>
     <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="764" y="83" w="-1" h="-1" measuredW="84" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>How%20It%20Works</text>
+        <text>Documentation</text>
       </controlProperties>
     </control>
     <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="850" y="83" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="5" locked="false" isInGroup="-1">

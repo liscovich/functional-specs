@@ -386,18 +386,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <!---internal lnks here-->
 
 <ol>
-<li>Navigation Bar</li>
-<li>Overview</li>
-<li>Usage Statistics</li>
-<li>Features</li>
-<li>Footer</li>
+<li><a href="#RSNavbar">Navigation Bar</a></li>
+<li><a href="#RSIP_Header">Header</a></li>
+<li><a href="#RSUsage_Statistics">Usage Statistics</a></li>
+<li><a href="#RSFeatures">Features</a></li>
+<li><a href="#RSIP_Footer">Footer</a></li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation Bar</h3>
+<p><a name="RSNavbar"></a>##1. Navigation Bar</p>
 
-<!---pic-->
-
-<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/lpnav.png?raw=true" width="100%"></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar?raw=true" width="100%"></a> </p>
 
 <p>The <strong>Navigation Bar</strong> includes six or three items, depending on whether the user is logged in: </p>
 
@@ -426,9 +424,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <tbody>
 <tr>
-	<td style="text-align:left;">2. <a href="#RSHow_It_Works">How It Works</a></td>
+	<td style="text-align:left;">2. <a href="#RSDocumentation">Documentation</a></td>
 	<td style="text-align:left;">Yes</td>
-	<td style="text-align:left;">No</td>
+	<td style="text-align:left;">Yes</td>
 </tr>
 </tbody>
 
@@ -474,22 +472,30 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </table>
 <h4 id="loggedoutnavigationbar">Logged Out Navigation Bar</h4>
 
-<h4 id="loggedinnavigationbar">Logged In Navigation Bar</h4>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" width="100%"></a> </p>
 
-<p><a name="RSLogo"></a>The <strong>Logo</strong> contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
+<p><a name="#RSLogged_In_Navbar"></a>### Logged In Navigation Bar</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" width="100%"></a></p>
+
+<h4 id="logo">Logo</h4>
+
+<p><a name="RSLogo"></a>The Logo contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
 
 <p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
 
-<p>A good starting point for the logo portrait is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons. </p>
+<p>The portrait below is a good starting point for the logo. It is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons. </p>
+
+<p><a href="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg?raw=true" target="_blank"><img src="http://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg?raw=true" width="100%"></a></p>
 
 <h4 id="logorequirements">Logo Requirements</h4>
 
 <ul>
-<li><strong>Facial expression:</strong> In its current form, the above portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive.</li>
-<li><strong>Cropping:</strong> The face must be cropped so that it does not look as if it belongs at a funeral.</li>
+<li><strong>Facial expression:</strong> The above portrait is problematic because Karl Popper appears as if he may be looking around. In the logo, Popper should look pensive.</li>
+<li><strong>Cropping:</strong> The portrait must be cropped so that it does not look as if it belongs at a funeral.</li>
 <li><strong>Different sizes:</strong> The word &#8220;Popper&#8221; and the portrait should be recognizable whether the logo is small or large.</li>
 <li><strong>Color scheme:</strong> The logo should be designed to stand out well against both the light background of the Researcher Site and the dark background of Unity3D, a core component of the Popper SDK.</li>
-<li><strong>Font:</strong> The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software.</li>
+<li><strong>Font:</strong> The font of the logo should be classical and convey both authority and legitimacy, much like the logos of universities and research software. (Examples <a href="http://admet.com/assets/cust_logo_harvard.jpg" target="_blank">here</a> and <a href="http://www.rcrwireless.com/austin/files/2011/07/Cisco-Logo1.jpg" target="_blank">here</a>.)</li>
 <li><strong>Favicon:</strong> The logo should have a corresponding favicon that appears in the browser title bar.</li>
 </ul>
 
@@ -542,7 +548,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <tbody>
 <tr>
 	<td style="text-align:left;"><strong>Color scheme</strong></td>
-	<td style="text-align:left;">No: Does not work against a dark background</td>
+	<td style="text-align:left;">No: Would not work against a dark background</td>
 	<td style="text-align:left;">No: Funeral photo</td>
 	<td style="text-align:left;">No: Funeral photo</td>
 </tr>
@@ -572,21 +578,35 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <!---logo images here-->
 
-<p><a name="RSHow_It_Works"></a><strong>How It Works</strong> links to documentation for Popper. Documentation is stored on GitHub, not on the Researcher Site. Clicking on <strong>How It Works</strong> takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments/">Popper GitHub account</a>. We will take care of writing documentation.</p>
+<h4 id="documentation">Documentation</h4>
 
-<p><strong>Our Story</strong> is a static About page. Its contents will be discussed later.</p>
+<p><a name="RSDocumentation"></a><strong>Documentation</strong> is stored on GitHub, not on the Researcher Site. Clicking on Documentation takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments">Popper GitHub account</a>. We will take care of writing documentation.</p>
 
-<p><strong>Experiments</strong> is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.</p>
+<h4 id="ourstory">Our Story</h4>
 
-<p>Log In with GitHub and Sign Up were discussed in the previous section, Accounts. <!---internal link--> The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user&#8217;s full name and a dropdown navigation bar that allows the user to view profile <!---link-->or log out.</p>
+<p><a href="#RSOur_Story">Our Story</a> is a static About page. Its contents will be discussed later.</p>
 
-<p><strong>Dashboard</strong> is visible only if the user is logged in.</p>
+<h4 id="experiments">Experiments</h4>
 
-<h3 id="header">3. Header</h3>
+<p><a href="#RSExperiments">Experiments</a> is a dynamic page on the Popper Research Site that allows researchers to browse experiments, and will be discussed later.</p>
 
-<!---pic-->
+<h4 id="loginandsignup">Log In and Sign Up</h4>
 
-<p>The purpose of the <strong>Header</strong> is to describe Popper briefly. At the top of the Header is a tagline:</p>
+<p><a href="#RSLog_In">Log In with GitHub</a> and <a href="RSSign_Up">Sign Up</a> were discussed in the previous section, <a href="#RSAccounts">Accounts</a>. The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user&#8217;s full name and a dropdown navigation bar that links to the user&#8217;s <a href="#RSProfile">Profile</a> and Log Out.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" width="100%"></a></p>
+
+<h4 id="dashboard">Dashboard</h4>
+
+<p><a href="#RSDashboard">Dashboard</a> is <a href="#Logged_In_Navbar">visible</a> only if the user is logged in.</p>
+
+<p><a name="RSIP_Header"></a></p>
+
+<h3 id="header">2. Header</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/ipheader.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/ipheader.png?raw=true" width="100%"></a></p>
+
+<p>The purpose of the Header is to describe Popper briefly. At the top of the Header is a tagline:</p>
 
 <p><c>
 <center>
@@ -629,11 +649,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <p>Popper is a powerful blend of modern technology and social science. With Popper, you can design complex cutting-edge experiments using the most advanced tools in existence. You can also run large-scale online trials drawing subjects from the world&#8217;s deepest on-demand subject pool.</p>
 </blockquote>
 
-<h3 id="usagestatistics">4. Usage Statistics</h3>
+<p><a name="RSUsage_Statistics"></a></p>
 
-<!---pic-->
+<h3 id="usagestatistics">3. Usage Statistics</h3>
 
-<p>Three summary statistics are dynamically updated and displayed under the <!---link-->Header:</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" width="100%"></a> </p>
+
+<p>Three summary statistics are dynamically updated and displayed under the <a href="RSIP_Header">Header</a>:</p>
 
 <ol>
 <li>The number of registered researchers</li>
@@ -641,14 +663,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>The number of completed trials</li>
 </ol>
 
-<p>The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Introduction Page will not contain this statistics block.</p>
+<p>The numbers should be larger than the corresponding items being counted. We will start displaying these statistics only once Popper gains traction. At launch, the Introduction Page will not contain this Usage Statistics block.</p>
 
-<h3 id="overview">5. Overview</h3>
+<p><a name="RSFeatures"></a></p>
 
-<!---pic-->
+<h3 id="features">4. Features</h3>
 
-<p>The <strong>Overview</strong> introduces the key features of the platform by walking users through a typical workflow:
-<!---internal links--></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfeatures.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfeatures.png?raw=true" width="100%"></a> </p>
+
+<p><strong>Features</strong> introduces the key features of the platform by walking users through a typical workflow:</p>
 
 <table>
 <colgroup>
@@ -697,92 +720,100 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </tr>
 </tbody>
 </table>
-<h3 id="footer">6. Footer</h3>
+<p><a name="RSIP_Footer"></a></p>
 
-<!---pic-->
+<h3 id="footer">5. Footer</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" width="100%"></a> </p>
 
 <p>The <strong>Footer</strong> features general links and legal documents.</p>
 
 <ul>
-<li>Our Story <!---internal link--></li>
+<li><a href="RSOur_Story">Our Story</a></li>
 <li>Blog: Hosted on a third-party site</li>
 <li>Twitter: @popper_exp</li>
 <li>Facebook: http://www.facebook.com/popper_exp</li>
-<li>Contact: The &#8220;Contact&#8221; section of <!---link-->About Us</li>
-<li>Documentation: Hosted on GitHub, as described above<!---link--></li>
-<li>Terms of Service: Navigation Bar, text, and Footer<!---link--></li>
-<li>Privacy &amp; Security: Navigation Bar, text, and Footer<!---link--></li>
+<li>Contact: The &#8220;Contact&#8221; section of <a href="RSOur_Story">Our Story</a></li>
+<li><a href="#RSDocumentation">Documentation</a></li>
+<li>Terms of Service: We will provide the text</li>
+<li>Privacy &amp; Security: We will provide the text</li>
 </ul>
 
-<h2 id="anamersour_storyaourstory"><a name="RSOur_story"></a>Our story</h2>
+<h2 id="anamersour_storyaourstory"><a name="RSOur_Story"></a>Our story</h2>
 
-<p><strong>Our Story</strong> introduces the history of the project and its connection to Karl Popper.
-<!---pic--></p>
+<p><strong>Our Story</strong> introduces the history of the project and its connection to Karl Popper.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
-<!---internal lnks here-->
-
 <ol>
-<li>Navigation Bar</li>
-<li>Portrait of Karl Popper</li>
-<li>History</li>
-<li>Team and Contributors</li>
-<li>Footer</li>
+<li><a href="#RSNavbar_OS">Navigation Bar</a></li>
+<li><a href="#RSPortrait_OS">Portrait of Karl Popper</a></li>
+<li><a href="#RSHistory_OS">History</a></li>
+<li><a href="#RSTeam_OS">Team and Contributors</a></li>
+<li><a href="#RSFooter_OS">Footer</a></li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation Bar</h3>
+<h3 id="anamersnavbar_osanavigationbar">1. <a name="RSNavbar_OS"></a>Navigation Bar</h3>
 
-<p>Same as the Introduction Page. <!---link--></p>
+<p>See <a href="#RSNavbar">above</a>.</p>
 
-<h3 id="portraitofkarlpopper">2. Portrait of Karl Popper</h3>
+<h3 id="anamersportrait_osaportraitofkarlpopper">2. <a name="RSPortrait_OS"></a>Portrait of Karl Popper</h3>
 
-<p><strong>Our Story</strong> features a <a href="http://images.npg.org.uk/800_800/0/2/mw07802.jpg">photo</a> of Karl Popper taken by Lucinda Douglas-Menzies, cropped as necessary. </p>
+<p>On the left is a <a href="http://images.npg.org.uk/800_800/0/2/mw07802.jpg">photo</a> of Karl Popper taken by Lucinda Douglas-Menzies, cropped as necessary. </p>
 
-<p><img src="https://github.com/liscovich/functional-specs/blob/master/images/popperlucinda.png?raw=true" width="100%"></p>
+<p><a href="http://images.npg.org.uk/800_800/0/2/mw07802.jpg?raw=true" target="_blank"><img src="http://images.npg.org.uk/800_800/0/2/mw07802.jpg?raw=true" width="100%"></a> </p>
 
 <p>Under the cropped photo should be the text, </p>
 
 <p><c>&#8220;&copy; Lucinda Douglas-Menzies&#8221;</c> and <c>&#8220;Reproduced with the generous permission of the photographer&#8221;</c>. </p>
 
-<h3 id="history">3. History</h3>
+<h3 id="anamershistory_osahistory">3. <a name="RSHistory_OS"></a>History</h3>
 
-<p>We will provide the text for the History of the project when it is ready.</p>
+<p>We will provide this text.</p>
 
-<h3 id="teamandcontributors">4. Team and Contributors</h3>
+<h3 id="anamersteam_osateamandcontributors">4. <a name="RSTeam_OS"></a>Team and Contributors</h3>
 
-<p>We will provide the text for the History of the project when it is ready.</p>
+<p>We will provide this text.</p>
 
-<h3 id="footer">5. Footer</h3>
+<h3 id="anamersfooter_osafooter">5. <a name="RSFooter_OS"></a>Footer</h3>
 
-<p>Same as the Introduction Page. <!---link--></p>
+<p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersexperimentsaexperiments"><a name="RSExperiments"></a>Experiments</h2>
 
-<p>The <strong>Experiments</strong> page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles a <a href="http://www.amazon.com/s/ref=sr_nr_scat_3245219011_ln?rh=n%3A3245219011%2Ck%3Abarbie+doll&keywords=barbie+doll&ie=UTF8&qid=1343866475&scn=3245219011&h=220dc68f97ae40d6e3790975515ccea286922364" target="_blank">product list page</a> on Amazon.</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" width="100%"></a> </p>
+
+<p>The <strong>Experiments</strong> page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles an Amazon product list page:</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
-<!---internal lnks here-->
-
 <ol>
-<li>Navigation Bar</li>
-<li>List of Experiments</li>
-<li>Search Bar</li>
-<li>Filter</li>
-<li>Footer</li>
+<li><a href="#RSNavbar_E">Navigation Bar</a></li>
+<li><a href="#RSList_E">List of Experiments</a></li>
+<li><a href="#RSFilter_E">Filter</a></li>
+<li><a href="#RSFooter_E">Footer</a></li>
 </ol>
+
+<p><a name="RSNavbar_E"></a></p>
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
-<p>Same as the Introduction Page.<!---link--></p>
+<p>See <a href="#RSNavbar">above</a>.</p>
 
-<h3 id="anamerslist_of_experimentsalistofexperiments">2. <a name="RSList_of_Experiments"></a>List of Experiments</h3>
+<p><a name="RSList_E"></a></p>
+
+<h3 id="listofexperiments">2. List of Experiments</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_list.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_list.png?raw=true" width="100%"></a> </p>
 
 <p>The <strong>Experiments</strong> page displays a dynamically generated list of all available experiments from two sources:</p>
 
 <ul>
-<li>Public repositories from the central Popper GitHub account (github.com/experiments)</li>
+<li>Public repositories from the central <a href="http://www.github.com/experiments" target="_blank">Popper GitHub account</a>.</li>
 <li>Other GitHub repositories in the extended Popper network. This includes public GitHub repositories of <em>all</em> Popper users, and private repositories to which the user has access.</li>
 </ul>
 
@@ -811,9 +842,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Last modified ## minutes/hours/days/weeks/months/years ago</li>
 </ul>
 
-<p>The Researcher Site obtaines this information for each experiment from the metadata in its respective GitHub repository. Repositories that lack the proper metadata, source code, or executable files, are not displayed.</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" width="100%"></a> </p>
 
-<p>The <a href="https://github.com/Experiments/">Popper GitHub account</a> hosts Stock Experiments that showcase the capabilities of the platform and provide researchers with fully functional templates to start their own projects. </p>
+<p>The Researcher Site obtains this information for each experiment from the metadata in its respective GitHub repository. Repositories that lack the proper metadata, source code, or executable files, are not displayed.</p>
+
+<p>The <a href="http://www.github.com/experiments" target="_blank">Popper GitHub account</a> hosts Stock Experiments that showcase the capabilities of the platform and provide researchers with fully functional templates to start their own projects. </p>
 
 <p>An &#8220;Add Experiment&#8221; button links to Popper documention for designing and publishing an experiment using the Popper SDK.</p>
 
@@ -821,7 +854,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h3 id="searchbar">5. Search bar</h3>
 
-<p>The search bar performs an instant search on the <a href="#RSList_of_Experiments">List of Experiments</a>. Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query even before the user hits &#8220;Return&#8221;.</p>
+<p>The search bar performs an instant search on the <a href="#RSList_E">List of Experiments</a>. Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query even before the user hits &#8220;Return&#8221;.</p>
 
 <p>To perform instant search, the Researcher Site regularly indexes metadata from all experiment repositories. This specifically includes all text fields in the metadata, such as title, description, author, and documentation.</p>
 

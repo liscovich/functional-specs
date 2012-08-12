@@ -478,11 +478,11 @@
         <text>search</text>
       </controlProperties>
     </control>
-    <control controlID="106" controlTypeID="com.balsamiq.mockups::Link" x="959" y="83" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="80" locked="false" isInGroup="-1">
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::Link" x="941" y="83" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="80" locked="false" isInGroup="-1">
       <controlProperties>
         <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22959%2C83%2C1024%2C104%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%22106%22/%3E</map>
-        <text>Dashboard</text>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22941%2C83%2C1030%2C104%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%22106%22/%3E</map>
+        <text>Documentation</text>
       </controlProperties>
     </control>
     <control controlID="156" controlTypeID="com.balsamiq.mockups::FieldSet" x="1015" y="158" w="295" h="692" measuredW="200" measuredH="170" zOrder="81" locked="false" isInGroup="-1">
@@ -886,6 +886,13 @@
     <control controlID="248" controlTypeID="com.balsamiq.mockups::Link" x="439" y="1187" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="150" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
+      </controlProperties>
+    </control>
+    <control controlID="249" controlTypeID="com.balsamiq.mockups::Link" x="869" y="83" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="151" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22869%2C83%2C935%2C104%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%22249%22/%3E</map>
+        <text>Dashboard</text>
       </controlProperties>
     </control>
   </controls>

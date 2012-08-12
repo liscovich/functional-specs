@@ -46,14 +46,14 @@
         <text>History</text>
       </controlProperties>
     </control>
-    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="759" y="306" w="-1" h="-1" measuredW="151" measuredH="22" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="759" y="276" w="-1" h="-1" measuredW="151" measuredH="22" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>14</size>
         <text>Team%20and%20Contributors</text>
       </controlProperties>
     </control>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Paragraph" x="759" y="334" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Paragraph" x="759" y="304" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>We%20are%20a%20good%20bunch.</text>
       </controlProperties>
@@ -121,12 +121,12 @@
         <text>Twitter</text>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::Webcam" x="759" y="356" w="70" h="58" measuredW="177" measuredH="146" zOrder="22" locked="false" isInGroup="-1"/>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::Webcam" x="850" y="356" w="70" h="58" measuredW="177" measuredH="146" zOrder="23" locked="false" isInGroup="-1"/>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Webcam" x="942" y="356" w="70" h="58" measuredW="177" measuredH="146" zOrder="24" locked="false" isInGroup="-1"/>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Webcam" x="759" y="429" w="70" h="58" measuredW="177" measuredH="146" zOrder="25" locked="false" isInGroup="-1"/>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Webcam" x="850" y="429" w="70" h="58" measuredW="177" measuredH="146" zOrder="26" locked="false" isInGroup="-1"/>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::Webcam" x="942" y="429" w="70" h="58" measuredW="177" measuredH="146" zOrder="27" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Webcam" x="759" y="326" w="70" h="58" measuredW="177" measuredH="146" zOrder="22" locked="false" isInGroup="-1"/>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Webcam" x="850" y="326" w="70" h="58" measuredW="177" measuredH="146" zOrder="23" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Webcam" x="942" y="326" w="70" h="58" measuredW="177" measuredH="146" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Webcam" x="759" y="399" w="70" h="58" measuredW="177" measuredH="146" zOrder="25" locked="false" isInGroup="-1"/>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Webcam" x="850" y="399" w="70" h="58" measuredW="177" measuredH="146" zOrder="26" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Webcam" x="942" y="399" w="70" h="58" measuredW="177" measuredH="146" zOrder="27" locked="false" isInGroup="-1"/>
     <control controlID="47" controlTypeID="com.balsamiq.mockups::Link" x="932" y="83" w="-1" h="-1" measuredW="109" measuredH="21" zOrder="28" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Log%20In%20with%20GitHub</text>
@@ -189,5 +189,17 @@
       </controlProperties>
     </control>
     <control controlID="58" controlTypeID="com.balsamiq.mockups::SearchBox" x="350" y="79" w="190" h="-1" measuredW="120" measuredH="25" zOrder="39" locked="false" isInGroup="-1"/>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Label" x="759" y="493" w="-1" h="-1" measuredW="56" measuredH="22" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>14</size>
+        <text>Contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Paragraph" x="759" y="521" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>We%20would%20love%20to%20hear%20from%20you%21%20Sent%20your%20questions%20and%20feedback%20to%20%5Bsupport@popper.org%5D.</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>

@@ -41,11 +41,11 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="884" y="82" w="-1" h="-1" measuredW="115" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="916" y="82" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <href>experiment_library%26bm%3Bexperiment_library.bmml%26bm%3Bexperiment_library.bmml%26bm%3Bexperiment_library.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22884%2C82%2C999%2C103%22%20href%3D%22experiment_library.bmml%22%20alt%3D%22experiment_library%22%20id%3D%2216%22/%3E</map>
-        <text>Experiment%20Library</text>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22916%2C82%2C995%2C103%22%20href%3D%22experiment_library.bmml%22%20alt%3D%22experiment_library%22%20id%3D%2216%22/%3E</map>
+        <text>Experiments</text>
       </controlProperties>
     </control>
     <control controlID="28" controlTypeID="com.balsamiq.mockups::Label" x="206" y="164" w="-1" h="-1" measuredW="83" measuredH="33" zOrder="8" locked="false" isInGroup="-1">
@@ -99,11 +99,11 @@
         <text>game</text>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::Link" x="816" y="82" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Link" x="824" y="82" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22816%2C82%2C881%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%2253%22/%3E</map>
-        <text>Dashboard</text>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22824%2C82%2C913%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%2253%22/%3E</map>
+        <text>Documentation</text>
       </controlProperties>
     </control>
     <control controlID="54" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="1077" w="1330" h="226" measuredW="100" measuredH="70" zOrder="17" locked="false" isInGroup="-1">
@@ -456,7 +456,7 @@
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="152" controlTypeID="com.balsamiq.mockups::Link" x="467" y="1220" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="84" locked="false" isInGroup="-1">
+    <control controlID="152" controlTypeID="com.balsamiq.mockups::Link" x="467" y="1220" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="84" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
@@ -469,6 +469,13 @@
     <control controlID="154" controlTypeID="com.balsamiq.mockups::Link" x="467" y="1201" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="86" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
+      </controlProperties>
+    </control>
+    <control controlID="155" controlTypeID="com.balsamiq.mockups::Link" x="754" y="82" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="87" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22754%2C82%2C820%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%22155%22/%3E</map>
+        <text>Dashboard</text>
       </controlProperties>
     </control>
   </controls>

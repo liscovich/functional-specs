@@ -123,11 +123,11 @@
         <text>search</text>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::Link" x="843" y="82" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Link" x="823" y="82" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
         <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22843%2C82%2C908%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%2253%22/%3E</map>
-        <text>Dashboard</text>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22823%2C82%2C912%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%2253%22/%3E</map>
+        <text>Documentation</text>
       </controlProperties>
     </control>
     <control controlID="54" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="710" w="1330" h="226" measuredW="100" measuredH="70" zOrder="22" locked="false" isInGroup="-1">
@@ -477,6 +477,18 @@
     <control controlID="141" controlTypeID="com.balsamiq.mockups::List" x="1007" y="101" w="142" h="48" measuredW="100" measuredH="126" zOrder="81" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Profile%0ALog%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="142" controlTypeID="com.balsamiq.mockups::Link" x="750" y="82" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="82" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>about_page%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml%26bm%3Babout_page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22750%2C82%2C816%2C103%22%20href%3D%22about_page.bmml%22%20alt%3D%22about_page%22%20id%3D%22142%22/%3E</map>
+        <text>Dashboard</text>
+      </controlProperties>
+    </control>
+    <control controlID="143" controlTypeID="com.balsamiq.mockups::Button" x="1034" y="205" w="-1" h="-1" measuredW="115" measuredH="27" zOrder="83" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20Experiment</text>
       </controlProperties>
     </control>
   </controls>

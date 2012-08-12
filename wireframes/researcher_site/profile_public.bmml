@@ -108,9 +108,9 @@
         <text>Our%20Story</text>
       </controlProperties>
     </control>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::Link" x="762" y="83" w="-1" h="-1" measuredW="84" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Link" x="762" y="83" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>How%20It%20Works</text>
+        <text>Documentation</text>
       </controlProperties>
     </control>
     <control controlID="50" controlTypeID="com.balsamiq.mockups::Link" x="850" y="83" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
