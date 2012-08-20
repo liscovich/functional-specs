@@ -371,7 +371,7 @@ The **Introduction Page** introduces users to Popper. The primary action that a 
 <a name="RSNavbar"></a>
 ##1. Navigation Bar
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" width="100%"></a>	
 
 The **Navigation Bar** includes six or three items, depending on whether the user is logged in: 
 
@@ -746,18 +746,45 @@ Clicking “More...” scrolls down the window to display more trials in the sty
 
 The Feed automatically updates with:
 
-1. Changes in status, with the following phrasing:
-	- **Awaiting subjects:** `<a href=”trial-summary-url”>Trial ##</a> has been created. Awaiting subjects.`
-    - **In progress:** `<a href=”trial-summary-url”>Trial ##</a> is now in progress.`
-	- **Paused:** `<a href=”trial-summary-url”>Trial ##</a> has been paused.`
-	- **Payment pending:** `<a href=”trial-summary-url”>Trial ##</a> has finished. Please <a href=”trial-summary-url”>review</a> subject payments.`
-	- **Complete:** `<a href=”trial-summary-url”>Trial ##</a> is now complete.`
-	- **Error:** `An error has occurred with <a href=”trial-summary-url”>Trial ##</a>.`
-2. **Fork activity**
-	- `<a href=”researcher-public-profile-url”>John Nash</a> has just forked your experiment, <a href=”experiment-url”>Experiment Name</a>.`
-- **Following activity**
-	- `<a href=”researcher-public-profile-url”>John Nash</a> is now following <a href=”trial-summary-url”>Trial ##</a>.`
-	- `You are now following <a href=”trial-summary-url”>Trial ##</a> by <a href=”researcher-public-profile-url”>John Nash</a>.`
+**Changes in status, with the following phrasing:**
+
+1. Awaiting subjects:
+		
+		<a href="trial-summary-url">Trial ##</a> has been created. Awaiting subjects.
+    
+2. In progress:
+
+	    <a href="trial-summary-url">Trial ##</a> is now in progress.
+	
+3. Paused: 
+
+		<a href="trial-summary-url">Trial ##</a> has been paused.
+	
+4. Payment pending:
+
+		<a href="trial-summary-url">Trial ##</a> has finished. Please <a href=”trial-summary-url”>review</a> subject payments.
+
+5. Complete:
+
+		<a href="trial-summary-url">Trial ##</a> is now complete.
+	
+6. Error:
+
+		An error has occurred with <a href="trial-summary-url">Trial ##</a>.
+
+**Sharing**
+
+1. Fork notification:
+
+		<a href="researcher-public-profile-url">John Nash</a> has just forked your experiment, <a href="experiment-url">Experiment Name</a>.
+
+2. Someone else follows your trial:
+
+		<a href="researcher-public-profile-url">John Nash</a> is now following <a href="trial-summary-url">Trial ##</a>.
+
+3. You follow someone else's trial: 
+
+		You are now following <a href="trial-summary-url">Trial ##</a> by <a href="researcher-public-profile-url">John Nash</a>.
 
 "More..." scrolls down the entire window to display more feed information.
 
@@ -767,6 +794,8 @@ The Feed automatically updates with:
 See <a href="RSIP_Footer">above</a>.
 
 # <a name="RSExperiment_Summary"></a>Experiment Summary
+
+Experiment Summary allows a researcher to read about an experiment and create a trial. 
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" width="100%"></a>	
 
@@ -783,19 +812,27 @@ See <a href="#RSNavbar">above</a>.
 
 ## <a name="RSExpInfo_ES">Experiment Information</a>
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a>	
-
 ### Basic Information
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a>	
 
-The following pieces of information are pulled from the experiment metadata in the experiment's GitHub repository:
+The following information is pulled from experiment metadata:
 
 - Experiment name
-- Experiment authors (usually faculty or graduate student(s) who will write a paper based on the experiment)
-- Designers ()
+- Experiment authors: Person who creates an experiment in Unity3D. 
+- Designers: Person who came up with the idea of the experiment. This idea could have been expressed in a paper and is not always the same as the experiment author.  
+- References
+- IRB approvals: If none exists, "Not Uploaded" is displayed. 
+- Categories: If none exists, "None" should be displayed. Every experiment should be classified under at least one category. 
+
+The following information is not affiliated with experiment metadata:
+
+- Previous trials: Each time a trial is run using this experiment, the trial number and individual who ran the trial should be listed with a timestamp. 
+- Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by the person's Gravatar photo, name linking to his or her Popper account, and a timestamp. 
 
 ## <a name="RSCreate_Trial_ES">Create Trial Form</a>
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" width="100%"></a>
 
 The Create Trial form includes the following fields:
 
@@ -831,13 +868,28 @@ The Subjects section accompanies all experiments. Available options, with the de
 - Connection latency at most ## milliseconds (the researcher fills in the field with a number, with the default value at 700)
 - [X] Make trial results public
 
+Trials are numbered in the order in which they are created. Clicking "Create Trial" assigns a number to the trial and brings the user to its <a href="#RSTrial_Summary">Trial Summary</a> page. 
+
 ## <a name="RSFooter_ES">Footer</a>
 
 See <a href="RSIP_Footer">above</a>.
 
-# <a name="RSTrial_summary"></a>Trial Summary
+## Private View
+
+The user who owns the GitHub account containing the trial can edit the following fields directly on the Experiment Summary page: 
+
+- Name
+- Description 
+- References
+- IRB approvals: The user can upload a PDF of the IRB approval for the experiment. The Researcher Website should create a folder in the user's GitHub repository for the experiment called "IRB", and store the uploaded PDF in this folder.
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" width="100%"></a>
+
+# <a name="RSTrial_Summary"></a>Trial Summary
 
 Researchers monitor trials in real time and download results on the Trial Summary page.
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary.png?raw=true" width="100%"></a>
 
 ##Page Components
 
@@ -849,14 +901,16 @@ Researchers monitor trials in real time and download results on the Trial Summar
 6. History
 7. Footer
 
-<h3> 1. Navigation bar </h3>
+##1. Navigation bar
 
-See above. <!---internal link-->
+See <a href="#RSNavbar">above</a>.
 
-##2. Trial information
+##2. Basic information
 
-- **Name of the experiment:** Link to the Create Trial page
-- **Trial number:** Trials are numbered in the order that they are created
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form_basic.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_basic.png?raw=true" width="100%"></a>
+
+- Name of the experiment: Link to the <a href="#RSExperiment_Summary">Experiment Summary</a> page
+- Trial number: Trials are numbered in the order that they are created
 
 ##3. Trial actions
 

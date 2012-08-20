@@ -397,7 +397,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar?raw=true" width="100%"></a> </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" width="100%"></a> </p>
 
 <p>The <strong>Navigation Bar</strong> includes six or three items, depending on whether the user is logged in: </p>
 
@@ -971,28 +971,50 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p>The Feed automatically updates with:</p>
 
+<p><strong>Changes in status, with the following phrasing:</strong></p>
+
 <ol>
-<li>Changes in status, with the following phrasing:
+<li><p>Awaiting subjects:</p>
 
-<ul>
-<li><strong>Awaiting subjects:</strong> <code>&lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; has been created. Awaiting subjects.</code></li>
-<li><strong>In progress:</strong> <code>&lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; is now in progress.</code></li>
-<li><strong>Paused:</strong> <code>&lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; has been paused.</code></li>
-<li><strong>Payment pending:</strong> <code>&lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; has finished. Please &lt;a href=”trial-summary-url”&gt;review&lt;/a&gt; subject payments.</code></li>
-<li><strong>Complete:</strong> <code>&lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; is now complete.</code></li>
-<li><strong>Error:</strong> <code>An error has occurred with &lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt;.</code></li>
-</ul></li>
-<li><strong>Fork activity</strong>
+<pre><code>&lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; has been created. Awaiting subjects.
+</code></pre></li>
+<li><p>In progress:</p>
 
-<ul>
-<li><code>&lt;a href=”researcher-public-profile-url”&gt;John Nash&lt;/a&gt; has just forked your experiment, &lt;a href=”experiment-url”&gt;Experiment Name&lt;/a&gt;.</code></li>
-</ul></li>
-<li><strong>Following activity</strong>
+<pre><code>&lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; is now in progress.
+</code></pre></li>
+<li><p>Paused: </p>
 
-<ul>
-<li><code>&lt;a href=”researcher-public-profile-url”&gt;John Nash&lt;/a&gt; is now following &lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt;.</code></li>
-<li><code>You are now following &lt;a href=”trial-summary-url”&gt;Trial ##&lt;/a&gt; by &lt;a href=”researcher-public-profile-url”&gt;John Nash&lt;/a&gt;.</code></li>
-</ul></li>
+<pre><code>&lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; has been paused.
+</code></pre></li>
+<li><p>Payment pending:</p>
+
+<pre><code>&lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; has finished. Please &lt;a href=”trial-summary-url”&gt;review&lt;/a&gt; subject payments.
+</code></pre></li>
+<li><p>Complete:</p>
+
+<pre><code>&lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; is now complete.
+</code></pre></li>
+<li><p>Error:</p>
+
+<pre><code>An error has occurred with &lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt;.
+</code></pre></li>
+</ol>
+
+<p><strong>Sharing</strong></p>
+
+<ol>
+<li><p>Fork notification:</p>
+
+<pre><code>&lt;a href=&quot;researcher-public-profile-url&quot;&gt;John Nash&lt;/a&gt; has just forked your experiment, &lt;a href=&quot;experiment-url&quot;&gt;Experiment Name&lt;/a&gt;.
+</code></pre></li>
+<li><p>Someone else follows your trial:</p>
+
+<pre><code>&lt;a href=&quot;researcher-public-profile-url&quot;&gt;John Nash&lt;/a&gt; is now following &lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt;.
+</code></pre></li>
+<li><p>You follow someone else&#8217;s trial: </p>
+
+<pre><code>You are now following &lt;a href=&quot;trial-summary-url&quot;&gt;Trial ##&lt;/a&gt; by &lt;a href=&quot;researcher-public-profile-url&quot;&gt;John Nash&lt;/a&gt;.
+</code></pre></li>
 </ol>
 
 <p>&#8220;More&#8230;&#8221; scrolls down the entire window to display more feed information.</p>
@@ -1004,6 +1026,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersexperiment_summaryaexperimentsummary"><a name="RSExperiment_Summary"></a>Experiment Summary</h2>
+
+<p>Experiment Summary allows a researcher to read about an experiment and create a trial. </p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" width="100%"></a> </p>
 
@@ -1022,21 +1046,31 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h3 id="anamersexpinfo_esexperimentinformationa"><a name="RSExpInfo_ES">Experiment Information</a></h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a> </p>
-
 <h4 id="basicinformation">Basic Information</h4>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" width="100%"></a> </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a> </p>
 
-<p>The following pieces of information are pulled from the experiment metadata in the experiment&#8217;s GitHub repository:</p>
+<p>The following information is pulled from experiment metadata:</p>
 
 <ul>
 <li>Experiment name</li>
-<li>Experiment authors (usually faculty or graduate student(s) who will write a paper based on the experiment)</li>
-<li>Designers ()</li>
+<li>Experiment authors: Person who creates an experiment in Unity3D.</li>
+<li>Designers: Person who came up with the idea of the experiment. This idea could have been expressed in a paper and is not always the same as the experiment author.</li>
+<li>References</li>
+<li>IRB approvals: If none exists, &#8220;Not Uploaded&#8221; is displayed.</li>
+<li>Categories: If none exists, &#8220;None&#8221; should be displayed. Every experiment should be classified under at least one category.</li>
+</ul>
+
+<p>The following information is not affiliated with experiment metadata:</p>
+
+<ul>
+<li>Previous trials: Each time a trial is run using this experiment, the trial number and individual who ran the trial should be listed with a timestamp.</li>
+<li>Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by the person&#8217;s Gravatar photo, name linking to his or her Popper account, and a timestamp.</li>
 </ul>
 
 <h3 id="anamerscreate_trial_escreatetrialforma"><a name="RSCreate_Trial_ES">Create Trial Form</a></h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" width="100%"></a></p>
 
 <p>The Create Trial form includes the following fields:</p>
 
@@ -1090,13 +1124,30 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>[X] Make trial results public</li>
 </ul>
 
+<p>Trials are numbered in the order in which they are created. Clicking &#8220;Create Trial&#8221; assigns a number to the trial and brings the user to its <a href="#RSTrial_Summary">Trial Summary</a> page. </p>
+
 <h3 id="anamersfooter_esfootera"><a name="RSFooter_ES">Footer</a></h3>
 
 <p>See <a href="RSIP_Footer">above</a>.</p>
 
-<h2 id="anamerstrial_summaryatrialsummary"><a name="RSTrial_summary"></a>Trial Summary</h2>
+<h3 id="privateview">Private View</h3>
+
+<p>The user who owns the GitHub account containing the trial can edit the following fields directly on the Experiment Summary page: </p>
+
+<ul>
+<li>Name</li>
+<li>Description</li>
+<li>References</li>
+<li>IRB approvals: The user can upload a PDF of the IRB approval for the experiment. The Researcher Website should create a folder in the user&#8217;s GitHub repository for the experiment called &#8220;IRB&#8221;, and store the uploaded PDF in this folder.</li>
+</ul>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" width="100%"></a></p>
+
+<h2 id="anamerstrial_summaryatrialsummary"><a name="RSTrial_Summary"></a>Trial Summary</h2>
 
 <p>Researchers monitor trials in real time and download results on the Trial Summary page.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary.png?raw=true" width="100%"></a></p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -1110,15 +1161,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Footer</li>
 </ol>
 
-<h3> 1. Navigation bar </h3>
+<h3 id="navigationbar">1. Navigation bar</h3>
 
-<p>See above. <!---internal link--></p>
+<p>See <a href="#RSNavbar">above</a>.</p>
 
-<h3 id="trialinformation">2. Trial information</h3>
+<h3 id="basicinformation">2. Basic information</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form_basic.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_basic.png?raw=true" width="100%"></a></p>
 
 <ul>
-<li><strong>Name of the experiment:</strong> Link to the Create Trial page</li>
-<li><strong>Trial number:</strong> Trials are numbered in the order that they are created</li>
+<li>Name of the experiment: Link to the <a href="#RSExperiment_Summary">Experiment Summary</a> page</li>
+<li>Trial number: Trials are numbered in the order that they are created</li>
 </ul>
 
 <h3 id="trialactions">3. Trial actions</h3>
