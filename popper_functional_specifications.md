@@ -368,7 +368,8 @@ The **Introduction Page** introduces users to Popper. The primary action that a 
 4. <a href="#RSFeatures">Features</a>
 5. <a href="#RSIP_Footer">Footer</a>
 
-<a name="RSNavbar"></a>##1. Navigation Bar
+<a name="RSNavbar"></a>
+##1. Navigation Bar
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar?raw=true" width="100%"></a>	
 
@@ -634,7 +635,7 @@ The layout of the page is fluid so that the number of experiments displayed per 
 - Name of the repository (functioning as the name of the experiment)
 - Repository owner
 - Short description of the experiment
-- Number of forks
+- Numfber of forks
 - Publication citation
 - Upvotes and names of recommenders
 - Last modified ## minutes/hours/days/weeks/months/years ago
@@ -698,7 +699,7 @@ The **Dashboard** is an overview of all activity in the user's account. It serve
 4. <a href="#RSFooter_D">Footer</a>
 
 <a name="RSNavbar_D"></a>
-##1. Navigation bar
+<h3> 1. Navigation bar </h3>
 
 See <a href="#RSNavbar">above</a>.
 
@@ -848,7 +849,7 @@ Researchers monitor trials in real time and download results on the Trial Summar
 6. History
 7. Footer
 
-##1. Navigation bar
+<h3> 1. Navigation bar </h3>
 
 See above. <!---internal link-->
 
@@ -906,7 +907,7 @@ Each user has a public profile to showcase his or her work in the experimental s
 2. Researcher profile
 3. Footer
 
-##1. Navigation bar
+<h3> 1. Navigation bar </h3>
 
 See above. <!---internal link-->
 

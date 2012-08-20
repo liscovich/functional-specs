@@ -393,7 +393,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li><a href="#RSIP_Footer">Footer</a></li>
 </ol>
 
-<p><a name="RSNavbar"></a>##1. Navigation Bar</p>
+<p><a name="RSNavbar"></a></p>
+
+<h3 id="navigationbar">1. Navigation Bar</h3>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar?raw=true" width="100%"></a> </p>
 
@@ -836,7 +838,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Name of the repository (functioning as the name of the experiment)</li>
 <li>Repository owner</li>
 <li>Short description of the experiment</li>
-<li>Number of forks</li>
+<li>Numfber of forks</li>
 <li>Publication citation</li>
 <li>Upvotes and names of recommenders</li>
 <li>Last modified ## minutes/hours/days/weeks/months/years ago</li>
@@ -848,9 +850,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p>The <a href="http://www.github.com/experiments" target="_blank">Popper GitHub account</a> hosts Stock Experiments that showcase the capabilities of the platform and provide researchers with fully functional templates to start their own projects. </p>
 
-<p>An &#8220;Add Experiment&#8221; button links to Popper documention for designing and publishing an experiment using the Popper SDK.</p>
+<p>An &#8220;Add Experiment&#8221; button links to Popper <a href="#RSDocumentation">Documentation</a> on GitHub for designing and publishing an experiment using the Popper SDK.</p>
 
-<p>The user clicks on the experiment to go to its <a href="RSCreate_Trial">Create Trial</a> page.</p>
+<p>The user clicks on the experiment to go to its <a href="#RSCreate_Trial">Create Trial</a> page.</p>
 
 <h3 id="searchbar">5. Search bar</h3>
 
@@ -875,7 +877,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h3 id="filter">6. Filter</h3>
 
-<p>Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon.com. </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" width="100%"></a> </p>
+
+<p>Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon. </p>
 
 <h4 id="availablefilters:">Available filters:</h4>
 
@@ -900,28 +904,37 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h2 id="anamersdashboardadashboard"><a name="RSDashboard"></a>Dashboard</h2>
 
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" width="100%"></a> </p>
+
 <p>The <strong>Dashboard</strong> is an overview of all activity in the user&#8217;s account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.</p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
-<!---internal links here-->
-
 <ol>
-<li>Navigation bar</li>
-<li>Trials</li>
-<li>Feed</li>
-<li>Footer</li>
+<li><a href="#RSNavbar_D">Navigation bar</a></li>
+<li><a href="#RSTrials_D">Trials</a></li>
+<li><a href="#RSFeed_D">Feed</a></li>
+<li><a href="#RSFooter_D">Footer</a></li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation bar</h3>
+<p><a name="RSNavbar_D"></a>
+<h3> 1. Navigation bar </h3></p>
 
-<p>Same as the Introduction Page. <!---link--></p>
+<p>See <a href="#RSNavbar">above</a>.</p>
+
+<p><a name="RSTrials_D"></a></p>
 
 <h3 id="trials">2. Trials</h3>
 
-<p><strong>Trials</strong> lists a user&#8217;s ongoing and completed trials. Clicking on the name of a trial brings the researcher to its <strong>Trial Summary</strong><!---link--> page.</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials.png?raw=true" width="100%"></a> </p>
 
-<p>Trials are sorted by timestamp. The state of a trial appears beneath its name, and a change in state updates its time stamp, pushing the trial to the top of the list.. These states can be altered in the metadata file but by default, trials are in one of six states:</p>
+<p><strong>Trials</strong> lists a user&#8217;s ongoing and completed trials. Clicking on the name of a trial brings the researcher to its <a href="#Trial_Summary">Trial Summary</a> page, which will be discussed later.</p>
+
+<p>Trials are sorted by timestamp. The state of a trial appears beneath its name, and a change in state updates its time stamp, pushing the trial to the top of the list. </p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" width="100%"></a> </p>
+
+<p>These states can be altered in the metadata file but by default, trials are in one of six states:</p>
 
 <ol>
 <li><strong>Awaiting subjects:</strong> The initial status of all trials. The trial has been created and the server is waiting for a sufficient number of subjects. The researcher can recruit more subjects by clicking the name of the trial to go to its <strong>Trial Summary</strong> page.</li>
@@ -935,15 +948,26 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <p>Also displayed: </p>
 
 <ul>
+<li><strong>Trial name</strong></li>
 <li><strong>Trial number:</strong> Unique ID number assigned to each trial.</li>
 <li><strong>Timestamp:</strong> Time trial corresponding to a change in state.</li>
 </ul>
 
-<p>Clicking “More&#8230;” scrolls down the window to display more trials in the style of GitHub. <!--- screenshot of GitHub more in action-->“More” disappears once all trials have been displayed. There is no scroll bar on the Trials frame.</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" width="100%"></a> </p>
 
-<p>“New Trial” links to the <strong>Create Trial</strong> page.</p>
+<p>Clicking “More&#8230;” scrolls down the window to display more trials in the style of GitHub. “More” disappears once all trials have been displayed. There is no scroll bar on the Trials frame.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" width="100%"></a> </p>
+
+<p>“Experiments&quot; links to the <a href="#RSExperiments">Experiments</a> page.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" width="100%"></a> </p>
+
+<p><a name="RSFeed_D"></a></p>
 
 <h3 id="feed">3. Feed</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" width="100%"></a> </p>
 
 <p>The Feed automatically updates with:</p>
 
@@ -973,11 +997,46 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <p>&#8220;More&#8230;&#8221; scrolls down the entire window to display more feed information.</p>
 
+<p><a name="RSFooter_D"></a></p>
+
 <h3 id="footer">4. Footer</h3>
 
-<p>The Footer is the same as the one described on previous pages. <!---internal link--></p>
+<p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersexperiment_summaryaexperimentsummary"><a name="RSExperiment_Summary"></a>Experiment Summary</h2>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" width="100%"></a> </p>
+
+<h3 id="pagecomponents">Page Components</h3>
+
+<ol>
+<li><a href="#RSNavbar_ES">Navigation Bar</a></li>
+<li><a href="#RSExpInfo_ES">Experiment Information</a></li>
+<li><a href="#RSCreate_Trial_ES">Create Trial Form</a></li>
+<li><a href="#RSFooter_ES">Footer</a></li>
+</ol>
+
+<h3 id="anamersnavbar_esnavigationbara"><a name="RSNavbar_ES">Navigation Bar</a></h3>
+
+<p>See <a href="#RSNavbar">above</a>.</p>
+
+<h3 id="anamersexpinfo_esexperimentinformationa"><a name="RSExpInfo_ES">Experiment Information</a></h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a> </p>
+
+<h4 id="basicinformation">Basic Information</h4>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_basicinfo.png?raw=true" width="100%"></a> </p>
+
+<p>The following pieces of information are pulled from the experiment metadata in the experiment&#8217;s GitHub repository:</p>
+
+<ul>
+<li>Experiment name</li>
+<li>Experiment authors (usually faculty or graduate student(s) who will write a paper based on the experiment)</li>
+<li>Designers ()</li>
+</ul>
+
+<h3 id="anamerscreate_trial_escreatetrialforma"><a name="RSCreate_Trial_ES">Create Trial Form</a></h3>
 
 <p>The Create Trial form includes the following fields:</p>
 
@@ -1031,6 +1090,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>[X] Make trial results public</li>
 </ul>
 
+<h3 id="anamersfooter_esfootera"><a name="RSFooter_ES">Footer</a></h3>
+
+<p>See <a href="RSIP_Footer">above</a>.</p>
+
 <h2 id="anamerstrial_summaryatrialsummary"><a name="RSTrial_summary"></a>Trial Summary</h2>
 
 <p>Researchers monitor trials in real time and download results on the Trial Summary page.</p>
@@ -1047,7 +1110,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Footer</li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation bar</h3>
+<h3> 1. Navigation bar </h3>
 
 <p>See above. <!---internal link--></p>
 
@@ -1117,7 +1180,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Footer</li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation bar</h3>
+<h3> 1. Navigation bar </h3>
 
 <p>See above. <!---internal link--></p>
 
