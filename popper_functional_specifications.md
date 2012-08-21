@@ -932,8 +932,6 @@ See <a href="#RSNavbar">above</a>.
 - Parameters: Same information from the Create Trial form. These parameters are not editable on this page.
 - Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a>
 
-- **Replicate:** Link to the Create Trial page, with all fields already filled in. The user can replicate the trial or change parameters.
-
 ##5. <a name="RSTrial_Summary_S"></a>Subjects
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" width="100%"></a>
@@ -1018,39 +1016,80 @@ See <a href="RSIP_Footer">above</a>.
 
 # <a name="RSPrivate_Profile"></a>Private Profile
 
-A logged in user can edit profile and payment information. 
+A logged in user can edit <a href="#RSEdit_Profile">profile</a> and <a href="#RSEdit_Payment">payment credentials.</a> 
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a>
 	
-##Page Components
+<a name = "RSEdit_Profile"></a>
+##Page Components: Edit Profile
 
-1. <a href="#RSProfile_NB">Navigation bar</a>
-2. <a href="#RSProfile_RP">Researcher profile</a>
-3. <a href="#RSProfile_F">Footer</a>
+1. <a href="#RSProfile_ENB">Navigation bar</a>
+2. <a href="#RSProfile_ESN">Side navigation</a>
+3. <a href="#RSProfile_ERP">Edit profile</a>
+4. <a href="#RSProfile_EF">Footer</a>
 
-<a name = "RSProfile_NB"></a>
+<a name = "RSProfile_ENB"></a>
 ##1. Navigation bar
 
 See <a href="#RSNavbar">above</a>.
 
-<a name = "RSProfile_RP"></a>
-##2. Researcher profile (replaced with the researcher’s name)
+<a name = "RSProfile_ESN"></a>
+##2. Side navigation
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" width="100%"></a>
+The edit profile page has an additional side navigation bar, which allows the researcher to toggle between editing profile information and updating payment credentials. 
 
-The profile features information pulled from the user’s GitHub account as well as user-provided information. The public view of a user’s profile displays the following:
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" width="100%"></a>
 
-- GitHub profile picture (Gravatar)
-- Full name
-- Department
+<a name = "RSProfile_ERP"></a>
+##3. Edit profile
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" width="100%"></a>
+
+The researcher can edit the following items:
+
+- Name
 - Affiliation
-- Bio: Written by the researcher.
-- Experiments: Shows all public experiments associated with a researcher's GitHub account. 
-- Trials: Links to the <a href="#RSTrial_Summary">Trial Summary</a> page for <a href="#Public_Trial">public trials</a>. 
-- Recommendations: Shows all experiments that the researcher has recommended on an <a href="#RSExperiment_Summary">Experiment Summary</a> page.
+- Department 
+- Biography: If the researcher has not provided a biography, the space under the department and affiliation line reads "Write your biography here."
+- Recommended experiments: The researcher can removed experiments from this list.  
 
-<a name = "RSProfile_F"></a>
-##3. Footer 
+The research _cannot_ edit the following items:
+
+- Experiments: We want to encourage researchers to share as many experiments publicly as possible. Researchers need to change share settings to "Private" in their GitHub account, not from the Researcher Website, if they wish to make any experiment invisible to the public. 
+- Trials: We also want to encourage sharing trials. Trial settings must be adjusted directly on the Trial Summary page. 
+
+<a name = "RSProfile_EF"></a>
+##4. Footer 
+
+See <a href="RSIP_Footer">above</a>.
+
+<a name = "RSEdit_Payment"></a>
+##Page Components: Edit Payment
+
+1. <a href="#RSProfile_EPNB">Navigation bar</a>
+2. <a href="#RSProfile_EPSN">Side navigation</a>
+3. <a href="#RSProfile_EPRP">Edit payment</a>
+4. <a href="#RSProfile_EPF">Footer</a>
+
+<a name = "RSProfile_EPNB"></a>
+##1. Navigation bar
+
+See <a href="#RSNavbar">above</a>.
+
+<a name = "RSProfile_EPSN"></a>
+##2. Side navigation
+
+See <a href="#RSProfile_ESN">above</a>.
+
+<a name = "RSProfile_EPRP"></a>
+##3. Edit profile
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" width="100%"></a>
+
+The researcher can enter credit card information on the left side of the screen and manage payment methods on the right. Payment history keeps a log of the date, payee, trial number, and payment amount of all previous transactions. 
+
+<a name = "RSProfile_EPF"></a>
+##4. Footer 
 
 See <a href="RSIP_Footer">above</a>.
 
@@ -1058,18 +1097,23 @@ See <a href="RSIP_Footer">above</a>.
 
 Users can perform an instant search for an experiment, trial, or researcher profile from any page on the Researcher Website.
 
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" width="100%"></a>
+
 ## Page Components
 
-<!---internal lnks here-->
-1. Navigation Bar 
-2. Search Results 
-3. Footer
+1. <a href="#RSSearch_Nav">Navigation Bar</a> 
+2. <a href="#RSSearch_Search">Search Results</a> 
+3. <a href="#RSSearch_Footer">Footer</a>
 
+<a name="#RSSearch_Nav"></a>
 ## 1. Navigation Bar
 
-See above.
+See <a href="#RSNavbar">above</a>.
 
+<a name="#RSSearch_Search"></a>
 ##2. Search Results 
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" width="100%"></a>
 
 Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query. 
 
@@ -1092,23 +1136,25 @@ To perform instant search, the Researcher Site regularly indexes the following i
 	- Categories assigned to the user’s pushed experiments
 	- Names of the user’s created trials
 
-All three results sections (experiments, trials, and profiles) are displayed with every query. If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More...” opens a new page with search results from only that category. The same “More...” functionality <a href=”https://github.com/search?q=rails&type=Everything&repo=&langOverride=&start_value=1” target=”_blank”>can be found</a> in GitHub search. 
+All three results sections (experiments, trials, and profiles) are displayed with every query. The user can choose to view only one type of result by clicking on one of the filters on the left of the screen (All, Experimnets, Trials, Researchers).
+
+If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More...” opens a new page with search results from only that category. The same “More...” functionality <a href=”https://github.com/search?q=rails&type=Everything&repo=&langOverride=&start_value=1” target=”_blank”>can be found</a> in GitHub search. 
 
 ###Sorting
 
-Experiments search results are sorted by:
+**Experiments** search results are sorted by:
 
 1. Growth rate in the number of commits
 2. If tied, the number of forks
 3. If tied, the number of upvotes
 4. If tied, the age of the repository, with younger repositories listed first
 
-Trials search results are sorted by:
+**Trials** search results are sorted by:
 
 1. Last activity date
 2. If tied, number of times search word(s) appear in 
 
-Profile search results are sorted by
+**Profile** search results are sorted by
 
 1. Appearance in the user’s name:
 	- Alphabetically by last name
@@ -1120,9 +1166,10 @@ Profile search results are sorted by
 	- If tied, by appearance in names of trials created
 	- If tied, by appearance in the researcher’s self summary
 
+<a name="RSSearch_Footer"></a>
 ##3. Footer
 
-See above.
+See <a href="RSIP_Footer">above</a>.
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 

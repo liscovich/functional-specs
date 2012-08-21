@@ -1183,7 +1183,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" width="100%"></a></p>
 
 <ul>
-<li>Public/Private: Determined by whether the user checked the box &#8220;Make results public&#8221; in the <a href="#RSCreate_Trial_ES">Create Trial Form</a>. The user can toggle between Private and Public. If results are private, only the user who created the trial can view its Trial Summary page. If results are public, anyone with a Popper account can view this Trial Summary page. Results are viewable in real time.</li>
+<li><a name="Public_Trial"></a>Public/Private: Determined by whether the user checked the box &#8220;Make results public&#8221; in the <a href="#RSCreate_Trial_ES">Create Trial Form</a>. The user can toggle between Private and Public. If results are private, only the user who created the trial can view its Trial Summary page. If results are public, anyone with a Popper account can view this Trial Summary page. Results are viewable in real time.</li>
 <li>Ongoing/Pause/Stop: Status of the trial.
 
 <ul>
@@ -1197,9 +1197,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" width="100%"></a></p>
 
 <ul>
-<li><p>Parameters: Same information from the Create Trial form. These parameters are not editable on this page.</p></li>
-<li><p>Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a></p></li>
-<li><p><strong>Replicate:</strong> Link to the Create Trial page, with all fields already filled in. The user can replicate the trial or change parameters.</p></li>
+<li>Parameters: Same information from the Create Trial form. These parameters are not editable on this page.</li>
+<li>Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a></li>
 </ul>
 
 <h3 id="anamerstrial_summary_sasubjects">5. <a name="RSTrial_Summary_S"></a>Subjects</h3>
@@ -1261,9 +1260,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <h3 id="pagecomponents">Page Components</h3>
 
 <ol>
-<li><a href="#RSTrial_Summary_NB">Navigation bar</li>
-<li>Researcher profile</li>
-<li>Footer</li>
+<li><a href="#RSProfile_NB">Navigation bar</a></li>
+<li><a href="#RSProfile_RP">Researcher profile</a></li>
+<li><a href="#RSProfile_F">Footer</a></li>
 </ol>
 
 <p><a name = "RSProfile_NB"></a></p>
@@ -1271,6 +1270,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <h3 id="navigationbar">1. Navigation bar</h3>
 
 <p>See <a href="#RSNavbar">above</a>.</p>
+
+<p><a name = "RSProfile_RP"></a></p>
 
 <h3 id="researcherprofilereplacedwiththeresearchersname">2. Researcher profile (replaced with the researcher’s name)</h3>
 
@@ -1280,22 +1281,117 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <ul>
 <li>GitHub profile picture (Gravatar)</li>
-<li>Full Name</li>
+<li>Full name</li>
 <li>Department</li>
 <li>Affiliation</li>
-<li>Experiments</li>
-<li>Trials</li>
+<li>Bio: Written by the researcher.</li>
+<li>Experiments: Shows all public experiments associated with a researcher&#8217;s GitHub account.</li>
+<li>Trials: Links to the <a href="#RSTrial_Summary">Trial Summary</a> page for <a href="#Public_Trial">public trials</a>.</li>
+<li>Recommendations: Shows all experiments that the researcher has recommended on an <a href="#RSExperiment_Summary">Experiment Summary</a> page.</li>
 </ul>
 
-<p>A logged-in user can edit the above fields and see the following private information:</p>
-
-<ul>
-<li>Payment credentials</li>
-</ul>
+<p><a name = "RSProfile_F"></a></p>
 
 <h3 id="footer">3. Footer</h3>
 
-<p>See above. <!---internal link--></p>
+<p>See <a href="RSIP_Footer">above</a>.</p>
+
+<h2 id="anamersprivate_profileaprivateprofile"><a name="RSPrivate_Profile"></a>Private Profile</h2>
+
+<p>A logged in user can edit <a href="#RSEdit_Profile">profile</a> and <a href="#RSEdit_Payment">payment credentials.</a> </p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a></p>
+
+<p><a name = "RSEdit_Profile"></a></p>
+
+<h3 id="pagecomponents:editprofile">Page Components: Edit Profile</h3>
+
+<ol>
+<li><a href="#RSProfile_ENB">Navigation bar</a></li>
+<li><a href="#RSProfile_ESN">Side navigation</a></li>
+<li><a href="#RSProfile_ERP">Edit profile</a></li>
+<li><a href="#RSProfile_EF">Footer</a></li>
+</ol>
+
+<p><a name = "RSProfile_ENB"></a></p>
+
+<h3 id="navigationbar">1. Navigation bar</h3>
+
+<p>See <a href="#RSNavbar">above</a>.</p>
+
+<p><a name = "RSProfile_ESN"></a></p>
+
+<h3 id="sidenavigation">2. Side navigation</h3>
+
+<p>The edit profile page has an additional side navigation bar, which allows the researcher to toggle between editing profile information and updating payment credentials. </p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" width="100%"></a></p>
+
+<p><a name = "RSProfile_ERP"></a></p>
+
+<h3 id="editprofile">3. Edit profile</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" width="100%"></a></p>
+
+<p>The researcher can edit the following items:</p>
+
+<ul>
+<li>Name</li>
+<li>Affiliation</li>
+<li>Department</li>
+<li>Biography: If the researcher has not provided a biography, the space under the department and affiliation line reads &#8220;Write your biography here.&#8221;</li>
+<li>Recommended experiments: The researcher can removed experiments from this list.</li>
+</ul>
+
+<p>The research <em>cannot</em> edit the following items:</p>
+
+<ul>
+<li>Experiments: We want to encourage researchers to share as many experiments publicly as possible. Researchers need to change share settings to &#8220;Private&#8221; in their GitHub account, not from the Researcher Website, if they wish to make any experiment invisible to the public.</li>
+<li>Trials: We also want to encourage sharing trials. Trial settings must be adjusted directly on the Trial Summary page.</li>
+</ul>
+
+<p><a name = "RSProfile_EF"></a></p>
+
+<h3 id="footer">4. Footer</h3>
+
+<p>See <a href="RSIP_Footer">above</a>.</p>
+
+<p><a name = "RSEdit_Payment"></a></p>
+
+<h3 id="pagecomponents:editpayment">Page Components: Edit Payment</h3>
+
+<ol>
+<li><a href="#RSProfile_EPNB">Navigation bar</a></li>
+<li><a href="#RSProfile_EPSN">Side navigation</a></li>
+<li><a href="#RSProfile_EPRP">Edit payment</a></li>
+<li><a href="#RSProfile_EPF">Footer</a></li>
+</ol>
+
+<p><a name = "RSProfile_EPNB"></a></p>
+
+<h3 id="navigationbar">1. Navigation bar</h3>
+
+<p>See <a href="#RSNavbar">above</a>.</p>
+
+<p><a name = "RSProfile_EPSN"></a></p>
+
+<h3 id="sidenavigation">2. Side navigation</h3>
+
+<p>See <a href="#RSProfile_ESN">above</a>.</p>
+
+<p><a name = "RSProfile_EPRP"></a></p>
+
+<h3 id="editprofile">3. Edit profile</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" width="100%"></a></p>
+
+<p>The researcher can enter credit card information on the left side of the screen and manage payment methods on the right. Payment history keeps a log of the date, payee, trial number, and payment amount of all previous transactions. </p>
+
+<p><a name = "RSProfile_EPF"></a></p>
+
+<h3 id="footer">4. Footer</h3>
+
+<p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h2 id="anamerssearch_resultsasearchresults"><a name="RSSearch_Results"></a>Search Results</h2>
 
@@ -1303,19 +1399,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <h3 id="pagecomponents">Page Components</h3>
 
-<!---internal lnks here-->
-
 <ol>
-<li>Navigation Bar</li>
-<li>Search Results</li>
-<li>Footer</li>
+<li><a href="#RSSearch_Nav">Navigation Bar</a></li>
+<li><a href="#RSSearch_Search">Search Results</a></li>
+<li><a href="#RSSearch_Footer">Footer</a></li>
 </ol>
+
+<p><a name="#RSSearch_Nav"></a></p>
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
-<p>See above.</p>
+<p>See <a href="#RSNavbar">above</a>.</p>
+
+<p><a name="#RSSearch_Search"></a></p>
 
 <h3 id="searchresults">2. Search Results</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" width="100%"></a></p>
 
 <p>Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query. </p>
 
@@ -1389,9 +1489,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </ul></li>
 </ol>
 
+<p><a name="RSSearch_Footer"></a></p>
+
 <h3 id="footer">3. Footer</h3>
 
-<p>See above.</p>
+<p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 
