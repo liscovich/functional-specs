@@ -18,17 +18,17 @@
         <text>Popper</text>
       </controlProperties>
     </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::DataGrid" x="324" y="288" w="657" h="172" measuredW="693" measuredH="174" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::DataGrid" x="324" y="288" w="657" h="172" measuredW="683" measuredH="174" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <size>12</size>
-        <text>Player%20ID%20v%2C%20Status%20%5Ev%2C%20Stage%2C%20IP%20address%2C%20Location%2C%20Platform%2C%20Earnings%20v%2C%20Approved%0A%5BPlayer%2012312%5D%2C%20Active%2C%206%2C%20209.412.112.60%2C%20New%20Delhi%5C%2C%20IN%2C%20iOS%205.1%2C%241.16%2C%20%5B%5D%0A%5BPlayer%2023490%5D%2C%20Active%2C%206%2C%20392.285.291.856%2C%20Paris%5C%2C%20FR%2C%20Windows%207%2C%241.80%2C%20%5B%5D%0A%5BPlayer%2088870%5D%2C%20Active%2C%206%2C%20123.12.605.44.96%2C%20Cambridge%5C%2C%20MA%2C%20OS%20X%2010.7%2C%242.33%2C%20%5B%5D%0A%5BPlayer%2016557%5D%2C%20Dropped%20out%2C%202%2C%20123.12.605.44.96%2C%20Cambridge%5C%2C%20MA%2C%20OS%20X%2010.7%2C%240.04%2C%20%5B%5D%0A%5BPlayer%2031930%5D%2C%20Inactive%2C%204%2C%20213.531.543.120%2C%20Santo%20Domingo%5C%2C%20DR%2C%20Windows%20XP%2C%241.16%2C%20%5B%5D</text>
+        <text>Subject%20ID%20v%2C%20Status%20%5Ev%2C%20Stage%2C%20IP%20address%2C%20Location%2C%20Platform%2C%20Earnings%20v%2C%20Approved%0A%5BSubject%2012312%5D%2C%20Active%2C%206%2C%20209.412.112.60%2C%20New%20Delhi%5C%2C%20IN%2C%20iOS%205.1%2C%241.16%2C%20%5B%5D%0A%5BSubject%2023490%5D%2C%20Active%2C%206%2C%20392.285.291.856%2C%20Paris%5C%2C%20FR%2C%20Windows%207%2C%241.80%2C%20%5B%5D%0A%5BSubject%2088870%5D%2C%20Active%2C%206%2C%20123.12.605.44.96%2C%20Cambridge%5C%2C%20MA%2C%20OS%20X%2010.7%2C%242.33%2C%20%5B%5D%0A%5BSubject%2016557%5D%2C%20Dropped%20out%2C%202%2C%20123.12.605.44.96%2C%20Cambridge%5C%2C%20MA%2C%20OS%20X%2010.7%2C%240.04%2C%20%5B%5D%0A%5BSubject%2031930%5D%2C%20Inactive%2C%204%2C%20213.531.543.120%2C%20Santo%20Domingo%5C%2C%20DR%2C%20Windows%20XP%2C%241.16%2C%20%5B%5D</text>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="19" controlTypeID="com.balsamiq.mockups::SubTitle" x="324" y="265" w="-1" h="-1" measuredW="51" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::SubTitle" x="324" y="265" w="-1" h="-1" measuredW="59" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <size>14</size>
-        <text>Players</text>
+        <text>Subjects</text>
       </controlProperties>
     </control>
     <control controlID="20" controlTypeID="com.balsamiq.mockups::SubTitle" x="633" y="499" w="-1" h="-1" measuredW="47" measuredH="22" zOrder="5" locked="false" isInGroup="-1">
@@ -79,10 +79,10 @@
         <text>Stage</text>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::SubTitle" x="381" y="529" w="-1" h="-1" measuredW="39" measuredH="20" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::SubTitle" x="381" y="529" w="-1" h="-1" measuredW="45" measuredH="20" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <size>12</size>
-        <text>Player</text>
+        <text>Subject</text>
       </controlProperties>
     </control>
     <control controlID="34" controlTypeID="com.balsamiq.mockups::SubTitle" x="432" y="529" w="-1" h="-1" measuredW="43" measuredH="20" zOrder="14" locked="false" isInGroup="-1">
@@ -397,10 +397,10 @@
         <text>Mon%20Jul%2016%2002%3A41%3A17%20UTC%202012</text>
       </controlProperties>
     </control>
-    <control controlID="88" controlTypeID="com.balsamiq.mockups::SubTitle" x="824" y="549" w="-1" h="-1" measuredW="157" measuredH="20" zOrder="66" locked="false" isInGroup="-1">
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::SubTitle" x="824" y="549" w="-1" h="-1" measuredW="163" measuredH="20" zOrder="66" locked="false" isInGroup="-1">
       <controlProperties>
         <size>12</size>
-        <text>Player%2088870%20joins%20the%20game</text>
+        <text>Subject%2088870%20joins%20the%20game</text>
       </controlProperties>
     </control>
     <control controlID="90" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="1063" w="1330" h="226" measuredW="100" measuredH="70" zOrder="67" locked="false" isInGroup="-1">

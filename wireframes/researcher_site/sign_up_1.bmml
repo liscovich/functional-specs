@@ -18,7 +18,7 @@
         <text>Popper</text>
       </controlProperties>
     </control>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="645" y="272" w="-1" h="-1" measuredW="54" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="550" y="261" w="-1" h="-1" measuredW="54" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>14</size>
@@ -117,18 +117,18 @@
         <text>search</text>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::TextInput" x="593" y="324" w="158" h="-1" measuredW="44" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::TextInput" x="552" y="317" w="244" h="-1" measuredW="94" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
-        <italic>true</italic>
-        <text>email</text>
+        <italic>false</italic>
+        <text>email%20address</text>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="com.balsamiq.mockups::Button" x="593" y="403" w="158" h="27" measuredW="117" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Button" x="593" y="396" w="158" h="27" measuredW="68" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Confirm%20Account</text>
+        <text>Sign%20Up</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="518" y="234" w="308" h="239" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="518" y="234" w="308" h="211" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <backgroundAlpha>0</backgroundAlpha>
       </controlProperties>
@@ -165,10 +165,16 @@
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::Paragraph" x="596" y="367" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="30" locked="false" isInGroup="-1">
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Paragraph" x="552" y="359" w="244" h="49" measuredW="200" measuredH="80" zOrder="30" locked="false" isInGroup="-1">
       <controlProperties>
         <size>10</size>
-        <text>By%20clicking%20Confirm%2C%20you%20agree%20to%0Athe%20Popper%20%5BTerms%20of%20Service%5D.</text>
+        <text>By%20clicking%20Sign%20Up%20you%20confirm%20that%20you%20have%20read%20and%20agree%20to%20%20%5BTerms%20of%20Service%5D%20and%20%5BPrivacy%20Policy%5D.</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Paragraph" x="552" y="293" w="259" h="16" measuredW="200" measuredH="80" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>To%20sign%20up%20for%20a%20Popper%20account%2C%20just%20enter%20your%20email.</text>
       </controlProperties>
     </control>
   </controls>

@@ -18,7 +18,7 @@
         <text>Popper</text>
       </controlProperties>
     </control>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="593" y="272" w="154" h="22" measuredW="145" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="545" y="260" w="154" h="22" measuredW="145" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
         <bold>true</bold>
@@ -118,78 +118,66 @@
         <text>search</text>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="com.balsamiq.mockups::Button" x="593" y="416" w="158" h="27" measuredW="127" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Button" x="568" y="463" w="227" h="27" measuredW="222" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Log%20In%20with%20GitHub</text>
+        <text>Log%20In%20with%20Existing%20GitHub%20Account</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="518" y="234" w="308" h="322" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="518" y="234" w="308" h="281" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <backgroundAlpha>0</backgroundAlpha>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::CallOut" x="593" y="474" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="24" locked="false" isInGroup="-1">
-      <controlProperties>
-        <backgroundAlpha>1</backgroundAlpha>
-        <color>10066329</color>
-        <text>1</text>
-      </controlProperties>
-    </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="654" y="475" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="25" locked="false" isInGroup="-1">
-      <controlProperties>
-        <backgroundAlpha>1</backgroundAlpha>
-        <color>40463</color>
-        <text>2</text>
-      </controlProperties>
-    </control>
-    <control controlID="58" controlTypeID="com.balsamiq.mockups::CallOut" x="714" y="476" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="26" locked="false" isInGroup="-1">
-      <controlProperties>
-        <backgroundAlpha>1</backgroundAlpha>
-        <color>16777215</color>
-        <text>3</text>
-      </controlProperties>
-    </control>
-    <control controlID="59" controlTypeID="com.balsamiq.mockups::HRule" x="626" y="494" w="-1" h="-1" measuredW="100" measuredH="5" zOrder="23" locked="false" isInGroup="-1"/>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Paragraph" x="469" y="679" w="135" h="35" measuredW="200" measuredH="80" zOrder="27" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Paragraph" x="469" y="679" w="135" h="35" measuredW="200" measuredH="80" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <bold>true</bold>
         <text>Documentation</text>
       </controlProperties>
     </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Link" x="469" y="701" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="28" locked="false" isInGroup="-1">
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Link" x="469" y="701" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="62" controlTypeID="com.balsamiq.mockups::Link" x="469" y="722" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Link" x="469" y="722" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::Link" x="469" y="781" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Link" x="469" y="781" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="26" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::Link" x="469" y="742" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="31" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Link" x="469" y="742" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::Link" x="469" y="762" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="32" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Link" x="469" y="762" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="28" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Link</text>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::Paragraph" x="572" y="297" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="33" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Paragraph" x="551" y="288" w="260" h="36" measuredW="200" measuredH="80" zOrder="29" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>GitHub%20is%20a%20versioning%20tool%20that%20allows%20researchers%20to%20access%20and%20collaborate%20on%20experiments.</text>
+        <text>GitHub%20is%20a%20versioning%20tool%20that%20allows%20you%20to%20access%20and%20collaborate%20on%20experiments.%20</text>
       </controlProperties>
     </control>
-    <control controlID="67" controlTypeID="com.balsamiq.mockups::Button" x="593" y="374" w="158" h="27" measuredW="128" measuredH="27" zOrder="34" locked="false" isInGroup="-1">
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Button" x="578" y="382" w="189" h="27" measuredW="186" measuredH="27" zOrder="30" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Sign%20Up%20for%20GitHub</text>
+        <text>Create%20New%20GitHub%20Account</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Paragraph" x="551" y="324" w="260" h="72" measuredW="200" measuredH="80" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>To%20use%20Popper%2C%20you%20need%20to%20have%20an%20active%20GitHub%20account.%20If%20you%20don%27t%20have%20it%2C%20please%20create%20one%20now.</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Paragraph" x="551" y="424" w="260" h="39" measuredW="200" measuredH="80" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>If%20you%20already%20have%20a%20GitHub%20account%2C%20use%20it%20to%20Sign%20In%20below.</text>
       </controlProperties>
     </control>
   </controls>

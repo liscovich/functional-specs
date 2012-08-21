@@ -1152,60 +1152,76 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <h3 id="pagecomponents">Page Components</h3>
 
 <ol>
-<li>Navigation bar</li>
-<li>Trial information</li>
-<li>Trial actions</li>
-<li>Subjects</li>
-<li>Report</li>
-<li>History</li>
-<li>Footer</li>
+<li><a href="#RSTrial_Summary_NB">Navigation bar</a></li>
+<li><a href="#RSTrial_Summary_BI">Basic information</a></li>
+<li><a href="#RSTrial_Summary_TS">Trial status</a></li>
+<li><a href="#RSTrial_Summary_TP">Trial parameters</a></li>
+<li><a href="#RSTrial_Summary_S">Subjects</a></li>
+<li><a href="#RSTrial_Summary_RH">Report and History</a></li>
+<li><a href="#RSTrial_Summary_C">Comments</a></li>
+<li><a href="#RSTrial_Summary_F">Footer</a></li>
 </ol>
 
-<h3 id="navigationbar">1. Navigation bar</h3>
+<h3 id="anamerstrial_summary_nbanavigationbar">1. <a name="RSTrial_Summary_NB"></a> Navigation bar</h3>
 
 <p>See <a href="#RSNavbar">above</a>.</p>
 
-<h3 id="basicinformation">2. Basic information</h3>
+<h3 id="anamerstrial_summary_biabasicinformation">2. <a name="RSTrial_Summary_BI"></a>Basic information</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/create_trial_form_basic.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_basic.png?raw=true" width="100%"></a></p>
-
-<ul>
-<li>Name of the experiment: Link to the <a href="#RSExperiment_Summary">Experiment Summary</a> page</li>
-<li>Trial number: Trials are numbered in the order that they are created</li>
-</ul>
-
-<h3 id="trialactions">3. Trial actions</h3>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_basic.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_basic.png?raw=true" width="100%"></a></p>
 
 <ul>
-<li><p><strong>Pause/Resume:</strong> Suspend/resume the trial temporarily.</p></li>
-<li><p><strong>Stop:</strong> End the trial manually; clicking this button opens a popup that asks,</p>
-
-<p>Are you sure you want to end this trial now? You will be responsible for any subject payments that have accumulated so far.</p></li>
+<li>Trial number: Trials are numbered in the order that they are created.</li>
+<li>Name of the experiment: Links to the <a href="#RSExperiment_Summary">Experiment Summary</a> page.</li>
+<li>Person who created the trial: Links to the user&#8217;s Popper Profile.</li>
+<li>Design: Individuals who designed the experiment. Links to the individual&#8217;s Popper Profile if one exists.</li>
+<li>Implementation: Individuals who created the experiment in Unity 3D. Links to the individual&#8217;s Popper Profile if one exists.</li>
 </ul>
 
-<p>End trial (red button)
- Never mind (grey button) </p>
+<h3 id="anamerstrial_summary_tsatrialstatus">3. <a name="RSTrial_Summary_TS"></a>Trial status</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" width="100%"></a></p>
 
 <ul>
-<li><strong>Replicate:</strong> Link to the Create Trial page, with all fields already filled in. The user can replicate the trial or change parameters.</li>
-</ul>
-
-<h3 id="subjects">3. Subjects</h3>
-
-<p>Subjects is a table of all past and current subjects for the trial. The following stock parameters can be added to or changed in the experiment metadata. </p>
+<li>Public/Private: Determined by whether the user checked the box &#8220;Make results public&#8221; in the <a href="#RSCreate_Trial_ES">Create Trial Form</a>. The user can toggle between Private and Public. If results are private, only the user who created the trial can view its Trial Summary page. If results are public, anyone with a Popper account can view this Trial Summary page. Results are viewable in real time.</li>
+<li>Ongoing/Pause/Stop: Status of the trial.
 
 <ul>
-<li><strong>Player ID:</strong> Link to the public player profile on the Player Website. For anonymity, a new Player ID is generated for each player per game. <!---internal link to player ID discussion--></li>
-<li><strong>Status:</strong> A player who has the game open in the player&#8217;s current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>Inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.</li>
-<li><strong>Stage:</strong> If there are multiple steps in the trial, the researcher can see how far each subject has progressed.</li>
-<li><strong>IP address:</strong> The user can prevent cheating by checking whether multiple users are actually playing from the same IP address.</li>
-<li><strong>Location:</strong> Based on the player’s IP address.</li>
-<li><strong>Platform</strong> Browser &amp; Operating system</li>
-<li><strong>Earnings</strong> How much the subject has earned so far in the trial.</li>
-<li><strong>Approved:</strong> The researcher approves subject payments by clicking the checkbox next to a player&#8217;s earnings. This option is not available until the trial ends or the researcher manually clicks &#8220;Stop&#8221; to end the trial.</li>
+<li>Pause: Clicking &#8220;Pause&#8221; changes the link to the word &#8220;Paused&#8221;. &#8220;Ongoing&#8221; is replaced with the word &#8220;Resume&#8221;. Pausing a trial temporarily suspends it. Existing subjects cannot make choices in the game and new subjects cannot join the game.</li>
+<li>Stop: Clicking &#8220;Stop&#8221; brings up a dialog box asking, &#8220;Are you sure you want to stop the trial? You cannot resume a trial once you end it.&#8221; The options should be &#8220;Yes&#8221; and &#8220;No&#8221;, with Yes emphasized as the default. &#8220;Trial Ended&#8221; replaces the options &#8220;Ongoing&#8221;, &#8220;Pause&#8221;, and &#8220;Stop&#8221;. Stopping a trial ends it permanently.</li>
+</ul></li>
 </ul>
 
-<h3 id="report">5. Report</h3>
+<h3 id="anamerstrial_summary_tpatrialparameters">4. <a name="RSTrial_Summary_TP"></a>Trial parameters</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" width="100%"></a></p>
+
+<ul>
+<li><p>Parameters: Same information from the Create Trial form. These parameters are not editable on this page.</p></li>
+<li><p>Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a></p></li>
+<li><p><strong>Replicate:</strong> Link to the Create Trial page, with all fields already filled in. The user can replicate the trial or change parameters.</p></li>
+</ul>
+
+<h3 id="anamerstrial_summary_sasubjects">5. <a name="RSTrial_Summary_S"></a>Subjects</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" width="100%"></a></p>
+
+<p>All past and current subjects for the trial are listed. The following stock parameters can be added to or changed in the experiment metadata. </p>
+
+<ul>
+<li>Player ID: Link to the public player profile on the Player Website. For anonymity, a new Player ID is generated for each player per game.</li>
+<li>Status: A player who has the game open in the player&#8217;s current browser tab is <code>Active</code>. A player who navigates to a different browser tab is <code>Inactive</code>. A player who prematurely closes the browser tab to leave the trial has <code>Dropped out</code>.</li>
+<li>Stage: If there are multiple steps in the trial, the researcher can see how far each subject has progressed.</li>
+<li>IP address: The user can prevent cheating by checking whether multiple users are actually playing from the same IP address.</li>
+<li>Location: Based on the player’s IP address.</li>
+<li>Platform: Browser &amp; Operating system</li>
+<li>Earnings: How much the subject has earned so far in the trial.</li>
+<li>Approved:: The researcher approves subject payments by clicking the checkbox next to a player&#8217;s earnings. <strong>This option is not available until the trial ends or the researcher manually clicks &#8220;Stop&#8221; to end the trial.</strong></li>
+</ul>
+
+<h3 id="anamerstrial_summary_rhareportandhistory">6. <a name="RSTrial_Summary_RH"></a>Report and History</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" width="100%"></a></p>
 
 <p>The Report is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:</p>
 
@@ -1217,27 +1233,48 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <li>Balance: A snapshot of the player&#8217;s current points balance</li>
 </ul>
 
-<h3 id="history">6. History</h3>
-
 <p>The History is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. </p>
+
+<p>Once the trial ends, the user can download the Full Report in CSV, XLS, or PDF format at the bottom of the page. </p>
+
+<ul>
+<li>XLS: Results appear in the first sheet; History appears in the second sheet</li>
+<li>CSV and PDF: Results appear first; History appears below</li>
+</ul>
+
+<h3 id="anamerstrial_summary_cacomments">7. <a name="RSTrial_Summary_C"></a>Comments</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" width="100%"></a></p>
+
+<p>The researcher can leave comments as the trial is ongoing. Once the trial ends, the researcher can no longer leave comments. These comments appear in the History of the report as well as the Full Report. </p>
+
+<h4 id="anamerstrial_summary_fa">8. <a name="RSTrial_Summary_F"></a></h4>
+
+<p>See <a href="RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersprofileaprofile"><a name="RSProfile"></a>Profile</h2>
 
 <p>Each user has a public profile to showcase his or her work in the experimental social sciences on Popper.</p>
 
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a></p>
+
 <h3 id="pagecomponents">Page Components</h3>
 
 <ol>
-<li>Navigation bar</li>
+<li><a href="#RSTrial_Summary_NB">Navigation bar</li>
 <li>Researcher profile</li>
 <li>Footer</li>
 </ol>
 
-<h3> 1. Navigation bar </h3>
+<p><a name = "RSProfile_NB"></a></p>
 
-<p>See above. <!---internal link--></p>
+<h3 id="navigationbar">1. Navigation bar</h3>
+
+<p>See <a href="#RSNavbar">above</a>.</p>
 
 <h3 id="researcherprofilereplacedwiththeresearchersname">2. Researcher profile (replaced with the researcher’s name)</h3>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" width="100%"></a></p>
 
 <p>The profile features information pulled from the user’s GitHub account as well as user-provided information. The public view of a user’s profile displays the following:</p>
 
