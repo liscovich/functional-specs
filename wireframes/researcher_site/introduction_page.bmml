@@ -1,54 +1,25 @@
-<mockup version="1.0" skin="sketch" measuredW="1345" measuredH="977" mockupW="1345" mockupH="977">
+<mockup version="1.0" skin="sketch" measuredW="1345" measuredH="865" mockupW="1345" mockupH="865">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1345" h="977" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1345" h="865" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Popper%20-%20Behavioral%20Experiments%20Platform%0Ahttp%3A//www.popper.org%0A%20</text>
         <value>0</value>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="209" y="79" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="167" y="93" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="932" y="83" w="-1" h="-1" measuredW="109" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="176" y="170" w="-1" h="-1" measuredW="59" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Log%20In%20with%20GitHub</text>
-      </controlProperties>
-    </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Link" x="699" y="83" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <href>our_story%26bm%3Bour_story.bmml%26bm%3Bour_story.bmml%26bm%3Bour_story.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22699%2C83%2C760%2C104%22%20href%3D%22our_story.bmml%22%20alt%3D%22our_story%22%20id%3D%226%22/%3E</map>
-        <text>Our%20Story</text>
-      </controlProperties>
-    </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="764" y="83" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Documentation</text>
-      </controlProperties>
-    </control>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="850" y="83" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
-      <controlProperties>
-        <href>experiment_library%26bm%3Bexperiment_library.bmml%26bm%3Bexperiment_library.bmml%26bm%3Bexperiment_library.bmml</href>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22850%2C83%2C929%2C104%22%20href%3D%22experiment_library.bmml%22%20alt%3D%22experiment_library%22%20id%3D%228%22/%3E</map>
-        <text>Experiments</text>
-      </controlProperties>
-    </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="206" y="164" w="-1" h="-1" measuredW="83" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>24</size>
+        <bold>true</bold>
+        <size>16</size>
         <text>Popper</text>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::Paragraph" x="518" y="653" w="332" h="38" measuredW="200" measuredH="80" zOrder="11" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>center</align>
-        <text>%22I%20can%27t%20sleep%20ever%20since%20I%20saw%20Popper.%20I%27m%20so%20pissed%21%22%0A%20--%20Urs%20Fischbaher%2C%20creator%20of%20z-Tree</text>
-      </controlProperties>
-    </control>
-    <control controlID="30" controlTypeID="__group__" x="509" y="253" w="348" h="54" measuredW="348" measuredH="54" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="30" controlTypeID="__group__" x="509" y="362" w="348" h="54" measuredW="348" measuredH="54" zOrder="11" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::SubTitle" x="5" y="0" w="-1" h="-1" measuredW="69" measuredH="33" zOrder="0" locked="false" isInGroup="30">
           <controlProperties>
@@ -71,7 +42,7 @@
             <text>721</text>
           </controlProperties>
         </control>
-        <control controlID="4" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="33" w="-1" h="-1" measuredW="78" measuredH="21" zOrder="4" locked="false" isInGroup="30">
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="33" w="-1" h="-1" measuredW="77" measuredH="21" zOrder="4" locked="false" isInGroup="30">
           <controlProperties>
             <size>13</size>
             <text>researchers</text>
@@ -85,32 +56,27 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::Canvas" x="343" y="384" w="680" h="196" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Canvas" x="343" y="503" w="680" h="196" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <value>0</value>
         <verticalScrollbar>false</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Button" x="1041" y="80" w="94" h="27" measuredW="68" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Sign%20Up</text>
-      </controlProperties>
-    </control>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::IconLabel" x="881" y="309" w="-1" h="-1" measuredW="141" measuredH="70" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::IconLabel" x="881" y="428" w="-1" h="-1" measuredW="141" measuredH="70" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>14</size>
         <text>Leave%20Logistics%20to%20Us</text>
       </controlProperties>
     </control>
-    <control controlID="50" controlTypeID="com.balsamiq.mockups::IconLabel" x="691" y="309" w="-1" h="-1" measuredW="167" measuredH="70" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::IconLabel" x="691" y="428" w="-1" h="-1" measuredW="167" measuredH="70" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>14</size>
         <text>Run%20When%20You%20Are%20Ready</text>
       </controlProperties>
     </control>
-    <control controlID="51" controlTypeID="com.balsamiq.mockups::IconLabel" x="491" y="309" w="185" h="-1" measuredW="181" measuredH="70" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::IconLabel" x="491" y="428" w="194" h="-1" measuredW="181" measuredH="70" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <labelPosition>bottom</labelPosition>
@@ -118,124 +84,80 @@
         <text>Program%20the%20Way%20You%20Think</text>
       </controlProperties>
     </control>
-    <control controlID="52" controlTypeID="com.balsamiq.mockups::IconLabel" x="345" y="309" w="-1" h="-1" measuredW="131" measuredH="70" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::IconLabel" x="345" y="428" w="-1" h="-1" measuredW="131" measuredH="70" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>14</size>
         <text>Start%20at%20the%20Frontier</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="638" w="1330" h="226" measuredW="100" measuredH="70" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="359" w="1330" h="57" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <color>14540253</color>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::Link" x="360" y="875" w="-1" h="-1" measuredW="109" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Terms%20of%20Service</text>
-      </controlProperties>
-    </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::Link" x="481" y="875" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Privacy</text>
-      </controlProperties>
-    </control>
-    <control controlID="58" controlTypeID="com.balsamiq.mockups::Link" x="540" y="875" w="-1" h="-1" measuredW="53" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Security</text>
-      </controlProperties>
-    </control>
-    <control controlID="59" controlTypeID="com.balsamiq.mockups::Paragraph" x="360" y="902" w="244" h="18" measuredW="200" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>left</align>
-        <text>%A9%202012%20Popper%20Inc.%20All%20Rights%20Reserved.</text>
-      </controlProperties>
-    </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Paragraph" x="360" y="679" w="80" h="35" measuredW="200" measuredH="80" zOrder="21" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>left</align>
-        <bold>true</bold>
-        <text>Popper</text>
-      </controlProperties>
-    </control>
-    <control controlID="62" controlTypeID="com.balsamiq.mockups::Link" x="360" y="701" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Our%20Story</text>
-      </controlProperties>
-    </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::Link" x="360" y="722" w="-1" h="-1" measuredW="31" measuredH="21" zOrder="23" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Blog</text>
-      </controlProperties>
-    </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::Link" x="360" y="781" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="24" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Contact</text>
-      </controlProperties>
-    </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="250" w="1330" h="57" measuredW="100" measuredH="70" zOrder="25" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>14540253</color>
-      </controlProperties>
-    </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::Title" x="360" y="121" w="647" h="-1" measuredW="626" measuredH="37" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Title" x="360" y="230" w="647" h="-1" measuredW="626" measuredH="37" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
         <text>Behavioral%20Experiments%20Platform%2C%20A%20_Charming_%20One.</text>
       </controlProperties>
     </control>
-    <control controlID="67" controlTypeID="com.balsamiq.mockups::Paragraph" x="515" y="167" w="337" h="102" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Paragraph" x="515" y="276" w="337" h="102" measuredW="200" measuredH="80" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
         <size>12</size>
         <text>Popper%20is%20a%20powerful%20blend%20of%20modern%20technology%20and%20social%20science.%20It%20empowers%20researchers%20to%20design%20complex%20cutting-edge%20experiments%20using%20the%20most%20advanced%20tools%20in%20existence.%20It%20also%20enables%20them%20to%20run%20large-scale%20online%20trials%20drawing%20subjects%20from%20the%20world%27s%20deepest%20on-demand%20subject%20pool.</text>
       </controlProperties>
     </control>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::Link" x="360" y="742" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Facebook</text>
-      </controlProperties>
-    </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::Link" x="360" y="762" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="28" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Twitter</text>
-      </controlProperties>
-    </control>
-    <control controlID="70" controlTypeID="com.balsamiq.mockups::Button" x="929" y="593" w="94" h="27" measuredW="68" measuredH="27" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Button" x="929" y="712" w="94" h="27" measuredW="68" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Sign%20Up</text>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::Paragraph" x="440" y="679" w="100" h="35" measuredW="200" measuredH="80" zOrder="30" locked="false" isInGroup="-1">
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Link" x="201" y="776" w="-1" h="-1" measuredW="109" measuredH="21" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Terms%20of%20Service</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::Link" x="312" y="776" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Privacy</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Paragraph" x="201" y="803" w="244" h="18" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
-        <bold>true</bold>
+        <text>%A9%202012%20Popper%20Inc.%20All%20Rights%20Reserved.</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::HRule" x="2" y="756" w="1324" h="-1" measuredW="100" measuredH="5" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+      </controlProperties>
+    </control>
+    <control controlID="87" controlTypeID="com.balsamiq.mockups::Link" x="362" y="776" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>About</text>
+      </controlProperties>
+    </control>
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Link" x="960" y="94" w="-1" h="-1" measuredW="103" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Login%20with%20GitHub</text>
+      </controlProperties>
+    </control>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Link" x="862" y="94" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
         <text>Documentation</text>
       </controlProperties>
     </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::Link" x="440" y="701" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="31" locked="false" isInGroup="-1">
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::Link" x="779" y="94" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Link</text>
+        <text>Experiments</text>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Link" x="440" y="722" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="32" locked="false" isInGroup="-1">
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Button" x="1071" y="91" w="94" h="27" measuredW="68" measuredH="27" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Link</text>
-      </controlProperties>
-    </control>
-    <control controlID="74" controlTypeID="com.balsamiq.mockups::Link" x="440" y="781" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="33" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Link</text>
-      </controlProperties>
-    </control>
-    <control controlID="75" controlTypeID="com.balsamiq.mockups::Link" x="440" y="742" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="34" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Link</text>
-      </controlProperties>
-    </control>
-    <control controlID="76" controlTypeID="com.balsamiq.mockups::Link" x="440" y="762" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="35" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Link</text>
+        <text>Sign%20Up</text>
       </controlProperties>
     </control>
   </controls>
