@@ -41,7 +41,7 @@ Popper is a behavioral experiments platform that empowers researchers in economi
 			<li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
 			<li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
 			<li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
-			<li>2.5 &nbsp; <a href="#RSOur_Story">Our Story</a></li>	
+			<li>2.5 &nbsp; <a href="#RSAbout">About</a></li>	
 			<li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
 			<li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
 			<li>2.8 &nbsp; <a href="#RSExperiment_Summary">Experiment Summary</a></li>
@@ -153,7 +153,7 @@ The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers
 		<li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
 		<li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
 		<li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
-		<li>2.5 &nbsp; <a href="#RSOur_story">Our Story</a></li>	
+		<li>2.5 &nbsp; <a href="#RSAbout">About</a></li>	
 		<li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
 		<li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
 		<li>2.8 &nbsp; <a href="#RSExperiment_summary">Experiment Summary</a></li>
@@ -312,7 +312,7 @@ The below diagram shows how Log In works and how it is connected to Sign Up. We 
 		<li>1. &nbsp; A user clicks "Log In with GitHub".</li>
 		<li>2. &nbsp; The Researcher Site checks whether the user is currently logged into GitHub.
 	 		<ul>
-	 			<li>a. If the user is not logged into GitHub, he or she is taken to the GitHub Log In page and the Researcher Site proceeds to <a href="Check_2">Check 2</a>. This Log In page is the same one that the user sees <a href="#Sign_Up_2">after clicking "Log In using GitHub"</a> from the <a href="#Sign_Up">Sign Up</a> page.</li>
+	 			<li>a. If the user is not logged into GitHub, he or she is taken to the GitHub Log In page and the Researcher Site proceeds to <a href="Check_2">Check 2</a>.</li>
 	 				<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" width="100%"></a>
 	 			<li>b. If the user is logged into GitHub, the Researcher Site proceeds to <a href="#Check_3">Check 3</a>.
 	</ul>
@@ -345,17 +345,17 @@ By Check 3, the user has logged in using a GitHub account and has granted the Re
 	<ul>
 		<li>1. &nbsp; The Researcher Site checks whether the user's logged-in GitHub account is associated with a confirmed email address.</li>
 			<ul>
-				<li>a. &nbsp; If the user does not have a verified email address, he or she is directed from GitHub to the email confirmation Sign Up page, which is described in <a href="Sign_Up_1_1">Step 1, Part 1</a> of the Sign Up process.</li>
+				<li>a. &nbsp; If the user does not have a verified email address, he or she is directed from GitHub to the email confirmation Sign Up page, which is described in <a href="#Sign_Up_1_1">Step 1, Part 1</a> of the Sign Up process.</li>
 				<li>b. &nbsp; If the user does have a verified email address, he or she passes Check 3.</li>
 			</ul>
 		<li>2. &nbsp; The Researcher Site proceeds to <a href="#Check_4">Check 4</a>.</li>
 	</ul>
 </section>
 
-###<a href="Check_4"></a>Check 4: Profile completion?
+###<a name="Check_4"></a>Check 4: Profile completion?
 <!---accounts 4 image-->
 
-By Check 4, the user has logged in using GitHub and the Researcher Website has verified that this GitHub account is associated with a confirmed email address.
+By Check 4, the user has logged in using GitHub and the Researcher Website has verified that this GitHub account is associated with an email address confirmed by the Researcher Website.
 
 <section class="pages">
 	<ul>
@@ -370,13 +370,12 @@ By Check 4, the user has logged in using GitHub and the Researcher Website has v
 
 # <a name="RSIntroduction_page"></a>Introduction page
 
-The **Introduction Page** introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>.   
+The Introduction Page introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">Sign Up</a>.   
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" width="100%"></a>	
 
 ##Page Components
 
-<!---internal lnks here-->
 1. <a href="#RSNavbar">Navigation Bar</a> 
 2. <a href="#RSIP_Header">Header</a>
 3. <a href="#RSUsage_Statistics">Usage Statistics</a>
@@ -388,29 +387,30 @@ The **Introduction Page** introduces users to Popper. The primary action that a 
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" width="100%"></a>	
 
-The **Navigation Bar** includes six or three items, depending on whether the user is logged in: 
+The Navigation Bar includes five items, which vary depending on whether the user is logged in: 
 
 |						                            | Logged Out | Logged In | 
 ------------------------------------------------------- | :- | :- |  
 1. <a href="#RSLogo">Logo</a>   						| Yes | Yes |  
 
-2. <a href="#RSDocumentation">Documentation</a>          | Yes | Yes |   
+2. <a href="#RSExperiments">Experiments</a>             | Yes | Yes |  
 
-3. <a href="#RSOur_Story">Our Story</a>                 | Yes | No |   
+3. <a href="#RSDocumentation">Documentation</a>          | Yes | Yes |   
 
-4. <a href="#RSExperiments">Experiments</a>             | Yes | Yes |  
+4. <a href="#RSLog_In">Log In with GitHub</a>           | Yes | No |   
 
-5. <a href="#RSLog_In">Log In with GitHub</a>           | Yes | No |   
+5. <a href="#RSSign_Up">Sign Up</a>                     | Yes | No |   
 
-6. <a href="#RSSign_Up">Sign Up</a>                     | Yes | No |   
+6. <a href="#RSDashboard">Dashboard</a>                 | No | Yes |  
 
-7. <a href="#RSDashboard">Dashboard</a>                 | No | Yes |  
+7. User controls (links to Profile, Payments, Log Out)	| No | Yes |
 
 ### Logged Out Navigation Bar
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" width="100%"></a>	
 
-<a name="#RSLogged_In_Navbar"></a>### Logged In Navigation Bar
+<a name="RSLogged_In_Navbar"></a>
+### Logged In Navigation Bar
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" width="100%"></a>
 
@@ -418,7 +418,7 @@ The **Navigation Bar** includes six or three items, depending on whether the use
 
 <a name="RSLogo"></a>The Logo contains the word "Popper" accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper's likeness to clarify the origin of the name "Popper" and dissociate alternative meanings of the word. 
 
-When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at [www.popper.org](http://www.popper.org). Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
+When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org" target="_blank">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.
 
 The portrait below is a good starting point for the logo. It is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons.  
 
@@ -456,11 +456,11 @@ The portrait below is a good starting point for the logo. It is available <a hre
 
 ### Documentation
 
-<a name="RSDocumentation"></a>**Documentation** is stored on GitHub, not on the Researcher Site. Clicking on Documentation takes the Researcher to a public repository linked with the official [Popper GitHub account](https://github.com/Experiments). We will take care of writing documentation.
+<a name="RSDocumentation"></a>Documentation is stored on GitHub, not on the Researcher Site. Clicking on Documentation takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments" target="_blank">https://github.com/Experiments</a>. We will take care of writing documentation.
 
-### Our Story
+### About
 
-<a href="#RSOur_Story">Our Story</a> is a static About page. Its contents will be discussed later.
+The content of <a href="#RSAbout">About</a> will be discussed later.
 
 ### Experiments
 
@@ -468,13 +468,13 @@ The portrait below is a good starting point for the logo. It is available <a hre
 
 ### Log In and Sign Up
 
-<a href="#RSLog_In">Log In with GitHub</a> and <a href="RSSign_Up">Sign Up</a> were discussed in the previous section, <a href="#RSAccounts">Accounts</a>. The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user's full name and a dropdown navigation bar that links to the user's <a href="#RSProfile">Profile</a> and Log Out.
+<a href="#RSLog_In">Log In with GitHub</a> and <a href="#RSSign_Up">Sign Up</a> were discussed in the previous section, <a href="#RSAccounts">Accounts</a>. The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user's full name and a dropdown navigation bar that links to the user's <a href="#RSProfile">Profile</a> and Log Out.
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" width="100%"></a>
 
 ### Dashboard
 
-<a href="#RSDashboard">Dashboard</a> is <a href="#Logged_In_Navbar">visible</a> only if the user is logged in.
+<a href="#RSDashboard">Dashboard</a> is <a href="#RSLogged_In_Navbar">visible</a> only if the user is logged in.
 
 <a name="RSIP_Header"></a>
 ## 2. Header
@@ -523,7 +523,7 @@ Underneath the tagline is a short paragraph describing Popper.
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" width="100%"></a>	
 
-Three summary statistics are dynamically updated and displayed under the <a href="RSIP_Header">Header</a>:
+Three summary statistics are dynamically updated and displayed under the <a href="#RSIP_Header">Header</a>:
 
 1. The number of registered researchers
 2. The number of deployed experiments
@@ -553,30 +553,30 @@ The numbers should be larger than the corresponding items being counted. We will
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" width="100%"></a>	
 
-The **Footer** features general links and legal documents.
+The **Footer** features general links and legal documents. It remains constant through the entire Researcher Site.
 
-- <a href="RSOur_Story">Our Story</a>
+- Terms of Service: We will provide the text
+- Privacy: We will provide the text
+- <a href="#RSAbout">About</a>
+
+<!---
 - Blog: Hosted on a third-party site
 - Twitter: @popper_exp
 - Facebook: http://www.facebook.com/popper_exp
-- Contact: The "Contact" section of <a href="RSOur_Story">Our Story</a>
-- <a href="#RSDocumentation">Documentation</a>
-- Terms of Service: We will provide the text
-- Privacy & Security: We will provide the text
+-->
 
-# <a name="RSOur_Story"></a>Our story
+# <a name="RSAbout"></a>About
 
-**Our Story** introduces the history of the project and its connection to Karl Popper.
+**About** introduces the history of the project and its connection to Karl Popper.
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/about.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/about.png?raw=true" width="100%"></a>	
 
 ##Page Components
 
 1. <a href="#RSNavbar_OS">Navigation Bar</a> 
 2. <a href="#RSPortrait_OS">Portrait of Karl Popper</a> 
 3. <a href="#RSHistory_OS">History</a>
-4. <a href="#RSTeam_OS">Team and Contributors</a>
-5. <a href="#RSFooter_OS">Footer</a>
+4. <a href="#RSFooter_OS">Footer</a>
 
 ##1. <a name="RSNavbar_OS"></a>Navigation Bar
 
@@ -596,19 +596,15 @@ Under the cropped photo should be the text,
 
 We will provide this text.
 
-##4. <a name="RSTeam_OS"></a>Team and Contributors 
+##4. <a name="RSFooter_OS"></a>Footer
 
-We will provide this text.
-
-##5. <a name="RSFooter_OS"></a>Footer
-
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 # <a name="RSExperiments"></a>Experiments
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" width="100%"></a>	
 
-The **Experiments** page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles an Amazon product list page:
+The Experiments page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles an Amazon product list page:
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" width="100%"></a>	
 
@@ -616,8 +612,8 @@ The **Experiments** page is a searchable library of all experiments available to
 
 1. <a href="#RSNavbar_E">Navigation Bar</a>
 2. <a href="#RSList_E">List of Experiments</a> 
-3. <a href="#RSFilter_E">Filter</a>
-4. <a href="#RSFooter_E">Footer</a>
+3. <a href="#RSSearchbar">Search Bar</a>
+4. <a href="#RSFooter_EP">Footer</a>
 
 <a name="RSNavbar_E"></a>
 ## 1. Navigation Bar
@@ -636,7 +632,7 @@ The **Experiments** page displays a dynamically generated list of all available 
 
 Naturally, if the user is not logged in, he or she cannot see any experiments hosted in private repositories. 
 
-When the user first arrives at the **List of Experiments** and when the user conducts a search, his or her private repositories are listed first and sorted by the number of trials. All other experiments are listed afterwards and sorted by:
+A user's private repositories are listed first and sorted by the number of trials (experiments with the most trials are listed first). All other experiments are listed afterwards and sorted by:
 
 1. Growth rate in the number of commits
 2. If tied, the number of forks
@@ -645,15 +641,17 @@ When the user first arrives at the **List of Experiments** and when the user con
 
 A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. 
 
-The layout of the page is fluid so that the number of experiments displayed per row changes dynamically with the browser width. Each individual experiment listing contains the following information:
+There are three experiments displayed per row. Each individual experiment listing contains the following information:
 
 - Name of the repository (functioning as the name of the experiment)
 - Repository owner
+- Individual(s) who designed the experiment
+- Last activity in the GitHub repository (Just now, # hours ago, # days ago, # weeks ago, # months ago, 1 year ago, over # years ago)
 - Short description of the experiment
-- Numfber of forks
 - Publication citation
-- Upvotes and names of recommenders
-- Last modified ## minutes/hours/days/weeks/months/years ago
+- Number of trials
+- Number of watchers and forks (as determined on GitHub)
+- Number and names of recommenders (up to six listed, with a mouseover on "others" displaying an overlayed box listing the remaining names)
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" width="100%"></a>	
 
@@ -663,9 +661,10 @@ The <a href="http://www.github.com/experiments" target="_blank">Popper GitHub ac
 
 An "Add Experiment" button links to Popper <a href="#RSDocumentation">Documentation</a> on GitHub for designing and publishing an experiment using the Popper SDK.
 
-The user clicks on the experiment to go to its <a href="#RSCreate_Trial">Create Trial</a> page.
+The user clicks on the experiment to go to its <a href="#RSExperiment_Summary">Experiment Summary</a> page, which allows the user to read more about the experiment and create a trial.
 
-##5. Search bar
+<a name="RSSearchbar"></a>
+##3. Search bar
 
 The search bar performs an instant search on the <a href="#RSList_E">List of Experiments</a>. Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query even before the user hits "Return".
 
@@ -677,6 +676,12 @@ Search results are sorted by:
 2. If tied, the number of forks
 3. If tied, the number of upvotes
 4. If tied, the age of the repository, with younger repositories listed first
+
+##4. <a name="RSFooter_EP"></a>Footer
+
+See <a href="#RSIP_Footer">above</a>.
+
+<!---
 
 <section class="sideimg">
 
@@ -699,12 +704,13 @@ Researchers can apply instant filters to the list of displayed experiments in th
 - Status
 	- Published (checkbox; indicates whether the metadata for an experiment lists an accepted peer-reviewed publication based on this experiment)
 	- Hosted by Popper (checkbox; indicates whether experiment is in the Popper repository)
+-->
 
 # <a name="RSDashboard"></a>Dashboard
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" width="100%"></a>	
+The **Dashboard is an overview of all activity in the user's account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.
 
-The **Dashboard** is an overview of all activity in the user's account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" width="100%"></a>	
 
 ##Page Components
 
@@ -727,8 +733,6 @@ See <a href="#RSNavbar">above</a>.
 
 Trials are sorted by timestamp. The state of a trial appears beneath its name, and a change in state updates its time stamp, pushing the trial to the top of the list. 
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" width="100%"></a>	
-
 These states can be altered in the metadata file but by default, trials are in one of six states:
 
 1. **Awaiting subjects:** The initial status of all trials. The trial has been created and the server is waiting for a sufficient number of subjects. The researcher can recruit more subjects by clicking the name of the trial to go to its **Trial Summary** page. 
@@ -744,20 +748,18 @@ Also displayed:
 - **Trial number:** Unique ID number assigned to each trial.
 - **Timestamp:** Time trial corresponding to a change in state.
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" width="100%"></a>	
-
 Clicking “More...” scrolls down the window to display more trials in the style of GitHub. “More” disappears once all trials have been displayed. There is no scroll bar on the Trials frame.
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" width="100%"></a>	
 
-“Experiments" links to the <a href="#RSExperiments">Experiments</a> page.
+"Create Trial"" links to the <a href="#RSExperiments">Experiments</a> page. Once there, the user sees the message, "To create a trial, first select an experiment".
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" width="100%"></a>	
 
 <a name="RSFeed_D"></a>
 ##3. Feed
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_feed.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_feed.png?raw=true" width="100%"></a>	
 
 The Feed automatically updates with:
 
@@ -806,13 +808,13 @@ The Feed automatically updates with:
 <a name="RSFooter_D"></a>
 ##4. Footer 
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 # <a name="RSExperiment_Summary"></a>Experiment Summary
 
 Experiment Summary allows a researcher to read about an experiment and create a trial. 
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary.png?raw=true" width="100%"></a>	
 
 ##Page Components
 
@@ -829,7 +831,7 @@ See <a href="#RSNavbar">above</a>.
 
 ### Basic Information
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a>	
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_basicinfo.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_basicinfo.png?raw=true" width="100%"></a>	
 
 The following information is pulled from experiment metadata:
 
@@ -843,7 +845,7 @@ The following information is pulled from experiment metadata:
 The following information is not affiliated with experiment metadata:
 
 - Previous trials: Each time a trial is run using this experiment, the trial number and individual who ran the trial should be listed with a timestamp. 
-- Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by the person's Gravatar photo, name linking to his or her Popper account, and a timestamp. 
+- Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by a name linking to his or her Popper account and a timestamp. 
 
 ## <a name="RSCreate_Trial_ES">Create Trial Form</a>
 
@@ -887,8 +889,9 @@ Trials are numbered in the order in which they are created. Clicking "Create Tri
 
 ## <a name="RSFooter_ES">Footer</a>
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
+<!---
 ## Private View
 
 The user who owns the GitHub account containing the trial can edit the following fields directly on the Experiment Summary page: 
@@ -899,6 +902,7 @@ The user who owns the GitHub account containing the trial can edit the following
 - IRB approvals: The user can upload a PDF of the IRB approval for the experiment. The Researcher Website should create a folder in the user's GitHub repository for the experiment called "IRB", and store the uploaded PDF in this folder.
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" width="100%"></a>
+-->
 
 # <a name="RSTrial_Summary"></a>Trial Summary
 
@@ -910,12 +914,11 @@ Researchers monitor trials in real time and download results on the Trial Summar
 
 1. <a href="#RSTrial_Summary_NB">Navigation bar</a>
 2. <a href="#RSTrial_Summary_BI">Basic information</a>
-3. <a href="#RSTrial_Summary_TS">Trial status</a>
-4. <a href="#RSTrial_Summary_TP">Trial parameters</a>
-5. <a href="#RSTrial_Summary_S">Subjects</a>
-6. <a href="#RSTrial_Summary_RH">Report and History</a>
-7. <a href="#RSTrial_Summary_C">Comments</a>
-8. <a href="#RSTrial_Summary_F">Footer</a>
+3. <a href="#RSTrial_Summary_TP">Trial parameters</a>
+4. <a href="#RSTrial_Summary_S">Subjects</a>
+5. <a href="#RSTrial_Summary_RH">Report and History</a>
+6. <a href="#RSTrial_Summary_C">Comments</a>
+7. <a href="#RSTrial_Summary_F">Footer</a>
 
 ##1. <a name="RSTrial_Summary_NB"></a> Navigation bar
 
@@ -930,24 +933,19 @@ See <a href="#RSNavbar">above</a>.
 - Person who created the trial: Links to the user's Popper Profile. 
 - Design: Individuals who designed the experiment. Links to the individual's Popper Profile if one exists.
 - Implementation: Individuals who created the experiment in Unity 3D. Links to the individual's Popper Profile if one exists.
-
-##3. <a name="RSTrial_Summary_TS"></a>Trial status
-
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" width="100%"></a>
-
 - <a name="Public_Trial"></a>Public/Private: Determined by whether the user checked the box "Make results public" in the <a href="#RSCreate_Trial_ES">Create Trial Form</a>. The user can toggle between Private and Public. If results are private, only the user who created the trial can view its Trial Summary page. If results are public, anyone with a Popper account can view this Trial Summary page. Results are viewable in real time. 
 - Ongoing/Pause/Stop: Status of the trial. 
 	- Pause: Clicking "Pause" changes the link to the word "Paused". "Ongoing" is replaced with the word "Resume". Pausing a trial temporarily suspends it. Existing subjects cannot make choices in the game and new subjects cannot join the game.   
 	- Stop: Clicking "Stop" brings up a dialog box asking, "Are you sure you want to stop the trial? You cannot resume a trial once you end it." The options should be "Yes" and "No", with Yes emphasized as the default. "Trial Ended" replaces the options "Ongoing", "Pause", and "Stop". Stopping a trial ends it permanently.
 
-##4. <a name="RSTrial_Summary_TP"></a>Trial parameters
+##3. <a name="RSTrial_Summary_TP"></a>Trial parameters
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" width="100%"></a>
 
 - Parameters: Same information from the Create Trial form. These parameters are not editable on this page.
 - Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a>
 
-##5. <a name="RSTrial_Summary_S"></a>Subjects
+##4. <a name="RSTrial_Summary_S"></a>Subjects
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" width="100%"></a>
 
@@ -962,11 +960,11 @@ All past and current subjects for the trial are listed. The following stock para
 - Earnings: How much the subject has earned so far in the trial.
 - Approved:: The researcher approves subject payments by clicking the checkbox next to a player's earnings. **This option is not available until the trial ends or the researcher manually clicks "Stop" to end the trial.**
 
-##6. <a name="RSTrial_Summary_RH"></a>Report and History
+##5. <a name="RSTrial_Summary_RH"></a>Report and History
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" width="100%"></a>
 
-The Report is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:
+**Results** is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:
 
 - Stage
 - Player
@@ -974,28 +972,28 @@ The Report is a list of purely quantitative data in .csv, .xls, or .pdf format. 
 - Duration: The amount of time that it took for a player to make a particular choice
 - Balance: A snapshot of the player's current points balance
 
-The History is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. 
+**History** is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. 
 
-Once the trial ends, the user can download the Full Report in CSV, XLS, or PDF format at the bottom of the page. 
+Once the trial ends, the user can download the Full Report in .csv, .xls, or .pdf format at the bottom of the page. 
 
-- XLS: Results appear in the first sheet; History appears in the second sheet
-- CSV and PDF: Results appear first; History appears below
+- .xls: Results appear in the first sheet; History appears in the second sheet
+- .csv and .pdf: Results appear first; History appears below
 
-##7. <a name="RSTrial_Summary_C"></a>Comments
+##6. <a name="RSTrial_Summary_C"></a>Comments
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" width="100%"></a>
 
 The researcher can leave comments as the trial is ongoing. Once the trial ends, the researcher can no longer leave comments. These comments appear in the History of the report as well as the Full Report. 
 
-###8. <a name="RSTrial_Summary_F"></a>
+###7. <a name="RSTrial_Summary_F"></a>Footer
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 # <a name="RSProfile"></a>Profile
 
 Each user has a public profile to showcase his or her work in the experimental social sciences on Popper.
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a>
 	
 ##Page Components
 
@@ -1011,7 +1009,7 @@ See <a href="#RSNavbar">above</a>.
 <a name = "RSProfile_RP"></a>
 ##2. Researcher profile (replaced with the researcher’s name)
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" width="100%"></a>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a>
 
 The profile features information pulled from the user’s GitHub account as well as user-provided information. The public view of a user’s profile displays the following:
 
@@ -1022,43 +1020,35 @@ The profile features information pulled from the user’s GitHub account as well
 - Bio: Written by the researcher.
 - Experiments: Shows all public experiments associated with a researcher's GitHub account. 
 - Trials: Links to the <a href="#RSTrial_Summary">Trial Summary</a> page for <a href="#Public_Trial">public trials</a>. 
-- Recommendations: Shows all experiments that the researcher has recommended on an <a href="#RSExperiment_Summary">Experiment Summary</a> page.
+- Feed: Shows activity when a user starts a trial, adds an experiment, recommends an experiment, or joins Popper, accompanied by a timestamp. 
 
 <a name = "RSProfile_F"></a>
 ##3. Footer 
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 # <a name="RSPrivate_Profile"></a>Private Profile
 
 A logged in user can edit <a href="#RSEdit_Profile">profile</a> and <a href="#RSEdit_Payment">payment credentials.</a> 
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a>
 	
 <a name = "RSEdit_Profile"></a>
 ##Page Components: Edit Profile
 
 1. <a href="#RSProfile_ENB">Navigation bar</a>
-2. <a href="#RSProfile_ESN">Side navigation</a>
-3. <a href="#RSProfile_ERP">Edit profile</a>
-4. <a href="#RSProfile_EF">Footer</a>
+2. <a href="#RSProfile_ERP">Edit profile</a>
+3. <a href="#RSProfile_EF">Footer</a>
 
 <a name = "RSProfile_ENB"></a>
 ##1. Navigation bar
 
 See <a href="#RSNavbar">above</a>.
 
-<a name = "RSProfile_ESN"></a>
-##2. Side navigation
-
-The edit profile page has an additional side navigation bar, which allows the researcher to toggle between editing profile information and updating payment credentials. 
-
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" width="100%"></a>
-
 <a name = "RSProfile_ERP"></a>
-##3. Edit profile
+##2. Edit profile
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" width="100%"></a>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a>
 
 The researcher can edit the following items:
 
@@ -1066,47 +1056,68 @@ The researcher can edit the following items:
 - Affiliation
 - Department 
 - Biography: If the researcher has not provided a biography, the space under the department and affiliation line reads "Write your biography here."
-- Recommended experiments: The researcher can removed experiments from this list.  
 
 The research _cannot_ edit the following items:
 
 - Experiments: We want to encourage researchers to share as many experiments publicly as possible. Researchers need to change share settings to "Private" in their GitHub account, not from the Researcher Website, if they wish to make any experiment invisible to the public. 
 - Trials: We also want to encourage sharing trials. Trial settings must be adjusted directly on the Trial Summary page. 
+- Feed
 
 <a name = "RSProfile_EF"></a>
-##4. Footer 
+##3. Footer 
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 <a name = "RSEdit_Payment"></a>
 ##Page Components: Edit Payment
 
 1. <a href="#RSProfile_EPNB">Navigation bar</a>
-2. <a href="#RSProfile_EPSN">Side navigation</a>
-3. <a href="#RSProfile_EPRP">Edit payment</a>
-4. <a href="#RSProfile_EPF">Footer</a>
+2. <a href="#RSProfile_EPRP">Edit payment</a>
+3. <a href="#RSProfile_EPF">Footer</a>
 
 <a name = "RSProfile_EPNB"></a>
 ##1. Navigation bar
 
 See <a href="#RSNavbar">above</a>.
 
-<a name = "RSProfile_EPSN"></a>
-##2. Side navigation
-
-See <a href="#RSProfile_ESN">above</a>.
-
 <a name = "RSProfile_EPRP"></a>
-##3. Edit profile
+##2. Edit payment
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" width="100%"></a>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/payments_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/payments_page.png?raw=true" width="100%"></a>
 
-The researcher can enter credit card information on the left side of the screen and manage payment methods on the right. Payment history keeps a log of the date, payee, trial number, and payment amount of all previous transactions. 
+The researcher can review a history of payments on the left side of the screen and manage payment methods and review balance information on the right. 
+
+Payment history keeps a log of the date, time, transaction description, and transaction amount of processed transactions. Two types of transactions are tracked: 
+
+1. Payment processed for [Trial ##]
+2. Funds added to prepaid balance
+
+Negative amounts (when payment is processed for a trial) are enclosed in parentheses. 
+
+The researcher can also review the total amount of money available to pay subjects. When a researcher begins a trial, the total anticipated amount of money committed to the trial is included in "Committed subject payments" and subtracted from the researcher's prepaid balance. "Committed subject payments" also includes subject payments that have been approved but not yet processed. When only $50.00 in credit or less is remaining in the researcher's account, the following email is sent from <a href="mailto:support@popper.org">support@popper.org</a>:
+
+<section class="quote">
+	<p>Subject: Alert: Low balance on Popper</p>
+	
+	<p>Your prepaid balance on Popper is currently below $50.00. Once your balance reaches $0.00, all currently running trials will be paused until more funds are added to your account.</p>
+	
+	<p>You can add funds by clicking <a href="http://paymentsurl.com" target="_blank">here</a> or by navigating to the "Payments" in the navigation bar.</p>
+	
+	<p>If you have any questions, please email us.</p>
+	
+	<p>The Popper Team</p>
+</section>
+
+If the researcher deposits less than $50.00 into the prepaid balance, the same email above is sent to the user.
+
+Once "Available balance" reaches $0.00, all currently running trials are paused until the researcher adds more funds to his or her prepaid balance on Popper. 
+
+Payment is processed using the service <a href="https://www.braintreepayments.com/">Braintree</a>, and at launch will accommodate only credit cards. Funds are automatically deducted from the researcher's primary payment method, which is specified on the Edit Payment page.   
 
 <a name = "RSProfile_EPF"></a>
-##4. Footer 
+##3. Footer 
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 # <a name="RSSearch_Results"></a>Search Results
 
@@ -1120,17 +1131,17 @@ Users can perform an instant search for an experiment, trial, or researcher prof
 2. <a href="#RSSearch_Search">Search Results</a> 
 3. <a href="#RSSearch_Footer">Footer</a>
 
-<a name="#RSSearch_Nav"></a>
+<a name="RSSearch_Nav"></a>
 ## 1. Navigation Bar
 
 See <a href="#RSNavbar">above</a>.
 
-<a name="#RSSearch_Search"></a>
+<a name="RSSearch_Search"></a>
 ##2. Search Results 
 
-<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" width="100%"></a>
-
 Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query. 
+
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" width="100%"></a>
 
 ###Indexing
 
@@ -1153,7 +1164,7 @@ To perform instant search, the Researcher Site regularly indexes the following i
 
 All three results sections (experiments, trials, and profiles) are displayed with every query. The user can choose to view only one type of result by clicking on one of the filters on the left of the screen (All, Experimnets, Trials, Researchers).
 
-If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More...” opens a new page with search results from only that category. The same “More...” functionality <a href=”https://github.com/search?q=rails&type=Everything&repo=&langOverride=&start_value=1” target=”_blank”>can be found</a> in GitHub search. 
+If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More...” opens a new page with search results from only that category. The same “More...” functionality can be found in GitHub search. 
 
 ###Sorting
 
@@ -1184,7 +1195,7 @@ If no result exists for a particular results section, the message “No results 
 <a name="RSSearch_Footer"></a>
 ##3. Footer
 
-See <a href="RSIP_Footer">above</a>.
+See <a href="#RSIP_Footer">above</a>.
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 

@@ -46,7 +46,7 @@
             <li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
             <li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>  
             <li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
-            <li>2.5 &nbsp; <a href="#RSOur_Story">Our Story</a></li>    
+            <li>2.5 &nbsp; <a href="#RSAbout">About</a></li>    
             <li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
             <li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>    
             <li>2.8 &nbsp; <a href="#RSExperiment_Summary">Experiment Summary</a></li>
@@ -158,7 +158,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         <li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
         <li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>  
         <li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
-        <li>2.5 &nbsp; <a href="#RSOur_story">Our Story</a></li>    
+        <li>2.5 &nbsp; <a href="#RSAbout">About</a></li>    
         <li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
         <li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>    
         <li>2.8 &nbsp; <a href="#RSExperiment_summary">Experiment Summary</a></li>
@@ -329,7 +329,7 @@ Robert is a research assistant working for the economics department at Carnegie 
         <li>1. &nbsp; A user clicks "Log In with GitHub".</li>
         <li>2. &nbsp; The Researcher Site checks whether the user is currently logged into GitHub.
             <ul>
-                <li>a. If the user is not logged into GitHub, he or she is taken to the GitHub Log In page and the Researcher Site proceeds to <a href="Check_2">Check 2</a>. This Log In page is the same one that the user sees <a href="#Sign_Up_2">after clicking "Log In using GitHub"</a> from the <a href="#Sign_Up">Sign Up</a> page.</li>
+                <li>a. If the user is not logged into GitHub, he or she is taken to the GitHub Log In page and the Researcher Site proceeds to <a href="Check_2">Check 2</a>.</li>
                     <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" width="100%"></a>
                 <li>b. If the user is logged into GitHub, the Researcher Site proceeds to <a href="#Check_3">Check 3</a>.
     </ul>
@@ -364,18 +364,18 @@ Robert is a research assistant working for the economics department at Carnegie 
     <ul>
         <li>1. &nbsp; The Researcher Site checks whether the user's logged-in GitHub account is associated with a confirmed email address.</li>
             <ul>
-                <li>a. &nbsp; If the user does not have a verified email address, he or she is directed from GitHub to the email confirmation Sign Up page, which is described in <a href="Sign_Up_1_1">Step 1, Part 1</a> of the Sign Up process.</li>
+                <li>a. &nbsp; If the user does not have a verified email address, he or she is directed from GitHub to the email confirmation Sign Up page, which is described in <a href="#Sign_Up_1_1">Step 1, Part 1</a> of the Sign Up process.</li>
                 <li>b. &nbsp; If the user does have a verified email address, he or she passes Check 3.</li>
             </ul>
         <li>2. &nbsp; The Researcher Site proceeds to <a href="#Check_4">Check 4</a>.</li>
     </ul>
 </section>
 
-<h4 id="ahrefcheck_4acheck4:profilecompletion"><a href="Check_4"></a>Check 4: Profile completion?</h4>
+<h4 id="anamecheck_4acheck4:profilecompletion"><a name="Check_4"></a>Check 4: Profile completion?</h4>
 
 <!---accounts 4 image-->
 
-<p>By Check 4, the user has logged in using GitHub and the Researcher Website has verified that this GitHub account is associated with a confirmed email address.</p>
+<p>By Check 4, the user has logged in using GitHub and the Researcher Website has verified that this GitHub account is associated with an email address confirmed by the Researcher Website.</p>
 
 <section class="pages">
     <ul>
@@ -390,13 +390,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h2 id="anamersintroduction_pageaintroductionpage"><a name="RSIntroduction_page"></a>Introduction page</h2>
 
-<p>The <strong>Introduction Page</strong> introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">sign up</a>. </p>
+<p>The Introduction Page introduces users to Popper. The primary action that a user takes is to <a href="#Sign_Up">Sign Up</a>. </p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/introduction_page.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
-
-<!---internal lnks here-->
 
 <ol>
 <li><a href="#RSNavbar">Navigation Bar</a></li>
@@ -412,7 +410,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar.png?raw=true" width="100%"></a> </p>
 
-<p>The <strong>Navigation Bar</strong> includes six or three items, depending on whether the user is logged in: </p>
+<p>The Navigation Bar includes five items, which vary depending on whether the user is logged in: </p>
 
 <table>
 <colgroup>
@@ -439,7 +437,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <tbody>
 <tr>
-	<td style="text-align:left;">2. <a href="#RSDocumentation">Documentation</a></td>
+	<td style="text-align:left;">2. <a href="#RSExperiments">Experiments</a></td>
 	<td style="text-align:left;">Yes</td>
 	<td style="text-align:left;">Yes</td>
 </tr>
@@ -447,7 +445,15 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <tbody>
 <tr>
-	<td style="text-align:left;">3. <a href="#RSOur_Story">Our Story</a></td>
+	<td style="text-align:left;">3. <a href="#RSDocumentation">Documentation</a></td>
+	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">Yes</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">4. <a href="#RSLog_In">Log In with GitHub</a></td>
 	<td style="text-align:left;">Yes</td>
 	<td style="text-align:left;">No</td>
 </tr>
@@ -455,15 +461,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <tbody>
 <tr>
-	<td style="text-align:left;">4. <a href="#RSExperiments">Experiments</a></td>
-	<td style="text-align:left;">Yes</td>
-	<td style="text-align:left;">Yes</td>
-</tr>
-</tbody>
-
-<tbody>
-<tr>
-	<td style="text-align:left;">5. <a href="#RSLog_In">Log In with GitHub</a></td>
+	<td style="text-align:left;">5. <a href="#RSSign_Up">Sign Up</a></td>
 	<td style="text-align:left;">Yes</td>
 	<td style="text-align:left;">No</td>
 </tr>
@@ -471,15 +469,15 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <tbody>
 <tr>
-	<td style="text-align:left;">6. <a href="#RSSign_Up">Sign Up</a></td>
-	<td style="text-align:left;">Yes</td>
+	<td style="text-align:left;">6. <a href="#RSDashboard">Dashboard</a></td>
 	<td style="text-align:left;">No</td>
+	<td style="text-align:left;">Yes</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
-	<td style="text-align:left;">7. <a href="#RSDashboard">Dashboard</a></td>
+	<td style="text-align:left;">7. User controls (links to Profile, Payments, Log Out)</td>
 	<td style="text-align:left;">No</td>
 	<td style="text-align:left;">Yes</td>
 </tr>
@@ -489,7 +487,9 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedout.png?raw=true" width="100%"></a> </p>
 
-<p><a name="#RSLogged_In_Navbar"></a>### Logged In Navigation Bar</p>
+<p><a name="RSLogged_In_Navbar"></a></p>
+
+<h4 id="loggedinnavigationbar">Logged In Navigation Bar</h4>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin.png?raw=true" width="100%"></a></p>
 
@@ -497,7 +497,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p><a name="RSLogo"></a>The Logo contains the word &#8220;Popper&#8221; accompanying a stylized image of the philosopher Karl Popper. We are including Karl Popper&#8217;s likeness to clarify the origin of the name &#8220;Popper&#8221; and dissociate alternative meanings of the word. </p>
 
-<p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
+<p>When a user is not logged in, clicking on the Popper Logo brings the user to the <a href="#RSIntroduction_page">Introduction Page</a> at <a href="http://www.popper.org" target="_blank">www.popper.org</a>. Once the user logs in, clicking on the Popper Logo brings the user to the <a href="#RSDashboard">Dashboard</a>.</p>
 
 <p>The portrait below is a good starting point for the logo. It is available <a href="http://en.wikipedia.org/wiki/File:Karl_Popper.jpg" target="_blank">here</a> in the public domain from Wiki Commons. </p>
 
@@ -595,11 +595,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h4 id="documentation">Documentation</h4>
 
-<p><a name="RSDocumentation"></a><strong>Documentation</strong> is stored on GitHub, not on the Researcher Site. Clicking on Documentation takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments">Popper GitHub account</a>. We will take care of writing documentation.</p>
+<p><a name="RSDocumentation"></a>Documentation is stored on GitHub, not on the Researcher Site. Clicking on Documentation takes the Researcher to a public repository linked with the official <a href="https://github.com/Experiments" target="_blank">https://github.com/Experiments</a>. We will take care of writing documentation.</p>
 
-<h4 id="ourstory">Our Story</h4>
+<h4 id="about">About</h4>
 
-<p><a href="#RSOur_Story">Our Story</a> is a static About page. Its contents will be discussed later.</p>
+<p>The content of <a href="#RSAbout">About</a> will be discussed later.</p>
 
 <h4 id="experiments">Experiments</h4>
 
@@ -607,13 +607,13 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h4 id="loginandsignup">Log In and Sign Up</h4>
 
-<p><a href="#RSLog_In">Log In with GitHub</a> and <a href="RSSign_Up">Sign Up</a> were discussed in the previous section, <a href="#RSAccounts">Accounts</a>. The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user&#8217;s full name and a dropdown navigation bar that links to the user&#8217;s <a href="#RSProfile">Profile</a> and Log Out.</p>
+<p><a href="#RSLog_In">Log In with GitHub</a> and <a href="#RSSign_Up">Sign Up</a> were discussed in the previous section, <a href="#RSAccounts">Accounts</a>. The Sign Up button disappears once the user is logged in. The Log In with GitHub button is replaced with the user&#8217;s full name and a dropdown navigation bar that links to the user&#8217;s <a href="#RSProfile">Profile</a> and Log Out.</p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/navbar_loggedin_zoom.png?raw=true" width="100%"></a></p>
 
 <h4 id="dashboard">Dashboard</h4>
 
-<p><a href="#RSDashboard">Dashboard</a> is <a href="#Logged_In_Navbar">visible</a> only if the user is logged in.</p>
+<p><a href="#RSDashboard">Dashboard</a> is <a href="#RSLogged_In_Navbar">visible</a> only if the user is logged in.</p>
 
 <p><a name="RSIP_Header"></a></p>
 
@@ -670,7 +670,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/usage_statistics.png?raw=true" width="100%"></a> </p>
 
-<p>Three summary statistics are dynamically updated and displayed under the <a href="RSIP_Header">Header</a>:</p>
+<p>Three summary statistics are dynamically updated and displayed under the <a href="#RSIP_Header">Header</a>:</p>
 
 <ol>
 <li>The number of registered researchers</li>
@@ -741,24 +741,25 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/rsfooter.png?raw=true" width="100%"></a> </p>
 
-<p>The <strong>Footer</strong> features general links and legal documents.</p>
+<p>The <strong>Footer</strong> features general links and legal documents. It remains constant through the entire Researcher Site.</p>
 
 <ul>
-<li><a href="RSOur_Story">Our Story</a></li>
-<li>Blog: Hosted on a third-party site</li>
-<li>Twitter: @popper_exp</li>
-<li>Facebook: http://www.facebook.com/popper_exp</li>
-<li>Contact: The &#8220;Contact&#8221; section of <a href="RSOur_Story">Our Story</a></li>
-<li><a href="#RSDocumentation">Documentation</a></li>
 <li>Terms of Service: We will provide the text</li>
-<li>Privacy &amp; Security: We will provide the text</li>
+<li>Privacy: We will provide the text</li>
+<li><a href="#RSAbout">About</a></li>
 </ul>
 
-<h2 id="anamersour_storyaourstory"><a name="RSOur_Story"></a>Our story</h2>
+<!---
+- Blog: Hosted on a third-party site
+- Twitter: @popper_exp
+- Facebook: http://www.facebook.com/popper_exp
+-->
 
-<p><strong>Our Story</strong> introduces the history of the project and its connection to Karl Popper.</p>
+<h2 id="anamersaboutaabout"><a name="RSAbout"></a>About</h2>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/our_story.png?raw=true" width="100%"></a> </p>
+<p><strong>About</strong> introduces the history of the project and its connection to Karl Popper.</p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/about.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/about.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -766,7 +767,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li><a href="#RSNavbar_OS">Navigation Bar</a></li>
 <li><a href="#RSPortrait_OS">Portrait of Karl Popper</a></li>
 <li><a href="#RSHistory_OS">History</a></li>
-<li><a href="#RSTeam_OS">Team and Contributors</a></li>
 <li><a href="#RSFooter_OS">Footer</a></li>
 </ol>
 
@@ -788,19 +788,15 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>We will provide this text.</p>
 
-<h3 id="anamersteam_osateamandcontributors">4. <a name="RSTeam_OS"></a>Team and Contributors</h3>
+<h3 id="anamersfooter_osafooter">4. <a name="RSFooter_OS"></a>Footer</h3>
 
-<p>We will provide this text.</p>
-
-<h3 id="anamersfooter_osafooter">5. <a name="RSFooter_OS"></a>Footer</h3>
-
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersexperimentsaexperiments"><a name="RSExperiments"></a>Experiments</h2>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page.png?raw=true" width="100%"></a> </p>
 
-<p>The <strong>Experiments</strong> page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles an Amazon product list page:</p>
+<p>The Experiments page is a searchable library of all experiments available to the user on the Popper platform. Its overall interface resembles an Amazon product list page:</p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/barbie_search.png?raw=true" width="100%"></a> </p>
 
@@ -809,8 +805,8 @@ Robert is a research assistant working for the economics department at Carnegie 
 <ol>
 <li><a href="#RSNavbar_E">Navigation Bar</a></li>
 <li><a href="#RSList_E">List of Experiments</a></li>
-<li><a href="#RSFilter_E">Filter</a></li>
-<li><a href="#RSFooter_E">Footer</a></li>
+<li><a href="#RSSearchbar">Search Bar</a></li>
+<li><a href="#RSFooter_EP">Footer</a></li>
 </ol>
 
 <p><a name="RSNavbar_E"></a></p>
@@ -834,7 +830,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>Naturally, if the user is not logged in, he or she cannot see any experiments hosted in private repositories. </p>
 
-<p>When the user first arrives at the <strong>List of Experiments</strong> and when the user conducts a search, his or her private repositories are listed first and sorted by the number of trials. All other experiments are listed afterwards and sorted by:</p>
+<p>A user&#8217;s private repositories are listed first and sorted by the number of trials (experiments with the most trials are listed first). All other experiments are listed afterwards and sorted by:</p>
 
 <ol>
 <li>Growth rate in the number of commits</li>
@@ -845,16 +841,18 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>A user would typically keep a repository private while the experiment is still being developed and then make the repository public once an accompanying paper has been published and the experiment is open for peer review and replication. </p>
 
-<p>The layout of the page is fluid so that the number of experiments displayed per row changes dynamically with the browser width. Each individual experiment listing contains the following information:</p>
+<p>There are three experiments displayed per row. Each individual experiment listing contains the following information:</p>
 
 <ul>
 <li>Name of the repository (functioning as the name of the experiment)</li>
 <li>Repository owner</li>
+<li>Individual(s) who designed the experiment</li>
+<li>Last activity in the GitHub repository (Just now, # hours ago, # days ago, # weeks ago, # months ago, 1 year ago, over # years ago)</li>
 <li>Short description of the experiment</li>
-<li>Numfber of forks</li>
 <li>Publication citation</li>
-<li>Upvotes and names of recommenders</li>
-<li>Last modified ## minutes/hours/days/weeks/months/years ago</li>
+<li>Number of trials</li>
+<li>Number of watchers and forks (as determined on GitHub)</li>
+<li>Number and names of recommenders (up to six listed, with a mouseover on &#8220;others&#8221; displaying an overlayed box listing the remaining names)</li>
 </ul>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_listing.png?raw=true" width="100%"></a> </p>
@@ -865,9 +863,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>An &#8220;Add Experiment&#8221; button links to Popper <a href="#RSDocumentation">Documentation</a> on GitHub for designing and publishing an experiment using the Popper SDK.</p>
 
-<p>The user clicks on the experiment to go to its <a href="#RSCreate_Trial">Create Trial</a> page.</p>
+<p>The user clicks on the experiment to go to its <a href="#RSExperiment_Summary">Experiment Summary</a> page, which allows the user to read more about the experiment and create a trial.</p>
 
-<h3 id="searchbar">5. Search bar</h3>
+<p><a name="RSSearchbar"></a></p>
+
+<h3 id="searchbar">3. Search bar</h3>
 
 <p>The search bar performs an instant search on the <a href="#RSList_E">List of Experiments</a>. Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query even before the user hits &#8220;Return&#8221;.</p>
 
@@ -882,44 +882,40 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>If tied, the age of the repository, with younger repositories listed first</li>
 </ol>
 
+<h3 id="anamersfooter_epafooter">4. <a name="RSFooter_EP"></a>Footer</h3>
+
+<p>See <a href="#RSIP_Footer">above</a>.</p>
+
+<!---
+
 <section class="sideimg">
 
 <img src="https://github.com/liscovich/functional-specs/blob/master/images/Amazon_filter.png?raw=true" width="40%" align="right">
 
 </section>
 
-<h3 id="filter">6. Filter</h3>
+##6. Filter
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" width="100%"></a> </p>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiments_page_filter.png?raw=true" width="100%"></a>  
 
-<p>Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon. </p>
+Researchers can apply instant filters to the list of displayed experiments in the style of navigating with the left navigation bar to find a product on Amazon. 
 
-<h4 id="availablefilters:">Available filters:</h4>
+###Available filters:
 
-<ul>
-<li>Category
-
-<ul>
-<li>Hierarchy of fields (based on information contained in experiment metadata)</li>
-</ul></li>
-<li>Author
-
-<ul>
-<li>Names of top 10 authors (checkboxes; by number of repositories as determined by experiment metadata)</li>
-</ul></li>
-<li>Status
-
-<ul>
-<li>Published (checkbox; indicates whether the metadata for an experiment lists an accepted peer-reviewed publication based on this experiment)</li>
-<li>Hosted by Popper (checkbox; indicates whether experiment is in the Popper repository)</li>
-</ul></li>
-</ul>
+- Category 
+    - Hierarchy of fields (based on information contained in experiment metadata)
+- Author
+    - Names of top 10 authors (checkboxes; by number of repositories as determined by experiment metadata)
+- Status
+    - Published (checkbox; indicates whether the metadata for an experiment lists an accepted peer-reviewed publication based on this experiment)
+    - Hosted by Popper (checkbox; indicates whether experiment is in the Popper repository)
+-->
 
 <h2 id="anamersdashboardadashboard"><a name="RSDashboard"></a>Dashboard</h2>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" width="100%"></a> </p>
+<p>The **Dashboard is an overview of all activity in the user&#8217;s account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.</p>
 
-<p>The <strong>Dashboard</strong> is an overview of all activity in the user&#8217;s account. It serves as the landing page for logged in users who come to the Researcher Site via <a href="http://www.popper.org" target="_blank">www.popper.org</a>.</p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -945,8 +941,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>Trials are sorted by timestamp. The state of a trial appears beneath its name, and a change in state updates its time stamp, pushing the trial to the top of the list. </p>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_status.png?raw=true" width="100%"></a> </p>
-
 <p>These states can be altered in the metadata file but by default, trials are in one of six states:</p>
 
 <ol>
@@ -966,13 +960,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li><strong>Timestamp:</strong> Time trial corresponding to a change in state.</li>
 </ul>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_timestamp.png?raw=true" width="100%"></a> </p>
-
 <p>Clicking “More&#8230;” scrolls down the window to display more trials in the style of GitHub. “More” disappears once all trials have been displayed. There is no scroll bar on the Trials frame.</p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_more.png?raw=true" width="100%"></a> </p>
 
-<p>“Experiments&quot; links to the <a href="#RSExperiments">Experiments</a> page.</p>
+<p>&#8220;Create Trial&#8221;&#8220; links to the <a href="#RSExperiments">Experiments</a> page. Once there, the user sees the message, &#8221;To create a trial, first select an experiment&quot;.</p>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_trials_expts.png?raw=true" width="100%"></a> </p>
 
@@ -980,7 +972,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h3 id="feed">3. Feed</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/feed.png?raw=true" width="100%"></a> </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_feed.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/dashboard_feed.png?raw=true" width="100%"></a> </p>
 
 <p>The Feed automatically updates with:</p>
 
@@ -1036,13 +1028,13 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h3 id="footer">4. Footer</h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersexperiment_summaryaexperimentsummary"><a name="RSExperiment_Summary"></a>Experiment Summary</h2>
 
 <p>Experiment Summary allows a researcher to read about an experiment and create a trial. </p>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public.png?raw=true" width="100%"></a> </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary.png?raw=true" width="100%"></a> </p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -1061,7 +1053,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h4 id="basicinformation">Basic Information</h4>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_public_information.png?raw=true" width="100%"></a> </p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_basicinfo.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_basicinfo.png?raw=true" width="100%"></a> </p>
 
 <p>The following information is pulled from experiment metadata:</p>
 
@@ -1078,7 +1070,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <ul>
 <li>Previous trials: Each time a trial is run using this experiment, the trial number and individual who ran the trial should be listed with a timestamp.</li>
-<li>Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by the person&#8217;s Gravatar photo, name linking to his or her Popper account, and a timestamp.</li>
+<li>Discussion: Users can leave comments about a trial. For the first prototype, DISQUS or something similar can be used. The comment should be accompanied by a name linking to his or her Popper account and a timestamp.</li>
 </ul>
 
 <h3 id="anamerscreate_trial_escreatetrialforma"><a name="RSCreate_Trial_ES">Create Trial Form</a></h3>
@@ -1141,20 +1133,20 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h3 id="anamersfooter_esfootera"><a name="RSFooter_ES">Footer</a></h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
-<h3 id="privateview">Private View</h3>
+<!---
+## Private View
 
-<p>The user who owns the GitHub account containing the trial can edit the following fields directly on the Experiment Summary page: </p>
+The user who owns the GitHub account containing the trial can edit the following fields directly on the Experiment Summary page: 
 
-<ul>
-<li>Name</li>
-<li>Description</li>
-<li>References</li>
-<li>IRB approvals: The user can upload a PDF of the IRB approval for the experiment. The Researcher Website should create a folder in the user&#8217;s GitHub repository for the experiment called &#8220;IRB&#8221;, and store the uploaded PDF in this folder.</li>
-</ul>
+- Name
+- Description 
+- References
+- IRB approvals: The user can upload a PDF of the IRB approval for the experiment. The Researcher Website should create a folder in the user's GitHub repository for the experiment called "IRB", and store the uploaded PDF in this folder.
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" width="100%"></a></p>
+<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/experiment_summary_private.png?raw=true" width="100%"></a>
+-->
 
 <h2 id="anamerstrial_summaryatrialsummary"><a name="RSTrial_Summary"></a>Trial Summary</h2>
 
@@ -1167,7 +1159,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 <ol>
 <li><a href="#RSTrial_Summary_NB">Navigation bar</a></li>
 <li><a href="#RSTrial_Summary_BI">Basic information</a></li>
-<li><a href="#RSTrial_Summary_TS">Trial status</a></li>
 <li><a href="#RSTrial_Summary_TP">Trial parameters</a></li>
 <li><a href="#RSTrial_Summary_S">Subjects</a></li>
 <li><a href="#RSTrial_Summary_RH">Report and History</a></li>
@@ -1189,13 +1180,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Person who created the trial: Links to the user&#8217;s Popper Profile.</li>
 <li>Design: Individuals who designed the experiment. Links to the individual&#8217;s Popper Profile if one exists.</li>
 <li>Implementation: Individuals who created the experiment in Unity 3D. Links to the individual&#8217;s Popper Profile if one exists.</li>
-</ul>
-
-<h3 id="anamerstrial_summary_tsatrialstatus">3. <a name="RSTrial_Summary_TS"></a>Trial status</h3>
-
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_status.png?raw=true" width="100%"></a></p>
-
-<ul>
 <li><a name="Public_Trial"></a>Public/Private: Determined by whether the user checked the box &#8220;Make results public&#8221; in the <a href="#RSCreate_Trial_ES">Create Trial Form</a>. The user can toggle between Private and Public. If results are private, only the user who created the trial can view its Trial Summary page. If results are public, anyone with a Popper account can view this Trial Summary page. Results are viewable in real time.</li>
 <li>Ongoing/Pause/Stop: Status of the trial.
 
@@ -1205,7 +1189,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 </ul></li>
 </ul>
 
-<h3 id="anamerstrial_summary_tpatrialparameters">4. <a name="RSTrial_Summary_TP"></a>Trial parameters</h3>
+<h3 id="anamerstrial_summary_tpatrialparameters">3. <a name="RSTrial_Summary_TP"></a>Trial parameters</h3>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_parameters.png?raw=true" width="100%"></a></p>
 
@@ -1214,7 +1198,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Replicate Trial: Brings the user to the Experiment Summary page and populates the <a href="#RSCreate_Trial_ES">Create Trial Form</a></li>
 </ul>
 
-<h3 id="anamerstrial_summary_sasubjects">5. <a name="RSTrial_Summary_S"></a>Subjects</h3>
+<h3 id="anamerstrial_summary_sasubjects">4. <a name="RSTrial_Summary_S"></a>Subjects</h3>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_subjects.png?raw=true" width="100%"></a></p>
 
@@ -1231,11 +1215,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Approved:: The researcher approves subject payments by clicking the checkbox next to a player&#8217;s earnings. <strong>This option is not available until the trial ends or the researcher manually clicks &#8220;Stop&#8221; to end the trial.</strong></li>
 </ul>
 
-<h3 id="anamerstrial_summary_rhareportandhistory">6. <a name="RSTrial_Summary_RH"></a>Report and History</h3>
+<h3 id="anamerstrial_summary_rhareportandhistory">5. <a name="RSTrial_Summary_RH"></a>Report and History</h3>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_resultshistory.png?raw=true" width="100%"></a></p>
 
-<p>The Report is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:</p>
+<p><strong>Results</strong> is a list of purely quantitative data in .csv, .xls, or .pdf format. Here are suggested types of data that users collect:</p>
 
 <ul>
 <li>Stage</li>
@@ -1245,30 +1229,30 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Balance: A snapshot of the player&#8217;s current points balance</li>
 </ul>
 
-<p>The History is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. </p>
+<p><strong>History</strong> is a raw log of all events in the game. Its content depends on experiment metadata. At minimum, History includes the initial parameters of the game, a list of subjects, and a list of all in-game events with timestamps. </p>
 
-<p>Once the trial ends, the user can download the Full Report in CSV, XLS, or PDF format at the bottom of the page. </p>
+<p>Once the trial ends, the user can download the Full Report in .csv, .xls, or .pdf format at the bottom of the page. </p>
 
 <ul>
-<li>XLS: Results appear in the first sheet; History appears in the second sheet</li>
-<li>CSV and PDF: Results appear first; History appears below</li>
+<li>.xls: Results appear in the first sheet; History appears in the second sheet</li>
+<li>.csv and .pdf: Results appear first; History appears below</li>
 </ul>
 
-<h3 id="anamerstrial_summary_cacomments">7. <a name="RSTrial_Summary_C"></a>Comments</h3>
+<h3 id="anamerstrial_summary_cacomments">6. <a name="RSTrial_Summary_C"></a>Comments</h3>
 
 <p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/trial_summary_comments.png?raw=true" width="100%"></a></p>
 
 <p>The researcher can leave comments as the trial is ongoing. Once the trial ends, the researcher can no longer leave comments. These comments appear in the History of the report as well as the Full Report. </p>
 
-<h4 id="anamerstrial_summary_fa">8. <a name="RSTrial_Summary_F"></a></h4>
+<h4 id="anamerstrial_summary_fafooter">7. <a name="RSTrial_Summary_F"></a>Footer</h4>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersprofileaprofile"><a name="RSProfile"></a>Profile</h2>
 
 <p>Each user has a public profile to showcase his or her work in the experimental social sciences on Popper.</p>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a></p>
 
 <h3 id="pagecomponents">Page Components</h3>
 
@@ -1288,7 +1272,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h3 id="researcherprofilereplacedwiththeresearchersname">2. Researcher profile (replaced with the researcher’s name)</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public_zoom.png?raw=true" width="100%"></a></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a></p>
 
 <p>The profile features information pulled from the user’s GitHub account as well as user-provided information. The public view of a user’s profile displays the following:</p>
 
@@ -1300,20 +1284,20 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Bio: Written by the researcher.</li>
 <li>Experiments: Shows all public experiments associated with a researcher&#8217;s GitHub account.</li>
 <li>Trials: Links to the <a href="#RSTrial_Summary">Trial Summary</a> page for <a href="#Public_Trial">public trials</a>.</li>
-<li>Recommendations: Shows all experiments that the researcher has recommended on an <a href="#RSExperiment_Summary">Experiment Summary</a> page.</li>
+<li>Feed: Shows activity when a user starts a trial, adds an experiment, recommends an experiment, or joins Popper, accompanied by a timestamp.</li>
 </ul>
 
 <p><a name = "RSProfile_F"></a></p>
 
 <h3 id="footer">3. Footer</h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h2 id="anamersprivate_profileaprivateprofile"><a name="RSPrivate_Profile"></a>Private Profile</h2>
 
 <p>A logged in user can edit <a href="#RSEdit_Profile">profile</a> and <a href="#RSEdit_Payment">payment credentials.</a> </p>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_public.png?raw=true" width="100%"></a></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a></p>
 
 <p><a name = "RSEdit_Profile"></a></p>
 
@@ -1321,7 +1305,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <ol>
 <li><a href="#RSProfile_ENB">Navigation bar</a></li>
-<li><a href="#RSProfile_ESN">Side navigation</a></li>
 <li><a href="#RSProfile_ERP">Edit profile</a></li>
 <li><a href="#RSProfile_EF">Footer</a></li>
 </ol>
@@ -1332,19 +1315,11 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>See <a href="#RSNavbar">above</a>.</p>
 
-<p><a name = "RSProfile_ESN"></a></p>
-
-<h3 id="sidenavigation">2. Side navigation</h3>
-
-<p>The edit profile page has an additional side navigation bar, which allows the researcher to toggle between editing profile information and updating payment credentials. </p>
-
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_sidenav.png?raw=true" width="100%"></a></p>
-
 <p><a name = "RSProfile_ERP"></a></p>
 
-<h3 id="editprofile">3. Edit profile</h3>
+<h3 id="editprofile">2. Edit profile</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_p.png?raw=true" width="100%"></a></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_page.png?raw=true" width="100%"></a></p>
 
 <p>The researcher can edit the following items:</p>
 
@@ -1353,7 +1328,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li>Affiliation</li>
 <li>Department</li>
 <li>Biography: If the researcher has not provided a biography, the space under the department and affiliation line reads &#8220;Write your biography here.&#8221;</li>
-<li>Recommended experiments: The researcher can removed experiments from this list.</li>
 </ul>
 
 <p>The research <em>cannot</em> edit the following items:</p>
@@ -1361,13 +1335,14 @@ Robert is a research assistant working for the economics department at Carnegie 
 <ul>
 <li>Experiments: We want to encourage researchers to share as many experiments publicly as possible. Researchers need to change share settings to &#8220;Private&#8221; in their GitHub account, not from the Researcher Website, if they wish to make any experiment invisible to the public.</li>
 <li>Trials: We also want to encourage sharing trials. Trial settings must be adjusted directly on the Trial Summary page.</li>
+<li>Feed</li>
 </ul>
 
 <p><a name = "RSProfile_EF"></a></p>
 
-<h3 id="footer">4. Footer</h3>
+<h3 id="footer">3. Footer</h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <p><a name = "RSEdit_Payment"></a></p>
 
@@ -1375,7 +1350,6 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <ol>
 <li><a href="#RSProfile_EPNB">Navigation bar</a></li>
-<li><a href="#RSProfile_EPSN">Side navigation</a></li>
 <li><a href="#RSProfile_EPRP">Edit payment</a></li>
 <li><a href="#RSProfile_EPF">Footer</a></li>
 </ol>
@@ -1386,25 +1360,48 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>See <a href="#RSNavbar">above</a>.</p>
 
-<p><a name = "RSProfile_EPSN"></a></p>
-
-<h3 id="sidenavigation">2. Side navigation</h3>
-
-<p>See <a href="#RSProfile_ESN">above</a>.</p>
-
 <p><a name = "RSProfile_EPRP"></a></p>
 
-<h3 id="editprofile">3. Edit profile</h3>
+<h3 id="editpayment">2. Edit payment</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/profile_private_s.png?raw=true" width="100%"></a></p>
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/payments_page.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/payments_page.png?raw=true" width="100%"></a></p>
 
-<p>The researcher can enter credit card information on the left side of the screen and manage payment methods on the right. Payment history keeps a log of the date, payee, trial number, and payment amount of all previous transactions. </p>
+<p>The researcher can review a history of payments on the left side of the screen and manage payment methods and review balance information on the right. </p>
+
+<p>Payment history keeps a log of the date, time, transaction description, and transaction amount of processed transactions. Two types of transactions are tracked: </p>
+
+<ol>
+<li>Payment processed for [Trial ##]</li>
+<li>Funds added to prepaid balance</li>
+</ol>
+
+<p>Negative amounts (when payment is processed for a trial) are enclosed in parentheses. </p>
+
+<p>The researcher can also review the total amount of money available to pay subjects. When a researcher begins a trial, the total anticipated amount of money committed to the trial is included in &#8220;Committed subject payments&#8221; and subtracted from the researcher&#8217;s prepaid balance. &#8220;Committed subject payments&#8221; also includes subject payments that have been approved but not yet processed. When only $50.00 in credit or less is remaining in the researcher&#8217;s account, the following email is sent from <a href="mailto:support@popper.org">support@popper.org</a>:</p>
+
+<section class="quote">
+    <p>Subject: Alert: Low balance on Popper</p>
+    
+    <p>Your prepaid balance on Popper is currently below $50.00. Once your balance reaches $0.00, all currently running trials will be paused until more funds are added to your account.</p>
+    
+    <p>You can add funds by clicking <a href="http://paymentsurl.com" target="_blank">here</a> or by navigating to the "Payments" in the navigation bar.</p>
+    
+    <p>If you have any questions, please email us.</p>
+    
+    <p>The Popper Team</p>
+</section>
+
+<p>If the researcher deposits less than $50.00 into the prepaid balance, the same email above is sent to the user.</p>
+
+<p>Once &#8220;Available balance&#8221; reaches $0.00, all currently running trials are paused until the researcher adds more funds to his or her prepaid balance on Popper. </p>
+
+<p>Payment is processed using the service <a href="https://www.braintreepayments.com/">Braintree</a>, and at launch will accommodate only credit cards. Funds are automatically deducted from the researcher&#8217;s primary payment method, which is specified on the Edit Payment page. </p>
 
 <p><a name = "RSProfile_EPF"></a></p>
 
-<h3 id="footer">4. Footer</h3>
+<h3 id="footer">3. Footer</h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h2 id="anamerssearch_resultsasearchresults"><a name="RSSearch_Results"></a>Search Results</h2>
 
@@ -1420,19 +1417,19 @@ Robert is a research assistant working for the economics department at Carnegie 
 <li><a href="#RSSearch_Footer">Footer</a></li>
 </ol>
 
-<p><a name="#RSSearch_Nav"></a></p>
+<p><a name="RSSearch_Nav"></a></p>
 
 <h3 id="navigationbar">1. Navigation Bar</h3>
 
 <p>See <a href="#RSNavbar">above</a>.</p>
 
-<p><a name="#RSSearch_Search"></a></p>
+<p><a name="RSSearch_Search"></a></p>
 
 <h3 id="searchresults">2. Search Results</h3>
 
-<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results_results.png?raw=true" width="100%"></a></p>
-
 <p>Suggestions appear beneath the Search bar as the user begins to type, similar to Google search. Search results are updated continuously to match the current state of the query. </p>
+
+<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/search_results.png?raw=true" width="100%"></a></p>
 
 <h4 id="indexing">Indexing</h4>
 
@@ -1466,7 +1463,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <p>All three results sections (experiments, trials, and profiles) are displayed with every query. The user can choose to view only one type of result by clicking on one of the filters on the left of the screen (All, Experimnets, Trials, Researchers).</p>
 
-<p>If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More&#8230;” opens a new page with search results from only that category. The same “More&#8230;” functionality <a href=”https://github.com/search?q=rails&type=Everything&repo=&langOverride=&start_value=1” target=”_blank”>can be found</a> in GitHub search. </p>
+<p>If no result exists for a particular results section, the message “No results found” is displayed. Clicking “More&#8230;” opens a new page with search results from only that category. The same “More&#8230;” functionality can be found in GitHub search. </p>
 
 <h4 id="sorting">Sorting</h4>
 
@@ -1510,7 +1507,7 @@ Robert is a research assistant working for the economics department at Carnegie 
 
 <h3 id="footer">3. Footer</h3>
 
-<p>See <a href="RSIP_Footer">above</a>.</p>
+<p>See <a href="#RSIP_Footer">above</a>.</p>
 
 <h1> <a name="Player_Site"></a>Player Site </h1>
 
