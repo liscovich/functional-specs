@@ -18,25 +18,34 @@ Popper is a behavioral experiments platform that empowers researchers in economi
 
 <section class="pages">
 <ul>
+<!---
 	<li>1 &nbsp; <a href="#Introduction">Introduction (in progress)</a> </li>
-		<ul>
+		<ul>	
 			<li>1.1 &nbsp; <a href="#Correlation_vs_causation">Correlation vs. Causation</a></li>
 			<li>1.2 &nbsp; <a href="#Experiments_in_sciences">Experiments in the natural and social sciences</a></li>
 			<li>1.3 &nbsp; <a href="#Tradeoff">Tradeoff between internal and external validity</a></li>
 			<li>1.4 &nbsp; <a href="#Current">Current experimental economics</a></li>
 			<li>1.5 &nbsp; <a href="#Why_Popper">Why Popper?</a></li>
+		-->
+	<li>1 &nbsp; Introduction (in progress)
+		<ul>
+			<li>1.1 &nbsp; Correlation vs. Causation</li>
+			<li>1.2 &nbsp; Experiments in the natural and social sciences</li>
+			<li>1.3 &nbsp; Tradeoff between internal and external validity</li>
+			<li>1.4 &nbsp; Current experimental economics</li>
+			<li>1.5 &nbsp; Why Popper?</li>
 		</ul>	
-	<li>2 &nbsp; <a href="./researcher_site.html#Researcher_Site">Researcher Site</a></li>
+	<li>2 &nbsp; <a href="#Researcher_Site">Researcher Site</a></li>
 		<ul>
 			<li>2.1 &nbsp; <a href="#RSAudience">Audience</a></li>
 			<li>2.2 &nbsp; <a href="#RSLook">Look and Feel</a></li>
 			<li>2.3 &nbsp; <a href="#RSAccounts">Accounts</a></li>	
 			<li>2.4 &nbsp; <a href="#RSIntroduction_page">Introduction Page</a></li>
-			<li>2.5 &nbsp; <a href="#RSOur_story">Our Story</a></li>	
+			<li>2.5 &nbsp; <a href="#RSOur_Story">Our Story</a></li>	
 			<li>2.6 &nbsp; <a href="#RSExperiments">Experiments</a></li>
 			<li>2.7 &nbsp; <a href="#RSDashboard">Dashboard</a></li>	
-			<li>2.8 &nbsp; <a href="#RSExperiment_summary">Experiment Summary</a></li>
-			<li>2.9 &nbsp; <a href="#RSTrial_summary">Trial Summary</a></li>
+			<li>2.8 &nbsp; <a href="#RSExperiment_Summary">Experiment Summary</a></li>
+			<li>2.9 &nbsp; <a href="#RSTrial_Summary">Trial Summary</a></li>
 			<li>2.10 &nbsp; <a href="#RSProfile">Profile</a></li>
 			<li>2.11 &nbsp; <a href="#RSSearch_Results">Search Results</a></li>		
 		</ul>
@@ -154,11 +163,13 @@ The Researcher Site ([www.popper.org](http://www.popper.org)) allows researchers
 	</ul>
 </section>
 
-# <a name="RSAudience">Audience</a>
+# <a name="RSAudience"></a>Audience
 
 The Researcher Site is used by experimental social scientists, who use experiments to understand human behavior. These researchers come from many different backgrounds, including the fields of economics, political science, psychology, and sociology, as well as corporations and think tanks. 
 
-Most of these researchers currently use [z-Tree](http://www.iew.uzh.ch/ztree/index.php), software from the 1990s that requires researchers to learn how to program. Researchers are accustomed to bare-bones UI for both themselves and their subjects. These researchers typically know a limited amount of programming and are open to technologically complex tools, since much of their work relies on technology such as [STATA](www.stata.com), [z-Tree](http://www.iew.uzh.ch/ztree/index.php), and [R](http://www.r-project.org/).
+Most of these researchers currently use <a href="http://www.iew.uzh.ch/ztree/index.php" target="_blank">z-Tree</a>, software from the 1990s that requires researchers to learn how to program. Researchers are accustomed to bare-bones UI for both themselves and their subjects. These researchers typically know a limited amount of programming and are open to technologically complex tools, since much of their work relies on technology such as <a href="http://www.stata.com" target="_blank">STATA</a>, <a href="http://www.iew.uzh.ch/ztree/index.php" target="_blank">z-Tree</a>, and <a href="http://www.r-project.org/" target="_blank">R</a>.
+
+<!---
 
 Users fall into two typical use cases: 
 
@@ -167,7 +178,7 @@ Users fall into two typical use cases:
 
 ##1. Professor Goldin, the Experiment Designer
 
-Professor Goldin is an economics professor at Carnegie Mellon University. For over ten years, she has used [z-Tree](http://www.iew.uzh.ch/ztree/index.php), the dominant social science experiments software, to study human behavior. She knows a rudimentary amount of programming--just enough to design experiments in z-Tree. Each trial takes several weeks to run, and much of this time is spent handling logistics: recruiting subjects, waiting for subjects, screening subjects, reserving computer lab space at the university's social science experiments facility, and ensuring that subjects are paid. 
+Professor Goldin is an economics professor at Carnegie Mellon University. For over ten years, she has used [z-Tree](http://www.iew.uzh.ch/ztree/index.php), the dominant social science experiments software, to study human behavior. She knows a rudimentary amount of programming - just enough to design experiments in z-Tree. Each trial takes several weeks to run, and much of this time is spent handling logistics: recruiting subjects, waiting for subjects, screening subjects, reserving computer lab space at the university's social science experiments facility, and ensuring that subjects are paid. 
 
 Professor Goldin hears about Popper at an Experimental Economics Conference and visits [www.popper.org](www.popper.org). On the **Introduction Page**, she reads about how Popper works and signs up for an account. She downloads the Popper SDK and reads through the Popper documentation. The first trial that she runs uses one of the stock experiments available publicly. She makes a few changes to the experiment design in [Unity3D](http://unity3d.com/), which is provided as part of the Popper SDK. Once she finishes designing the experiment to her satisfaction, Professor Goldin asks her research assistant, Robert, to run trials using this experiment. 
 
@@ -176,12 +187,13 @@ Soon, Professor Goldin begins designing her own experiments from scratch using t
 ##2. Robert, the Trial Runner
 
 Robert is a research assistant working for the economics department at Carnegie Mellon University. His job this summer is to run trials and crunch data for Professor Goldin. Robert knows no programming but has taken a few statistics courses. Professor Goldin asks him to set up an account at www.popper.org. He signs up on the **Introduction Page** and follows a set of simple instructions to create an account. Robert links Professor Goldin's laboratory GitHub account with his Popper account, and is able to find the lab's private experiments on the **Experiments** page. He selects one of the experiments and fills in a set of parameters for who is allowed to participate in the trial and the type of data he would like to collect. Robert clicks Create Trial, and eligible subjects are automatically recruited from Amazon MTurk and oDesk. He monitors the progress of the trial on the **Dashboard** page. A few hours later, the trial is complete and Robert downloads the data to analyze further. 
+-->
 
-# <a name="RSLook">Look and Feel</a>
+# <a name="RSLook"></a>Look and Feel
 
-The site serves an academic audience so the overall look of the **Introduction Page** should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
+The Researcher Site serves an academic audience so its overall look should be classic yet modern, and convey academic legitimacy. We are leaning towards a light, clean color scheme.
 
-# <a name="RSAccounts">Accounts</a>
+# <a name="RSAccounts"></a>Accounts
 
 <!---A GitHub account is necessary for the following three reasons. 
 1. GitHub eliminates the need to implement standard workflows on our side, like log in and password retrieval. 
@@ -191,23 +203,24 @@ The site serves an academic audience so the overall look of the **Introduction P
 
 ## Overview
 
-The Researcher Site requires users to have a GitHub account and authenticates them via GitHub OAuth API. In addition to the GitHub profile information, the following data are stored for each of the users: 
+The Researcher Site requires users to have a GitHub account and authenticates them via GitHub OAuth API. The following user data are stored: 
 
+- GitHub profile information
 - First name
 - Last name
 - Email address
 - Department and affiliation
-- Payment method (credit card/PayPal)
-- Activity history on the Site (experiments, trials, experiments recommended by the user)
+- Payment method (credit card)
+- Activity history on the Site (experiment GitHub activity, trial activity on the Researcher Website, experiments recommended through the Researcher Website)
 
-##Components
+## Components
 
 1. <a href="#RSSign_Up">Sign Up</a>
 2. <a href="#RSLog_In">Log In</a>
 
 ##<a name="RSSign_Up"></a>1. Sign Up
 
-There are two ways for unregistered users to Sign Up:
+There are two ways for unregistered users to Sign Up for a Popper account:
 
 1. By clicking on the "Sign Up" button in the Navigation Bar. 
 2. By being redirected to Sign Up after logging in with GitHub.
@@ -221,7 +234,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 <section class="pages">
 	<ul>
 		<a name="Sign_Up_1_1"></a><li>1. &nbsp; The user enters an email and clicks "Sign Up".</li>
-		<li>2. &nbsp; The following confirmation email is sent to the user from <a href="support@popper.org">support@popper.org</a>:</li>
+		<li>2. &nbsp; The following confirmation email is sent to the user from <a href="mailto:support@popper.org" target="_blank">support@popper.org</a>:</li>
  	</ul>
 </section>
 
@@ -230,7 +243,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 	
 	<p>Thanks for signing up with Popper! Please follow this link to activate your account:</p>
 	
-	<p><a href="https://www.someurlforsignup.com">https://www.someurlforsignup.com</a></p>
+	<p><a href="https://www.someurlforsignup.com" target="_blank">https://www.someurlforsignup.com</a></p>
 	
 	<p>If you have any questions, please email us.</p>
 	
@@ -240,7 +253,7 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 <section class="pages">
 	<ul>
 		<li>3. &nbsp; The user clicks on the confirmation link in the email.</li>
-		<li>4. &nbsp; The user is taken to Step 2 of the Sign Up page, which has the same overall design as the email confirmation Sign Up page but contains different information.</li> 
+		<li>4. &nbsp; The user is taken to Step 2 of Sign Up.</li> 
 	</ul>
 </section>
 
@@ -251,19 +264,19 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 <section class="pages">
 	<ul>
 		<li>1. &nbsp; The user is prompted to log in by either using an existing GitHub account or signing up for a new one.</li>
-		<li>2. &nbsp; The user clicks either Log In with GitHub (with a custom link that ultimately brings the user to the Authorize access page) or Sign Up for GitHub (free account at <a href="https://github.com/signup/free">https://github.com/signup/free</a>).</li>
+		<li>2. &nbsp; The user clicks either Log In with GitHub (with a custom link that ultimately brings the user to the Authorize access page) or Sign Up for GitHub (free account at <a href="https://github.com/signup/free" target="_blank">github.com/signup/free</a>).</li>
 		<li>3. &nbsp; The user either logs in or signs up for GitHub on the GitHub website.</li>
 			<ul>
 				<a name="Sign_Up_2_3a"></a><li>a. &nbsp; If the user clicks Sign Up, he or she is taken to the GitHub Sign Up page to create a free account at <a href="https://github.com/signup/free" target="_blank">github.com/signup/free</a> in a <i>new</i> browser tab.<p> 
 					<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Git_Hub_signup.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Git_Hub_signup.png?raw=true" width="100%"></a></p>		
-				<p>Once the user has signed up, he or she can close the GitHub tab and log in using GitHub from the Researcher Site Sign Up page. Proceed to <a href="#3b">3b</a> below.</p>
+				<p>Once the user has signed up, he or she can close the GitHub tab and Log In from either the Navigation Bar or the "Log In with Existing GitHub Account" button on Step 2 of Sign Up.</p>
 			</li>
-				<li><a name="3b">b.</a> &nbsp; If the user clicks Log In, he or she is taken to the GitHub App Authorization page <i>in the same browser tab</i> with parameters. If the user is not logged in, he or she is taken to the log in page instead.
+				<li><a name="3b">b.</a> &nbsp; If the user clicks Log In, he or she is taken to the GitHub App Authorization page <i>in the same browser tab</i>. If the user is not logged in, he or she is taken to the <a href="#RSLog_In">Log In</a> page instead.
 					<p><a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Authorization.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/Authorization.png?raw=true" width="100%"></a></p>
 				</li>		
 			</ul>	
 		<li>4. &nbsp; The user authorizes Popper to access the user's public and private information, including all repositories.</li>
-			<!---This authorization is necessary to customize the user's **Experiments** so that the users's own public and private experiments are displayed. The only way to run a trial is through the **Experiments**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository.-->	
+			<!---This authorization is necessary to customize the user's **Experiments** so that the users's own public and private experiments are displayed. The only way to run a trial is through **Experiments**, which means that Popper must be able to access both public and private repositories. Experiments from public repositories are visible to all users, while experiments from private repositories are visible only to users who have GitHub access to that repository.-->	
 		<li>5. &nbsp; The user is taken to Step 3 of the Sign Up page.</li>
  	</ul>
 </section>
@@ -275,8 +288,9 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
 1. The user provides the following information:
 	- First name
 	- Last name
-	- Department and affiliation
-	<p>Users enter their affiliation using autocomplete. If their institution is not found from our provided list, the user simply finishes typing the affiliation. Names of departments and affiliations need to be scraped from <a href="http://edirc.repec.org/alphabet.html">http://edirc.repec.org/alphabet.html</a>.</p>
+	- Affiliation
+	- Department
+	<p>Users enter their affiliation using autocomplete. If their institution is not found from our provided list, the user simply finishes typing the affiliation. Names of departments and affiliations need to be scraped from <a href="http://edirc.repec.org/alphabet.html" target="_blank">http://edirc.repec.org/alphabet.html</a>.</p>
 2. The user clicks "Submit". 
 3. The user is redirected to the <a href="#RSDashboard">Dashboard</a>.
 
@@ -284,9 +298,9 @@ Sign Up consists of three steps. Only one step is displayed at a time so that us
  
 ## <a name="RSLog_In"></a>Log In
 
-The Log In process is tied closely to the Sign Up page. You'll recall that Sign Up requires three components: email verification, a linked GitHub account, and affiliation details. Logging in includes a series of checks in the backend to make sure that a user account includes all three components.
+The Log In process is tied closely to <a href="#RSSign_Up">Sign Up</a>. You'll recall that Sign Up requires three components: email verification, a linked GitHub account, and affiliation details. Logging in includes a series of checks in the backend to make sure that a user has completed all three Sign Up steps. 
 
-The below diagram shows how Log In works and how it is connected to Sign Up. We will now take a look at what happens from the moment the user clicks **Log In** from the Navigation Bar. 
+The below diagram shows how Log In works and how it is connected to Sign Up. We will now take a look at what happens from the moment the user clicks **Log In with GitHub** from the Navigation Bar. 
 
 <a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/log_in.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/log_in.png?raw=true" width="100%"></a>
 
@@ -295,10 +309,11 @@ The below diagram shows how Log In works and how it is connected to Sign Up. We 
 <!---accounts 1 image-->
 <section class="pages">
 	<ul>
-		<li>1. &nbsp; A user clicks "Log In".</li>
+		<li>1. &nbsp; A user clicks "Log In with GitHub".</li>
 		<li>2. &nbsp; The Researcher Site checks whether the user is currently logged into GitHub.
 	 		<ul>
 	 			<li>a. If the user is not logged into GitHub, he or she is taken to the GitHub Log In page and the Researcher Site proceeds to <a href="Check_2">Check 2</a>. This Log In page is the same one that the user sees <a href="#Sign_Up_2">after clicking "Log In using GitHub"</a> from the <a href="#Sign_Up">Sign Up</a> page.</li>
+	 				<a href="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" target="_blank"><img src="https://github.com/liscovich/functional-specs/blob/master/wireframes/researcher_site/GitHub_login.png?raw=true" width="100%"></a>
 	 			<li>b. If the user is logged into GitHub, the Researcher Site proceeds to <a href="#Check_3">Check 3</a>.
 	</ul>
 </section>
