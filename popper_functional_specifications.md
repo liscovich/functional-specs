@@ -12,7 +12,9 @@ latex input:		mmd-natbib-plain
 latex input:		mmd-article-begin-doc  
 latex footer:		mmd-memoir-footer  
 
-<h1> Functional Specifications </h1>
+<h1> Functional eSpecifications </h1>
+<h2> Version 2.2 </h2>
+<h2> Sophy Lee </h2>
 
 Popper is a behavioral experiments platform that empowers researchers in economics, psychology, sociology, and political science to create and conduct complex large-scale online experiments.
 
